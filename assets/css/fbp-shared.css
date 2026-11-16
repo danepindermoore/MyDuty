@@ -303,7 +303,7 @@ body.fbp-theme {
   .fbp-card,
   .fbp-panel,
   .briefing-card,
-  .ical-card,
+  .myroster-card,
   .fdp-card {
     padding: 20px;
     border-radius: 24px;
@@ -337,13 +337,13 @@ body.fbp-theme {
 
 /* Shared visual treatment for feature-page panels. */
 body.fbp-theme .briefing-card,
-body.fbp-theme .ical-card,
+body.fbp-theme .myroster-card,
 body.fbp-theme .fdp-card {
   padding: 24px;
 }
 
 body.fbp-theme .briefing-card,
-body.fbp-theme .ical-card,
+body.fbp-theme .myroster-card,
 body.fbp-theme .fdp-card,
 body.fbp-theme .result-box {
   border: 1px solid var(--border);
@@ -356,7 +356,7 @@ body.fbp-theme .result-box {
 }
 
 body.fbp-theme .briefing-card h2,
-body.fbp-theme .ical-card h2,
+body.fbp-theme .myroster-card h2,
 body.fbp-theme .fdp-card h2,
 body.fbp-theme .fbp-panel > h2 {
   font-size: 1.2rem;
@@ -442,7 +442,7 @@ body.fbp-theme :focus-visible {
 
 @media (max-width: 700px) {
   body.fbp-theme .briefing-card,
-  body.fbp-theme .ical-card,
+  body.fbp-theme .myroster-card,
   body.fbp-theme .fdp-card {
     padding: 20px;
     border-radius: 24px;

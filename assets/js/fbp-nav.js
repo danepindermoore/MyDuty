@@ -21,7 +21,7 @@ Responsibilities
     // Navigation Items
     //-----------------------------------------------------
 
-const IS_FEATURE_PAGE = /\/(FDP|briefing|iCal|MyDocuments)(\/|$)/i.test(
+const IS_FEATURE_PAGE = /\/(MyBriefing|MyAircraft|MyRoster|MyDocuments)(\/|$)/i.test(
     decodeURIComponent(location.pathname)
 );
 
@@ -36,15 +36,15 @@ const NAV_ITEMS = [
     },
 
     {
-        id: "briefing",
+        id: "myAircraft",
         text: "MyAircraft",
-        href: BASE + "briefing/index.html"
+        href: BASE + "MyAircraft/index.html"
     },
 
     {
-        id: "fdp",
+        id: "myBriefing",
         text: "MyBriefing",
-        href: BASE + "FDP/index.html",
+        href: BASE + "MyBriefing/index.html",
         adminOnly: true
     },
 
@@ -54,9 +54,9 @@ const NAV_ITEMS = [
         href: BASE + "MyDocuments/index.html"
     },
     {
-        id: "ical",
+        id: "myRoster",
         text: "MyRoster",
-        href: BASE + "iCal/index.html",
+        href: BASE + "MyRoster/index.html",
         adminOnly: true
     }
 

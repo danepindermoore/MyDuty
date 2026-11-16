@@ -1,29 +1,29 @@
 :root {
-    --ical-panel: var(--surface);
-    --ical-panel2: var(--surface-2);
-    --ical-text: var(--text);
-    --ical-muted: var(--muted);
-    --ical-border: var(--border);
-    --ical-shadow: var(--shadow);
+    --myroster-panel: var(--surface);
+    --myroster-panel2: var(--surface-2);
+    --myroster-text: var(--text);
+    --myroster-muted: var(--muted);
+    --myroster-border: var(--border);
+    --myroster-shadow: var(--shadow);
 }
 
 body {
     margin: 0;
-    color: var(--ical-text);
+    color: var(--myroster-text);
 }
 
-.ical-wrap {
+.myroster-wrap {
     margin-top: 22px;
 }
 
-.ical-card {
+.myroster-card {
     background: var(--surface-2);
     border: 1px solid var(--border);
     border-radius: var(--radius-xl);
     padding: 24px;
     box-shadow: var(--shadow);
     margin-bottom: 18px;
-    color: var(--ical-text);
+    color: var(--myroster-text);
 }
 
 h1,
@@ -35,7 +35,7 @@ h3 {
 .sub,
 .note,
 .small {
-    color: var(--ical-muted);
+    color: var(--myroster-muted);
     line-height: 1.5;
 }
 
@@ -149,7 +149,7 @@ button.danger {
 }
 
 .stat {
-    background: var(--ical-panel2);
+    background: var(--myroster-panel2);
     border: 1px solid rgba(255,255,255,.06);
     border-radius: 16px;
     padding: 14px;
@@ -160,11 +160,11 @@ button.danger {
     font-weight: 800;
     line-height: 1;
     margin-bottom: 4px;
-    color: var(--ical-text);
+    color: var(--myroster-text);
 }
 
 .stat .lbl {
-    color: var(--ical-muted);
+    color: var(--myroster-muted);
     font-size: .88rem;
 }
 
@@ -173,8 +173,8 @@ button.danger {
     padding: 12px 14px;
     border-radius: 14px;
     border: 1px solid rgba(255,255,255,.07);
-    background: var(--ical-panel2);
-    color: var(--ical-muted);
+    background: var(--myroster-panel2);
+    color: var(--myroster-muted);
     white-space: pre-wrap;
     line-height: 1.45;
 }
@@ -199,7 +199,7 @@ button.danger {
     background: rgba(56,189,248,.06);
     border-radius: 16px;
     padding: 12px 14px;
-    color: color-mix(in srgb, var(--ical-text) 80%, #dbeafe 20%);
+    color: color-mix(in srgb, var(--myroster-text) 80%, #dbeafe 20%);
     line-height: 1.5;
     font-size: .92rem;
 }
@@ -211,12 +211,12 @@ button.danger {
 }
 
 .chip {
-    background: var(--ical-panel2);
+    background: var(--myroster-panel2);
     border: 1px solid rgba(255,255,255,.08);
     border-radius: 999px;
     padding: 8px 10px;
     font-size: .85rem;
-    color: var(--ical-muted);
+    color: var(--myroster-muted);
 }
 
 .table-wrap {
@@ -229,24 +229,24 @@ table {
     width: 100%;
     border-collapse: collapse;
     min-width: 1260px;
-    background: var(--ical-panel2);
+    background: var(--myroster-panel2);
 }
 
 th,
 td {
     padding: 12px 10px;
     border-bottom: 1px solid rgba(255,255,255,.06);
-    vertical-align: top;
+    vertmyroster-align: top;
     text-align: left;
     font-size: .92rem;
-    color: var(--ical-text);
+    color: var(--myroster-text);
 }
 
 th {
     position: sticky;
     top: 0;
-    background: var(--ical-panel);
-    color: color-mix(in srgb, var(--ical-text) 85%, #dbeafe 15%);
+    background: var(--myroster-panel);
+    color: color-mix(in srgb, var(--myroster-text) 85%, #dbeafe 15%);
     z-index: 1;
 }
 
@@ -291,7 +291,7 @@ th {
 }
 
 .state-unchanged {
-    color: var(--ical-muted);
+    color: var(--myroster-muted);
     font-weight: 700;
 }
 
@@ -304,7 +304,7 @@ details summary {
     cursor: pointer;
     font-weight: 700;
     margin-bottom: 10px;
-    color: var(--ical-text);
+    color: var(--myroster-text);
 }
 
 .hidden {
@@ -327,18 +327,18 @@ details summary {
     gap: 12px;
     padding: 14px;
     border-radius: 16px;
-    background: var(--ical-panel2);
+    background: var(--myroster-panel2);
     border: 1px solid rgba(255,255,255,.06);
 }
 
 .crewlink-flow p {
     margin: 0;
-    color: var(--ical-muted);
+    color: var(--myroster-muted);
     line-height: 1.55;
 }
 
 .crewlink-flow strong {
-    color: var(--ical-text);
+    color: var(--myroster-text);
 }
 
 .crewlink-paste {
@@ -471,9 +471,9 @@ textarea {
     box-sizing: border-box;
 
     border-radius: 12px;
-    border: 1px solid var(--ical-border);
-    background: var(--ical-panel2);
-    color: var(--ical-text);
+    border: 1px solid var(--myroster-border);
+    background: var(--myroster-panel2);
+    color: var(--myroster-text);
     padding: 12px;
     font: inherit;
 
@@ -485,9 +485,9 @@ input[type="date"] {
     width: 100%;
     box-sizing: border-box;
     border-radius: 12px;
-    border: 1px solid var(--ical-border);
-    background: var(--ical-panel2);
-    color: var(--ical-text);
+    border: 1px solid var(--myroster-border);
+    background: var(--myroster-panel2);
+    color: var(--myroster-text);
     padding: 12px;
     font: inherit;
 }

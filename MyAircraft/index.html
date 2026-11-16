@@ -574,7 +574,7 @@ document.addEventListener("DOMContentLoaded",boot);
   <script src="../assets/js/fbp-shared.js"></script>
   <script src="../assets/js/fbp-nav.js"></script>
   <script>
-    document.querySelector(".fbp-shell").prepend(FBP.createNavigation("briefing"));
+    document.querySelector(".fbp-shell").prepend(FBP.createNavigation("myAircraft"));
   </script>
 <script>
 document.addEventListener("click",function(event){const link=event.target.closest("a.docunet-app-link");if(!link)return;event.preventDefault();let leftPage=false;window.addEventListener("blur",()=>{leftPage=true},{once:true});document.addEventListener("visibilitychange",()=>{if(document.hidden)leftPage=true},{once:true});window.location.href=link.href;window.setTimeout(()=>{if(!leftPage&&!document.hidden&&link.dataset.webUrl)window.open(link.dataset.webUrl,"_blank","noopener,noreferrer")},1600)});

@@ -12,7 +12,7 @@
   <link rel="apple-touch-icon" href="../apple-touch-icon.png">
 
   <link rel="stylesheet" href="../assets/css/fbp-shared.css">
-  <link rel="stylesheet" href="../assets/css/ical/ical.css">
+  <link rel="stylesheet" href="../assets/css/MyRoster/MyRoster.css">
 
   <script src="../data/ba-destinations.js"></script>
   <script src="../data/ba-roster-data.js"></script>
@@ -30,9 +30,9 @@
 
 <main>
 
-    <div class="ical-wrap">
+    <div class="myroster-wrap">
 
-        <section class="ical-card">
+        <section class="myroster-card">
           
 <h2>1) Roster Import</h2>
 
@@ -102,9 +102,10 @@
 
         </section>
 
-<section class="ical-card">
+<section class="myroster-card">
 
 <h2>2) Planning Tools</h2>
+<p class="small">Export part-time days or future duties on their own, or include them with a roster.</p>
 
 <details class="planning-options">
       <summary>Part Time and Future Duties (optional)</summary>
@@ -133,7 +134,7 @@
         >
 
         <p class="small">
-            Leave blank and iCal will automatically use the first
+            Leave blank and MyRoster will automatically use the first
             PT TIME NON WORKING duty found in your uploaded roster.
         </p>
 
@@ -166,7 +167,7 @@
 
 </section>
 
-        <section class="ical-card">
+        <section class="myroster-card">
           <h2>3) Export</h2>
 
           <div class="controls">
@@ -191,7 +192,7 @@
         </section>
       
 
-      <section id="rosterPreviewSection" class="ical-card" hidden>
+      <section id="rosterPreviewSection" class="myroster-card" hidden>
         <div class="row" style="justify-content: space-between;">
           <h2 style="margin:0;">4) Roster Preview</h2>
           <div class="row">
@@ -227,7 +228,7 @@
         </div>
       </section>
 
-      <section class="ical-card" hidden>
+      <section class="myroster-card" hidden>
         <details>
           <summary>5) Debug panel</summary>
           <p class="note">This shows the raw extracted text and merged day blocks.</p>
@@ -256,7 +257,7 @@
     window.pdfjsReady = true;
   </script>
 
-  <script src="../assets/js/ical/ical.js"></script>
+  <script src="../assets/js/MyRoster/MyRoster.js"></script>
 
 </body>
 </html>

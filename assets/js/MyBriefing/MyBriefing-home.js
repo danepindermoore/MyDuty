@@ -1,12 +1,12 @@
 /**
  * Flight Briefing Pack
- * FDP Homepage
+ * MyBriefing Homepage
  */
 
 document.addEventListener("DOMContentLoaded", () => {
 
     FBP.createPage({
-        activePage: "fdp",
+        activePage: "myBriefing",
         title: "MyBriefing",
         subtitle: "Choose the correct duty type from the options below.",
         feedbackText: "MyBriefing Feedback",
