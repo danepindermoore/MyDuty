@@ -21,13 +21,19 @@ Responsibilities
     // Navigation Items
     //-----------------------------------------------------
 
-const IS_FEATURE_PAGE = /\/(MyBriefing|MyAircraft|MyRoster|MyDocuments)(\/|$)/i.test(
+const IS_FEATURE_PAGE = /\/(MyBriefing|MyAircraft|MyRoster|MyDocuments|MyExams)(\/|$)/i.test(
     decodeURIComponent(location.pathname)
 );
 
 const BASE = IS_FEATURE_PAGE ? "../" : "";
 
 const NAV_ITEMS = [
+    {
+        id: "myExams",
+        text: "MyExams",
+        href: BASE + "MyExams/index.html",
+        adminOnly: true
+    },
 
     {
         id: "home",
