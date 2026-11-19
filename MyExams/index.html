@@ -7,15 +7,15 @@
   <script src="../assets/js/fbp-access.js"></script>
   <link rel="icon" href="../favicon.ico">
   <link rel="stylesheet" href="../assets/css/fbp-shared.css">
-  <link rel="stylesheet" href="exams.css?v=2">
+  <link rel="stylesheet" href="exams.css?v=15">
   <script defer src="../assets/js/fbp-shared.js"></script>
-  <script defer src="../assets/js/fbp-nav.js"></script>
+  <script defer src="../assets/js/fbp-nav.js?v=15"></script>
   <script defer src="../assets/js/fbp-shell.js"></script>
   <script defer src="../assets/js/fbp-page.js"></script>
-  <script defer src="../data/practice-questions.js?v=3"></script>
-  <script defer src="memory-cues.js?v=3"></script>
-  <script defer src="exam-core.js?v=3"></script>
-  <script defer src="exams.js?v=3"></script>
+  <script defer src="../data/practice-questions.js?v=15"></script>
+  <script defer src="memory-cues.js?v=15"></script>
+  <script defer src="exam-core.js?v=15"></script>
+  <script defer src="exams.js?v=15"></script>
 </head>
 <body class="fbp-theme">
 <main class="fbp-shell"><div class="exam-content">
@@ -24,11 +24,10 @@
     <p class="muted">Choose your subject and exam length. Reveal each answer as you go, then see your final score.</p>
     <form id="setup-form">
       <label class="field-label" for="subject">Exam subject</label>
-      <select id="subject" name="subject"><option value="A350">Airbus A350</option><option value="B777">Boeing 777</option><option value="B787">Boeing 787</option><option value="A320">Airbus A320 family</option><option value="AvMed">Aviation Medicine</option><option value="all">Mixed revision - all subjects</option></select>
+      <select id="subject" name="subject"><option value="A320">A320</option><option value="A350">A350</option><option value="B787">B787</option><option value="B777">B777</option><option value="AvMed">AvMed</option><option value="Security">Security</option><option value="General">General</option><option value="all">Mixed revision - all subjects</option></select>
       <label class="field-label" for="exam-length">Number of questions</label><select id="exam-length" name="exam-length"></select>
       <p id="bank-status" class="muted"></p><details id="pending" class="source-note" hidden><summary>Older answers to verify</summary><div id="pending-items"></div></details><button id="start" type="submit" class="primary">Start exam</button>
     </form>
-    <p class="source-note">Personal revision based on your supplied practice notes. Alternative choices are written for this tool. Check older answers against current training material.</p>
     <details class="history"><summary>Recent results on this device</summary><div id="history"></div><button id="clear-history" class="quiet" type="button">Clear revision history</button></details>
   </section>
   <section id="exam" class="exam-card" hidden>
@@ -43,7 +42,7 @@
   </section>
   <section id="results" class="exam-card" hidden aria-labelledby="results-title">
     <p class="eyebrow">EXAM COMPLETE</p><h2 id="results-title" tabindex="-1">Your result</h2>
-    <div id="score" class="score"></div><p id="score-detail"></p><p id="save-status" class="muted small"></p>
+    <div id="score" class="score"></div><p id="score-detail"></p><p id="pass-status" class="answer-feedback" role="status" hidden></p><p id="save-status" class="muted small"></p>
     <div class="result-actions"><button id="again" class="primary" type="button">New exam</button><button id="change" class="secondary" type="button">Change subject or length</button></div>
     <button id="review-button" class="secondary" type="button" hidden>Review incorrect answers</button>
     <p id="perfect" class="review-answer" hidden>All answers correct - nothing to review.</p>

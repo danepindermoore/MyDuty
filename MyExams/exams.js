@@ -54,7 +54,7 @@
       const article=node('article','','review-item');
       article.append(node('span',`Incorrect | ${q.category}`,'review-state wrong'),node('h4',`${i+1}. ${q.question}`),node('p',`Your answer: ${session.answers[i]}`),node('p',`Correct answer: ${q.answer}`,'review-answer'));
       const cue=window.FBP_MEMORY_CUES?.[q.id]||q.note||`Make a two-sided flashcard. Say "${q.answer}" aloud, cover it, then recall it after a short break.`;
-      article.append(node('p',`Memory cue: ${cue}`,'memory-cue'),node('p',`Source: ${q.source} | supplied revision notes`,'review-source'));$('review').append(article);
+      article.append(node('p',`Memory cue: ${cue}`,'memory-cue'),node('p',`Source: ${q.source} | ${q.officialChoices?'official practice-exam choices':'revision notes; generated alternative choices'}`,'review-source'));$('review').append(article);
     });
     $('review-panel').hidden=false;$('review-button').hidden=true;$('review-title').focus();
   }
@@ -64,6 +64,10 @@
     record.history.unshift({category,correct:result.correct,total:result.total,percentage:result.percentage,date:new Date().toISOString()});record.history=record.history.slice(0,20);
     try{localStorage.setItem(key,JSON.stringify(record));$('save-status').textContent='Result saved on this device.';}catch{$('save-status').textContent='This browser could not save revision history.';}
     $('score').textContent=`${result.percentage}%`;$('score-detail').textContent=`${result.correct} out of ${result.total} correct | ${category==='all'?'Mixed revision':category}`;
+    const mixed=category==='all',passed=result.correct*100>=result.total*80;
+    $('pass-status').hidden=mixed;
+    $('pass-status').className='answer-feedback '+(passed?'is-correct':'is-wrong');
+    $('pass-status').textContent=mixed?'':passed?'Pass — you achieved the required 80% or more.':'Fail — this would be a fail in a live exam. You need at least 80% to pass. Revisit your incorrect answers before moving on.';
     $('again').textContent=`New ${result.total}-question exam`;$('review-button').hidden=result.missed.length===0;$('review-button').textContent=`Review incorrect answers (${result.missed.length})`;
     $('perfect').hidden=result.missed.length!==0;$('review-panel').hidden=true;$('review').replaceChildren();history();show('results');$('results-title').focus();
   }
