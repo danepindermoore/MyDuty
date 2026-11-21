@@ -29,7 +29,7 @@
   function start(){category=$('subject').value;session=FBPExam.createSession(FBPExam.createExam(bank,category,Number($('exam-length').value)));position=0;active=true;show('exam');render();}
   function updateFeedback(){
     const q=session.questions[position],isRevealed=session.revealed[position];$('feedback').hidden=!isRevealed;
-    if(isRevealed){const correct=session.answers[position]===q.answer;$('feedback').className='answer-feedback '+(correct?'is-correct':'is-wrong');$('feedback-title').textContent=correct?'Correct':'Incorrect';$('feedback-answer').textContent=`Correct answer: ${q.answer}`;}
+    if(isRevealed){const correct=session.answers[position]===q.answer;$('feedback').className='answer-feedback '+(correct?'is-correct':'is-wrong');$('feedback-title').textContent=correct?'Correct':'Incorrect';}
     $('next').disabled=session.answers[position]===null;
     $('next').textContent=!isRevealed?'Reveal answer':position===session.questions.length-1?'Finish exam':'Next question';
     const n=session.revealed.filter(Boolean).length;$('answered').textContent=`${n} of ${session.questions.length} revealed`;$('progress').value=n;
@@ -42,7 +42,10 @@
       const label=document.createElement('label');label.className='answer-option';
       const input=document.createElement('input');input.type='radio';input.name='answer';input.value=option;input.id=`choice-${i}`;input.checked=session.answers[position]===option;input.disabled=session.revealed[position];
       input.addEventListener('change',()=>{if(FBPExam.select(session,position,option))updateFeedback();});
-      if(session.revealed[position]&&option===q.answer)label.classList.add('correct-choice');else if(session.revealed[position]&&input.checked)label.classList.add('wrong-choice');
+      if(session.revealed[position]){
+        if(option===q.answer)label.classList.add('correct-choice');
+        if(input.checked&&option!==q.answer)label.classList.add('wrong-choice');
+      }
       label.append(input,node('span',option));$('options').append(label);
     });
     $('back').disabled=position===0;updateFeedback();$('question').focus();
