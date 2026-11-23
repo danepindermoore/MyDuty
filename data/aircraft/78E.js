@@ -218,8 +218,7 @@ globalThis.AOR_78E = {
       "rest": "2nd Rest",
       "additionalResponsibilities": [
         "Boarding alongside SCCM",
-        "Inflight Retail",
-        "If GCC position is allocated to number 3 then IFR is reallocated to number 8"
+        "Inflight Retail, If GCC position is allocated to number 3 then IFR is reallocated to number 8"
       ],
       "equipmentChecks": [
         {
@@ -748,8 +747,7 @@ globalThis.AOR_78E = {
       },
       "rest": "2nd Rest",
       "additionalResponsibilities": [
-        "Door coverage of D4LR when aircraft is on the ground",
-        "If GCC position is allocated to number 3 then IFR responsibility is reallocated to number 8"
+        "Door coverage of D4LR when aircraft is on the ground, If GCC position is allocated to number 3 then IFR responsibility is reallocated to number 8"
       ],
       "equipmentChecks": [
         {

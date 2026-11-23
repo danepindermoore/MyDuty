@@ -10,10 +10,16 @@ DEFAULT=Path.home()/"iCloudDrive/Documents/Work/British Airways/5.0 Project Work
 NA="NA"
 def clean(v):
     if v is None: return ""
-    return re.sub(r"\s+", " ", str(v)).strip()
+    return re.sub(r"\bfirst\b", "FIRST", re.sub(r"\s+", " ", str(v)).strip(), flags=re.I)
 def split_list(v):
     s=clean(v)
     return [x.strip() for x in s.split(",") if x.strip()] if s and s.upper()!=NA else []
+def split_responsibilities(v):
+    s=clean(v)
+    if not s or s.upper()==NA:return [NA]
+    # Semicolons always separate duties. Commas separate list items, while
+    # commas introducing a condition/action (", if…", ", check…") stay joined.
+    return [x.strip() for x in re.split(r";|,(?!\s*(?:if|check|unless)\b)",s,flags=re.I) if x.strip()] or [NA]
 def role_title(row):
     a,b=clean(row.get("Role 1")),clean(row.get("Role 2"))
     if a.upper()=="IFM" and b.upper()=="SCCM": parts=["SCCM","IFM"]
@@ -124,7 +130,7 @@ def main():
             p["demo"]={"position":clean(row.get("Position")) or NA,"pointsOut":split_list(row.get("Points Out")) or [NA]}
             area=clean(row.get("Area of Responsibility (AOR)")) or NA
             p["aor"]={"hasAor":area!=NA,"area":area}
-            p["additionalResponsibilities"]=split_list(row.get("Additional Responsibilities")) or [NA]
+            p["additionalResponsibilities"]=split_responsibilities(row.get("Additional Responsibilities"))
             checks=[]
             for col,loc in (("Under Crew Seat","seat"),("In Assigned Area","area"),("In Crew Rest Area","rest")):
                 checks.extend(equipment(row.get(col),loc))

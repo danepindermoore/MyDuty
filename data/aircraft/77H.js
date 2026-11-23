@@ -145,7 +145,7 @@ globalThis.AOR_77H = {
       "role": "Cabin Crew",
       "displayTitle": "No. 2 (Cabin Crew)",
       "service": {
-        "summary": "First cabin service delivery",
+        "summary": "FIRST cabin service delivery",
         "cabin": [
           "F"
         ]
@@ -412,7 +412,8 @@ globalThis.AOR_77H = {
       "rest": "2nd Rest",
       "additionalResponsibilities": [
         "Boarding alongside SCCM at D2L",
-        "Inflight Retail; if number 5 is GCC position 3",
+        "Inflight Retail",
+        "if number 5 is GCC position 3",
         "IFR is reallocated to number 12"
       ],
       "equipmentChecks": [
@@ -529,8 +530,7 @@ globalThis.AOR_77H = {
       },
       "rest": "1st Rest",
       "additionalResponsibilities": [
-        "If no number 15 is operating",
-        "check the crew seat at D5L inboard forward facing"
+        "If no number 15 is operating, check the crew seat at D5L inboard forward facing"
       ],
       "equipmentChecks": [
         {
@@ -621,7 +621,7 @@ globalThis.AOR_77H = {
       "role": "Cabin Crew",
       "displayTitle": "No. 7 (Cabin Crew - Galley Operator)",
       "service": {
-        "summary": "First Galley Operator, Flight Crew Service Delivery",
+        "summary": "FIRST Galley Operator, Flight Crew Service Delivery",
         "cabin": [
           "F"
         ]
@@ -645,8 +645,10 @@ globalThis.AOR_77H = {
       },
       "rest": "1st Rest",
       "additionalResponsibilities": [
-        "SEP equipment in OFCR; door coverage of D1LR when aircraft is on the ground; boarding at D1L when two doors are used; if no number 14 is operating",
-        "check the D1R forward-facing crew seat"
+        "SEP equipment in OFCR",
+        "door coverage of D1LR when aircraft is on the ground",
+        "boarding at D1L when two doors are used",
+        "if no number 14 is operating, check the D1R forward-facing crew seat"
       ],
       "equipmentChecks": [
         {
@@ -756,7 +758,7 @@ globalThis.AOR_77H = {
       },
       "rest": "2nd Rest",
       "additionalResponsibilities": [
-        "NA"
+        "Door coverage of D2LR when aircraft is on the ground"
       ],
       "equipmentChecks": [
         {
@@ -992,7 +994,8 @@ globalThis.AOR_77H = {
       },
       "rest": "1st Rest",
       "additionalResponsibilities": [
-        "Community Fund / Flying Start collection; door coverage of D4LR when aircraft is on the ground"
+        "Community Fund / Flying Start collection",
+        "door coverage of D4LR when aircraft is on the ground"
       ],
       "equipmentChecks": [
         {
@@ -1088,9 +1091,10 @@ globalThis.AOR_77H = {
       },
       "rest": "2nd Rest",
       "additionalResponsibilities": [
-        "Door coverage of D5LR when aircraft is on the ground; if number 5 is GCC position 3",
-        "IFR is reallocated to number 12; if no number 16 is operating",
-        "check the D5R inboard forward-facing crew seat"
+        "Door coverage of D5LR when aircraft is on the ground",
+        "if number 5 is GCC position 3",
+        "IFR is reallocated to number 12",
+        "if no number 16 is operating, check the D5R inboard forward-facing crew seat"
       ],
       "equipmentChecks": [
         {

@@ -61,7 +61,35 @@ globalThis.AIRCRAFT_DIAGRAMS = Object.freeze({
     }
   },
   "351": { image: "../assets/aircraft/351.png", viewBox: { width: 854, height: 1842 } },
-  "77H": { image: "../assets/aircraft/77H.png", viewBox: { width: 996, height: 2179 }, positionPanels: {
+  "77H": { image: "../assets/aircraft/77H.png", viewBox: { width: 996, height: 2179 }, aorAreaIds: {
+      "SCCM workstation (IFE), 1 x Toilet at D1L": ["sccm-aor-1"],
+      "FIRST cabin": ["first-cabin"],
+      "D2L to D3L, 2 x Toilets at D2L": ["cw-left-mid"],
+      "D3L to AFT CW": ["cw-left-aft"],
+      "D4L to AFT WT ABCDE side, 1 x Toilet at D4L, OFAR": ["wt-left"],
+      "WT Galley, 1 x Toilet at D5L": ["wt-tail-galley"],
+      "FIRST Galley, OFCR": ["first-galley"],
+      "Mid galley at D2LR": ["mid-galley"],
+      "D2R to D3R, 2 x Toilets at D2R": ["cw-right-mid"],
+      "D3R to AFT CW": ["cw-right-aft"],
+      "Entire WTP cabin, 1 x Toilet at D4R": ["wtp-cabin"],
+      "WT cabin FGHJK side, 1 x Toilet at D5R": ["wt-right"],
+      "Club World forward cabin": ["cw-forward-left"]
+    }, aorShapes: {
+      "first-cabin": "M384 148 L384 282 L589 282 L589 148 Z",
+      "first-galley": "M451 2 L451 145 L546 145 L592 136 L572 34 L559 2 Z",
+      "sccm-aor-1": "M422 0 L412 11 L402 53 L395 63 L395 82 L386 123 L387 138 L412 142 L446 142 L451 141 L452 123 L449 74 L451 5 L426 0 Z",
+      "cw-forward-left": "M377 290 L377 443 L599 443 L599 290 Z",
+      "cw-left-mid": "M377 549 L377 1038 L441 1039 L441 1051 L488 1051 L488 549 Z",
+      "cw-right-mid": "M488 545 L488 1056 L534 1056 L534 1037 L599 1036 L599 557 L528 556 L528 545 Z",
+      "mid-galley": "M450 436 L450 444 L375 445 L375 554 L599 554 L599 447 L527 446 L527 436 Z",
+      "cw-left-aft": "M378 1037 L378 1336 L488 1336 L488 1066 L422 1065 L422 1037 Z",
+      "cw-right-aft": "M550 1034 L550 1064 L488 1065 L488 1334 L599 1334 L599 1034 Z",
+      "wtp-cabin": "M376 1335 L376 1531 L450 1532 L450 1537 L488 1538 L488 1571 L528 1571 L528 1531 L597 1530 L597 1335 Z",
+      "wt-left": "M379 1533 L379 1951 L387 2018 L440 2021 L440 2038 L489 2038 L489 1533 Z",
+      "wt-right": "M488 1569 L599 1569 L599 1920 L590 1995 L585 2045 L583 2060 L578 2100 L571 2125 L566 2129 L545 2127 L545 2045 L524 2044 L524 1991 L488 1990 Z",
+      "wt-tail-galley": "M489 1991 L489 2063 L395 2064 L406 2127 L441 2162 L481 2171 L493 2171 L519 2169 L543 2151 L544 2038 L524 2037 L524 1991 Z"
+    }, positionPanels: {
       "1": { x: 10, y: 72, w: 315, h: 172 },
       "13": { x: 13, y: 263, w: 314, h: 173 },
       "2": { x: 10, y: 472, w: 311, h: 172 },

@@ -408,8 +408,7 @@ globalThis.AOR_351 = {
       "rest": "2nd Rest",
       "additionalResponsibilities": [
         "Boarding alongside SCCM",
-        "Inflight Retail",
-        "If GCC position is allocated to number 3 then IFR is reallocated to number 11"
+        "Inflight Retail, If GCC position is allocated to number 3 then IFR is reallocated to number 11"
       ],
       "equipmentChecks": [
         {
