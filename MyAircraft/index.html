@@ -367,7 +367,7 @@ function renderConfiguredDiagram(data){
   const demoLayer=svgEl("g",{"data-demo-layer":String(data.aircraftCode),"aria-hidden":"true"});
   const demoMarkerScale=data.aircraftCode==="351"?1:width/380;
   Object.entries(diagram.demoPoints||{}).forEach(([number,[x,y]])=>{
-    const marker=svgEl("g",{"data-demo-position":number,opacity:["351","77H","77M","77T","77L","77S"].includes(data.aircraftCode)?"1":"0",transform:`translate(${x} ${y})`});
+    const marker=svgEl("g",{"data-demo-position":number,opacity:["351","77H","77M","77T","77L","77S","78E","78N","789","781","78Z"].includes(data.aircraftCode)?"1":"0",transform:`translate(${x} ${y})`});
     marker.appendChild(svgEl("circle",{cx:0,cy:0,r:10*demoMarkerScale,fill:"#101a2b",stroke:"#fff","stroke-width":1.5*demoMarkerScale}));
     const label=svgEl("text",{x:0,y:3.5*demoMarkerScale,"text-anchor":"middle",fill:"#fff","font-size":9*demoMarkerScale,"font-weight":"700","font-family":"Arial, sans-serif"});
     label.textContent=number;
@@ -396,7 +396,7 @@ function renderConfiguredDiagram(data){
     seatLayer.appendChild(button);
   });
 }
-function setDemoMarker(pos){const showAll=!pos&&["351","77H","77M","77T","77L","77S"].includes(STATE.activeData?.aircraftCode);aircraftSvg.querySelectorAll("[data-demo-position]").forEach(el=>el.setAttribute("opacity",showAll?"1":"0"))}
+function setDemoMarker(pos){const showAll=!pos&&["351","77H","77M","77T","77L","77S","78E","78N","789","781","78Z"].includes(STATE.activeData?.aircraftCode);aircraftSvg.querySelectorAll("[data-demo-position]").forEach(el=>el.setAttribute("opacity",showAll?"1":"0"))}
 function setAorOverlay(pos){aorCaption.textContent="";aircraftSvg.querySelectorAll("[data-aor-id]").forEach(el=>el.setAttribute("opacity","0"));if(!pos)return;const mappedIds=STATE.activeData?.diagram?.aorPositionIds?.[pos.number];const ids=mappedIds||(STATE.activeData?.diagram?.aorAreaIds&&pos.aor?.hasAor&&pos.aor.area?STATE.activeData.diagram.aorAreaIds[pos.aor.area]:[]);ids.forEach(id=>{const el=aircraftSvg.querySelector(`[data-aor-id="${id}"]`);if(el)el.setAttribute("opacity","1")});if(ids.length)aorCaption.textContent=mappedIds?`AOR highlighted: No. ${pos.number}`:`AOR highlighted: ${pos.aor.area}`}
 const CABIN_DISPLAY_ORDER=[{code:"F",breakdownCode:"F",name:"First",seatKey:"first"},{code:"J",breakdownCode:"CW",name:"Club World",seatKey:"clubWorld"},{code:"W",breakdownCode:"WTP",name:"World Traveller Plus",seatKey:"worldTravellerPlus"},{code:"M",breakdownCode:"WT",name:"World Traveller",seatKey:"worldTraveller"},{code:"CE",breakdownCode:"CE",name:"Club Europe",seatKey:"clubEurope"},{code:"ET",breakdownCode:"ET",name:"Euro Traveller",seatKey:"euroTraveller"}];
 const REST_AREA_NAMES={OFCR:"Overhead Flight Crew Rest",OFAR:"Overhead Flight Attendant Rest",FCRC:"Flight Crew Rest Compartment",CCRC:"Cabin Crew Rest Compartment"};

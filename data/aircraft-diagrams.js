@@ -207,7 +207,18 @@ globalThis.AIRCRAFT_DIAGRAMS = Object.freeze({
       "7": { x: 670, y: 1420, w: 317, h: 174 },
       "8": { x: 670, y: 2029, w: 317, h: 174 }
   } },
-  "781": { image: "../assets/aircraft/781.png", viewBox: { width: 976, height: 2091 }, positionPanels: {
+  "781": { image: "../assets/aircraft/781.png", viewBox: { width: 976, height: 2091 }, demoPoints: {
+    "9": [430, 154],
+    "10": [430, 333],
+    "5": [576, 333],
+    "2": [430, 500],
+    "11": [430, 812],
+    "6": [573, 812],
+    "3": [470, 1085],
+    "7": [536, 1085],
+    "4": [455, 1393],
+    "8": [529, 1654]
+  }, positionPanels: {
       "1": { x: 8, y: 27, w: 315, h: 174 },
       "10": { x: 8, y: 215, w: 315, h: 174 },
       "2": { x: 8, y: 610, w: 315, h: 174 },
@@ -220,7 +231,17 @@ globalThis.AIRCRAFT_DIAGRAMS = Object.freeze({
       "7": { x: 659, y: 1250, w: 315, h: 174 },
       "8": { x: 654, y: 1925, w: 315, h: 174 }
   } },
-  "789": { image: "../assets/aircraft/789.png", viewBox: { width: 1010, height: 2222 }, positionPanels: {
+  "789": { image: "../assets/aircraft/789.png", viewBox: { width: 1010, height: 2222 }, demoPoints: {
+    "9": [447, 173],
+    "10": [451, 375],
+    "5": [565, 536],
+    "2": [451, 765],
+    "6": [551, 1050],
+    "3": [462, 1125],
+    "7": [556, 1125],
+    "4": [451, 1473],
+    "8": [556, 1473]
+  }, positionPanels: {
       "1": { x: 0, y: 24, w: 321, h: 172 },
       "10": { x: 0, y: 216, w: 317, h: 172 },
       "2": { x: 2, y: 501, w: 315, h: 174 },
@@ -233,7 +254,16 @@ globalThis.AIRCRAFT_DIAGRAMS = Object.freeze({
       "11": { x: 684, y: 1779, w: 314, h: 174 },
       "8": { x: 684, y: 1992, w: 314, h: 174 }
   } },
-  "78E": { image: "../assets/aircraft/78E.png", viewBox: { width: 1006, height: 2240 }, positionPanels: {
+  "78E": { image: "../assets/aircraft/78E.png", viewBox: { width: 1006, height: 2240 }, demoPoints: {
+    "1": [449, 230],
+    "5": [580, 230],
+    "2": [440, 650],
+    "6": [580, 650],
+    "3": [450, 920],
+    "7": [560, 1210],
+    "4": [450, 1535],
+    "8": [560, 1535]
+  }, positionPanels: {
       "1": { x: 11, y: 37, w: 315, h: 174 },
       "2": { x: 7, y: 511, w: 315, h: 174 },
       "3": { x: 7, y: 1406, w: 315, h: 174 },
@@ -243,7 +273,17 @@ globalThis.AIRCRAFT_DIAGRAMS = Object.freeze({
       "7": { x: 688, y: 1403, w: 314, h: 174 },
       "8": { x: 678, y: 2005, w: 314, h: 174 }
   } },
-  "78N": { image: "../assets/aircraft/78N.png", viewBox: { width: 1003, height: 2251 }, positionPanels: {
+  "78N": { image: "../assets/aircraft/78N.png", viewBox: { width: 1003, height: 2251 }, demoPoints: {
+    "9": [463, 180],
+    "10": [455, 390],
+    "5": [559, 390],
+    "2": [455, 800],
+    "6": [559, 970],
+    "3": [463, 1135],
+    "7": [551, 1135],
+    "4": [463, 1490],
+    "8": [551, 1490]
+  }, positionPanels: {
       "1": { x: 7, y: 58, w: 315, h: 174 },
       "10": { x: 0, y: 248, w: 316, h: 174 },
       "2": { x: 3, y: 535, w: 315, h: 174 },
@@ -256,7 +296,18 @@ globalThis.AIRCRAFT_DIAGRAMS = Object.freeze({
       "11": { x: 672, y: 1812, w: 315, h: 174 },
       "8": { x: 672, y: 2027, w: 315, h: 174 }
   } },
-  "78Z": { image: "../assets/aircraft/78Z.png", viewBox: { width: 976, height: 2141 }, positionPanels: {
+  "78Z": { image: "../assets/aircraft/78Z.png", viewBox: { width: 976, height: 2141 }, demoPoints: {
+    "9": [430, 154],
+    "10": [430, 333],
+    "5": [550, 333],
+    "2": [430, 500],
+    "11": [430, 812],
+    "6": [547, 812],
+    "3": [447, 1085],
+    "7": [536, 1085],
+    "4": [441, 1373],
+    "8": [529, 1654]
+  }, positionPanels: {
       "1": { x: 15, y: 34, w: 316, h: 174 },
       "10": { x: 8, y: 222, w: 315, h: 174 },
       "2": { x: 15, y: 610, w: 315, h: 174 },

@@ -2,7 +2,7 @@
 globalThis.AIRCRAFT_REGISTRATION_SOURCE = Object.freeze({
   file: "British Airways Fleet.xlsx",
   asOf: "2026-09",
-  registrationCount: 251
+  registrationCount: 252
 });
 
 globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
@@ -2686,6 +2686,44 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
     "firstProduct": "First",
     "clubWorldProduct": "Club Suite"
   },
+  "ZBXA": {
+    "registration": "ZBXA",
+    "haul": "longhaul",
+    "baseSection": "Main fleet",
+    "airfile": "78Z",
+    "wifiType": "None",
+    "livery": "Standard",
+    "sepEquipment": [
+      {
+        "code": "AED",
+        "location": "D2R"
+      },
+      {
+        "code": "M5",
+        "location": "D2R"
+      },
+      {
+        "code": "RES",
+        "location": "D2R"
+      },
+      {
+        "code": "RESTRAINT",
+        "location": "D2L"
+      },
+      {
+        "code": "FE",
+        "location": "All RHDs"
+      },
+      {
+        "code": "WEX",
+        "location": "D1L, D4L"
+      }
+    ],
+    "baAorUrl": "https://baplc.sharepoint.com/sites/IFCE_Docs/Shared%20Documents/One%20Portal/Safety/QR%20Codes/B787%2078Z.pdf",
+    "baDeliveryStandardsUrl": "https://danepindermoore.github.io/flightbriefingpack/Service%20Documents/Dual_Aisle/78Z.pdf",
+    "firstProduct": "First",
+    "clubWorldProduct": "Club Suite"
+  },
   "RAES": {
     "registration": "RAES",
     "haul": "longhaul",
@@ -4160,7 +4198,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
     "haul": "longhaul",
     "baseSection": "Main fleet",
     "airfile": "77H",
-    "wifiType": "Starlink",
+    "wifiType": "BA-WiFi (Free Messaging)",
     "livery": "Bespoke",
     "sepEquipment": [
       {
@@ -4198,7 +4236,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
     "haul": "longhaul",
     "baseSection": "Main fleet",
     "airfile": "77H",
-    "wifiType": "Starlink",
+    "wifiType": "BA-WiFi (Free Messaging)",
     "livery": "Standard",
     "sepEquipment": [
       {
@@ -9537,6 +9575,7 @@ globalThis.AIRCRAFT_REGISTRATION_ORDER = Object.freeze([
   "ZBLJ",
   "ZBLK",
   "ZBLL",
+  "ZBXA",
   "RAES",
   "VIIA",
   "VIIB",
