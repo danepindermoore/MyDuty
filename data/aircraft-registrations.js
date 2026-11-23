@@ -4160,7 +4160,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
     "haul": "longhaul",
     "baseSection": "Main fleet",
     "airfile": "77H",
-    "wifiType": "BA-WiFi (Free Messaging)",
+    "wifiType": "Starlink",
     "livery": "Bespoke",
     "sepEquipment": [
       {
@@ -4198,7 +4198,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
     "haul": "longhaul",
     "baseSection": "Main fleet",
     "airfile": "77H",
-    "wifiType": "BA-WiFi (Free Messaging)",
+    "wifiType": "Starlink",
     "livery": "Standard",
     "sepEquipment": [
       {
