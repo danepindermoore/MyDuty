@@ -12,619 +12,883 @@ globalThis.AOR_38A = {
   "positions": [
     {
       "number": 1,
-      "title": "Inflight Manager",
+      "title": "SCCM - IFM",
       "role": "IFM",
-      "displayTitle": "No 1 - Inflight Manager",
+      "displayTitle": "No. 1 (SCCM - IFM)",
       "service": {
-        "summary": "Position-specific service, AOR, seating, safety demonstration and equipment-check details are not mapped in this dataset. Refer to the aircraft AOR source document.",
-        "cabin": []
+        "summary": "NA",
+        "cabin": [
+          "CW"
+        ]
       },
       "seating": {
-        "seat": null,
-        "descriptor": null,
-        "facing": null,
-        "full": "See aircraft AOR source document"
+        "seat": "NA",
+        "descriptor": "NA",
+        "facing": "NA",
+        "full": "NA"
       },
-      "doorResponsibility": null,
+      "doorResponsibility": "NA",
       "demo": {
-        "position": null,
-        "pointsOut": []
+        "position": "NA",
+        "pointsOut": [
+          "NA"
+        ]
       },
       "aor": {
         "hasAor": false,
-        "area": null
+        "area": "NA"
       },
-      "rest": null,
-      "additionalResponsibilities": [],
-      "equipmentChecks": []
+      "rest": "NA",
+      "additionalResponsibilities": [
+        "NA"
+      ],
+      "equipmentChecks": [
+        {
+          "code": "NA",
+          "qty": 1,
+          "locationType": "area"
+        }
+      ]
     },
     {
       "number": 2,
-      "title": null,
-      "role": null,
-      "displayTitle": "No 2",
+      "title": "NA",
+      "role": "NA",
+      "displayTitle": "No. 2",
       "service": {
-        "summary": "Position-specific service, AOR, seating, safety demonstration and equipment-check details are not mapped in this dataset. Refer to the aircraft AOR source document.",
-        "cabin": []
+        "summary": "NA",
+        "cabin": [
+          "NA"
+        ]
       },
       "seating": {
-        "seat": null,
-        "descriptor": null,
-        "facing": null,
-        "full": "See aircraft AOR source document"
+        "seat": "NA",
+        "descriptor": "NA",
+        "facing": "NA",
+        "full": "NA"
       },
-      "doorResponsibility": null,
+      "doorResponsibility": "NA",
       "demo": {
-        "position": null,
-        "pointsOut": []
+        "position": "NA",
+        "pointsOut": [
+          "NA"
+        ]
       },
       "aor": {
         "hasAor": false,
-        "area": null
+        "area": "NA"
       },
-      "rest": null,
-      "additionalResponsibilities": [],
-      "equipmentChecks": []
+      "rest": "NA",
+      "additionalResponsibilities": [
+        "NA"
+      ],
+      "equipmentChecks": [
+        {
+          "code": "NA",
+          "qty": 1,
+          "locationType": "area"
+        }
+      ]
     },
     {
       "number": 3,
-      "title": null,
-      "role": null,
-      "displayTitle": "No 3",
+      "title": "NA",
+      "role": "NA",
+      "displayTitle": "No. 3",
       "service": {
-        "summary": "Position-specific service, AOR, seating, safety demonstration and equipment-check details are not mapped in this dataset. Refer to the aircraft AOR source document.",
-        "cabin": []
+        "summary": "NA",
+        "cabin": [
+          "NA"
+        ]
       },
       "seating": {
-        "seat": null,
-        "descriptor": null,
-        "facing": null,
-        "full": "See aircraft AOR source document"
+        "seat": "NA",
+        "descriptor": "NA",
+        "facing": "NA",
+        "full": "NA"
       },
-      "doorResponsibility": null,
+      "doorResponsibility": "NA",
       "demo": {
-        "position": null,
-        "pointsOut": []
+        "position": "NA",
+        "pointsOut": [
+          "NA"
+        ]
       },
       "aor": {
         "hasAor": false,
-        "area": null
+        "area": "NA"
       },
-      "rest": null,
-      "additionalResponsibilities": [],
-      "equipmentChecks": []
+      "rest": "NA",
+      "additionalResponsibilities": [
+        "NA"
+      ],
+      "equipmentChecks": [
+        {
+          "code": "NA",
+          "qty": 1,
+          "locationType": "area"
+        }
+      ]
     },
     {
       "number": 4,
-      "title": null,
-      "role": null,
-      "displayTitle": "No 4",
+      "title": "IFL - Acting SCCM",
+      "role": "IFL",
+      "displayTitle": "No. 4 (IFL - Acting SCCM)",
       "service": {
-        "summary": "Position-specific service, AOR, seating, safety demonstration and equipment-check details are not mapped in this dataset. Refer to the aircraft AOR source document.",
-        "cabin": []
+        "summary": "NA",
+        "cabin": [
+          "NA"
+        ]
       },
       "seating": {
-        "seat": null,
-        "descriptor": null,
-        "facing": null,
-        "full": "See aircraft AOR source document"
+        "seat": "NA",
+        "descriptor": "NA",
+        "facing": "NA",
+        "full": "NA"
       },
-      "doorResponsibility": null,
+      "doorResponsibility": "NA",
       "demo": {
-        "position": null,
-        "pointsOut": []
+        "position": "NA",
+        "pointsOut": [
+          "NA"
+        ]
       },
       "aor": {
         "hasAor": false,
-        "area": null
+        "area": "NA"
       },
-      "rest": null,
-      "additionalResponsibilities": [],
-      "equipmentChecks": []
+      "rest": "NA",
+      "additionalResponsibilities": [
+        "NA"
+      ],
+      "equipmentChecks": [
+        {
+          "code": "NA",
+          "qty": 1,
+          "locationType": "area"
+        }
+      ]
     },
     {
       "number": 5,
-      "title": null,
-      "role": null,
-      "displayTitle": "No 5",
+      "title": "NA",
+      "role": "NA",
+      "displayTitle": "No. 5",
       "service": {
-        "summary": "Position-specific service, AOR, seating, safety demonstration and equipment-check details are not mapped in this dataset. Refer to the aircraft AOR source document.",
-        "cabin": []
+        "summary": "NA",
+        "cabin": [
+          "NA"
+        ]
       },
       "seating": {
-        "seat": null,
-        "descriptor": null,
-        "facing": null,
-        "full": "See aircraft AOR source document"
+        "seat": "NA",
+        "descriptor": "NA",
+        "facing": "NA",
+        "full": "NA"
       },
-      "doorResponsibility": null,
+      "doorResponsibility": "NA",
       "demo": {
-        "position": null,
-        "pointsOut": []
+        "position": "NA",
+        "pointsOut": [
+          "NA"
+        ]
       },
       "aor": {
         "hasAor": false,
-        "area": null
+        "area": "NA"
       },
-      "rest": null,
-      "additionalResponsibilities": [],
-      "equipmentChecks": []
+      "rest": "NA",
+      "additionalResponsibilities": [
+        "NA"
+      ],
+      "equipmentChecks": [
+        {
+          "code": "NA",
+          "qty": 1,
+          "locationType": "area"
+        }
+      ]
     },
     {
       "number": 6,
-      "title": null,
-      "role": null,
-      "displayTitle": "No 6",
+      "title": "NA",
+      "role": "NA",
+      "displayTitle": "No. 6",
       "service": {
-        "summary": "Position-specific service, AOR, seating, safety demonstration and equipment-check details are not mapped in this dataset. Refer to the aircraft AOR source document.",
-        "cabin": []
+        "summary": "NA",
+        "cabin": [
+          "NA"
+        ]
       },
       "seating": {
-        "seat": null,
-        "descriptor": null,
-        "facing": null,
-        "full": "See aircraft AOR source document"
+        "seat": "NA",
+        "descriptor": "NA",
+        "facing": "NA",
+        "full": "NA"
       },
-      "doorResponsibility": null,
+      "doorResponsibility": "NA",
       "demo": {
-        "position": null,
-        "pointsOut": []
+        "position": "NA",
+        "pointsOut": [
+          "NA"
+        ]
       },
       "aor": {
         "hasAor": false,
-        "area": null
+        "area": "NA"
       },
-      "rest": null,
-      "additionalResponsibilities": [],
-      "equipmentChecks": []
+      "rest": "NA",
+      "additionalResponsibilities": [
+        "NA"
+      ],
+      "equipmentChecks": [
+        {
+          "code": "NA",
+          "qty": 1,
+          "locationType": "area"
+        }
+      ]
     },
     {
       "number": 7,
-      "title": null,
-      "role": null,
-      "displayTitle": "No 7",
+      "title": "NA",
+      "role": "NA",
+      "displayTitle": "No. 7",
       "service": {
-        "summary": "Position-specific service, AOR, seating, safety demonstration and equipment-check details are not mapped in this dataset. Refer to the aircraft AOR source document.",
-        "cabin": []
+        "summary": "NA",
+        "cabin": [
+          "NA"
+        ]
       },
       "seating": {
-        "seat": null,
-        "descriptor": null,
-        "facing": null,
-        "full": "See aircraft AOR source document"
+        "seat": "NA",
+        "descriptor": "NA",
+        "facing": "NA",
+        "full": "NA"
       },
-      "doorResponsibility": null,
+      "doorResponsibility": "NA",
       "demo": {
-        "position": null,
-        "pointsOut": []
+        "position": "NA",
+        "pointsOut": [
+          "NA"
+        ]
       },
       "aor": {
         "hasAor": false,
-        "area": null
+        "area": "NA"
       },
-      "rest": null,
-      "additionalResponsibilities": [],
-      "equipmentChecks": []
+      "rest": "NA",
+      "additionalResponsibilities": [
+        "NA"
+      ],
+      "equipmentChecks": [
+        {
+          "code": "NA",
+          "qty": 1,
+          "locationType": "area"
+        }
+      ]
     },
     {
       "number": 8,
-      "title": null,
-      "role": null,
-      "displayTitle": "No 8",
+      "title": "NA",
+      "role": "NA",
+      "displayTitle": "No. 8",
       "service": {
-        "summary": "Position-specific service, AOR, seating, safety demonstration and equipment-check details are not mapped in this dataset. Refer to the aircraft AOR source document.",
-        "cabin": []
+        "summary": "NA",
+        "cabin": [
+          "NA"
+        ]
       },
       "seating": {
-        "seat": null,
-        "descriptor": null,
-        "facing": null,
-        "full": "See aircraft AOR source document"
+        "seat": "NA",
+        "descriptor": "NA",
+        "facing": "NA",
+        "full": "NA"
       },
-      "doorResponsibility": null,
+      "doorResponsibility": "NA",
       "demo": {
-        "position": null,
-        "pointsOut": []
+        "position": "NA",
+        "pointsOut": [
+          "NA"
+        ]
       },
       "aor": {
         "hasAor": false,
-        "area": null
+        "area": "NA"
       },
-      "rest": null,
-      "additionalResponsibilities": [],
-      "equipmentChecks": []
+      "rest": "NA",
+      "additionalResponsibilities": [
+        "NA"
+      ],
+      "equipmentChecks": [
+        {
+          "code": "NA",
+          "qty": 1,
+          "locationType": "area"
+        }
+      ]
     },
     {
       "number": 9,
-      "title": null,
-      "role": null,
-      "displayTitle": "No 9",
+      "title": "NA",
+      "role": "NA",
+      "displayTitle": "No. 9",
       "service": {
-        "summary": "Position-specific service, AOR, seating, safety demonstration and equipment-check details are not mapped in this dataset. Refer to the aircraft AOR source document.",
-        "cabin": []
+        "summary": "NA",
+        "cabin": [
+          "NA"
+        ]
       },
       "seating": {
-        "seat": null,
-        "descriptor": null,
-        "facing": null,
-        "full": "See aircraft AOR source document"
+        "seat": "NA",
+        "descriptor": "NA",
+        "facing": "NA",
+        "full": "NA"
       },
-      "doorResponsibility": null,
+      "doorResponsibility": "NA",
       "demo": {
-        "position": null,
-        "pointsOut": []
+        "position": "NA",
+        "pointsOut": [
+          "NA"
+        ]
       },
       "aor": {
         "hasAor": false,
-        "area": null
+        "area": "NA"
       },
-      "rest": null,
-      "additionalResponsibilities": [],
-      "equipmentChecks": []
+      "rest": "NA",
+      "additionalResponsibilities": [
+        "NA"
+      ],
+      "equipmentChecks": [
+        {
+          "code": "NA",
+          "qty": 1,
+          "locationType": "area"
+        }
+      ]
     },
     {
       "number": 10,
-      "title": null,
-      "role": null,
-      "displayTitle": "No 10",
+      "title": "NA",
+      "role": "NA",
+      "displayTitle": "No. 10",
       "service": {
-        "summary": "Position-specific service, AOR, seating, safety demonstration and equipment-check details are not mapped in this dataset. Refer to the aircraft AOR source document.",
-        "cabin": []
+        "summary": "NA",
+        "cabin": [
+          "NA"
+        ]
       },
       "seating": {
-        "seat": null,
-        "descriptor": null,
-        "facing": null,
-        "full": "See aircraft AOR source document"
+        "seat": "NA",
+        "descriptor": "NA",
+        "facing": "NA",
+        "full": "NA"
       },
-      "doorResponsibility": null,
+      "doorResponsibility": "NA",
       "demo": {
-        "position": null,
-        "pointsOut": []
+        "position": "NA",
+        "pointsOut": [
+          "NA"
+        ]
       },
       "aor": {
         "hasAor": false,
-        "area": null
+        "area": "NA"
       },
-      "rest": null,
-      "additionalResponsibilities": [],
-      "equipmentChecks": []
+      "rest": "NA",
+      "additionalResponsibilities": [
+        "NA"
+      ],
+      "equipmentChecks": [
+        {
+          "code": "NA",
+          "qty": 1,
+          "locationType": "area"
+        }
+      ]
     },
     {
       "number": 11,
-      "title": null,
-      "role": null,
-      "displayTitle": "No 11",
+      "title": "NA",
+      "role": "NA",
+      "displayTitle": "No. 11",
       "service": {
-        "summary": "Position-specific service, AOR, seating, safety demonstration and equipment-check details are not mapped in this dataset. Refer to the aircraft AOR source document.",
-        "cabin": []
+        "summary": "NA",
+        "cabin": [
+          "NA"
+        ]
       },
       "seating": {
-        "seat": null,
-        "descriptor": null,
-        "facing": null,
-        "full": "See aircraft AOR source document"
+        "seat": "NA",
+        "descriptor": "NA",
+        "facing": "NA",
+        "full": "NA"
       },
-      "doorResponsibility": null,
+      "doorResponsibility": "NA",
       "demo": {
-        "position": null,
-        "pointsOut": []
+        "position": "NA",
+        "pointsOut": [
+          "NA"
+        ]
       },
       "aor": {
         "hasAor": false,
-        "area": null
+        "area": "NA"
       },
-      "rest": null,
-      "additionalResponsibilities": [],
-      "equipmentChecks": []
+      "rest": "NA",
+      "additionalResponsibilities": [
+        "NA"
+      ],
+      "equipmentChecks": [
+        {
+          "code": "NA",
+          "qty": 1,
+          "locationType": "area"
+        }
+      ]
     },
     {
       "number": 12,
-      "title": null,
-      "role": null,
-      "displayTitle": "No 12",
+      "title": "IFL - Acting SCCM",
+      "role": "IFL",
+      "displayTitle": "No. 12 (IFL - Acting SCCM)",
       "service": {
-        "summary": "Position-specific service, AOR, seating, safety demonstration and equipment-check details are not mapped in this dataset. Refer to the aircraft AOR source document.",
-        "cabin": []
+        "summary": "NA",
+        "cabin": [
+          "NA"
+        ]
       },
       "seating": {
-        "seat": null,
-        "descriptor": null,
-        "facing": null,
-        "full": "See aircraft AOR source document"
+        "seat": "NA",
+        "descriptor": "NA",
+        "facing": "NA",
+        "full": "NA"
       },
-      "doorResponsibility": null,
+      "doorResponsibility": "NA",
       "demo": {
-        "position": null,
-        "pointsOut": []
+        "position": "NA",
+        "pointsOut": [
+          "NA"
+        ]
       },
       "aor": {
         "hasAor": false,
-        "area": null
+        "area": "NA"
       },
-      "rest": null,
-      "additionalResponsibilities": [],
-      "equipmentChecks": []
+      "rest": "NA",
+      "additionalResponsibilities": [
+        "NA"
+      ],
+      "equipmentChecks": [
+        {
+          "code": "NA",
+          "qty": 1,
+          "locationType": "area"
+        }
+      ]
     },
     {
       "number": 13,
-      "title": null,
-      "role": null,
-      "displayTitle": "No 13",
+      "title": "NA",
+      "role": "NA",
+      "displayTitle": "No. 13",
       "service": {
-        "summary": "Position-specific service, AOR, seating, safety demonstration and equipment-check details are not mapped in this dataset. Refer to the aircraft AOR source document.",
-        "cabin": []
+        "summary": "NA",
+        "cabin": [
+          "NA"
+        ]
       },
       "seating": {
-        "seat": null,
-        "descriptor": null,
-        "facing": null,
-        "full": "See aircraft AOR source document"
+        "seat": "NA",
+        "descriptor": "NA",
+        "facing": "NA",
+        "full": "NA"
       },
-      "doorResponsibility": null,
+      "doorResponsibility": "NA",
       "demo": {
-        "position": null,
-        "pointsOut": []
+        "position": "NA",
+        "pointsOut": [
+          "NA"
+        ]
       },
       "aor": {
         "hasAor": false,
-        "area": null
+        "area": "NA"
       },
-      "rest": null,
-      "additionalResponsibilities": [],
-      "equipmentChecks": []
+      "rest": "NA",
+      "additionalResponsibilities": [
+        "NA"
+      ],
+      "equipmentChecks": [
+        {
+          "code": "NA",
+          "qty": 1,
+          "locationType": "area"
+        }
+      ]
     },
     {
       "number": 14,
-      "title": null,
-      "role": null,
-      "displayTitle": "No 14",
+      "title": "NA",
+      "role": "NA",
+      "displayTitle": "No. 14",
       "service": {
-        "summary": "Position-specific service, AOR, seating, safety demonstration and equipment-check details are not mapped in this dataset. Refer to the aircraft AOR source document.",
-        "cabin": []
+        "summary": "NA",
+        "cabin": [
+          "NA"
+        ]
       },
       "seating": {
-        "seat": null,
-        "descriptor": null,
-        "facing": null,
-        "full": "See aircraft AOR source document"
+        "seat": "NA",
+        "descriptor": "NA",
+        "facing": "NA",
+        "full": "NA"
       },
-      "doorResponsibility": null,
+      "doorResponsibility": "NA",
       "demo": {
-        "position": null,
-        "pointsOut": []
+        "position": "NA",
+        "pointsOut": [
+          "NA"
+        ]
       },
       "aor": {
         "hasAor": false,
-        "area": null
+        "area": "NA"
       },
-      "rest": null,
-      "additionalResponsibilities": [],
-      "equipmentChecks": []
+      "rest": "NA",
+      "additionalResponsibilities": [
+        "NA"
+      ],
+      "equipmentChecks": [
+        {
+          "code": "NA",
+          "qty": 1,
+          "locationType": "area"
+        }
+      ]
     },
     {
       "number": 15,
-      "title": null,
-      "role": null,
-      "displayTitle": "No 15",
+      "title": "NA",
+      "role": "NA",
+      "displayTitle": "No. 15",
       "service": {
-        "summary": "Position-specific service, AOR, seating, safety demonstration and equipment-check details are not mapped in this dataset. Refer to the aircraft AOR source document.",
-        "cabin": []
+        "summary": "NA",
+        "cabin": [
+          "NA"
+        ]
       },
       "seating": {
-        "seat": null,
-        "descriptor": null,
-        "facing": null,
-        "full": "See aircraft AOR source document"
+        "seat": "NA",
+        "descriptor": "NA",
+        "facing": "NA",
+        "full": "NA"
       },
-      "doorResponsibility": null,
+      "doorResponsibility": "NA",
       "demo": {
-        "position": null,
-        "pointsOut": []
+        "position": "NA",
+        "pointsOut": [
+          "NA"
+        ]
       },
       "aor": {
         "hasAor": false,
-        "area": null
+        "area": "NA"
       },
-      "rest": null,
-      "additionalResponsibilities": [],
-      "equipmentChecks": []
+      "rest": "NA",
+      "additionalResponsibilities": [
+        "NA"
+      ],
+      "equipmentChecks": [
+        {
+          "code": "NA",
+          "qty": 1,
+          "locationType": "area"
+        }
+      ]
     },
     {
       "number": 16,
-      "title": null,
-      "role": null,
-      "displayTitle": "No 16",
+      "title": "NA",
+      "role": "NA",
+      "displayTitle": "No. 16",
       "service": {
-        "summary": "Position-specific service, AOR, seating, safety demonstration and equipment-check details are not mapped in this dataset. Refer to the aircraft AOR source document.",
-        "cabin": []
+        "summary": "NA",
+        "cabin": [
+          "NA"
+        ]
       },
       "seating": {
-        "seat": null,
-        "descriptor": null,
-        "facing": null,
-        "full": "See aircraft AOR source document"
+        "seat": "NA",
+        "descriptor": "NA",
+        "facing": "NA",
+        "full": "NA"
       },
-      "doorResponsibility": null,
+      "doorResponsibility": "NA",
       "demo": {
-        "position": null,
-        "pointsOut": []
+        "position": "NA",
+        "pointsOut": [
+          "NA"
+        ]
       },
       "aor": {
         "hasAor": false,
-        "area": null
+        "area": "NA"
       },
-      "rest": null,
-      "additionalResponsibilities": [],
-      "equipmentChecks": []
+      "rest": "NA",
+      "additionalResponsibilities": [
+        "NA"
+      ],
+      "equipmentChecks": [
+        {
+          "code": "NA",
+          "qty": 1,
+          "locationType": "area"
+        }
+      ]
     },
     {
       "number": 17,
-      "title": null,
-      "role": null,
-      "displayTitle": "No 17",
+      "title": "NA",
+      "role": "NA",
+      "displayTitle": "No. 17",
       "service": {
-        "summary": "Position-specific service, AOR, seating, safety demonstration and equipment-check details are not mapped in this dataset. Refer to the aircraft AOR source document.",
-        "cabin": []
+        "summary": "NA",
+        "cabin": [
+          "NA"
+        ]
       },
       "seating": {
-        "seat": null,
-        "descriptor": null,
-        "facing": null,
-        "full": "See aircraft AOR source document"
+        "seat": "NA",
+        "descriptor": "NA",
+        "facing": "NA",
+        "full": "NA"
       },
-      "doorResponsibility": null,
+      "doorResponsibility": "NA",
       "demo": {
-        "position": null,
-        "pointsOut": []
+        "position": "NA",
+        "pointsOut": [
+          "NA"
+        ]
       },
       "aor": {
         "hasAor": false,
-        "area": null
+        "area": "NA"
       },
-      "rest": null,
-      "additionalResponsibilities": [],
-      "equipmentChecks": []
+      "rest": "NA",
+      "additionalResponsibilities": [
+        "NA"
+      ],
+      "equipmentChecks": [
+        {
+          "code": "NA",
+          "qty": 1,
+          "locationType": "area"
+        }
+      ]
     },
     {
       "number": 18,
-      "title": null,
-      "role": null,
-      "displayTitle": "No 18",
+      "title": "NA",
+      "role": "NA",
+      "displayTitle": "No. 18",
       "service": {
-        "summary": "Position-specific service, AOR, seating, safety demonstration and equipment-check details are not mapped in this dataset. Refer to the aircraft AOR source document.",
-        "cabin": []
+        "summary": "NA",
+        "cabin": [
+          "NA"
+        ]
       },
       "seating": {
-        "seat": null,
-        "descriptor": null,
-        "facing": null,
-        "full": "See aircraft AOR source document"
+        "seat": "NA",
+        "descriptor": "NA",
+        "facing": "NA",
+        "full": "NA"
       },
-      "doorResponsibility": null,
+      "doorResponsibility": "NA",
       "demo": {
-        "position": null,
-        "pointsOut": []
+        "position": "NA",
+        "pointsOut": [
+          "NA"
+        ]
       },
       "aor": {
         "hasAor": false,
-        "area": null
+        "area": "NA"
       },
-      "rest": null,
-      "additionalResponsibilities": [],
-      "equipmentChecks": []
+      "rest": "NA",
+      "additionalResponsibilities": [
+        "NA"
+      ],
+      "equipmentChecks": [
+        {
+          "code": "NA",
+          "qty": 1,
+          "locationType": "area"
+        }
+      ]
     },
     {
       "number": 19,
-      "title": null,
-      "role": null,
-      "displayTitle": "No 19",
+      "title": "NA",
+      "role": "NA",
+      "displayTitle": "No. 19",
       "service": {
-        "summary": "Position-specific service, AOR, seating, safety demonstration and equipment-check details are not mapped in this dataset. Refer to the aircraft AOR source document.",
-        "cabin": []
+        "summary": "NA",
+        "cabin": [
+          "NA"
+        ]
       },
       "seating": {
-        "seat": null,
-        "descriptor": null,
-        "facing": null,
-        "full": "See aircraft AOR source document"
+        "seat": "NA",
+        "descriptor": "NA",
+        "facing": "NA",
+        "full": "NA"
       },
-      "doorResponsibility": null,
+      "doorResponsibility": "NA",
       "demo": {
-        "position": null,
-        "pointsOut": []
+        "position": "NA",
+        "pointsOut": [
+          "NA"
+        ]
       },
       "aor": {
         "hasAor": false,
-        "area": null
+        "area": "NA"
       },
-      "rest": null,
-      "additionalResponsibilities": [],
-      "equipmentChecks": []
+      "rest": "NA",
+      "additionalResponsibilities": [
+        "NA"
+      ],
+      "equipmentChecks": [
+        {
+          "code": "NA",
+          "qty": 1,
+          "locationType": "area"
+        }
+      ]
     },
     {
       "number": 20,
-      "title": null,
-      "role": null,
-      "displayTitle": "No 20",
+      "title": "NA",
+      "role": "NA",
+      "displayTitle": "No. 20",
       "service": {
-        "summary": "Position-specific service, AOR, seating, safety demonstration and equipment-check details are not mapped in this dataset. Refer to the aircraft AOR source document.",
-        "cabin": []
+        "summary": "NA",
+        "cabin": [
+          "NA"
+        ]
       },
       "seating": {
-        "seat": null,
-        "descriptor": null,
-        "facing": null,
-        "full": "See aircraft AOR source document"
+        "seat": "NA",
+        "descriptor": "NA",
+        "facing": "NA",
+        "full": "NA"
       },
-      "doorResponsibility": null,
+      "doorResponsibility": "NA",
       "demo": {
-        "position": null,
-        "pointsOut": []
+        "position": "NA",
+        "pointsOut": [
+          "NA"
+        ]
       },
       "aor": {
         "hasAor": false,
-        "area": null
+        "area": "NA"
       },
-      "rest": null,
-      "additionalResponsibilities": [],
-      "equipmentChecks": []
+      "rest": "NA",
+      "additionalResponsibilities": [
+        "NA"
+      ],
+      "equipmentChecks": [
+        {
+          "code": "NA",
+          "qty": 1,
+          "locationType": "area"
+        }
+      ]
     },
     {
       "number": 21,
-      "title": null,
-      "role": null,
-      "displayTitle": "No 21",
+      "title": "NA",
+      "role": "NA",
+      "displayTitle": "No. 21",
       "service": {
-        "summary": "Position-specific service, AOR, seating, safety demonstration and equipment-check details are not mapped in this dataset. Refer to the aircraft AOR source document.",
-        "cabin": []
+        "summary": "NA",
+        "cabin": [
+          "NA"
+        ]
       },
       "seating": {
-        "seat": null,
-        "descriptor": null,
-        "facing": null,
-        "full": "See aircraft AOR source document"
+        "seat": "NA",
+        "descriptor": "NA",
+        "facing": "NA",
+        "full": "NA"
       },
-      "doorResponsibility": null,
+      "doorResponsibility": "NA",
       "demo": {
-        "position": null,
-        "pointsOut": []
+        "position": "NA",
+        "pointsOut": [
+          "NA"
+        ]
       },
       "aor": {
         "hasAor": false,
-        "area": null
+        "area": "NA"
       },
-      "rest": null,
-      "additionalResponsibilities": [],
-      "equipmentChecks": []
+      "rest": "NA",
+      "additionalResponsibilities": [
+        "NA"
+      ],
+      "equipmentChecks": [
+        {
+          "code": "NA",
+          "qty": 1,
+          "locationType": "area"
+        }
+      ]
     },
     {
       "number": 22,
-      "title": null,
-      "role": null,
-      "displayTitle": "No 22",
+      "title": "NA",
+      "role": "NA",
+      "displayTitle": "No. 22",
       "service": {
-        "summary": "Position-specific service, AOR, seating, safety demonstration and equipment-check details are not mapped in this dataset. Refer to the aircraft AOR source document.",
-        "cabin": []
+        "summary": "NA",
+        "cabin": [
+          "NA"
+        ]
       },
       "seating": {
-        "seat": null,
-        "descriptor": null,
-        "facing": null,
-        "full": "See aircraft AOR source document"
+        "seat": "NA",
+        "descriptor": "NA",
+        "facing": "NA",
+        "full": "NA"
       },
-      "doorResponsibility": null,
+      "doorResponsibility": "NA",
       "demo": {
-        "position": null,
-        "pointsOut": []
+        "position": "NA",
+        "pointsOut": [
+          "NA"
+        ]
       },
       "aor": {
         "hasAor": false,
-        "area": null
+        "area": "NA"
       },
-      "rest": null,
-      "additionalResponsibilities": [],
-      "equipmentChecks": []
+      "rest": "NA",
+      "additionalResponsibilities": [
+        "NA"
+      ],
+      "equipmentChecks": [
+        {
+          "code": "NA",
+          "qty": 1,
+          "locationType": "area"
+        }
+      ]
     },
     {
       "number": 23,

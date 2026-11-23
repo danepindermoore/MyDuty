@@ -1,44 +1,47 @@
 globalThis.AOR_351 = {
-  aircraftCode: "351",
-  diagram: {
-    image: "../assets/aircraft/351.png",
-    viewBox: { width: 380, height: 818 },
-    fuselageClipPath: "M190 10 C180 18 172 34 167 58 L157 102 Q153 116 153 136 V684 Q153 728 173 746 Q181 752 190 753 Q199 752 207 746 Q227 728 227 684 V136 Q227 116 223 102 L213 58 C208 34 200 18 190 10 Z",
-    aorAreaIds:       {
-        "Club Kitchen / D2L to AFT CW Cabin AE side": [
-          "cw-left-aft"
-        ],
-        "FWD WTP to D3L AB side and 2 x Toilets at D3L": [
-          "wtp-left",
-          "wt-left-forward"
-        ],
-        "D3L to D4L ABC side, CCRC and 1 x Toilet at D4L": [
-          "wt-left"
-        ],
-        "CW Galley, FCRC and 1 x Toilet AFT of the Flight Deck": [
-          "front-galley"
-        ],
-        "D1R to D2R FK side and 1 x Toilet at D2R": [
-          "cw-right-full"
-        ],
-        "FWD WTP JK side to D3R and 2 x Toilets at D3R": [
-          "wtp-right",
-          "wt-right-forward"
-        ],
-        "WT Galley and 1 x Toilet at D4R": [
-          "aft-galley"
-        ],
-        "D2R to AFT CW cabin FK side": [
-          "cw-right-aft"
-        ],
-        "D1L to D2L and 1 x Toilet at D2L": [
-          "cw-left-forward"
-        ],
-        "D3R to D4R": [
-          "wt-right"
-        ]
-      },
-    aorShapes: {
+  "aircraftCode": "351",
+  "diagram": {
+    "image": "../assets/aircraft/351.png",
+    "viewBox": {
+      "width": 380,
+      "height": 818
+    },
+    "fuselageClipPath": "M190 10 C180 18 172 34 167 58 L157 102 Q153 116 153 136 V684 Q153 728 173 746 Q181 752 190 753 Q199 752 207 746 Q227 728 227 684 V136 Q227 116 223 102 L213 58 C208 34 200 18 190 10 Z",
+    "aorAreaIds": {
+      "Club Kitchen / D2L to AFT CW Cabin AE side": [
+        "cw-left-aft"
+      ],
+      "FWD WTP to D3L AB side and 2 x Toilets at D3L": [
+        "wtp-left",
+        "wt-left-forward"
+      ],
+      "D3L to D4L ABC side, CCRC and 1 x Toilet at D4L": [
+        "wt-left"
+      ],
+      "CW Galley, FCRC and 1 x Toilet AFT of the Flight Deck": [
+        "front-galley"
+      ],
+      "D1R to D2R FK side and 1 x Toilet at D2R": [
+        "cw-right-full"
+      ],
+      "FWD WTP JK side to D3R and 2 x Toilets at D3R": [
+        "wtp-right",
+        "wt-right-forward"
+      ],
+      "WT Galley and 1 x Toilet at D4R": [
+        "aft-galley"
+      ],
+      "D2R to AFT CW cabin FK side": [
+        "cw-right-aft"
+      ],
+      "D1L to D2L and 1 x Toilet at D2L": [
+        "cw-left-forward"
+      ],
+      "D3R to D4R": [
+        "wt-right"
+      ]
+    },
+    "aorShapes": {
       "front-galley": "M165 67 Q158 82 154 118 L226 118 Q222 82 215 67 Z",
       "cw-left-forward": "M156 116 C154 156 152 218 153 266 L173 268 L174 279 Q181 282 188 280 L189 117 Z",
       "cw-right-full": "M189 117 L189 266 L190 280 Q197 282 204 279 L204 268 L224 266 C225 218 223 156 222 116 Z",
@@ -48,38 +51,138 @@ globalThis.AOR_351 = {
       "wtp-right": "M187.5 342 L187.5 432 L226 432 C227 405 227 369 226 342 Z",
       "wt-left-forward": "M154 432 C154 458 154 484 155 508 L187.5 508 L187.5 432 Z",
       "wt-right-forward": "M187.5 432 L187.5 508 L225 508 C226 484 226 458 226 432 Z",
-      // Keep No. 4 as one continuous custom path, including the marked door
-      // pocket and left toilet while stopping before the grey galley.
       "wt-left": "M153 508 L190 508 L190 678 Q190 684 184 688 L166 689 L181 689 L181 700 Q181 708 170 714 L170 725 Q170 728 166 728 Q161 728 160 724 L157 713 Q157 708 155 704 L153 689 Z",
       "wt-right": "M187.5 508 L187.5 689 L221 689 C225 635 225 559 225 508 Z",
-      // No. 8 follows No. 4's boundary without covering any of its area.
       "aft-galley": "M181 689 L198 689 L198 684 Q198 679 202 679 L212 679 Q216 679 216 684 L216 689 Q220 711 210 731 Q203 742 190 742 Q177 742 170 731 L170 714 Q181 708 181 700 Z"
     },
-    demoPoints: {
-      10: [174, 128], 5: [204, 153], 12: [172, 199], 6: [205, 221],
-      2: [174, 302], 9: [203, 302], 3: [172, 362], 7: [203, 444],
-      4: [174, 520], 11: [204, 520]
+    "demoPoints": {
+      "10": [
+        174,
+        128
+      ],
+      "5": [
+        204,
+        153
+      ],
+      "12": [
+        172,
+        199
+      ],
+      "6": [
+        205,
+        221
+      ],
+      "2": [
+        174,
+        302
+      ],
+      "9": [
+        203,
+        302
+      ],
+      "3": [
+        172,
+        362
+      ],
+      "7": [
+        203,
+        444
+      ],
+      "4": [
+        174,
+        520
+      ],
+      "11": [
+        204,
+        520
+      ]
     },
-    positionPanels: {
-      1: { x: 18, y: 33, w: 114, h: 62 }, 10: { x: 16, y: 102, w: 114, h: 62 },
-      2: { x: 17, y: 268, w: 114, h: 63 }, 3: { x: 17, y: 495, w: 114, h: 66 },
-      4: { x: 17, y: 679, w: 114, h: 64 }, 11: { x: 17, y: 748, w: 114, h: 60 },
-      5: { x: 252, y: 31, w: 112, h: 64 }, 6: { x: 252, y: 268, w: 112, h: 63 },
-      9: { x: 252, y: 342, w: 112, h: 64 }, 7: { x: 252, y: 495, w: 112, h: 66 },
-      8: { x: 252, y: 679, w: 112, h: 64 }, 12: { x: 252, y: 748, w: 112, h: 64 }
+    "positionPanels": {
+      "1": {
+        "x": 18,
+        "y": 33,
+        "w": 114,
+        "h": 62
+      },
+      "10": {
+        "x": 16,
+        "y": 102,
+        "w": 114,
+        "h": 62
+      },
+      "2": {
+        "x": 17,
+        "y": 268,
+        "w": 114,
+        "h": 63
+      },
+      "3": {
+        "x": 17,
+        "y": 495,
+        "w": 114,
+        "h": 66
+      },
+      "4": {
+        "x": 17,
+        "y": 679,
+        "w": 114,
+        "h": 64
+      },
+      "11": {
+        "x": 17,
+        "y": 748,
+        "w": 114,
+        "h": 60
+      },
+      "5": {
+        "x": 252,
+        "y": 31,
+        "w": 112,
+        "h": 64
+      },
+      "6": {
+        "x": 252,
+        "y": 268,
+        "w": 112,
+        "h": 63
+      },
+      "9": {
+        "x": 252,
+        "y": 342,
+        "w": 112,
+        "h": 64
+      },
+      "7": {
+        "x": 252,
+        "y": 495,
+        "w": 112,
+        "h": 66
+      },
+      "8": {
+        "x": 252,
+        "y": 679,
+        "w": 112,
+        "h": 64
+      },
+      "12": {
+        "x": 252,
+        "y": 748,
+        "w": 112,
+        "h": 64
+      }
     }
   },
-  importantInfo: {
-    notes: [
+  "importantInfo": {
+    "notes": [
       "WTP Pre-Take Off Service is delivered by the the No. 4 and No. 11.",
       "If No. 3 is GCC position, IFR to be allocated to No. 11."
     ]
   },
-  positions:   [
+  "positions": [
     {
       "number": 1,
       "title": "SCCM - IFM",
-      "role": null,
+      "role": "IFM",
       "displayTitle": "No. 1 (SCCM - IFM)",
       "service": {
         "summary": "Overall responsibility for all cabins, CW cabin serving 1AE - 7AE",
@@ -91,16 +194,18 @@ globalThis.AOR_351 = {
         "seat": "D1L",
         "descriptor": "Inboard",
         "facing": "AFT",
-        "full": "D1L: Inboard AFT Facing"
+        "full": "D1L: Inboard AFT"
       },
       "doorResponsibility": "D1L",
       "demo": {
-        "position": null,
-        "pointsOut": []
+        "position": "NA",
+        "pointsOut": [
+          "NA"
+        ]
       },
       "aor": {
         "hasAor": false,
-        "area": null
+        "area": "NA"
       },
       "rest": "2nd Rest",
       "additionalResponsibilities": [
@@ -136,6 +241,11 @@ globalThis.AOR_351 = {
         },
         {
           "code": "MRT",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "DDC",
           "qty": 1,
           "locationType": "seat"
         },
@@ -183,8 +293,8 @@ globalThis.AOR_351 = {
     },
     {
       "number": 2,
-      "title": "Cabin Crew",
-      "role": "GCC 1",
+      "title": "Cabin Crew - GCC 1",
+      "role": "Cabin Crew",
       "displayTitle": "No. 2 (Cabin Crew - GCC 1)",
       "service": {
         "summary": "CW cabin serving 17AE - 8AE",
@@ -194,16 +304,15 @@ globalThis.AOR_351 = {
       },
       "seating": {
         "seat": "D2L",
-        "descriptor": null,
+        "descriptor": "NA",
         "facing": "AFT",
-        "full": "D2L: AFT Facing"
+        "full": "D2L: AFT"
       },
       "doorResponsibility": "D2L",
       "demo": {
         "position": "15AE",
         "pointsOut": [
-          "D3LR",
-          "D2LR"
+          "D3LR followed by D2LR"
         ]
       },
       "aor": {
@@ -211,90 +320,8 @@ globalThis.AOR_351 = {
         "area": "Club Kitchen / D2L to AFT CW Cabin AE side"
       },
       "rest": "1st Rest",
-      "additionalResponsibilities": [],
-      "equipmentChecks": [
-        {
-          "code": "ET",
-          "qty": 1,
-          "locationType": "seat"
-        },
-        {
-          "code": "HVT",
-          "qty": 1,
-          "locationType": "seat"
-        },
-        {
-          "code": "PBE",
-          "qty": 1,
-          "locationType": "seat"
-        },
-        {
-          "code": "LJ",
-          "qty": 1,
-          "locationType": "seat"
-        },
-        {
-          "code": "FG",
-          "qty": 1,
-          "locationType": "seat"
-        },
-        {
-          "code": "MRT",
-          "qty": 1,
-          "locationType": "seat"
-        },
-        {
-          "code": "DEM",
-          "qty": 1,
-          "locationType": "area"
-        },
-        {
-          "code": "PO",
-          "qty": 4,
-          "locationType": "area"
-        },
-        {
-          "code": "TO",
-          "qty": 3,
-          "locationType": "area"
-        }
-      ]
-    },
-    {
-      "number": 3,
-      "title": "Cabin Crew",
-      "role": "GCC 2",
-      "displayTitle": "No. 3 (Cabin Crew - GCC 2)",
-      "service": {
-        "summary": "WTP & WT cabin serving AB side, Inflight Retail for all cabins",
-        "cabin": [
-          "WTP",
-          "WT"
-        ]
-      },
-      "seating": {
-        "seat": "D3L",
-        "descriptor": null,
-        "facing": "AFT",
-        "full": "D3L: AFT Facing"
-      },
-      "doorResponsibility": "D3L",
-      "demo": {
-        "position": "Front of WTP AB side",
-        "pointsOut": [
-          "D3LR",
-          "D2LR"
-        ]
-      },
-      "aor": {
-        "hasAor": true,
-        "area": "FWD WTP to D3L AB side and 2 x Toilets at D3L"
-      },
-      "rest": "2nd Rest",
       "additionalResponsibilities": [
-        "Boarding alongside SCCM",
-        "Inflight Retail",
-        "If GCC position 2 is allocated to number 3 then IFR is reallocated to number 11"
+        "None"
       ],
       "equipmentChecks": [
         {
@@ -324,6 +351,99 @@ globalThis.AOR_351 = {
         },
         {
           "code": "MRT",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "DDC",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "DEM",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "PO",
+          "qty": 4,
+          "locationType": "area"
+        },
+        {
+          "code": "TO",
+          "qty": 3,
+          "locationType": "area"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Cabin Crew - GCC 2",
+      "role": "Cabin Crew",
+      "displayTitle": "No. 3 (Cabin Crew - GCC 2)",
+      "service": {
+        "summary": "WTP & WT cabin serving AB side, Inflight Retail for all cabins",
+        "cabin": [
+          "WTP",
+          "WT"
+        ]
+      },
+      "seating": {
+        "seat": "D3L",
+        "descriptor": "NA",
+        "facing": "AFT",
+        "full": "D3L: AFT"
+      },
+      "doorResponsibility": "D3L",
+      "demo": {
+        "position": "Front of WTP AB side",
+        "pointsOut": [
+          "D3LR followed by D2LR"
+        ]
+      },
+      "aor": {
+        "hasAor": true,
+        "area": "FWD WTP to D3L AB side and 2 x Toilets at D3L"
+      },
+      "rest": "2nd Rest",
+      "additionalResponsibilities": [
+        "Boarding alongside SCCM",
+        "Inflight Retail",
+        "If GCC position is allocated to number 3 then IFR is reallocated to number 11"
+      ],
+      "equipmentChecks": [
+        {
+          "code": "ET",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "HVT",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "PBE",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "LJ",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "FG",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "MRT",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "DDC",
           "qty": 1,
           "locationType": "seat"
         },
@@ -371,9 +491,9 @@ globalThis.AOR_351 = {
     },
     {
       "number": 4,
-      "title": "Acting SCCM - IFL",
-      "role": null,
-      "displayTitle": "No. 4 (Acting SCCM - IFL)",
+      "title": "IFL - Acting SCCM",
+      "role": "IFL",
+      "displayTitle": "No. 4 (IFL - Acting SCCM)",
       "service": {
         "summary": "Responsible for World Traveller and World Traveller Plus cabins, WT cabin or WT Galley Operator, WTP pre-take off service JK side",
         "cabin": [
@@ -384,14 +504,13 @@ globalThis.AOR_351 = {
         "seat": "D4L",
         "descriptor": "Outboard",
         "facing": "FWD",
-        "full": "D4L: Outboard FWD Facing"
+        "full": "D4L: Outboard FWD"
       },
       "doorResponsibility": "D4L",
       "demo": {
         "position": "Adjacent to D3L",
         "pointsOut": [
-          "D4LR",
-          "D3LR"
+          "D4LR followed by D3LR"
         ]
       },
       "aor": {
@@ -434,6 +553,11 @@ globalThis.AOR_351 = {
           "locationType": "seat"
         },
         {
+          "code": "DDC",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
           "code": "PO",
           "qty": 2,
           "locationType": "area"
@@ -446,58 +570,57 @@ globalThis.AOR_351 = {
         {
           "code": "ET",
           "qty": 2,
-          "locationType": "ccrc"
+          "locationType": "rest"
         },
         {
           "code": "PBE",
           "qty": 2,
-          "locationType": "ccrc"
+          "locationType": "rest"
         },
         {
           "code": "FG",
           "qty": 1,
-          "locationType": "ccrc"
+          "locationType": "rest"
         },
         {
           "code": "FE",
           "qty": 1,
-          "locationType": "ccrc"
+          "locationType": "rest"
         },
         {
           "code": "PO",
           "qty": 1,
-          "locationType": "ccrc"
+          "locationType": "rest"
         },
         {
           "code": "MRT",
           "qty": 1,
-          "locationType": "ccrc"
+          "locationType": "rest"
         }
       ]
     },
     {
       "number": 5,
-      "title": "Cabin Crew",
-      "role": null,
-      "displayTitle": "No. 5 (Cabin Crew)",
+      "title": "Cabin Crew - Galley Operator",
+      "role": "Cabin Crew",
+      "displayTitle": "No. 5 (Cabin Crew - Galley Operator)",
       "service": {
         "summary": "CW Galley Operator, Flight Crew Service Delivery",
         "cabin": [
-          "First"
+          "F"
         ]
       },
       "seating": {
         "seat": "D1R",
-        "descriptor": null,
+        "descriptor": "NA",
         "facing": "FWD",
-        "full": "D1R: FWD Facing"
+        "full": "D1R: FWD"
       },
       "doorResponsibility": "D1R",
       "demo": {
         "position": "4FK",
         "pointsOut": [
-          "D2LR",
-          "D1LR"
+          "D2LR followed by D1LR"
         ]
       },
       "aor": {
@@ -542,6 +665,11 @@ globalThis.AOR_351 = {
           "locationType": "seat"
         },
         {
+          "code": "DDC",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
           "code": "PO",
           "qty": 1,
           "locationType": "area"
@@ -569,34 +697,34 @@ globalThis.AOR_351 = {
         {
           "code": "ET",
           "qty": 1,
-          "locationType": "fcrc"
+          "locationType": "rest"
         },
         {
           "code": "PBE",
           "qty": 2,
-          "locationType": "fcrc"
+          "locationType": "rest"
         },
         {
           "code": "FG",
           "qty": 1,
-          "locationType": "fcrc"
+          "locationType": "rest"
         },
         {
           "code": "FE",
           "qty": 1,
-          "locationType": "fcrc"
+          "locationType": "rest"
         },
         {
           "code": "MRT",
           "qty": 1,
-          "locationType": "fcrc"
+          "locationType": "rest"
         }
       ]
     },
     {
       "number": 6,
       "title": "Cabin Crew",
-      "role": null,
+      "role": "Cabin Crew",
       "displayTitle": "No. 6 (Cabin Crew)",
       "service": {
         "summary": "CW cabin serving 17FK - 8FK",
@@ -606,16 +734,15 @@ globalThis.AOR_351 = {
       },
       "seating": {
         "seat": "D2R",
-        "descriptor": null,
+        "descriptor": "NA",
         "facing": "AFT",
-        "full": "D2R: AFT Facing"
+        "full": "D2R: AFT"
       },
       "doorResponsibility": "D2R",
       "demo": {
         "position": "9FK",
         "pointsOut": [
-          "D2LR",
-          "D1LR"
+          "D2LR followed by D1LR"
         ]
       },
       "aor": {
@@ -654,6 +781,11 @@ globalThis.AOR_351 = {
         },
         {
           "code": "MRT",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "DDC",
           "qty": 1,
           "locationType": "seat"
         },
@@ -706,8 +838,8 @@ globalThis.AOR_351 = {
     },
     {
       "number": 7,
-      "title": "Cabin Crew",
-      "role": "GCC 3",
+      "title": "Cabin Crew - GCC 3",
+      "role": "Cabin Crew",
       "displayTitle": "No. 7 (Cabin Crew - GCC 3)",
       "service": {
         "summary": "WT cabin serving HJK side",
@@ -717,16 +849,15 @@ globalThis.AOR_351 = {
       },
       "seating": {
         "seat": "D3R",
-        "descriptor": null,
+        "descriptor": "NA",
         "facing": "AFT",
-        "full": "D3R: AFT Facing"
+        "full": "D3R: AFT"
       },
       "doorResponsibility": "D3R",
       "demo": {
         "position": "Front of FWD WT cabin HJK side",
         "pointsOut": [
-          "D3LR",
-          "D2LR"
+          "D3LR followed by D2LR"
         ]
       },
       "aor": {
@@ -770,6 +901,11 @@ globalThis.AOR_351 = {
           "locationType": "seat"
         },
         {
+          "code": "DDC",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
           "code": "PO",
           "qty": 4,
           "locationType": "area"
@@ -808,11 +944,11 @@ globalThis.AOR_351 = {
     },
     {
       "number": 8,
-      "title": "Cabin Crew",
-      "role": null,
-      "displayTitle": "No. 8 (Cabin Crew)",
+      "title": "Cabin Crew - Galley Operator",
+      "role": "Cabin Crew",
+      "displayTitle": "No. 8 (Cabin Crew - Galley Operator)",
       "service": {
-        "summary": "WT Galley Operator if not operated by number 4,Responsible for PRAs and cabin Pas",
+        "summary": "WT Galley Operator if not operated by number 4,Responsible for PRAs and cabin PAs",
         "cabin": [
           "WT"
         ]
@@ -821,12 +957,14 @@ globalThis.AOR_351 = {
         "seat": "D4R",
         "descriptor": "Outboard",
         "facing": "FWD",
-        "full": "D4R: Outboard FWD Facing"
+        "full": "D4R: Outboard FWD"
       },
       "doorResponsibility": "D4R",
       "demo": {
-        "position": null,
-        "pointsOut": []
+        "position": "NA",
+        "pointsOut": [
+          "NA"
+        ]
       },
       "aor": {
         "hasAor": true,
@@ -864,6 +1002,11 @@ globalThis.AOR_351 = {
         },
         {
           "code": "MRT",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "DDC",
           "qty": 1,
           "locationType": "seat"
         },
@@ -907,7 +1050,7 @@ globalThis.AOR_351 = {
     {
       "number": 9,
       "title": "Cabin Crew",
-      "role": null,
+      "role": "Cabin Crew",
       "displayTitle": "No. 9 (Cabin Crew)",
       "service": {
         "summary": "WTP & WT cabin serving JK side",
@@ -918,16 +1061,15 @@ globalThis.AOR_351 = {
       },
       "seating": {
         "seat": "D2R",
-        "descriptor": null,
+        "descriptor": "NA",
         "facing": "FWD",
-        "full": "D2R: FWD Facing"
+        "full": "D2R: FWD"
       },
       "doorResponsibility": "NA",
       "demo": {
         "position": "15FK",
         "pointsOut": [
-          "D3LR",
-          "D2LR"
+          "D3LR followed by D2LR"
         ]
       },
       "aor": {
@@ -935,156 +1077,8 @@ globalThis.AOR_351 = {
         "area": "D2R to AFT CW cabin FK side"
       },
       "rest": "1st Rest",
-      "additionalResponsibilities": [],
-      "equipmentChecks": [
-        {
-          "code": "ET",
-          "qty": 1,
-          "locationType": "seat"
-        },
-        {
-          "code": "HVT",
-          "qty": 1,
-          "locationType": "seat"
-        },
-        {
-          "code": "PBE",
-          "qty": 1,
-          "locationType": "seat"
-        },
-        {
-          "code": "LJ",
-          "qty": 1,
-          "locationType": "seat"
-        },
-        {
-          "code": "FG",
-          "qty": 1,
-          "locationType": "seat"
-        },
-        {
-          "code": "MRT",
-          "qty": 1,
-          "locationType": "seat"
-        },
-        {
-          "code": "FE",
-          "qty": 1,
-          "locationType": "area"
-        },
-        {
-          "code": "DEM",
-          "qty": 1,
-          "locationType": "area"
-        }
-      ]
-    },
-    {
-      "number": 10,
-      "title": "Cabin Crew",
-      "role": "GCC 4",
-      "displayTitle": "No. 10 (Cabin Crew - GCC 4)",
-      "service": {
-        "summary": "CW cabin serving 1FK - 7FK",
-        "cabin": [
-          "CW"
-        ]
-      },
-      "seating": {
-        "seat": "D1L",
-        "descriptor": "Outboard",
-        "facing": "AFT",
-        "full": "D1L: Outboard AFT Facing"
-      },
-      "doorResponsibility": "NA",
-      "demo": {
-        "position": "1AE",
-        "pointsOut": [
-          "D2LR",
-          "D1LR"
-        ]
-      },
-      "aor": {
-        "hasAor": true,
-        "area": "D1L to D2L and 1 x Toilet at D2L"
-      },
-      "rest": "2nd Rest",
-      "additionalResponsibilities": [],
-      "equipmentChecks": [
-        {
-          "code": "ET",
-          "qty": 1,
-          "locationType": "seat"
-        },
-        {
-          "code": "HVT",
-          "qty": 1,
-          "locationType": "seat"
-        },
-        {
-          "code": "PBE",
-          "qty": 1,
-          "locationType": "seat"
-        },
-        {
-          "code": "LJ",
-          "qty": 1,
-          "locationType": "seat"
-        },
-        {
-          "code": "FG",
-          "qty": 1,
-          "locationType": "seat"
-        },
-        {
-          "code": "MRT",
-          "qty": 1,
-          "locationType": "seat"
-        },
-        {
-          "code": "ILJ",
-          "qty": 5,
-          "locationType": "area"
-        },
-        {
-          "code": "DEM",
-          "qty": 1,
-          "locationType": "area"
-        }
-      ]
-    },
-    {
-      "number": 11,
-      "title": "Cabin Crew",
-      "role": null,
-      "displayTitle": "No. 11 (Cabin Crew)",
-      "service": {
-        "summary": "WT cabin serving ABC side, WTP pre-take off service AB side",
-        "cabin": [
-          "WT"
-        ]
-      },
-      "seating": {
-        "seat": "D4L",
-        "descriptor": "Inboard",
-        "facing": "FWD",
-        "full": "D4L: Inboard FWD Facing"
-      },
-      "doorResponsibility": "NA",
-      "demo": {
-        "position": "Adjacent to D3R",
-        "pointsOut": [
-          "D4LR",
-          "D3LR"
-        ]
-      },
-      "aor": {
-        "hasAor": true,
-        "area": "D3R to D4R"
-      },
-      "rest": "1st Rest",
       "additionalResponsibilities": [
-        "If GCC position 2 is allocated to number 3 then IFR responsibility is reallocated to number 11"
+        "None"
       ],
       "equipmentChecks": [
         {
@@ -1118,48 +1112,54 @@ globalThis.AOR_351 = {
           "locationType": "seat"
         },
         {
-          "code": "DEM",
+          "code": "DDC",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "FE",
           "qty": 1,
           "locationType": "area"
         },
         {
-          "code": "FE",
+          "code": "DEM",
           "qty": 1,
           "locationType": "area"
         }
       ]
     },
     {
-      "number": 12,
-      "title": "Cabin Crew",
-      "role": null,
-      "displayTitle": "No. 12 (Cabin Crew)",
+      "number": 10,
+      "title": "Cabin Crew - GCC 4",
+      "role": "Cabin Crew",
+      "displayTitle": "No. 10 (Cabin Crew - GCC 4)",
       "service": {
-        "summary": "WT cabin serving HJK side, assists with CW cabin pre-departure service",
+        "summary": "CW cabin serving 1FK - 7FK",
         "cabin": [
-          "WT"
+          "CW"
         ]
       },
       "seating": {
-        "seat": "D4R",
-        "descriptor": "Inboard",
-        "facing": "FWD",
-        "full": "D4R: Inboard FWD Facing"
+        "seat": "D1L",
+        "descriptor": "Outboard",
+        "facing": "AFT",
+        "full": "D1L: Outboard AFT"
       },
       "doorResponsibility": "NA",
       "demo": {
-        "position": "7AE",
+        "position": "1AE",
         "pointsOut": [
-          "D2LR",
-          "D1LR"
+          "D2LR followed by D1LR"
         ]
       },
       "aor": {
-        "hasAor": false,
-        "area": null
+        "hasAor": true,
+        "area": "D1L to D2L and 1 x Toilet at D2L"
       },
       "rest": "2nd Rest",
-      "additionalResponsibilities": [],
+      "additionalResponsibilities": [
+        "None"
+      ],
       "equipmentChecks": [
         {
           "code": "ET",
@@ -1188,6 +1188,171 @@ globalThis.AOR_351 = {
         },
         {
           "code": "MRT",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "DDC",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "ILJ",
+          "qty": 5,
+          "locationType": "area"
+        },
+        {
+          "code": "DEM",
+          "qty": 1,
+          "locationType": "area"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "title": "Cabin Crew",
+      "role": "Cabin Crew",
+      "displayTitle": "No. 11 (Cabin Crew)",
+      "service": {
+        "summary": "WT cabin serving ABC side, WTP pre-take off service AB side",
+        "cabin": [
+          "WT"
+        ]
+      },
+      "seating": {
+        "seat": "D4L",
+        "descriptor": "Inboard",
+        "facing": "FWD",
+        "full": "D4L: Inboard FWD"
+      },
+      "doorResponsibility": "NA",
+      "demo": {
+        "position": "Adjacent to D3R",
+        "pointsOut": [
+          "D4LR followed by D3LR"
+        ]
+      },
+      "aor": {
+        "hasAor": true,
+        "area": "D3R to D4R"
+      },
+      "rest": "1st Rest",
+      "additionalResponsibilities": [
+        "If GCC position is allocated to number 3 then IFR responsibility is reallocated to number 11"
+      ],
+      "equipmentChecks": [
+        {
+          "code": "ET",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "HVT",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "PBE",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "LJ",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "FG",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "MRT",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "DDC",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "DEM",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "FE",
+          "qty": 1,
+          "locationType": "area"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "title": "Cabin Crew",
+      "role": "Cabin Crew",
+      "displayTitle": "No. 12 (Cabin Crew)",
+      "service": {
+        "summary": "WT cabin serving HJK side, assists with CW cabin pre-departure service",
+        "cabin": [
+          "WT"
+        ]
+      },
+      "seating": {
+        "seat": "D4R",
+        "descriptor": "Inboard",
+        "facing": "FWD",
+        "full": "D4R: Inboard FWD"
+      },
+      "doorResponsibility": "NA",
+      "demo": {
+        "position": "7AE",
+        "pointsOut": [
+          "D2LR followed by D1LR"
+        ]
+      },
+      "aor": {
+        "hasAor": false,
+        "area": "NA"
+      },
+      "rest": "2nd Rest",
+      "additionalResponsibilities": [
+        "None"
+      ],
+      "equipmentChecks": [
+        {
+          "code": "ET",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "HVT",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "PBE",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "LJ",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "FG",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "MRT",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "DDC",
           "qty": 1,
           "locationType": "seat"
         },
