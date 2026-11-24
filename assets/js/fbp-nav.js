@@ -21,7 +21,7 @@ Responsibilities
     // Navigation Items
     //-----------------------------------------------------
 
-const IS_FEATURE_PAGE = /\/(MyBriefing|MyAircraft|MyRoster|MyDocuments|MyExams)(\/|$)/i.test(
+const IS_FEATURE_PAGE = /\/(MyBriefing|MyAircraft|MyRoster|MyDocuments|MyExams|ImportantDates)(\/|$)/i.test(
     decodeURIComponent(location.pathname)
 );
 
@@ -33,6 +33,12 @@ const NAV_ITEMS = [
         id: "home",
         text: "Home",
         href: BASE + "index.html"
+    },
+
+    {
+        id: "importantDates",
+        text: "Important Dates",
+        href: BASE + "ImportantDates/index.html"
     },
 
     {

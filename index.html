@@ -20,6 +20,13 @@
 <body class="fbp-theme">
  
 <main class="fbp-shell">
+    <aside class="important-dates-ticker" aria-label="Upcoming important dates">
+      <span class="ticker-label">Upcoming Dates</span>
+      <div class="ticker-window" aria-live="off"><div id="importantDatesTickerTrack" class="ticker-track"></div></div>
+      <a class="ticker-calendar-link" href="ImportantDates/index.html" aria-label="Open Important Dates">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M7 3v4M17 3v4M3 9h18M7 13h3M13 13h4M7 17h3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </a>
+    </aside>
 
   
     <section class="fbp-hero">
@@ -92,5 +99,29 @@
 
 </main>
 
+<script src="data/important-dates.js"></script>
+<script>
+(function(){
+  const track=document.getElementById("importantDatesTickerTrack");
+  const events=globalThis.IMPORTANT_DATE_EVENTS||[];
+  if(!track)return;
+  const today=new Date();today.setHours(0,0,0,0);
+  const upcoming=events.filter(item=>item.date&&new Date(item.date+"T00:00:00")>=today)
+    .sort((a,b)=>new Date(a.date+"T00:00:00")-new Date(b.date+"T00:00:00"));
+  if(!upcoming.length){
+    track.classList.add("ticker-track-pending");
+    track.textContent="Upcoming dates will appear here once confirmed";
+    return;
+  }
+  const formatter=new Intl.DateTimeFormat("en-GB",{weekday:"short",day:"numeric",month:"short",year:"numeric"});
+  const sequence=upcoming.map(item=>{
+    const date=formatter.format(new Date(item.date+"T12:00:00"));
+    const time=item.time?" · "+item.time:"";
+    return "<span class=\"ticker-event\"><strong>"+item.label+"</strong><time datetime=\""+item.date+"\">"+date+time+"</time></span>";
+  }).join("");
+  track.innerHTML="<div class=\"ticker-sequence\">"+sequence+"</div><div class=\"ticker-sequence\" aria-hidden=\"true\">"+sequence+"</div>";
+  track.style.animationDuration=Math.max(48,track.scrollWidth/70)+"s";
+})();
+</script>
 </body>
 </html>

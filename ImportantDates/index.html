@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Important Dates</title>
+  <meta name="description" content="Monthly calendar of upcoming pay, bidding, roster and annual leave dates." />
+  <link rel="icon" href="../favicon.ico">
+  <link rel="stylesheet" href="../assets/css/fbp-shared.css">
+  <link rel="stylesheet" href="../assets/css/important-dates.css">
+  <script src="../assets/js/fbp-shared.js"></script>
+  <script src="../assets/js/fbp-nav.js"></script>
+  <script src="../assets/js/fbp-shell.js"></script>
+  <script src="../assets/js/fbp-page.js"></script>
+  <script src="../data/important-dates.js"></script>
+</head>
+<body class="fbp-theme">
+  <main class="fbp-shell">
+    <div class="important-dates-content">
+      <p class="important-dates-intro">Current month and next month. Important events are shown on their calendar dates.</p>
+      <ul class="important-date-legend" aria-label="Calendar categories">
+        <li class="legend-pay">Pay and payslips</li>
+        <li class="legend-roster">Bidding and roster</li>
+      </ul>
+      <div id="importantDateCalendars" class="important-date-calendars"></div>
+      <p id="importantDatePending" class="important-date-pending" hidden></p>
+    </div>
+  </main>
+  <script>
+    FBP.createPage({container:"main",contentSelector:".important-dates-content",layout:"wide",title:"Important Dates",subtitle:"Pay, bidding, roster and annual leave dates",feedbackText:"Important Dates Feedback",feedbackSubject:"Feedback for Important Dates",activePage:"importantDates"});
+    (function(){
+      const root=document.getElementById("importantDateCalendars");
+      const events=globalThis.IMPORTANT_DATE_EVENTS||[];
+      const today=new Date();today.setHours(0,0,0,0);
+      const monthFormatter=new Intl.DateTimeFormat("en-GB",{month:"long",year:"numeric"});
+      const esc=value=>String(value??"").replace(/[&<>"']/g,char=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[char]));
+      const isoDate=date=>date.getFullYear()+"-"+String(date.getMonth()+1).padStart(2,"0")+"-"+String(date.getDate()).padStart(2,"0");
+      const weekdayNames=["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+      function monthCalendar(monthOffset){
+        const month=new Date(today.getFullYear(),today.getMonth()+monthOffset,1);
+        const year=month.getFullYear(),monthIndex=month.getMonth();
+        const daysInMonth=new Date(year,monthIndex+1,0).getDate();
+        const leading=(month.getDay()+6)%7;
+        const cellCount=Math.ceil((leading+daysInMonth)/7)*7;
+        let rows="";
+        for(let start=0;start<cellCount;start+=7){
+          rows+="<tr>";
+          for(let column=0;column<7;column++){
+            const dayNumber=start+column-leading+1;
+            if(dayNumber<1||dayNumber>daysInMonth){rows+="<td class=\"calendar-day calendar-day-empty\"></td>";continue}
+            const current=new Date(year,monthIndex,dayNumber);
+            const key=isoDate(current);
+            const dayEvents=events.filter(item=>item.date===key);
+            const classes=["calendar-day"];
+            if(current<today)classes.push("calendar-day-past");
+            const ariaCurrent=key===isoDate(today)?" aria-current=\"date\"":"";
+            const eventMarkup=dayEvents.map(item=>{
+              const kind=["pay","roster","leave"].includes(item.kind)?item.kind:"other";
+              const time=item.time?"<time>"+esc(item.time)+"</time>":"";
+              return "<div class=\"calendar-event calendar-event-"+kind+"\" title=\""+esc([item.label,item.context,item.time].filter(Boolean).join(" · "))+"\"><strong>"+esc(item.label)+"</strong>"+(item.context?"<span>"+esc(item.context)+"</span>":"")+time+"</div>";
+            }).join("");
+            rows+="<td class=\""+classes.join(" ")+"\""+ariaCurrent+"><div class=\"calendar-day-number\"><time datetime=\""+key+"\">"+dayNumber+"</time></div><div class=\"calendar-day-events\">"+eventMarkup+"</div></td>";
+          }
+          rows+="</tr>";
+        }
+        return "<section class=\"fbp-panel important-month\"><h2>"+monthFormatter.format(month)+"</h2><div class=\"calendar-scroll\"><table class=\"month-calendar\"><caption class=\"visually-hidden\">"+monthFormatter.format(month)+" important dates</caption><thead><tr>"+weekdayNames.map(name=>"<th scope=\"col\"><abbr title=\""+name+"\">"+name.slice(0,3)+"</abbr></th>").join("")+"</tr></thead><tbody>"+rows+"</tbody></table></div></section>";
+      }
+      root.innerHTML=monthCalendar(0)+monthCalendar(1);
+      const pending=globalThis.IMPORTANT_DATE_PENDING||[];
+      if(pending.length){
+        const note=document.getElementById("importantDatePending");
+        note.hidden=false;
+        note.textContent="Annual leave dates still to be added: "+pending.join(", ")+".";
+      }
+    })();
+  </script>
+</body>
+</html>
