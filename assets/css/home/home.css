@@ -29,6 +29,7 @@ body.fbp-theme .home-feedback { min-height: 44px; border-radius: 999px; padding:
 .home-feedback .feedback-arrow { color: #ef657b; font-size: 1.1em; }
 
 .fbp-grid-tools { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 18px; }
+.fbp-grid-tools.public-tools { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 body.fbp-theme .tool-card {
   min-height: 176px; padding: 22px 16px; display: flex; flex-direction: column;
   align-items: center; justify-content: flex-start; gap: 12px; text-align: center;
@@ -46,6 +47,7 @@ body.fbp-theme .tool-card:hover { transform: translateY(-3px); border-color: rgb
 .tool-card-briefing .fbp-icon { background: linear-gradient(145deg, #c8102e, #86102b); }
 .tool-card-roster .fbp-icon { background: linear-gradient(145deg, #398bb9, #155b91); }
 .tool-card-documents .fbp-icon { background: linear-gradient(145deg, #277caa, #12466f); }
+.tool-card-asby .fbp-icon { background: linear-gradient(145deg, #278778, #125b59); }
 .tool-card .fbp-icon svg { width: 42px; height: 42px; }
 .tool-card-title { max-width: 100%; color: #fff; font-size: 1.05rem; font-weight: 750; line-height: 1.2; }
 .tool-card:hover .fbp-icon, .tool-card:focus-visible .fbp-icon { transform: scale(1.06); }
@@ -54,6 +56,7 @@ body.fbp-theme .tool-card:hover { transform: translateY(-3px); border-color: rgb
 @media (max-width: 850px) {
   body.fbp-theme .fbp-hero .fbp-topbar { align-items: flex-start; }
 }
+@media (max-width: 700px) { .fbp-grid-tools.public-tools { grid-template-columns: 1fr; } }
 @media (max-width: 560px) {
   .homepage-wrap { margin-top: 14px; }
   body.fbp-theme .fbp-hero { min-height: 0; padding: 25px 22px; }

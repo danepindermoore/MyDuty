@@ -1,0 +1,35 @@
+.report-times-content{padding:8px 0 30px;display:grid;gap:14px}
+.report-times-status{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:20px 22px}
+.report-times-kicker{color:var(--brand-sky);font-size:.7rem;font-weight:800;letter-spacing:.14em}
+.report-times-status h2{margin:6px 0 2px;color:var(--text);font-size:clamp(1.2rem,2vw,1.65rem)}
+.report-times-clock,.report-times-note,.report-times-schedule{margin:0;color:var(--muted);line-height:1.5}
+.report-times-clock{font-variant-numeric:tabular-nums}
+.report-times-counts{display:flex;gap:10px}
+.report-count{display:grid;gap:3px;min-width:120px;padding:12px 16px;border:1px solid var(--border);border-radius:14px;background:rgba(255,255,255,.035)}
+.report-count strong{font-size:1.7rem;line-height:1;font-variant-numeric:tabular-nums;color:var(--text)}
+.report-count span{color:var(--muted);font-size:.82rem}
+.report-count-due{border-color:rgba(56,189,128,.45)}
+.report-count-upcoming{border-color:rgba(117,184,223,.42)}
+.report-times-note{padding:0 4px;font-size:.88rem}
+.report-times-list{padding:18px}
+.report-times-tools{display:flex;align-items:end;gap:12px;margin-bottom:14px}
+.report-times-tools label{display:grid;gap:6px;color:var(--muted);font-size:.8rem;font-weight:700}
+.report-times-search{flex:1}
+.report-times-tools input,.report-times-tools select{min-height:42px;padding:9px 12px;border:1px solid var(--border);border-radius:10px;background:var(--surface-2);color:var(--text);font:inherit}
+.report-times-tools input::placeholder{color:var(--muted)}
+.report-times-filter select{min-width:170px}
+.report-times-schedule{margin:0 0 12px;font-size:.82rem}
+.report-times-table-wrap{overflow-x:auto}
+.report-times-table{width:100%;border-collapse:collapse;text-align:left}
+.report-times-table th,.report-times-table td{padding:11px 12px;border-top:1px solid var(--border)}
+.report-times-table th{color:var(--muted);font-size:.74rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase}
+.report-times-table td{color:var(--text);font-size:.92rem}
+.report-times-table td:first-child,.report-times-table td:nth-child(2){font-variant-numeric:tabular-nums;font-weight:750}
+.report-status{display:inline-flex;align-items:center;white-space:nowrap;padding:5px 9px;border:1px solid var(--border);border-radius:999px;font-size:.76rem;font-weight:800}
+.report-status-reported{border-color:rgba(56,189,128,.5);background:rgba(56,189,128,.12);color:#a8f0cf}
+.report-status-upcoming{border-color:rgba(117,184,223,.5);background:rgba(117,184,223,.11);color:#c6e6fa}
+.report-times-empty{margin:15px 0 0;color:var(--muted);text-align:center}
+@media(max-width:650px){.report-times-status{align-items:flex-start;flex-direction:column}.report-times-counts{width:100%}.report-count{flex:1;min-width:0}.report-times-tools{align-items:stretch;flex-direction:column}.report-times-filter select{width:100%}.report-times-table th,.report-times-table td{padding:10px 8px}.report-times-table td{font-size:.84rem}.report-times-table th{font-size:.65rem}}
+
+.report-times-aircraft-review{margin:0 0 12px;padding:10px 12px;border:1px solid rgba(236,177,83,.45);border-radius:10px;background:rgba(236,177,83,.08);color:var(--text);font-size:.84rem;line-height:1.45}
+.report-times-tools .report-times-filter select{min-width:180px}

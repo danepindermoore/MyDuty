@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>MyASBY</title>
+  <meta name="description" content="See which flights have reported and which are still to report today." />
+  <link rel="icon" href="../favicon.ico">
+  <link rel="stylesheet" href="../assets/css/fbp-shared.css">
+  <link rel="stylesheet" href="../assets/css/report-times.css">
+  <script src="../assets/js/fbp-shared.js"></script>
+  <script src="../assets/js/fbp-nav.js"></script>
+  <script src="../assets/js/fbp-shell.js"></script>
+  <script src="../assets/js/fbp-page.js"></script>
+  <script src="../data/report-times.js"></script>
+</head>
+<body class="fbp-theme">
+  <main class="fbp-shell">
+    <div class="report-times-content">
+      <section class="report-times-status fbp-panel" aria-live="polite">
+        <div>
+          <span class="report-times-kicker">LONDON TIME</span>
+          <h2 id="reportTimesToday">Loading today’s schedule…</h2>
+          <p id="reportTimesClock" class="report-times-clock"></p>
+        </div>
+        <div class="report-times-counts">
+          <div class="report-count report-count-due"><strong id="reportedCount">0</strong><span>Reported</span></div>
+          <div class="report-count report-count-upcoming"><strong id="remainingCount">0</strong><span>Still to report</span></div>
+        </div>
+      </section>
+      <p class="report-times-note">Status is assumed from the scheduled report time: once that time has passed, the flight is shown as Reported.</p>
+      <section class="report-times-list fbp-panel">
+        <div class="report-times-tools">
+          <label class="report-times-search">Find a flight or destination<input id="reportTimesSearch" type="search" placeholder="e.g. BA123 or JFK" autocomplete="off"></label>
+          <label class="report-times-filter">Flights<select id="reportTimesFilter"><option value="all">Show all flights (Today)</option><option value="reported">Show all reported flights</option><option value="upcoming" selected>Show flights still to report</option></select></label>
+          <label class="report-times-filter">Terminal<select id="reportTimesTerminal"><option value="all">All Terminals</option><option value="T5">T5 only</option><option value="T3">T3 only</option></select></label>
+          <label class="report-times-filter">Fleet<select id="reportTimesFleet"><option value="all">All Fleets</option><option value="B777-B787-A380">B777/B787/A380</option><option value="B777-B787-A350">B777/B787/A350</option><option value="B777-B787">B777/B787</option><option value="B777-only">B777 only</option></select></label>
+        </div>
+        <p id="reportTimesSchedule" class="report-times-schedule"></p>
+        <p id="reportTimesAircraftReview" class="report-times-aircraft-review" hidden></p>
+        <div class="report-times-table-wrap">
+          <table class="report-times-table">
+            <thead><tr><th scope="col">Report</th><th scope="col">Flight</th><th scope="col">Destination</th><th scope="col">Aircraft</th><th scope="col">Terminal</th><th scope="col">Status</th></tr></thead>
+            <tbody id="reportTimesRows"></tbody>
+          </table>
+        </div>
+        <p id="reportTimesEmpty" class="report-times-empty" hidden>No flights match this selection.</p>
+      </section>
+    </div>
+  </main>
+  <script>
+    FBP.createPage({container:"main",contentSelector:".report-times-content",layout:"wide",title:"MyASBY",subtitle:"Report Times - Today's Flights",feedbackText:"Report Times Feedback",feedbackSubject:"Feedback for Report Times",activePage:"myAsby"});
+  </script>
+  <script src="../assets/js/report-times.js"></script>
+</body>
+</html>
