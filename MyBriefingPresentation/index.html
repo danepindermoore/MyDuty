@@ -170,7 +170,9 @@ document.addEventListener('DOMContentLoaded',()=>{const form=document.querySelec
 .unsecured-suite-slide .hotspot-section-list button.selected{background:var(--navy);border-color:var(--navy);color:#fff}
 .unsecured-suite-slide .hotspot-description{min-height:3.5em;padding:12px 0;border-top:1px solid var(--line);font-size:clamp(.9rem,1.1vw,1.1rem);line-height:1.4}
 @media(max-width:700px){.unsecured-suite-slide .suite-interactive-layout{grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr) auto;grid-template-areas:"image" "prompt";gap:10px}.unsecured-suite-slide .suite-image{min-height:0}.unsecured-suite-slide .suite-prompt{overflow:visible;padding:0}.unsecured-suite-slide .suite-prompt h3{font-size:1.25rem}.unsecured-suite-slide .hotspot-section-list{grid-template-columns:repeat(3,minmax(0,1fr))}.unsecured-suite-slide .hotspot-section-list button{min-height:32px;padding:5px;font-size:.8rem}}
-</style></head>
+</style><link rel="stylesheet" href="../assets/css/fbp-shared.css">
+<script src="../assets/js/fbp-shared.js"></script>
+</head>
 <body>
 <header class="top"><img src="../assets/brand/ba-primary-logo.png" alt="British Airways"><a href="../index.html">Back to FBP</a></header>
 <section id="gate"><div class="gatebox"><p class="eyebrow">Flight Briefing Pack</p><h1>Pre-flight briefing</h1><p class="muted">If you have set up personalised SCCM expectations, please enter the last 4 digits of your work device phone number below. If you have not set up personalised SCCM expectations, please click 'Generic Briefing'.</p><form id="gateForm"><label class="field"><span class="field label">Your four-digit code</span><input id="code" type="text" inputmode="numeric" pattern="[0-9]{4}" minlength="4" maxlength="4" autocomplete="off" placeholder="" required></label><p id="error" aria-live="polite"></p><div class="gate-actions"><button class="button" type="submit">Continue</button><button id="genericBriefing" class="button secondary" type="button">Generic Briefing</button></div></form></div></section>

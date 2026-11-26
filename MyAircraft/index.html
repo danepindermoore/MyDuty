@@ -164,6 +164,7 @@
     @media (max-width:720px){.meta-grid,.grid-2,.legend{grid-template-columns:1fr 1fr}.aircraft-button-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.seat-btn{width:34px;height:34px;font-size:.95rem}}
     @media (max-width:520px){.aircraft-button-grid,.legend,.grid-2{grid-template-columns:1fr}.meta-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
   </style>
+  <script src="../assets/js/fbp-shared.js"></script>
 </head>
 <body class="fbp-theme">
   <main class="fbp-shell">
@@ -608,7 +609,7 @@ window.__toggleEquipmentChip=function(button){const expanded=button.classList.to
 document.addEventListener("DOMContentLoaded",boot);
 
   </script>
-  <script src="../assets/js/fbp-shared.js"></script>
+
   <script src="../assets/js/fbp-nav.js"></script>
   <script>
     document.querySelector(".fbp-shell").prepend(FBP.createNavigation("myAircraft"));

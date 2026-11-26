@@ -466,3 +466,10 @@ body.fbp-theme .fbp-feedback-button:hover{background:rgba(255,255,255,.12);borde
   .fbp-hero .fbp-page-heading{width:100%;min-width:0}
   .fbp-hero .fbp-toolbar{position:absolute;top:0;right:0;width:72px;align-self:auto}
 }
+
+.fbp-loading-overlay{position:fixed;inset:0;z-index:30000;display:grid;place-items:center;padding:24px;background:rgba(5,13,27,.82);backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px);color:#f7f9fc}
+.fbp-loading-overlay[hidden]{display:none}
+.fbp-loading-content{display:flex;flex-direction:column;align-items:center;gap:16px;font-size:1.05rem;font-weight:750;letter-spacing:.01em;text-align:center}
+.fbp-loading-plane{width:68px;height:68px;color:#fff;filter:drop-shadow(0 5px 16px rgba(117,184,223,.3));animation:fbp-loading-spin 1.25s linear infinite}
+@keyframes fbp-loading-spin{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.fbp-loading-plane{animation-duration:3.5s}}
