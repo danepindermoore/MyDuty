@@ -27,8 +27,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "M5L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "M2L, UD AFT Galley"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -65,8 +64,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "M5L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "M2L, UD AFT Galley"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -103,8 +101,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "M5L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "M2L, UD AFT Galley"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -141,8 +138,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "M5L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "M2L, UD AFT Galley"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -179,8 +175,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "M5L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "M2L, UD AFT Galley"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -217,8 +212,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "M5L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "M2L, UD AFT Galley"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -255,8 +249,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "M5L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "M2L, UD AFT Galley"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -293,8 +286,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "M5L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "M2L, UD AFT Galley"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -331,8 +323,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "M5L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "M2L, UD AFT Galley"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -369,8 +360,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "M5L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "M2L, UD AFT Galley"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -407,8 +397,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "M5L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "M2L, UD AFT Galley"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -457,8 +446,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "AFT Galley"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -494,8 +482,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "AFT Galley"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -531,8 +518,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "AFT Galley"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -568,8 +554,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "AFT Galley"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -605,8 +590,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "AFT Galley"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -642,8 +626,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "AFT Galley"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -679,8 +662,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "AFT Galley"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -716,8 +698,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "AFT Galley"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -753,8 +734,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "AFT Galley"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -790,8 +770,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "AFT Galley"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -827,8 +806,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "AFT Galley"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -864,8 +842,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "AFT Galley"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -901,8 +878,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "AFT Galley"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -938,8 +914,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "AFT Galley"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -975,8 +950,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "AFT Galley"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -1012,8 +986,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "AFT Galley"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -1049,8 +1022,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "AFT Galley"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -1086,8 +1058,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "AFT Galley"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -1123,8 +1094,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D2L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -1160,8 +1130,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D2L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -1197,8 +1166,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D2L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -1234,8 +1202,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D2L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -1271,8 +1238,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D2L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -1308,8 +1274,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D2L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -1345,8 +1310,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D2L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -1382,8 +1346,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D2L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -1419,8 +1382,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D2L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -1456,8 +1418,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D2L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -1493,8 +1454,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D2L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -1530,8 +1490,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D2L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -1567,8 +1526,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D2L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -1605,8 +1563,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D2L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -1643,8 +1600,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D2L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -1681,8 +1637,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D2L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -1719,8 +1674,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D2L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -1757,8 +1711,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D2L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -1795,8 +1748,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D2L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -1833,8 +1785,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D2L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -1871,8 +1822,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D2L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -1909,8 +1859,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D2L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -1947,8 +1896,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D2L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -1985,8 +1933,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D2L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -2023,8 +1970,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D2L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -2061,8 +2007,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D2L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -2099,8 +2044,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D2L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -2137,8 +2081,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D2L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -2175,8 +2118,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D2L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -2213,8 +2155,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D2L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -2251,8 +2192,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D2L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -2289,8 +2229,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D2L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -2327,8 +2266,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D2L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -2365,8 +2303,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D2L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -2403,8 +2340,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D2L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -2441,8 +2377,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D2L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -2479,8 +2414,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D2L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -2517,8 +2451,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D2L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -2555,8 +2488,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D2L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -2593,8 +2525,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D2L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -2631,8 +2562,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D2L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -2669,8 +2599,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D2L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -2707,8 +2636,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D2R"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D2L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -2745,8 +2673,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -2783,8 +2710,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -2821,8 +2747,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -2859,8 +2784,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -2897,8 +2821,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -2935,8 +2858,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -2973,8 +2895,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -3011,8 +2932,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -3049,8 +2969,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -3087,8 +3006,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -3125,8 +3043,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -3163,8 +3080,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -3201,8 +3117,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -3239,8 +3154,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -3277,8 +3191,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -3315,8 +3228,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -3353,8 +3265,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -3391,8 +3302,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -3429,8 +3339,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -3466,8 +3375,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -3503,8 +3411,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -3540,8 +3447,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -3577,8 +3483,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -3614,8 +3519,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -3651,8 +3555,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -3688,8 +3591,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -3725,8 +3627,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -3762,8 +3663,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -3799,8 +3699,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -3836,8 +3735,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -3873,8 +3771,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -3910,8 +3807,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -3948,8 +3844,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -3986,8 +3881,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -4024,8 +3918,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -4062,8 +3955,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -4100,8 +3992,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -4138,8 +4029,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -4176,8 +4066,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -4214,8 +4103,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -4252,8 +4140,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -4290,8 +4177,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -4328,8 +4214,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -4366,8 +4251,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -4404,8 +4288,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -4442,8 +4325,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -4480,8 +4362,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -4518,8 +4399,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -4555,8 +4435,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -4592,8 +4471,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -4629,8 +4507,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -4666,8 +4543,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -4703,8 +4579,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -4740,8 +4615,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -4777,8 +4651,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -4814,8 +4687,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -4851,8 +4723,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -4888,8 +4759,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -4925,8 +4795,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "D1L"
       },
       {
-        "code": "RESTRAINT",
-        "location": "D1L"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -4964,8 +4833,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "Stowage 304"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -5002,8 +4870,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "Stowage 304"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -5040,8 +4907,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "Stowage 304"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -5078,8 +4944,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "Stowage 304"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -5116,8 +4981,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "Stowage 304"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -5154,8 +5018,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "Stowage 304"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -5192,8 +5055,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "Stowage 304"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -5230,8 +5092,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "Stowage 304"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -5268,8 +5129,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "Stowage 304"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -5306,8 +5166,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "Stowage 304"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -5344,8 +5203,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "Stowage 304"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -5382,8 +5240,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "Stowage 304"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -5420,8 +5277,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "Stowage 304"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -5458,8 +5314,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "Stowage 304"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 212"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -5496,8 +5351,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "Stowage 304"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 212"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -5534,8 +5388,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "Stowage 304"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 212"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -5572,8 +5425,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "Stowage 304"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 212"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -5610,8 +5462,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "Stowage 304"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 212"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -5648,8 +5499,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "Stowage 304"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 212"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -5686,8 +5536,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "Stowage 304"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 212"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -5724,8 +5573,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Galley Cupboard"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -5762,8 +5610,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Galley Cupboard"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -5800,8 +5647,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Galley Cupboard"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -5838,8 +5684,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Galley Cupboard"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -5876,8 +5721,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Galley Cupboard"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -5914,8 +5758,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Galley Cupboard"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -5952,8 +5795,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Galley Cupboard"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -5990,8 +5832,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Galley Cupboard"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -6028,8 +5869,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Galley Cupboard"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -6066,8 +5906,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Galley Cupboard"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -6104,8 +5943,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Galley Cupboard"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -6142,8 +5980,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Galley Cupboard"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -6180,8 +6017,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Galley Cupboard"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -6218,8 +6054,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Galley Cupboard"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -6256,8 +6091,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Galley Cupboard"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -6294,8 +6128,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Galley Cupboard"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -6332,8 +6165,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Galley Cupboard"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -6370,8 +6202,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Galley Cupboard"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -6408,8 +6239,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Galley Cupboard"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -6446,8 +6276,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Galley Cupboard"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -6484,8 +6313,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Galley Cupboard"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -6522,8 +6350,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Galley Cupboard"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -6560,8 +6387,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Galley Cupboard"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -6598,8 +6424,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Galley Cupboard"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -6636,8 +6461,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Galley Cupboard"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -6674,8 +6498,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Galley Cupboard"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -6712,8 +6535,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Galley Cupboard"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -6750,8 +6572,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Galley Cupboard"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -6788,8 +6609,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Galley Cupboard"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -6826,8 +6646,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Galley Cupboard"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -6864,8 +6683,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Galley Cupboard"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -6902,8 +6720,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Galley Cupboard"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -6940,8 +6757,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Galley Cupboard"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -6978,8 +6794,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Galley Cupboard"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -7016,8 +6831,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Galley Cupboard"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -7054,8 +6868,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Galley Cupboard"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -7092,8 +6905,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Galley Cupboard"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -7130,8 +6942,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Galley Cupboard"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -7168,8 +6979,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Galley Cupboard"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -7206,8 +7016,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Galley Cupboard"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -7244,8 +7053,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Galley Cupboard"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -7282,8 +7090,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Galley Cupboard"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -7320,8 +7127,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Galley Cupboard"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -7358,8 +7164,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -7396,8 +7201,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -7434,8 +7238,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -7472,8 +7275,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -7510,8 +7312,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -7548,8 +7349,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -7586,8 +7386,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -7624,8 +7423,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -7662,8 +7460,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -7700,8 +7497,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -7738,8 +7534,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -7776,8 +7571,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -7814,8 +7608,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker DEF"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -7852,8 +7645,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker DEF"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -7890,8 +7682,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker DEF"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -7928,8 +7719,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker DEF"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -7966,8 +7756,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker DEF"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -8004,8 +7793,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker DEF"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -8042,8 +7830,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker DEF"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -8080,8 +7867,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker DEF"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -8118,8 +7904,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker DEF"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -8156,8 +7941,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker DEF"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -8194,8 +7978,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker DEF"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -8232,8 +8015,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker DEF"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -8270,8 +8052,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker DEF"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -8308,8 +8089,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker DEF"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -8346,8 +8126,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker DEF"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -8384,8 +8163,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker DEF"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -8422,8 +8200,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker DEF"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -8460,8 +8237,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker DEF"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -8498,8 +8274,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker DEF"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -8536,8 +8311,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker DEF"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -8574,8 +8348,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker DEF"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -8612,8 +8385,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker DEF"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -8650,8 +8422,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker DEF"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -8688,8 +8459,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker DEF"
       },
       {
-        "code": "RESTRAINT",
-        "location": "Stowage 211"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -8726,8 +8496,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Wardrobe"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Overhead Locker DEF"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -8764,8 +8533,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Wardrobe"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Overhead Locker DEF"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -8802,8 +8570,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Wardrobe"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Overhead Locker DEF"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -8840,8 +8607,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Wardrobe"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Overhead Locker DEF"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -8878,8 +8644,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Wardrobe"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Overhead Locker DEF"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -8916,8 +8681,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Wardrobe"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Overhead Locker DEF"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -8954,8 +8718,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Wardrobe"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Overhead Locker DEF"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -8992,8 +8755,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Wardrobe"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Overhead Locker DEF"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -9030,8 +8792,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Wardrobe"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Overhead Locker DEF"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -9068,8 +8829,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Wardrobe"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Overhead Locker DEF"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -9106,8 +8866,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Wardrobe"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Overhead Locker DEF"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -9144,8 +8903,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Overhead Locker DEF"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -9182,8 +8940,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Overhead Locker DEF"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -9220,8 +8977,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Overhead Locker DEF"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -9258,8 +9014,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Overhead Locker DEF"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -9296,8 +9051,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Overhead Locker DEF"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -9334,8 +9088,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Overhead Locker DEF"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -9372,8 +9125,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Overhead Locker DEF"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -9410,8 +9162,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Overhead Locker DEF"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -9448,8 +9199,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Overhead Locker DEF"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",
@@ -9486,8 +9236,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
         "location": "AFT Overhead Locker ABC"
       },
       {
-        "code": "RESTRAINT",
-        "location": "FWD Overhead Locker DEF"
+        "code": "RESTRAINT"
       },
       {
         "code": "FE",

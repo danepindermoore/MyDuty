@@ -28,7 +28,6 @@ EQUIPMENT_COLUMNS = (
     ("AED Location", "AED"),
     ("M5 Location", "M5"),
     ("RESUS Location", "RES"),
-    ("RESTRAINT Location", "RESTRAINT"),
     ("FE Location", "FE"),
     ("WEX Location", "WEX"),
 )
@@ -91,6 +90,8 @@ def equipment_for(row: tuple, headers: dict[str, int]) -> list[dict]:
         location = clean(value_for(row, headers, column))
         if location is not None:
             equipment.append({"code": code, "location": str(location)})
+    if clean(value_for(row, headers, "RESTRAINT Location")) is not None:
+        equipment.append({"code": "RESTRAINT"})
     return equipment
 
 

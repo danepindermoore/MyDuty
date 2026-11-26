@@ -1,3 +1,6 @@
+/* Demo marker aisle centers are cabin-specific x-coordinates in the 351 diagram viewBox.
+ * Diagram cabin colours: Gold = First, Blue = Club World, Red = World Traveller Plus, Yellow = World Traveller.
+ */
 globalThis.AOR_351 = {
   "aircraftCode": "351",
   "diagram": {
@@ -65,11 +68,11 @@ globalThis.AOR_351 = {
         153
       ],
       "12": [
-        172,
+        174,
         199
       ],
       "6": [
-        205,
+        204,
         221
       ],
       "2": [
@@ -77,15 +80,15 @@ globalThis.AOR_351 = {
         302
       ],
       "9": [
-        203,
+        204,
         302
       ],
       "3": [
-        172,
+        173,
         362
       ],
       "7": [
-        203,
+        204,
         444
       ],
       "4": [
@@ -96,6 +99,20 @@ globalThis.AOR_351 = {
         204,
         520
       ]
+    },
+    "aisleCenterCoordinates": {
+      "Club World": {
+        "left": 174,
+        "right": 204
+      },
+      "World Traveller Plus": {
+        "left": 173,
+        "right": 204
+      },
+      "World Traveller": {
+        "left": 174,
+        "right": 204
+      }
     },
     "positionPanels": {
       "1": {
@@ -321,7 +338,7 @@ globalThis.AOR_351 = {
       },
       "rest": "1st Rest",
       "additionalResponsibilities": [
-        "None"
+        "NA"
       ],
       "equipmentChecks": [
         {
@@ -403,7 +420,7 @@ globalThis.AOR_351 = {
       },
       "aor": {
         "hasAor": true,
-        "area": "FWD WTP to D3L AB side and 2 x Toilets at D3L"
+        "area": "FWD WTP to D3L AB side, 2 x Toilets at D3L"
       },
       "rest": "2nd Rest",
       "additionalResponsibilities": [
@@ -624,7 +641,7 @@ globalThis.AOR_351 = {
       },
       "aor": {
         "hasAor": true,
-        "area": "CW Galley, FCRC and 1 x Toilet AFT of the Flight Deck"
+        "area": "CW Galley, FCRC, 1 x Toilet AFT of the Flight Deck"
       },
       "rest": "2nd Rest",
       "additionalResponsibilities": [
@@ -746,7 +763,7 @@ globalThis.AOR_351 = {
       },
       "aor": {
         "hasAor": true,
-        "area": "D1R to D2R FK side and 1 x Toilet at D2R"
+        "area": "D1R to D2R FK side, 1 x Toilet at D2R"
       },
       "rest": "1st Rest",
       "additionalResponsibilities": [
@@ -861,7 +878,7 @@ globalThis.AOR_351 = {
       },
       "aor": {
         "hasAor": true,
-        "area": "FWD WTP JK side to D3R and 2 x Toilets at D3R"
+        "area": "FWD WTP JK side to D3R, 2 x Toilets at D3R"
       },
       "rest": "1st Rest",
       "additionalResponsibilities": [
@@ -967,7 +984,7 @@ globalThis.AOR_351 = {
       },
       "aor": {
         "hasAor": true,
-        "area": "WT Galley and 1 x Toilet at D4R"
+        "area": "WT Galley, 1 x Toilet at D4R"
       },
       "rest": "2nd Rest",
       "additionalResponsibilities": [
@@ -1077,7 +1094,7 @@ globalThis.AOR_351 = {
       },
       "rest": "1st Rest",
       "additionalResponsibilities": [
-        "None"
+        "NA"
       ],
       "equipmentChecks": [
         {
@@ -1153,11 +1170,11 @@ globalThis.AOR_351 = {
       },
       "aor": {
         "hasAor": true,
-        "area": "D1L to D2L and 1 x Toilet at D2L"
+        "area": "D1L to D2L, 1 x Toilet at D2L"
       },
       "rest": "2nd Rest",
       "additionalResponsibilities": [
-        "None"
+        "NA"
       ],
       "equipmentChecks": [
         {
@@ -1317,7 +1334,7 @@ globalThis.AOR_351 = {
       },
       "rest": "2nd Rest",
       "additionalResponsibilities": [
-        "None"
+        "NA"
       ],
       "equipmentChecks": [
         {

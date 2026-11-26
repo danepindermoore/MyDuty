@@ -81,8 +81,7 @@ globalThis.AIRCRAFT["38A"] = {
       "location": "M5L"
     },
     {
-      "code": "RESTRAINT",
-      "location": "M2L, UD AFT Galley"
+      "code": "RESTRAINT"
     },
     {
       "code": "FE",
@@ -211,8 +210,7 @@ globalThis.AIRCRAFT["351"] = {
       "location": "D2R"
     },
     {
-      "code": "RESTRAINT",
-      "location": "AFT Galley"
+      "code": "RESTRAINT"
     },
     {
       "code": "FE",
@@ -296,8 +294,7 @@ globalThis.AIRCRAFT["78E"] = {
       "location": "D2R"
     },
     {
-      "code": "RESTRAINT",
-      "location": "D2L"
+      "code": "RESTRAINT"
     },
     {
       "code": "FE",
@@ -384,8 +381,7 @@ globalThis.AIRCRAFT["78N"] = {
       "location": "D2R"
     },
     {
-      "code": "RESTRAINT",
-      "location": "D2L"
+      "code": "RESTRAINT"
     },
     {
       "code": "FE",
@@ -472,8 +468,7 @@ globalThis.AIRCRAFT["789"] = {
       "location": "D2R"
     },
     {
-      "code": "RESTRAINT",
-      "location": "D2L"
+      "code": "RESTRAINT"
     },
     {
       "code": "FE",
@@ -552,8 +547,7 @@ globalThis.AIRCRAFT["781"] = {
       "location": "D2R"
     },
     {
-      "code": "RESTRAINT",
-      "location": "D2L"
+      "code": "RESTRAINT"
     },
     {
       "code": "FE",
@@ -639,8 +633,7 @@ globalThis.AIRCRAFT["78Z"] = {
       "location": "D2R"
     },
     {
-      "code": "RESTRAINT",
-      "location": "D2L"
+      "code": "RESTRAINT"
     },
     {
       "code": "FE",
@@ -725,8 +718,7 @@ globalThis.AIRCRAFT["77M"] = {
       "location": "D1L"
     },
     {
-      "code": "RESTRAINT",
-      "location": "D1L"
+      "code": "RESTRAINT"
     },
     {
       "code": "FE",
@@ -817,8 +809,7 @@ globalThis.AIRCRAFT["77L"] = {
       "location": "D1L"
     },
     {
-      "code": "RESTRAINT",
-      "location": "D1L"
+      "code": "RESTRAINT"
     },
     {
       "code": "FE",
@@ -920,8 +911,7 @@ globalThis.AIRCRAFT["77H"] = {
       "location": "D1L"
     },
     {
-      "code": "RESTRAINT",
-      "location": "D1L"
+      "code": "RESTRAINT"
     },
     {
       "code": "FE",
@@ -1009,8 +999,7 @@ globalThis.AIRCRAFT["77T"] = {
       "location": "D1L"
     },
     {
-      "code": "RESTRAINT",
-      "location": "D1L"
+      "code": "RESTRAINT"
     },
     {
       "code": "FE",
@@ -1101,8 +1090,7 @@ globalThis.AIRCRAFT["77S"] = {
       "location": "D1L"
     },
     {
-      "code": "RESTRAINT",
-      "location": "D1L"
+      "code": "RESTRAINT"
     },
     {
       "code": "FE",
@@ -1186,8 +1174,7 @@ globalThis.AIRCRAFT["32R"] = {
       "location": "AFT Overhead Locker ABC"
     },
     {
-      "code": "RESTRAINT",
-      "location": "FWD Galley Cupboard"
+      "code": "RESTRAINT"
     },
     {
       "code": "FE",
@@ -1241,8 +1228,7 @@ globalThis.AIRCRAFT["32H"] = {
       "location": "AFT Overhead Locker ABC"
     },
     {
-      "code": "RESTRAINT",
-      "location": "FWD Galley Cupboard"
+      "code": "RESTRAINT"
     },
     {
       "code": "FE",
@@ -1326,8 +1312,7 @@ globalThis.AIRCRAFT["319"] = {
       "location": "AFT Wardrobe"
     },
     {
-      "code": "RESTRAINT",
-      "location": "FWD Overhead Locker DEF"
+      "code": "RESTRAINT"
     },
     {
       "code": "FE",
@@ -1381,8 +1366,7 @@ globalThis.AIRCRAFT["31C"] = {
       "location": "AFT Overhead Locker ABC"
     },
     {
-      "code": "RESTRAINT",
-      "location": "FWD Overhead Locker DEF"
+      "code": "RESTRAINT"
     },
     {
       "code": "FE",

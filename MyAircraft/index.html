@@ -22,7 +22,7 @@
       --cw:#4e86ff;
       --wtp:#ff5252;
       --wt:#f0c21a;
-      --aor-fill:rgba(200,16,46,.22);
+      --aor-fill:rgba(200,16,46,.30);
       --aor-stroke:rgba(200,16,46,.95);
       --chip-bg:rgba(117,184,223,.08);
       --chip-border:rgba(117,184,223,.22);
@@ -197,6 +197,7 @@
           <div class="subtle" id="selectorSummary" style="margin-top:14px;">Select an aircraft type to view its briefing options.</div>
         </div>
       </section>
+      <div id="aorMappingNotice" class="aor-mapping-notice" role="status" hidden>AOR mapping is not yet available for A380 or single aisle aircraft.</div>
 
       <section class="layout" hidden>
         <div class="left-stack">
@@ -208,8 +209,7 @@
               </div>
             </div>
             <div class="meta-grid" id="summaryStats"></div>
-            <div id="aorMappingNotice" class="aor-mapping-notice" role="status" hidden>AOR zoning has not yet been mapped onto this aircraft diagram. Completed aircraft = 77H and 351.</div>
-            <div class="aircraft-wrap">
+                        <div class="aircraft-wrap">
               <div class="diagram-shell">
                 <svg id="aircraftSvg" viewBox="0 0 420 980" xmlns="http://www.w3.org/2000/svg"></svg>
                 <div id="seatLayer" class="seat-layer"></div>
@@ -246,6 +246,7 @@ function initApp(){
 const pageTitle=document.getElementById("pageTitle"),pageIntro=document.getElementById("pageIntro"),aircraftButtonGrid=document.getElementById("aircraftButtonGrid"),aircraftMenuLabel=document.getElementById("aircraftMenuLabel"),aircraftMenuBack=document.getElementById("aircraftMenuBack"),aircraftHeaderTitle=document.getElementById("aircraftHeaderTitle"),aircraftHeaderSub=document.getElementById("aircraftHeaderSub"),summaryStats=document.getElementById("summaryStats"),aircraftSvg=document.getElementById("aircraftSvg"),seatLayer=document.getElementById("seatLayer"),aircraftMetaContent=document.getElementById("aircraftMetaContent"),positionContent=document.getElementById("positionContent"),positionPanel=document.getElementById("positionPanel"),selectorSummary=document.getElementById("selectorSummary"),aorCaption=document.getElementById("aorCaption"),registrationLookup=document.getElementById("registrationLookup"),registrationInput=document.getElementById("registrationInput");
 const css=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim(),ZONE_STYLES={F:{name:"First",color:css("--gold")},CW:{name:"Club World",color:css("--cw")},WTP:{name:"World Traveller Plus",color:css("--wtp")},WT:{name:"World Traveller",color:css("--wt")}};
 const clearDiagram=()=>{aircraftSvg.innerHTML="";aircraftSvg.setAttribute("viewBox","0 0 420 980");aircraftSvg.parentElement.classList.remove("image-diagram");aircraftSvg.parentElement.style.aspectRatio="";seatLayer.innerHTML="";aorCaption.textContent=""};
+const setAorMappingNotice=show=>{const notice=document.getElementById("aorMappingNotice");notice.textContent="AOR mapping is not yet available for A380 or single aisle aircraft.";notice.hidden=!show};
 const AIRCRAFT_FAMILIES=[
   {label:"A350",direct:{label:"351",code:"351"}},
   {label:"A380",options:[{label:"38A",code:"38A"},{label:"38T",code:"38T"}]},
@@ -298,11 +299,13 @@ function renderFamilyMenu(){
   updateButtons();
 }
 function renderFamilyOptions(family,parentFamily=null){
+  setAorMappingNotice(false);
   aircraftMenuLabel.textContent=`${family.label} options`;aircraftMenuBack.hidden=false;aircraftMenuBack.textContent=parentFamily?`Back to ${parentFamily.label}`:"Back to Aircraft Types";aircraftMenuBack.onclick=parentFamily?()=>renderFamilyOptions(parentFamily):returnToBriefingStart;aircraftButtonGrid.innerHTML="";
   family.options.forEach(option=>aircraftButtonGrid.appendChild(makeAircraftButton(option.label,{family,option})));
   selectorSummary.textContent="Select an aircraft configuration to load its briefing.";updateButtons();
 }
 function renderDeckOptions(code){
+  setAorMappingNotice(code==="38A");
   const family=AIRCRAFT_FAMILIES.find(item=>item.label==="A380");
   aircraftMenuLabel.textContent=`${code} deck`;aircraftMenuBack.hidden=false;aircraftMenuBack.textContent="Back to A380 options";aircraftMenuBack.onclick=()=>renderFamilyOptions(family);aircraftButtonGrid.innerHTML="";
   [{key:"MD",label:"Main Deck"},{key:"UD",label:"Upper Deck"}].forEach(deck=>{
@@ -311,6 +314,7 @@ function renderDeckOptions(code){
   selectorSummary.textContent=`Select Main Deck or Upper Deck for ${code}.`;updateButtons();
 }
 function returnToBriefingStart(){
+  setAorMappingNotice(false);
   STATE.activeCode=null;STATE.activeSelectorLabel=null;STATE.activeMeta=null;STATE.activeData=null;STATE.activePosition=null;STATE.activeDeck=null;
   registrationLookup.hidden=false;registrationInput.value="";document.getElementById("registrationMessage").textContent="Enter the last four characters to open the aircraft briefing.";document.getElementById("registrationMessage").classList.remove("error");
   document.querySelector(".briefing-shell").classList.remove("has-aircraft");
@@ -361,13 +365,35 @@ function renderConfiguredDiagram(data){
   if(defs.childElementCount)aircraftSvg.appendChild(defs);
   const aorLayer=svgEl("g",diagram.fuselageClipPath?{"clip-path":`url(#${clipId})`}:{});
   Object.entries(diagram.aorShapes||{}).forEach(([id,path])=>{
-    aorLayer.appendChild(svgEl("path",{d:path,fill:"var(--aor-fill)",stroke:"var(--aor-stroke)","stroke-width":"2",opacity:"0","data-aor-id":id}));
+    aorLayer.appendChild(svgEl("path",{d:path,fill:"var(--aor-fill)",stroke:diagram.aorOutlines?"none":"var(--aor-stroke)","stroke-width":diagram.aorOutlines?"0":String(diagram.aorStrokeWidth??2),opacity:"0","data-aor-id":id}));
+  });
+  Object.entries(diagram.aorOutlines||{}).forEach(([id,path])=>{
+    aorLayer.appendChild(svgEl("path",{d:path,fill:"none",stroke:"var(--aor-stroke)","stroke-width":String(diagram.aorOutlineWidth??2),"stroke-linejoin":"round",opacity:"0","data-aor-id":id}));
   });
   aircraftSvg.appendChild(aorLayer);
+  if(data.aircraftCode==="77M"){
+    const note=svgEl("text",{x:666,y:850,fill:"#fff","font-size":"24","font-weight":"700","font-family":"Arial, sans-serif"});
+    ["• No 5 secures First Galley","• No 3 secures WTP","• No 10 & No 11 secure","AFT CW Cabin"].forEach((line,index)=>{
+      const item=svgEl("tspan",{x:index===3?686:666,dy:index===0?0:index===3?"1.2em":"2.4em"});
+      item.textContent=line;
+      note.appendChild(item);
+    });
+    aircraftSvg.appendChild(note);
+  }
+  if(data.aircraftCode==="77S"||data.aircraftCode==="77T"){
+    const noteY=data.aircraftCode==="77S"?1740:1810;
+    const note=svgEl("text",{x:670,y:noteY,fill:"#fff","font-size":"24","font-weight":"700","font-family":"Arial, sans-serif"});
+    [["• No 8: Emergency Demo",670,0],["Only",692,"1.2em"]].forEach(([line,x,dy])=>{
+      const item=svgEl("tspan",{x,dy});
+      item.textContent=line;
+      note.appendChild(item);
+    });
+    aircraftSvg.appendChild(note);
+  }
   const demoLayer=svgEl("g",{"data-demo-layer":String(data.aircraftCode),"aria-hidden":"true"});
   const demoMarkerScale=data.aircraftCode==="351"?1:width/380;
   Object.entries(diagram.demoPoints||{}).forEach(([number,[x,y]])=>{
-    const marker=svgEl("g",{"data-demo-position":number,opacity:["351","77H","77M","77T","77L","77S","78E","78N","789","781","78Z"].includes(data.aircraftCode)?"1":"0",transform:`translate(${x} ${y})`});
+    const marker=svgEl("g",{"data-demo-position":number,opacity:["351","77H","77M","77T","77L","77S","78E","78N","789","781","78Z","38A"].includes(data.aircraftCode)?"1":"0",transform:`translate(${x} ${y})`});
     marker.appendChild(svgEl("circle",{cx:0,cy:0,r:10*demoMarkerScale,fill:"#101a2b",stroke:"#fff","stroke-width":1.5*demoMarkerScale}));
     const label=svgEl("text",{x:0,y:3.5*demoMarkerScale,"text-anchor":"middle",fill:"#fff","font-size":9*demoMarkerScale,"font-weight":"700","font-family":"Arial, sans-serif"});
     label.textContent=number;
@@ -396,8 +422,8 @@ function renderConfiguredDiagram(data){
     seatLayer.appendChild(button);
   });
 }
-function setDemoMarker(pos){const showAll=!pos&&["351","77H","77M","77T","77L","77S","78E","78N","789","781","78Z"].includes(STATE.activeData?.aircraftCode);aircraftSvg.querySelectorAll("[data-demo-position]").forEach(el=>el.setAttribute("opacity",showAll?"1":"0"))}
-function setAorOverlay(pos){aorCaption.textContent="";aircraftSvg.querySelectorAll("[data-aor-id]").forEach(el=>el.setAttribute("opacity","0"));if(!pos)return;const mappedIds=STATE.activeData?.diagram?.aorPositionIds?.[pos.number];const ids=mappedIds||(STATE.activeData?.diagram?.aorAreaIds&&pos.aor?.hasAor&&pos.aor.area?STATE.activeData.diagram.aorAreaIds[pos.aor.area]:[]);ids.forEach(id=>{const el=aircraftSvg.querySelector(`[data-aor-id="${id}"]`);if(el)el.setAttribute("opacity","1")});if(ids.length)aorCaption.textContent=mappedIds?`AOR highlighted: No. ${pos.number}`:`AOR highlighted: ${pos.aor.area}`}
+function setDemoMarker(pos){const showAll=!pos&&["351","77H","77M","77T","77L","77S","78E","78N","789","781","78Z","38A"].includes(STATE.activeData?.aircraftCode);aircraftSvg.querySelectorAll("[data-demo-position]").forEach(el=>{const visible=pos?Number(el.dataset.demoPosition)===Number(pos.number):showAll;el.setAttribute("opacity",visible?"1":"0")})}
+function setAorOverlay(pos){aorCaption.textContent="";aircraftSvg.querySelectorAll("[data-aor-id]").forEach(el=>el.setAttribute("opacity","0"));if(!pos)return;const mappedIds=STATE.activeData?.diagram?.aorPositionIds?.[pos.number];const ids=mappedIds||(STATE.activeData?.diagram?.aorAreaIds&&pos.aor?.hasAor&&pos.aor.area?STATE.activeData.diagram.aorAreaIds[pos.aor.area]:[]);ids.forEach(id=>{aircraftSvg.querySelectorAll(`[data-aor-id="${id}"]`).forEach(el=>el.setAttribute("opacity","1"))});if(ids.length)aorCaption.textContent=mappedIds?`AOR highlighted: No. ${pos.number}`:`AOR highlighted: ${pos.aor.area}`}
 const CABIN_DISPLAY_ORDER=[{code:"F",breakdownCode:"F",name:"First",seatKey:"first"},{code:"J",breakdownCode:"CW",name:"Club World",seatKey:"clubWorld"},{code:"W",breakdownCode:"WTP",name:"World Traveller Plus",seatKey:"worldTravellerPlus"},{code:"M",breakdownCode:"WT",name:"World Traveller",seatKey:"worldTraveller"},{code:"CE",breakdownCode:"CE",name:"Club Europe",seatKey:"clubEurope"},{code:"ET",breakdownCode:"ET",name:"Euro Traveller",seatKey:"euroTraveller"}];
 const REST_AREA_NAMES={OFCR:"Overhead Flight Crew Rest",OFAR:"Overhead Flight Attendant Rest",FCRC:"Flight Crew Rest Compartment",CCRC:"Cabin Crew Rest Compartment"};
 function summaryList(items,emptyText="None listed"){return items.length?`<ul class="summary-list">${items.map(item=>`<li>${esc(item)}</li>`).join("")}</ul>`:`<span>${esc(emptyText)}</span>`}
@@ -508,7 +534,7 @@ function updateSepEquipment(meta){
     return;
   }
   const equipment=matchingRecord?registrationRecord.sepEquipment:(meta.emergencyEquipmentSummary||[]);
-  const items=(equipment||[]).map(item=>`${item.code}: ${item.location}`);
+  const items=(equipment||[]).map(item=>item.code==="RESTRAINT"?"RESTRAINT: Not listed":`${item.code}: ${item.location}`);
   card.innerHTML=`<strong>SEP Equipment Summary</strong>${summaryList(items,"None listed")}`;
 }
 const DOCUNET_AOR_LINKS=Object.freeze({
@@ -544,7 +570,7 @@ function renderAircraft(meta,data){
   pageTitle.textContent="MyAircraft";
   selectorSummary.textContent=`${meta.selectorLabel} · ${meta.fullName} · ${meta.configName}`;
   aircraftHeaderTitle.textContent=`${meta.selectorLabel} · ${meta.fullName}`;
-  document.getElementById("aorMappingNotice").hidden=["77H","351"].includes(meta.airfile||meta.code);
+  const selectedCode=meta.airfile||meta.code;setAorMappingNotice(["38A","38T"].includes(selectedCode)||meta.haul==="shorthaul");
   aircraftHeaderSub.textContent=data.diagram&&Object.keys(data.diagram.positionPanels||{}).length
     ?`Select a numbered crew position to view its briefing and AOR${meta.deck?` · ${meta.deck==="MD"?"Main Deck":"Upper Deck"}`:""}`
     :data.diagram?`${meta.deck?`${meta.deck==="MD"?"Main Deck":"Upper Deck"} aircraft layout`:"Aircraft layout"}`
@@ -557,13 +583,14 @@ function renderAircraft(meta,data){
   showAllPositionsList();
 }
 function formatBullets(text){if(!text||String(text).trim()==="")return `<p>NA</p>`;const parts=String(text).split(",").map(s=>s.trim()).filter(Boolean);if(!parts.length)return `<p>NA</p>`;return `<ul>${parts.map(item=>`<li>${esc(item)}</li>`).join("")}</ul>`}
-function setActivePosition(number){const pos=(STATE.activeData?.positions||[]).find(p=>p.number===number);if(!pos)return;STATE.activePosition=pos;positionPanel.hidden=false;const hasAor=!!pos?.aor?.hasAor,doorText=pos.doorResponsibility||"NA",restText=pos.rest||"NA",serviceCabins=(pos.service?.cabin||[]).map(expandAcronym).join(" · ")||"NA";let demo=`<ul><li>Position: NA</li><li>Points out: NA</li></ul>`;if(pos.demo){const p=pos.demo.position==null?"NA":pos.demo.position,pts=pos.demo.pointsOut&&pos.demo.pointsOut.length?pos.demo.pointsOut.join(", "):"NA";demo=`<ul><li>Position: ${esc(p)}</li><li>Points out: ${esc(pts)}</li></ul>`}positionContent.innerHTML=`<div class="title-row"><div><h3 class="position-name">${esc(pos.displayTitle||`Position ${pos.number}`)}</h3><div class="subtle">${esc(pos.seating?.full||"NA")}</div></div><div class="badge">${hasAor?"AOR assigned":"No AOR"}</div></div><div class="pill-row"><div class="pill">Door: ${esc(doorText)}</div><div class="pill">Rest: ${esc(restText)}</div><div class="pill">Cabin: ${esc(serviceCabins)}</div></div><div class="section"><h3>Service Delivery</h3>${formatBullets(pos.service?.summary)}</div><div class="section"><h3>Safety Demo</h3>${demo}</div><div class="section"><h3>Area of Responsibility (AOR)</h3>${hasAor?formatBullets(pos.aor.area):"<p>NA</p>"}</div><div class="section"><h3>Additional Responsibilities</h3>${pos.additionalResponsibilities?.length?`<ul>${pos.additionalResponsibilities.map(item=>`<li>${esc(item)}</li>`).join("")}</ul>`:`<p>NA</p>`}</div><div class="section"><h3>Pre-Flight SEP Equipment Checks</h3><div class="chips">${(pos.equipmentChecks||[]).length?(pos.equipmentChecks||[]).map(item=>{const fullName=globalThis.EQUIPMENT?.[item.code]||item.code,locationName=locationTypeLabel(item.locationType),qty=item.qty&&item.qty>1?`<span class="qty">${item.qty}</span>`:"";return `<button type="button" class="equipment-chip ${esc(item.locationType||"area")}" onclick="window.__toggleEquipmentChip(this)" aria-expanded="false">${qty}<span class="code">${esc(item.code)}</span><span class="full-name">— ${esc(fullName)}</span>${locationName?`<span class="location-name">· ${esc(locationName)}</span>`:""}</button>`}).join(""):`<span>NA</span>`}</div></div>`;setAorOverlay(pos);setDemoMarker(pos);seatLayer.querySelectorAll(".seat-btn,.position-hotspot").forEach(btn=>{const active=Number(btn.dataset.position)===STATE.activePosition?.number;btn.classList.toggle("active",active);btn.setAttribute("aria-pressed",active?"true":"false")})}
+function setActivePosition(number){const pos=(STATE.activeData?.positions||[]).find(p=>p.number===number);if(!pos)return;STATE.activePosition=pos;positionPanel.hidden=false;const hasAor=!!pos?.aor?.hasAor,doorText=pos.doorResponsibility||"NA",restText=pos.rest||"NA",serviceCabins=(pos.service?.cabin||[]).map(expandAcronym).join(" · ")||"NA";let demo=`<ul><li>Position: NA</li><li>Points out: NA</li></ul>`;if(pos.demo){const p=pos.demo.position==null?"NA":pos.demo.position,pts=pos.demo.pointsOut&&pos.demo.pointsOut.length?pos.demo.pointsOut.join(", "):"NA";demo=`<ul><li>Position: ${esc(p)}</li><li>Points out: ${esc(pts)}</li></ul>`}positionContent.innerHTML=`<div class="title-row"><div><h3 class="position-name">${esc(pos.displayTitle||`Position ${pos.number}`)}</h3><div class="subtle">${esc(pos.seating?.full||"NA")}</div></div><div class="badge">${hasAor?"AOR assigned":"No AOR"}</div></div><div class="pill-row"><div class="pill">Door: ${esc(doorText)}</div><div class="pill">Rest: ${esc(restText)}</div><div class="pill">Cabin: ${esc(serviceCabins)}</div></div><div class="section"><h3>Service Delivery</h3>${formatBullets(pos.service?.summary)}</div><div class="section"><h3>Safety Demo</h3>${demo}</div><div class="section"><h3>Area of Responsibility (AOR)</h3>${hasAor?formatBullets(pos.aor.area):"<p>NA</p>"}</div><div class="section"><h3>Additional Responsibilities</h3>${pos.additionalResponsibilities?.length?`<ul>${pos.additionalResponsibilities.map(item=>`<li>${esc(item)}</li>`).join("")}</ul>`:`<p>NA</p>`}</div><div class="section"><h3>Pre-Flight SEP Equipment Checks</h3><div class="chips">${(pos.equipmentChecks||[]).length?(pos.equipmentChecks||[]).map(item=>{const fullName=globalThis.EQUIPMENT?.[item.code]||item.code,locationName=["RK","RESTRAINT"].includes(String(item.code).toUpperCase())?"":locationTypeLabel(item.locationType),qty=item.qty&&item.qty>1?`<span class="qty">${item.qty}</span>`:"";return `<button type="button" class="equipment-chip ${esc(item.locationType||"area")}" onclick="window.__toggleEquipmentChip(this)" aria-expanded="false">${qty}<span class="code">${esc(item.code)}</span><span class="full-name">— ${esc(fullName)}</span>${locationName?`<span class="location-name">· ${esc(locationName)}</span>`:""}</button>`}).join(""):`<span>NA</span>`}</div></div>`;setAorOverlay(pos);setDemoMarker(pos);seatLayer.querySelectorAll(".seat-btn,.position-hotspot").forEach(btn=>{const active=Number(btn.dataset.position)===STATE.activePosition?.number;btn.classList.toggle("active",active);btn.setAttribute("aria-pressed",active?"true":"false")})}
 function showAllPositionsList(){if(!STATE.activeData)return;STATE.activePosition=null;positionPanel.hidden=true;setAorOverlay(null);setDemoMarker(null);seatLayer.querySelectorAll(".seat-btn,.position-hotspot").forEach(btn=>{btn.classList.remove("active");btn.setAttribute("aria-pressed","false")})}
  async function selectAircraft(code,displayLabel=null,deck=null,registration=null){if(code==="78Z"&&!registration){const matches=Object.values(globalThis.AIRCRAFT_REGISTRATIONS||{}).filter(item=>item.airfile===code);if(matches.length===1)registration=matches[0].registration}document.getElementById("aorMappingNotice").hidden=true;setRegistrationExample(code);
 const baseMeta=globalThis.AIRCRAFT[code];let meta=baseMeta?(displayLabel?{...baseMeta,selectorLabel:displayLabel,selectorSubLabel:`${displayLabel} · ${baseMeta.fullName}`}:baseMeta):{code,selectorLabel:displayLabel||code,selectorSubLabel:`${displayLabel||code} · Details pending`,fullName:`B787 (${code})`,configName:"Configuration pending",manufacturer:"Boeing",classes:[],includesRestFacilities:null,dataPath:`data/aircraft/${code}.js`};
 if(deck)meta={...meta,deck,selectorSubLabel:`${meta.selectorSubLabel} · ${deck==="MD"?"Main Deck":"Upper Deck"}`};
 STATE.activeCode=code;STATE.activeDeck=deck;STATE.activeSelectorLabel=deck?`${code} ${deck}`:meta.selectorLabel||code;STATE.activeMeta=meta;STATE.activeData=null;STATE.activePosition=null;updateButtons();
 if(code==="38T"){
+ setAorMappingNotice(true);
  document.querySelector(".briefing-shell").classList.add("has-aircraft");document.querySelector(".hero-copy").hidden=false;document.querySelector(".layout").hidden=true;registrationLookup.hidden=false;registrationInput.value=registration||"";
  pageTitle.textContent="MyAircraft";pageIntro.textContent="The 38T aircraft layout and briefing details are coming soon.";aircraftHeaderTitle.textContent="38T · A380-841";aircraftHeaderSub.textContent="Coming Soon!";selectorSummary.textContent="Detailed 38T briefing information will be added later.";if(registration)document.getElementById("registrationMessage").textContent=`G-${registration} identified · 38T briefing coming soon.`;syncUrl(code);return;
 }
