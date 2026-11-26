@@ -85,7 +85,7 @@
     .aircraft-summary-sep-group{margin-top:12px}
     .aircraft-summary-sep-group-title{display:block;margin-bottom:2px;font-size:.9rem}
     .sep-equipment-locations{display:grid;gap:2px;text-align:right}
-    @media(max-width:520px){.aircraft-summary-details .aircraft-detail-row{grid-template-columns:1fr;gap:3px}.aircraft-summary-details dd{text-align:left}}
+    @media(max-width:520px){.aircraft-summary-details .aircraft-detail-row{grid-template-columns:1fr;gap:3px}.aircraft-summary-details dd,.sep-equipment-locations{text-align:left}}
     #registrationNotes:empty{display:none}
     #registrationNotes:not(:empty){margin-bottom:12px}
     .summary-sep-equipment{grid-column:1/-1}
@@ -202,7 +202,7 @@
           <div class="aircraft-choice-controls">
             <select id="aircraftFamilySelect" class="aircraft-select" aria-label="Choose an aircraft family"><option value="">Choose a family…</option></select>
             <div id="registrationLookup" class="registration-lookup">
-            <div class="registration-entry"><span class="registration-prefix" aria-hidden="true">G-</span><input id="registrationInput" type="text" inputmode="text" autocomplete="off" maxlength="4" pattern="[A-Za-z0-9]{4}" aria-describedby="registrationMessage" placeholder="e.g. ZBXA" /></div>
+            <div class="registration-entry"><span class="registration-prefix" aria-hidden="true">G-</span><input id="registrationInput" type="text" inputmode="text" autocomplete="off" maxlength="4" pattern="[A-Za-z0-9]{4}" aria-describedby="registrationMessage" placeholder="ZBXA" /></div>
             <div class="registration-message" id="registrationMessage" aria-live="polite"></div>
             </div>
           </div>
@@ -499,7 +499,7 @@ function renderAircraftSummary(meta,data){
       ["Livery",detailValue(registrationValue("livery"))]
     ];
   }
-  const detailRows=values.filter(([,value])=>value!==null&&value!==undefined&&value!=="").map(([label,value])=>`<div class="aircraft-detail-row"><dt>${esc(label)}</dt><dd>${esc(String(value))}</dd></div>`).join("");
+  const detailRows=values.filter(([label,value])=>value!==null&&value!==undefined&&value!==""&&(matching||label!=="Registration")&&!(typeof value==="string"&&value.trim().toLowerCase()==="varies by registration"&&!matching)).map(([label,value])=>`<div class="aircraft-detail-row"><dt>${esc(label)}</dt><dd>${esc(String(value))}</dd></div>`).join("");
   const sepLocation=value=>{const locations=String(value||"Not listed").split(/\s*,\s*/).filter(Boolean);return locations.length>1?`<div class="sep-equipment-locations">${locations.map(location=>`<div>${esc(location)}</div>`).join("")}</div>`:esc(locations[0]||"Not listed")};
   const sepRows=equipmentGroups.map(group=>`<section class="aircraft-summary-sep-group"><strong class="aircraft-summary-sep-group-title">${esc(group.title)}</strong><dl class="aircraft-summary-details">${group.items.map(([label,aliases])=>{const item=equipment.find(entry=>aliases.includes(String(entry.code).toUpperCase()));return `<div class="aircraft-detail-row"><dt>${esc(label)}</dt><dd>${sepLocation(item?.location)}</dd></div>`}).join("")}</dl></section>`).join("");
   const error=registrationInput.value.trim()&&!matching?`<p class="summary-registration-error">${record?"This registration belongs to a different aircraft type.":"Registration not found in the fleet data."}</p>`:"";
