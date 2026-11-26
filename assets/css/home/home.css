@@ -98,5 +98,13 @@ body.fbp-theme .tool-card:hover { transform: translateY(-3px); border-color: rgb
 .ticker-calendar-link:focus-visible{outline:3px solid var(--brand-sky);outline-offset:2px}
 .ticker-calendar-link svg{width:23px;height:23px;flex:0 0 auto}
 @keyframes important-date-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-@media (max-width:560px){.important-dates-ticker{gap:8px;min-height:52px;padding:7px 8px 7px 12px}.ticker-event{gap:6px;padding:0 13px;font-size:.82rem}.ticker-event::after{margin-left:8px}.ticker-calendar-link{min-width:0;height:38px;padding:0 10px;gap:6px;font-size:.74rem}.ticker-calendar-link svg{width:20px;height:20px}}
+@media (max-width:560px){.important-dates-ticker{gap:8px;min-height:52px;padding:7px 8px 7px 12px}.ticker-event{gap:6px;padding:0 13px;font-size:.82rem}.ticker-event::after{margin-left:8px}.ticker-calendar-link{min-width:38px;width:38px;height:38px;padding:0;gap:0;font-size:.74rem}.ticker-calendar-link span{display:none}.ticker-calendar-link svg{width:20px;height:20px}}
 @media (prefers-reduced-motion:reduce){.ticker-track{animation:none!important}.ticker-window{overflow-x:auto}}
+@media (max-width:560px){
+  .fbp-hero .fbp-topbar{position:relative;gap:0}
+  .fbp-hero .fbp-toolbar{position:absolute;top:0;right:0;width:auto;align-self:auto}
+  body.fbp-theme .home-feedback{width:72px;min-height:68px;padding:7px 5px;display:flex;flex-direction:column-reverse;justify-content:center;gap:5px;border-radius:14px;font-size:.68rem;line-height:1}
+  .home-feedback .feedback-label span:first-child{display:none}
+  .home-feedback .feedback-label span:last-child{display:block}
+  .home-feedback .feedback-arrow{font-size:1.45rem;line-height:.9}
+}
