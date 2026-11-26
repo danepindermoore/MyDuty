@@ -10,54 +10,6 @@ globalThis.AOR_351 = {
       "height": 818
     },
     "fuselageClipPath": "M190 10 C180 18 172 34 167 58 L157 102 Q153 116 153 136 V684 Q153 728 173 746 Q181 752 190 753 Q199 752 207 746 Q227 728 227 684 V136 Q227 116 223 102 L213 58 C208 34 200 18 190 10 Z",
-    "aorAreaIds": {
-      "Club Kitchen / D2L to AFT CW Cabin AE side": [
-        "cw-left-aft"
-      ],
-      "FWD WTP to D3L AB side and 2 x Toilets at D3L": [
-        "wtp-left",
-        "wt-left-forward"
-      ],
-      "D3L to D4L ABC side, CCRC and 1 x Toilet at D4L": [
-        "wt-left"
-      ],
-      "CW Galley, FCRC and 1 x Toilet AFT of the Flight Deck": [
-        "front-galley"
-      ],
-      "D1R to D2R FK side and 1 x Toilet at D2R": [
-        "cw-right-full"
-      ],
-      "FWD WTP JK side to D3R and 2 x Toilets at D3R": [
-        "wtp-right",
-        "wt-right-forward"
-      ],
-      "WT Galley and 1 x Toilet at D4R": [
-        "aft-galley"
-      ],
-      "D2R to AFT CW cabin FK side": [
-        "cw-right-aft"
-      ],
-      "D1L to D2L and 1 x Toilet at D2L": [
-        "cw-left-forward"
-      ],
-      "D3R to D4R": [
-        "wt-right"
-      ]
-    },
-    "aorShapes": {
-      "front-galley": "M165 67 Q158 82 154 118 L226 118 Q222 82 215 67 Z",
-      "cw-left-forward": "M156 116 C154 156 152 218 153 266 L173 268 L174 279 Q181 282 188 280 L189 117 Z",
-      "cw-right-full": "M189 117 L189 266 L190 280 Q197 282 204 279 L204 268 L224 266 C225 218 223 156 222 116 Z",
-      "cw-left-aft": "M153 267 L173 269 L174 280 Q181 283 188 281 L189 342 L158 342 Q154 339 153 329 Z",
-      "cw-right-aft": "M204 267 L224 267 C225 292 225 320 225 342 L189 342 L189 281 Q197 283 203 280 Z",
-      "wtp-left": "M154 342 C153 369 153 405 154 432 L187.5 432 L187.5 342 Z",
-      "wtp-right": "M187.5 342 L187.5 432 L226 432 C227 405 227 369 226 342 Z",
-      "wt-left-forward": "M154 432 C154 458 154 484 155 508 L187.5 508 L187.5 432 Z",
-      "wt-right-forward": "M187.5 432 L187.5 508 L225 508 C226 484 226 458 226 432 Z",
-      "wt-left": "M153 508 L190 508 L190 678 Q190 684 184 688 L166 689 L181 689 L181 700 Q181 708 170 714 L170 725 Q170 728 166 728 Q161 728 160 724 L157 713 Q157 708 155 704 L153 689 Z",
-      "wt-right": "M187.5 508 L187.5 689 L221 689 C225 635 225 559 225 508 Z",
-      "aft-galley": "M181 689 L198 689 L198 684 Q198 679 202 679 L212 679 Q216 679 216 684 L216 689 Q220 711 210 731 Q203 742 190 742 Q177 742 170 731 L170 714 Q181 708 181 700 Z"
-    },
     "demoPoints": {
       "10": [
         174,
@@ -1049,11 +1001,6 @@ globalThis.AOR_351 = {
         {
           "code": "MP",
           "qty": 1,
-          "locationType": "area"
-        },
-        {
-          "code": "RK",
-          "qty": 2,
           "locationType": "area"
         },
         {

@@ -81,6 +81,9 @@
     .aircraft-summary-details dt{color:var(--muted)}
     .aircraft-summary-details dd{margin:0;text-align:right;overflow-wrap:anywhere}
     .aircraft-summary-sep-title{display:block;margin-top:20px;padding-top:16px;border-top:1px solid var(--line-2)}
+    .aircraft-summary-sep-group{margin-top:12px}
+    .aircraft-summary-sep-group-title{display:block;margin-bottom:2px;font-size:.9rem}
+    .sep-equipment-locations{display:grid;gap:2px;text-align:right}
     @media(max-width:520px){.aircraft-summary-details .aircraft-detail-row{grid-template-columns:1fr;gap:3px}.aircraft-summary-details dd{text-align:left}}
     #registrationNotes:empty{display:none}
     #registrationNotes:not(:empty){margin-bottom:12px}
@@ -441,18 +444,10 @@ function renderAircraftSummary(meta,data){
   const detailValue=value=>value===null||value===undefined||value===""?"Not listed":value;
   const restName=value=>value?REST_AREA_NAMES[value]||value:"Not listed";
   const equipment=matching?.sepEquipment||meta.emergencyEquipmentSummary||[];
-  const equipmentLabel=[
-    ["AED","AED (Defibrillator)",["AED"]],
-    ["M5","M5 Medical Kit",["M5"]],
-    ["RES","Resuscitation Kit",["RES"]],
-    ["RESTRAINT","Restraint Kit",["RESTRAINT","RK"]],
-    ["FE","Fire Extinguishers",["FE"]],
-    ["WEX","Water Extinguishers",["WEX"]]
+  const equipmentGroups=[
+    {title:"Medical",items:[["AED (Defibrillator)",["AED"]],["M5 Medical Kit",["M5"]],["Resus Kit",["RES"]]]},
+    {title:"SFF",items:[["Fire Extinguishers",["FE"]],["Water Extinguishers",["WEX"]]]}
   ];
-  const equipmentRows=equipmentLabel.map(([code,label,aliases])=>{
-    const item=equipment.find(entry=>aliases.includes(String(entry.code).toUpperCase()));
-    return [label,item?.location||"Not listed"];
-  });
   let values;
   let sectionTitle;
   if(meta.haul==="shorthaul"){
@@ -460,7 +455,7 @@ function renderAircraftSummary(meta,data){
     const newSeat=registrationValue("newShorthaulSeat"),xlBins=registrationValue("xlOverheadBins");
     values=[
       ["Registration",matching?.registration||"Not entered"],
-      ["Short Name",detailValue(meta.shortName)],
+      ["Short Name",detailValue(registrationValue("shortName"))],
       ["Total Crew Seats",detailValue(crew.totalCrewSeats)],
       ["Standard Crew Compliment",detailValue(crew.standardCrewCompliment)],
       ["Legal Minimum Crew",detailValue(crew.legalMinimum)],
@@ -478,7 +473,7 @@ function renderAircraftSummary(meta,data){
     const clubWorldProduct=registrationValue("clubWorldProduct");
     values=[
       ["Registration",matching?.registration||"Not entered"],
-      ["Short Name",detailValue(meta.shortName)],
+      ["Short Name",detailValue(registrationValue("shortName"))],
       ["Total Crew Seats",detailValue(crew.totalCrewSeats)],
       ["Standard Crew Compliment",detailValue(crew.standardCrewCompliment)],
       ["Legal Minimum Crew",detailValue(crew.legalMinimum)],
@@ -495,7 +490,8 @@ function renderAircraftSummary(meta,data){
     ];
   }
   const detailRows=values.filter(([,value])=>value!==null&&value!==undefined&&value!=="").map(([label,value])=>`<div class="aircraft-detail-row"><dt>${esc(label)}</dt><dd>${esc(String(value))}</dd></div>`).join("");
-  const sepRows=equipmentRows.map(([label,value])=>`<div class="aircraft-detail-row"><dt>${esc(label)}</dt><dd>${esc(value)}</dd></div>`).join("");
+  const sepLocation=value=>{const locations=String(value||"Not listed").split(/\s*,\s*/).filter(Boolean);return locations.length>1?`<div class="sep-equipment-locations">${locations.map(location=>`<div>${esc(location)}</div>`).join("")}</div>`:esc(locations[0]||"Not listed")};
+  const sepRows=equipmentGroups.map(group=>`<section class="aircraft-summary-sep-group"><strong class="aircraft-summary-sep-group-title">${esc(group.title)}</strong><dl class="aircraft-summary-details">${group.items.map(([label,aliases])=>{const item=equipment.find(entry=>aliases.includes(String(entry.code).toUpperCase()));return `<div class="aircraft-detail-row"><dt>${esc(label)}</dt><dd>${sepLocation(item?.location)}</dd></div>`}).join("")}</dl></section>`).join("");
   const error=registrationInput.value.trim()&&!matching?`<p class="summary-registration-error">${record?"This registration belongs to a different aircraft type.":"Registration not found in the fleet data."}</p>`:"";
   aircraftMetaContent.innerHTML=`${error}<div class="small-card aircraft-summary-list"><strong>${sectionTitle}</strong><dl class="aircraft-summary-details">${detailRows}</dl><strong class="aircraft-summary-sep-title">SEP Equipment</strong><dl class="aircraft-summary-details">${sepRows}</dl></div>`;
 }
@@ -534,7 +530,7 @@ function updateSepEquipment(meta){
     return;
   }
   const equipment=matchingRecord?registrationRecord.sepEquipment:(meta.emergencyEquipmentSummary||[]);
-  const items=(equipment||[]).map(item=>item.code==="RESTRAINT"?"RESTRAINT: Not listed":`${item.code}: ${item.location}`);
+  const items=(equipment||[]).filter(item=>!["RESTRAINT","RK"].includes(String(item.code).toUpperCase())).map(item=>`${item.code}: ${item.location}`);
   card.innerHTML=`<strong>SEP Equipment Summary</strong>${summaryList(items,"None listed")}`;
 }
 const DOCUNET_AOR_LINKS=Object.freeze({

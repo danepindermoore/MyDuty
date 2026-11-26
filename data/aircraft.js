@@ -87,9 +87,6 @@ globalThis.AIRCRAFT["38A"] = {
     {
       "code": "WEX",
       "location": "M1L, U3L"
-    },
-    {
-      "code": "RESTRAINT"
     }
   ],
   "registrationRequiredForEquipment": false,
@@ -216,9 +213,6 @@ globalThis.AIRCRAFT["351"] = {
     {
       "code": "WEX",
       "location": "D2R, D3R"
-    },
-    {
-      "code": "RESTRAINT"
     }
   ],
   "registrationRequiredForEquipment": false,
@@ -235,7 +229,7 @@ globalThis.AIRCRAFT["78E"] = {
   "airfile": "78E",
   "haul": "longhaul",
   "fullName": "B787-8",
-  "shortName": "B787",
+  "shortName": "B787-8",
   "family": "B787",
   "variant": "B787-8",
   "manufacturer": "Boeing",
@@ -300,9 +294,6 @@ globalThis.AIRCRAFT["78E"] = {
     {
       "code": "WEX",
       "location": "D1L, D4L"
-    },
-    {
-      "code": "RESTRAINT"
     }
   ],
   "registrationRequiredForEquipment": false,
@@ -319,7 +310,7 @@ globalThis.AIRCRAFT["78N"] = {
   "airfile": "78N",
   "haul": "longhaul",
   "fullName": "B787-9",
-  "shortName": "B787",
+  "shortName": "B787-9",
   "family": "B787",
   "variant": "B787-9",
   "manufacturer": "Boeing",
@@ -387,9 +378,6 @@ globalThis.AIRCRAFT["78N"] = {
     {
       "code": "WEX",
       "location": "D1L, D4L"
-    },
-    {
-      "code": "RESTRAINT"
     }
   ],
   "registrationRequiredForEquipment": false,
@@ -406,7 +394,7 @@ globalThis.AIRCRAFT["789"] = {
   "airfile": "789",
   "haul": "longhaul",
   "fullName": "B787-9",
-  "shortName": "B787",
+  "shortName": "B787-9",
   "family": "B787",
   "variant": "B787-9",
   "manufacturer": "Boeing",
@@ -474,9 +462,6 @@ globalThis.AIRCRAFT["789"] = {
     {
       "code": "WEX",
       "location": "D1L, D4L"
-    },
-    {
-      "code": "RESTRAINT"
     }
   ],
   "registrationRequiredForEquipment": false,
@@ -493,7 +478,7 @@ globalThis.AIRCRAFT["781"] = {
   "airfile": "781",
   "haul": "longhaul",
   "fullName": "B787-10",
-  "shortName": "B787",
+  "shortName": "B787-10",
   "family": "B787",
   "variant": "B787-10",
   "manufacturer": "Boeing",
@@ -553,9 +538,6 @@ globalThis.AIRCRAFT["781"] = {
     {
       "code": "WEX",
       "location": "D1L, D4L"
-    },
-    {
-      "code": "RESTRAINT"
     }
   ],
   "registrationRequiredForEquipment": false,
@@ -572,7 +554,7 @@ globalThis.AIRCRAFT["78Z"] = {
   "airfile": "78Z",
   "haul": "longhaul",
   "fullName": "B787-10",
-  "shortName": "B787",
+  "shortName": "B787-10",
   "family": "B787",
   "variant": "B787-10",
   "manufacturer": "Boeing",
@@ -639,9 +621,6 @@ globalThis.AIRCRAFT["78Z"] = {
     {
       "code": "WEX",
       "location": "D1L, D4L"
-    },
-    {
-      "code": "RESTRAINT"
     }
   ],
   "registrationRequiredForEquipment": false,
@@ -658,7 +637,7 @@ globalThis.AIRCRAFT["77M"] = {
   "airfile": "77M",
   "haul": "longhaul",
   "fullName": "B777-236B",
-  "shortName": "B777",
+  "shortName": "B777-200",
   "family": "B777",
   "variant": "B777-236B",
   "manufacturer": "Boeing",
@@ -724,9 +703,6 @@ globalThis.AIRCRAFT["77M"] = {
     {
       "code": "WEX",
       "location": "D1L, D4R"
-    },
-    {
-      "code": "RESTRAINT"
     }
   ],
   "registrationRequiredForEquipment": false,
@@ -743,7 +719,7 @@ globalThis.AIRCRAFT["77L"] = {
   "airfile": "77L",
   "haul": "longhaul",
   "fullName": "B777-236 (ER)",
-  "shortName": "B777",
+  "shortName": "B777-200",
   "family": "B777",
   "variant": "B777-236 (ER)",
   "manufacturer": "Boeing",
@@ -815,9 +791,6 @@ globalThis.AIRCRAFT["77L"] = {
     {
       "code": "WEX",
       "location": "D1L, D4R"
-    },
-    {
-      "code": "RESTRAINT"
     }
   ],
   "registrationRequiredForEquipment": false,
@@ -834,7 +807,7 @@ globalThis.AIRCRAFT["77H"] = {
   "airfile": "77H",
   "haul": "longhaul",
   "fullName": "B777-336 (ER)",
-  "shortName": "B777",
+  "shortName": "B777-300",
   "family": "B777",
   "variant": "B777-336 (ER)",
   "manufacturer": "Boeing",
@@ -917,9 +890,6 @@ globalThis.AIRCRAFT["77H"] = {
     {
       "code": "WEX",
       "location": "D1L, D4R"
-    },
-    {
-      "code": "RESTRAINT"
     }
   ],
   "registrationRequiredForEquipment": false,
@@ -936,7 +906,7 @@ globalThis.AIRCRAFT["77T"] = {
   "airfile": "77T",
   "haul": "longhaul",
   "fullName": "B777-236B",
-  "shortName": "B777",
+  "shortName": "B777-200",
   "family": "B777",
   "variant": "B777-236B",
   "manufacturer": "Boeing",
@@ -1005,9 +975,6 @@ globalThis.AIRCRAFT["77T"] = {
     {
       "code": "WEX",
       "location": "D1L, D4R"
-    },
-    {
-      "code": "RESTRAINT"
     }
   ],
   "registrationRequiredForEquipment": false,
@@ -1024,7 +991,7 @@ globalThis.AIRCRAFT["77S"] = {
   "airfile": "77S",
   "haul": "longhaul",
   "fullName": "B777-236 (ER)",
-  "shortName": "B777",
+  "shortName": "B777-200",
   "family": "B777",
   "variant": "B777-236 (ER)",
   "manufacturer": "Boeing",
@@ -1096,9 +1063,6 @@ globalThis.AIRCRAFT["77S"] = {
     {
       "code": "WEX",
       "location": "D1L, D4R"
-    },
-    {
-      "code": "RESTRAINT"
     }
   ],
   "registrationRequiredForEquipment": false,
@@ -1180,9 +1144,6 @@ globalThis.AIRCRAFT["32R"] = {
     {
       "code": "WEX",
       "location": "AFT Galley Bulkhead"
-    },
-    {
-      "code": "RESTRAINT"
     }
   ],
   "registrationRequiredForEquipment": false,
@@ -1234,9 +1195,6 @@ globalThis.AIRCRAFT["32H"] = {
     {
       "code": "WEX",
       "location": "AFT Galley Bulkhead"
-    },
-    {
-      "code": "RESTRAINT"
     }
   ],
   "registrationRequiredForEquipment": false,
@@ -1318,9 +1276,6 @@ globalThis.AIRCRAFT["319"] = {
     {
       "code": "WEX",
       "location": "Stowage beside No 3 Crew Seat"
-    },
-    {
-      "code": "RESTRAINT"
     }
   ],
   "registrationRequiredForEquipment": false,
@@ -1372,9 +1327,6 @@ globalThis.AIRCRAFT["31C"] = {
     {
       "code": "WEX",
       "location": "No 2 (Direct View) Crew Seat"
-    },
-    {
-      "code": "RESTRAINT"
     }
   ],
   "registrationRequiredForEquipment": false,

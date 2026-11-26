@@ -30,6 +30,7 @@ EQUIPMENT_COLUMNS = (
     ("RESUS Location", "RES"),
     ("FE Location", "FE"),
     ("WEX Location", "WEX"),
+    ("PED Power Location", "PED"),
 )
 
 
@@ -90,8 +91,6 @@ def equipment_for(row: tuple, headers: dict[str, int]) -> list[dict]:
         location = clean(value_for(row, headers, column))
         if location is not None:
             equipment.append({"code": code, "location": str(location)})
-    if clean(value_for(row, headers, "RESTRAINT Location")) is not None:
-        equipment.append({"code": "RESTRAINT"})
     return equipment
 
 
@@ -165,6 +164,7 @@ def read_workbook(workbook_path: Path) -> tuple[dict[str, dict], dict[str, list[
                 "haul": haul,
                 "baseSection": clean(value_for(row, headers, "Base / section")),
                 "airfile": airfile,
+                "shortName": clean(value_for(row, headers, "Short Name")),
                 "wifiType": clean(value_for(row, headers, "Wi-Fi Type")),
                 "livery": clean(value_for(row, headers, "Livery")),
                 "newShorthaulSeat": yes_no(value_for(row, headers, "New SH seat")),
@@ -194,6 +194,7 @@ def read_workbook(workbook_path: Path) -> tuple[dict[str, dict], dict[str, list[
         variant = str(clean(value_for(row, headers, "Aircraft / variant")) or airfile)
         family_match = re.search(r"[AB]\d{3}", variant.upper())
         family = family_match.group(0) if family_match else variant
+        short_name = next((str(clean(value_for(item, headers, "Short Name"))) for item in type_rows if clean(value_for(item, headers, "Short Name")) is not None), family)
         manufacturer = str(clean(value_for(row, headers, "Manufacturer")) or ("Airbus" if family.startswith("A") else "Boeing"))
         equipment_by_registration = [equipment_for(item, headers) for item in type_rows]
         equipment_signatures = {json.dumps(items, sort_keys=True) for items in equipment_by_registration}
@@ -225,7 +226,7 @@ def read_workbook(workbook_path: Path) -> tuple[dict[str, dict], dict[str, list[
                 }
                 crew = {key: value for key, value in crew.items() if value is not None}
             summary = {
-                "airfile": airfile, "variant": variant, "family": family, "manufacturer": manufacturer,
+                "airfile": airfile, "variant": variant, "family": family, "shortName": short_name, "manufacturer": manufacturer,
                 "configName": clean(value_for(row, headers, "Configuration")) or f"{len(classes)} Class",
                 "classCount": len(classes), "classes": classes, "seatBreakdown": breakdown,
                 "boardingSupportPosition": boarding_support_position,
@@ -242,7 +243,7 @@ def read_workbook(workbook_path: Path) -> tuple[dict[str, dict], dict[str, list[
             cabin_values = str(clean(value_for(row, headers, "Cabin Codes")) or "J, M").replace(" ", "").split(",")
             classes = [code for code in cabin_values if code in {"F", "J", "W", "M"}]
             summary = {
-                "airfile": airfile, "variant": variant, "family": family, "manufacturer": manufacturer,
+                "airfile": airfile, "variant": variant, "family": family, "shortName": short_name, "manufacturer": manufacturer,
                 "configName": clean(value_for(row, headers, "Configuration")) or "Shorthaul",
                 "classCount": len(classes), "classes": classes, "seatBreakdown": None,
                 "boardingSupportPosition": boarding_support_position,
@@ -271,7 +272,7 @@ def update_aircraft_file(project_root: Path, summaries: dict[str, list[dict]]) -
             selector_sub = f'{summary["variant"]} · {summary["configName"]}' if haul == "longhaul" else f'{summary["variant"]} · {summary["totalSeats"]} seats'
             generated = {
                 "code": "SH Airbus" if haul == "shorthaul" and summary["manufacturer"] == "Airbus" else code,
-                "airfile": code, "haul": haul, "fullName": summary["variant"], "shortName": summary["family"],
+                "airfile": code, "haul": haul, "fullName": summary["variant"], "shortName": summary["shortName"],
                 "family": summary["family"], "variant": summary["variant"], "manufacturer": summary["manufacturer"],
                 "configName": summary["configName"], "classCount": summary["classCount"], "classes": summary["classes"],
                 "includesRestFacilities": summary["includesRestFacilities"], "restTypes": summary["restTypes"],

@@ -21,7 +21,6 @@ globalThis.EQUIPMENT = {
   PO: "Portable Oxygen",
   PRM: "PRM Handle",
   RES: "Resuscitation Kit",
-  RK: "Restraint Kit",
   SP: "Survival Pack",
   TO: "Therapeutic Oxygen",
   WCH: "Wheelchair",

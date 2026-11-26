@@ -175,11 +175,6 @@ globalThis.AOR_78E = {
           "locationType": "seat"
         },
         {
-          "code": "RK",
-          "qty": 2,
-          "locationType": "area"
-        },
-        {
           "code": "DEM",
           "qty": 1,
           "locationType": "area"

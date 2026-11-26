@@ -98,11 +98,6 @@ globalThis.AOR_77H = {
           "locationType": "area"
         },
         {
-          "code": "RK",
-          "qty": 1,
-          "locationType": "area"
-        },
-        {
           "code": "M5",
           "qty": 1,
           "locationType": "area"
@@ -1221,11 +1216,6 @@ globalThis.AOR_77H = {
           "code": "DDC",
           "qty": 1,
           "locationType": "seat"
-        },
-        {
-          "code": "RK",
-          "qty": 2,
-          "locationType": "area"
         }
       ]
     },

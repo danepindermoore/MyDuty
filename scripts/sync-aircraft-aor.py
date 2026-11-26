@@ -47,6 +47,7 @@ def equipment(v,loc):
     for item in split_list(v):
         m=re.match(r"^(\d+)\s+(.+)$",item)
         qty,code=(int(m.group(1)),m.group(2).strip()) if m else (1,item)
+        if re.sub(r"[^a-z]", "", code.casefold()) in {"rk", "restraint", "restraintkit", "restraintkits"}: continue
         out.append({"code":code,"qty":qty,"locationType":loc})
     return out
 def read_obj(path):
