@@ -23,6 +23,7 @@
         <li class="legend-roster">Bidding and roster</li>
         <li class="legend-leave">Annual leave</li>
       </ul>
+      <p class="calendar-mobile-hint">On a phone, tap a marked day to view its event details.</p>
       <div id="importantDateCalendars" class="important-date-calendars"></div>
       <p id="importantDatePending" class="important-date-pending" hidden></p>
     </div>
@@ -55,18 +56,34 @@
             const classes=["calendar-day"];
             if(current<today)classes.push("calendar-day-past");
             const ariaCurrent=key===isoDate(today)?" aria-current=\"date\"":"";
+            const eventKinds=[...new Set(dayEvents.map(item=>["pay","roster","leave"].includes(item.kind)?item.kind:"other"))];
+            const markerMarkup=eventKinds.map(kind=>"<span class=\"calendar-event-marker marker-"+kind+"\"></span>").join("");
             const eventMarkup=dayEvents.map(item=>{
               const kind=["pay","roster","leave"].includes(item.kind)?item.kind:"other";
               const time=item.time?"<time>"+esc(item.time)+"</time>":"";
               return "<div class=\"calendar-event calendar-event-"+kind+"\" title=\""+esc([item.label,item.context,item.time].filter(Boolean).join(" · "))+"\"><strong>"+esc(item.label)+"</strong>"+(item.context?"<span>"+esc(item.context)+"</span>":"")+time+"</div>";
             }).join("");
-            rows+="<td class=\""+classes.join(" ")+"\""+ariaCurrent+"><div class=\"calendar-day-number\"><time datetime=\""+key+"\">"+dayNumber+"</time></div><div class=\"calendar-day-events\">"+eventMarkup+"</div></td>";
+            const eventAccess=dayEvents.length?" role=\"button\" tabindex=\"0\" data-date=\""+key+"\" aria-label=\""+esc(new Intl.DateTimeFormat("en-GB",{weekday:"long",day:"numeric",month:"long"}).format(current)+": "+dayEvents.map(item=>item.label).join(", "))+"\"":"";
+            if(dayEvents.length)classes.push("calendar-day-has-events");
+            rows+="<td class=\""+classes.join(" ")+"\""+ariaCurrent+eventAccess+"><div class=\"calendar-day-number\"><time datetime=\""+key+"\">"+dayNumber+"</time></div><div class=\"calendar-day-markers\" aria-hidden=\"true\">"+markerMarkup+"</div><div class=\"calendar-day-events\">"+eventMarkup+"</div></td>";
           }
           rows+="</tr>";
         }
-        return "<section class=\"fbp-panel important-month\"><h2>"+monthFormatter.format(month)+"</h2><div class=\"calendar-scroll\"><table class=\"month-calendar\"><caption class=\"visually-hidden\">"+monthFormatter.format(month)+" important dates</caption><thead><tr>"+weekdayNames.map(name=>"<th scope=\"col\"><abbr title=\""+name+"\">"+name.slice(0,3)+"</abbr></th>").join("")+"</tr></thead><tbody>"+rows+"</tbody></table></div></section>";
+        return "<section class=\"fbp-panel important-month\"><h2>"+monthFormatter.format(month)+"</h2><div class=\"calendar-scroll\"><table class=\"month-calendar\"><caption class=\"visually-hidden\">"+monthFormatter.format(month)+" important dates</caption><thead><tr>"+weekdayNames.map(name=>"<th scope=\"col\"><abbr title=\""+name+"\">"+name.slice(0,3)+"</abbr></th>").join("")+"</tr></thead><tbody>"+rows+"</tbody></table></div><div class=\"calendar-selected-events\" aria-live=\"polite\" hidden></div></section>";
       }
       root.innerHTML=monthCalendar(0)+monthCalendar(1);
+      const showDateEvents=(cell)=>{
+        if(!cell?.dataset.date)return;
+        const monthCard=cell.closest(".important-month"),panel=monthCard?.querySelector(".calendar-selected-events");
+        const date=new Date(cell.dataset.date+"T12:00:00"),dateLabel=new Intl.DateTimeFormat("en-GB",{weekday:"long",day:"numeric",month:"long"}).format(date);
+        const selected=events.filter(item=>item.date===cell.dataset.date);
+        if(!panel)return;
+        panel.hidden=false;
+        panel.innerHTML="<h3>"+esc(dateLabel)+"</h3>"+(selected.length?"<ul>"+selected.map(item=>{const kind=["pay","roster","leave"].includes(item.kind)?item.kind:"other";return "<li class=\"calendar-event-detail detail-"+kind+"\"><strong>"+esc(item.label)+"</strong>"+(item.context?"<span>"+esc(item.context)+"</span>":"")+(item.time?"<time>"+esc(item.time)+"</time>":"")+"</li>"}).join("")+"</ul>":"<p>No important dates on this day.</p>");
+        monthCard.querySelectorAll(".calendar-day-selected").forEach(day=>day.classList.remove("calendar-day-selected"));cell.classList.add("calendar-day-selected");
+      };
+      root.addEventListener("click",event=>{const cell=event.target.closest("td.calendar-day-has-events");if(cell)showDateEvents(cell)});
+      root.addEventListener("keydown",event=>{if(event.key!=="Enter"&&event.key!==" ")return;const cell=event.target.closest("td.calendar-day-has-events");if(!cell)return;event.preventDefault();showDateEvents(cell)});
       const pending=globalThis.IMPORTANT_DATE_PENDING||[];
       if(pending.length){
         const note=document.getElementById("importantDatePending");
