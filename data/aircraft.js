@@ -81,15 +81,15 @@ globalThis.AIRCRAFT["38A"] = {
       "location": "M5L"
     },
     {
-      "code": "RESTRAINT"
-    },
-    {
       "code": "FE",
       "location": "MD = All RHDs, UD = RH Crew Seats"
     },
     {
       "code": "WEX",
       "location": "M1L, U3L"
+    },
+    {
+      "code": "RESTRAINT"
     }
   ],
   "registrationRequiredForEquipment": false,
@@ -210,15 +210,15 @@ globalThis.AIRCRAFT["351"] = {
       "location": "D2R"
     },
     {
-      "code": "RESTRAINT"
-    },
-    {
       "code": "FE",
       "location": "All RHDs, D4L"
     },
     {
       "code": "WEX",
       "location": "D2R, D3R"
+    },
+    {
+      "code": "RESTRAINT"
     }
   ],
   "registrationRequiredForEquipment": false,
@@ -294,15 +294,15 @@ globalThis.AIRCRAFT["78E"] = {
       "location": "D2R"
     },
     {
-      "code": "RESTRAINT"
-    },
-    {
       "code": "FE",
       "location": "All RHDs"
     },
     {
       "code": "WEX",
       "location": "D1L, D4L"
+    },
+    {
+      "code": "RESTRAINT"
     }
   ],
   "registrationRequiredForEquipment": false,
@@ -381,15 +381,15 @@ globalThis.AIRCRAFT["78N"] = {
       "location": "D2R"
     },
     {
-      "code": "RESTRAINT"
-    },
-    {
       "code": "FE",
       "location": "All RHDs"
     },
     {
       "code": "WEX",
       "location": "D1L, D4L"
+    },
+    {
+      "code": "RESTRAINT"
     }
   ],
   "registrationRequiredForEquipment": false,
@@ -468,15 +468,15 @@ globalThis.AIRCRAFT["789"] = {
       "location": "D2R"
     },
     {
-      "code": "RESTRAINT"
-    },
-    {
       "code": "FE",
       "location": "All RHDs"
     },
     {
       "code": "WEX",
       "location": "D1L, D4L"
+    },
+    {
+      "code": "RESTRAINT"
     }
   ],
   "registrationRequiredForEquipment": false,
@@ -547,15 +547,15 @@ globalThis.AIRCRAFT["781"] = {
       "location": "D2R"
     },
     {
-      "code": "RESTRAINT"
-    },
-    {
       "code": "FE",
       "location": "All RHDs"
     },
     {
       "code": "WEX",
       "location": "D1L, D4L"
+    },
+    {
+      "code": "RESTRAINT"
     }
   ],
   "registrationRequiredForEquipment": false,
@@ -633,15 +633,15 @@ globalThis.AIRCRAFT["78Z"] = {
       "location": "D2R"
     },
     {
-      "code": "RESTRAINT"
-    },
-    {
       "code": "FE",
       "location": "All RHDs"
     },
     {
       "code": "WEX",
       "location": "D1L, D4L"
+    },
+    {
+      "code": "RESTRAINT"
     }
   ],
   "registrationRequiredForEquipment": false,
@@ -718,15 +718,15 @@ globalThis.AIRCRAFT["77M"] = {
       "location": "D1L"
     },
     {
-      "code": "RESTRAINT"
-    },
-    {
       "code": "FE",
       "location": "All RHDs"
     },
     {
       "code": "WEX",
       "location": "D1L, D4R"
+    },
+    {
+      "code": "RESTRAINT"
     }
   ],
   "registrationRequiredForEquipment": false,
@@ -809,15 +809,15 @@ globalThis.AIRCRAFT["77L"] = {
       "location": "D1L"
     },
     {
-      "code": "RESTRAINT"
-    },
-    {
       "code": "FE",
       "location": "All RHDs"
     },
     {
       "code": "WEX",
       "location": "D1L, D4R"
+    },
+    {
+      "code": "RESTRAINT"
     }
   ],
   "registrationRequiredForEquipment": false,
@@ -911,15 +911,15 @@ globalThis.AIRCRAFT["77H"] = {
       "location": "D1L"
     },
     {
-      "code": "RESTRAINT"
-    },
-    {
       "code": "FE",
       "location": "All RHDs"
     },
     {
       "code": "WEX",
       "location": "D1L, D4R"
+    },
+    {
+      "code": "RESTRAINT"
     }
   ],
   "registrationRequiredForEquipment": false,
@@ -999,15 +999,15 @@ globalThis.AIRCRAFT["77T"] = {
       "location": "D1L"
     },
     {
-      "code": "RESTRAINT"
-    },
-    {
       "code": "FE",
       "location": "All RHDs"
     },
     {
       "code": "WEX",
       "location": "D1L, D4R"
+    },
+    {
+      "code": "RESTRAINT"
     }
   ],
   "registrationRequiredForEquipment": false,
@@ -1090,15 +1090,15 @@ globalThis.AIRCRAFT["77S"] = {
       "location": "D1L"
     },
     {
-      "code": "RESTRAINT"
-    },
-    {
       "code": "FE",
       "location": "All RHDs"
     },
     {
       "code": "WEX",
       "location": "D1L, D4R"
+    },
+    {
+      "code": "RESTRAINT"
     }
   ],
   "registrationRequiredForEquipment": false,
@@ -1174,15 +1174,15 @@ globalThis.AIRCRAFT["32R"] = {
       "location": "AFT Overhead Locker ABC"
     },
     {
-      "code": "RESTRAINT"
-    },
-    {
       "code": "FE",
       "location": "x2 FWD Crew Seats, x1 AFT Galley Bulkhead"
     },
     {
       "code": "WEX",
       "location": "AFT Galley Bulkhead"
+    },
+    {
+      "code": "RESTRAINT"
     }
   ],
   "registrationRequiredForEquipment": false,
@@ -1228,15 +1228,15 @@ globalThis.AIRCRAFT["32H"] = {
       "location": "AFT Overhead Locker ABC"
     },
     {
-      "code": "RESTRAINT"
-    },
-    {
       "code": "FE",
       "location": "x2 FWD Crew Seats, x1 AFT Galley Bulkhead"
     },
     {
       "code": "WEX",
       "location": "AFT Galley Bulkhead"
+    },
+    {
+      "code": "RESTRAINT"
     }
   ],
   "registrationRequiredForEquipment": false,
@@ -1312,15 +1312,15 @@ globalThis.AIRCRAFT["319"] = {
       "location": "AFT Wardrobe"
     },
     {
-      "code": "RESTRAINT"
-    },
-    {
       "code": "FE",
       "location": "x1 FWD Crew Seat, x1 No 3 Crew Seat, x1 No 5 Crew Seat"
     },
     {
       "code": "WEX",
       "location": "Stowage beside No 3 Crew Seat"
+    },
+    {
+      "code": "RESTRAINT"
     }
   ],
   "registrationRequiredForEquipment": false,
@@ -1366,15 +1366,15 @@ globalThis.AIRCRAFT["31C"] = {
       "location": "AFT Overhead Locker ABC"
     },
     {
-      "code": "RESTRAINT"
-    },
-    {
       "code": "FE",
       "location": "x1 FWD Crew Seat, x1 AFT Dogbox ABC, x1 No 3 Crew Seat"
     },
     {
       "code": "WEX",
       "location": "No 2 (Direct View) Crew Seat"
+    },
+    {
+      "code": "RESTRAINT"
     }
   ],
   "registrationRequiredForEquipment": false,
