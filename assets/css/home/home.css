@@ -20,6 +20,7 @@ body.fbp-theme .fbp-hero::before {
 
 .fbp-hero .fbp-topbar { width: 100%; align-items: flex-end; }
 .fbp-hero .fbp-page-heading { max-width: 690px; }
+.mobile-only-break{display:none}
 .home-brand-logo { display: block; width: clamp(190px, 28vw, 290px); height: auto; margin: 0 0 22px; }
 .home-kicker { margin: 0 0 10px; color: #9bc6e0; font-size: .76rem; font-weight: 800; letter-spacing: .22em; }
 body.fbp-theme .fbp-hero .fbp-title { font-size: clamp(2.5rem, 6vw, 5rem); letter-spacing: -.045em; }
@@ -59,10 +60,11 @@ body.fbp-theme .tool-card:hover { transform: translateY(-3px); border-color: rgb
 @media (max-width: 560px) {
   .homepage-wrap { margin-top: 14px; }
   body.fbp-theme .fbp-hero { min-height: 0; padding: 25px 22px; }
-  .fbp-hero .fbp-topbar { flex-direction: column; gap: 20px; }
+  .fbp-hero .fbp-topbar { flex-direction: column; gap: 20px; padding-right:0; }
   .home-brand-logo { width: 188px; margin-bottom: 16px; }
-  body.fbp-theme .fbp-hero .fbp-title { font-size: clamp(2.45rem, 12vw, 3.6rem); }
-  body.fbp-theme .fbp-hero .fbp-subtitle { font-size: .98rem; line-height: 1.5; }
+  body.fbp-theme .fbp-hero .fbp-title { font-size: clamp(2.1rem, 10.5vw, 2.8rem); white-space:nowrap; }
+  body.fbp-theme .fbp-hero .fbp-subtitle { font-size: .9rem; line-height: 1.45; }
+  .mobile-only-break { display:block; }
   .fbp-hero .fbp-toolbar { align-self: stretch; }
   body.fbp-theme .home-feedback { width: fit-content; }
   .fbp-grid-tools { gap: 10px; margin-top: 12px; }
@@ -117,8 +119,12 @@ body.fbp-theme .tool-card:hover { transform: translateY(-3px); border-color: rgb
   body.fbp-theme .tool-card{position:relative;min-height:122px;padding:14px 8px 12px;gap:0}
   .tool-card-primary{justify-content:flex-start;gap:8px}
   .tool-card .tool-card-description{display:none}
-  .tool-card-toggle{position:absolute;right:7px;bottom:7px;display:grid;place-items:center;width:25px;height:25px;padding:0;border:1px solid rgba(255,255,255,.23);border-radius:50%;background:rgba(255,255,255,.07);color:#dceaf4;font:inherit;font-size:1.05rem;line-height:1;cursor:pointer}
-  .tool-card-toggle span{transition:transform .16s ease}
+  .tool-card-title{display:block;width:100%;box-sizing:border-box;padding:0 38px 0 0;text-align:center;white-space:nowrap}
+  body.fbp-theme .tool-card-toggle{position:absolute;right:12px;top:80px;display:grid;place-items:center;width:34px;height:34px;min-width:34px;min-height:34px;padding:0;border:1px solid rgba(117,184,223,.36);border-radius:50%;background:rgba(117,184,223,.12);color:#e8f3fb;font:inherit;font-size:1rem;line-height:1;cursor:pointer;box-shadow:0 3px 10px rgba(0,0,0,.16)}
+  body.fbp-theme .tool-card-toggle:hover{background:rgba(117,184,223,.2);border-color:rgba(117,184,223,.55)}
+  body.fbp-theme .tool-card-toggle:focus-visible{outline:2px solid var(--brand-sky);outline-offset:2px}
+  .tool-card-toggle span{display:grid;place-items:center;transition:transform .16s ease}
+  .tool-card-toggle svg{display:block;width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
   .tool-card.description-expanded{min-height:0;padding-bottom:40px}
   .tool-card.description-expanded .tool-card-primary{flex:0 1 auto}
   .tool-card.description-expanded .tool-card-description{display:block;font-size:.82rem}
