@@ -29,7 +29,7 @@ body.fbp-theme .home-feedback { min-height: 44px; border-radius: 999px; padding:
 .home-feedback .feedback-arrow { color: #ef657b; font-size: 1.1em; }
 
 .fbp-grid-tools { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 18px; }
-.fbp-grid-tools.public-tools { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.fbp-grid-tools.public-tools { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 body.fbp-theme .tool-card {
   min-height: 176px; padding: 22px 16px; display: flex; flex-direction: column;
   align-items: center; justify-content: flex-start; gap: 12px; text-align: center;
@@ -56,7 +56,6 @@ body.fbp-theme .tool-card:hover { transform: translateY(-3px); border-color: rgb
 @media (max-width: 850px) {
   body.fbp-theme .fbp-hero .fbp-topbar { align-items: flex-start; }
 }
-@media (max-width: 700px) { .fbp-grid-tools.public-tools { grid-template-columns: 1fr; } }
 @media (max-width: 560px) {
   .homepage-wrap { margin-top: 14px; }
   body.fbp-theme .fbp-hero { min-height: 0; padding: 25px 22px; }
@@ -85,7 +84,6 @@ body.fbp-theme .tool-card:hover { transform: translateY(-3px); border-color: rgb
 .homepage-admin>summary:focus-visible{outline:3px solid var(--brand-sky);outline-offset:-3px}
 .homepage-admin>.fbp-grid-tools{margin:0;padding:0 14px 14px}
 .important-dates-ticker{display:flex;align-items:center;gap:16px;min-height:58px;margin:0 0 18px;padding:7px 10px 7px 18px;border:1px solid rgba(176,201,223,.24);border-radius:16px;background:linear-gradient(100deg,rgba(14,48,79,.98),rgba(7,27,61,.96));box-shadow:0 12px 30px rgba(0,0,0,.18);overflow:hidden}
-.ticker-label{flex:0 0 auto;color:#9bc6e0;font-size:.72rem;font-weight:850;letter-spacing:.15em;text-transform:uppercase}
 .ticker-window{flex:1;min-width:0;overflow:hidden}
 .ticker-track{display:flex;width:max-content;align-items:center;white-space:nowrap;animation:important-date-scroll 48s linear infinite}
 .important-dates-ticker:hover .ticker-track,.important-dates-ticker:focus-within .ticker-track{animation-play-state:paused}
@@ -95,10 +93,10 @@ body.fbp-theme .tool-card:hover { transform: translateY(-3px); border-color: rgb
 .ticker-event::after{content:"";width:5px;height:5px;margin-left:18px;border-radius:50%;background:#e53f5d}
 .ticker-event strong{font-weight:750}
 .ticker-event time{color:#b7d8ed}
-.ticker-calendar-link{flex:0 0 42px;width:42px;height:42px;display:grid;place-items:center;border:1px solid rgba(255,255,255,.24);border-radius:12px;background:rgba(255,255,255,.08);color:#fff;transition:background .2s ease,transform .2s ease}
-.ticker-calendar-link:hover{background:rgba(255,255,255,.17);transform:translateY(-1px)}
+.ticker-calendar-link{flex:0 0 auto;min-width:156px;height:44px;padding:0 15px;display:flex;align-items:center;justify-content:center;gap:9px;border:1px solid rgba(255,255,255,.24);border-radius:12px;background:linear-gradient(145deg,#c8102e,#86102b);border-color:rgba(255,255,255,.32);color:#fff;font-size:.86rem;font-weight:750;text-decoration:none;white-space:nowrap;transition:filter .2s ease,transform .2s ease}
+.ticker-calendar-link:hover{filter:brightness(1.12);transform:translateY(-1px)}
 .ticker-calendar-link:focus-visible{outline:3px solid var(--brand-sky);outline-offset:2px}
-.ticker-calendar-link svg{width:23px;height:23px}
+.ticker-calendar-link svg{width:23px;height:23px;flex:0 0 auto}
 @keyframes important-date-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-@media (max-width:560px){.important-dates-ticker{gap:10px;min-height:52px;padding-left:12px}.ticker-label{font-size:.64rem;letter-spacing:.1em}.ticker-event{gap:6px;padding:0 13px;font-size:.82rem}.ticker-event::after{margin-left:8px}.ticker-calendar-link{flex-basis:38px;width:38px;height:38px}}
+@media (max-width:560px){.important-dates-ticker{gap:8px;min-height:52px;padding:7px 8px 7px 12px}.ticker-event{gap:6px;padding:0 13px;font-size:.82rem}.ticker-event::after{margin-left:8px}.ticker-calendar-link{min-width:0;height:38px;padding:0 10px;gap:6px;font-size:.74rem}.ticker-calendar-link svg{width:20px;height:20px}}
 @media (prefers-reduced-motion:reduce){.ticker-track{animation:none!important}.ticker-window{overflow-x:auto}}

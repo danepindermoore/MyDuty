@@ -26,7 +26,13 @@ document.addEventListener("DOMContentLoaded", () => {
         <path d="m21.5 36.5 2.5 1 2.5-1" fill="none" stroke="#75b8df" stroke-width="2.7" stroke-linecap="round"/>
     </svg>`;
 
-    grid.innerHTML = FDP_CALCULATORS.map(calc => `
+    grid.innerHTML = FDP_CALCULATORS.map(calc => calc.type === "shorthaul" ? `
+        <button class="fdp-choice fdp-choice-disabled" data-type="${calc.type}" type="button" disabled aria-describedby="shorthaul-development-note">
+            <span class="fdp-icon" aria-hidden="true">${aircraftIcon()}</span>
+            <span class="fdp-choice-title">${calc.title}</span>
+            <span class="fdp-note" id="shorthaul-development-note">Shorthaul FDP in development</span>
+        </button>
+    ` : `
         <a class="fdp-choice" data-type="${calc.type}" href="${calc.url}">
             <span class="fdp-icon" aria-hidden="true">${aircraftIcon()}</span>
             <span class="fdp-choice-title">${calc.title}</span>

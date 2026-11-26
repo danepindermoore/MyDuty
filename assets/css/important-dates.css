@@ -4,6 +4,7 @@
 .important-date-legend li{display:flex;align-items:center;gap:7px}
 .important-date-legend li::before{content:"";width:10px;height:10px;border-radius:3px;background:#75b8df}
 .important-date-legend .legend-roster::before{background:#ef657b}
+.important-date-legend .legend-leave::before{background:#f3c969}
 .important-date-calendars{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;align-items:start}
 .important-month{min-width:0;padding:20px}
 .important-month h2{margin:0 0 15px;color:#fff;font-size:1.2rem}

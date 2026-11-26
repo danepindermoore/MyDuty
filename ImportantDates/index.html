@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>Important Dates</title>
-  <meta name="description" content="Monthly calendar of upcoming pay, bidding, roster and annual leave dates." />
+  <title>MyCalendar</title>
+  <meta name="description" content="Important upcoming dates. Pay, bidding, roster and annual leave." />
   <link rel="icon" href="../favicon.ico">
   <link rel="stylesheet" href="../assets/css/fbp-shared.css">
   <link rel="stylesheet" href="../assets/css/important-dates.css">
@@ -21,13 +21,14 @@
       <ul class="important-date-legend" aria-label="Calendar categories">
         <li class="legend-pay">Pay and payslips</li>
         <li class="legend-roster">Bidding and roster</li>
+        <li class="legend-leave">Annual leave</li>
       </ul>
       <div id="importantDateCalendars" class="important-date-calendars"></div>
       <p id="importantDatePending" class="important-date-pending" hidden></p>
     </div>
   </main>
   <script>
-    FBP.createPage({container:"main",contentSelector:".important-dates-content",layout:"wide",title:"Important Dates",subtitle:"Pay, bidding, roster and annual leave dates",feedbackText:"Important Dates Feedback",feedbackSubject:"Feedback for Important Dates",activePage:"importantDates"});
+    FBP.createPage({container:"main",contentSelector:".important-dates-content",layout:"wide",title:"MyCalendar",subtitle:"Important upcoming dates. Pay, bidding, roster and annual leave.",feedbackText:"MyCalendar Feedback",feedbackSubject:"Feedback for MyCalendar",activePage:"importantDates"});
     (function(){
       const root=document.getElementById("importantDateCalendars");
       const events=globalThis.IMPORTANT_DATE_EVENTS||[];

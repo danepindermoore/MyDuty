@@ -37,7 +37,7 @@ const NAV_ITEMS = [
 
     {
         id: "importantDates",
-        text: "Important Dates",
+        text: "MyCalendar",
         href: BASE + "ImportantDates/index.html"
     },
 
@@ -50,8 +50,7 @@ const NAV_ITEMS = [
     {
         id: "myBriefing",
         text: "MyBriefing",
-        href: BASE + "MyBriefing/index.html",
-        adminOnly: true
+        href: BASE + "MyBriefing/index.html"
     },
 
     {

@@ -69,3 +69,8 @@ Shared calculator styles:
     background: var(--surface-hover);
     color: var(--text);
 }
+
+button.fdp-choice{width:100%;font:inherit;cursor:pointer}
+.fdp-choice-disabled,.fdp-choice-disabled:hover{opacity:.55;filter:grayscale(1);transform:none;border-color:var(--border);box-shadow:var(--shadow);cursor:not-allowed}
+.fdp-choice-disabled .fdp-icon,.fdp-choice-disabled:hover .fdp-icon{transform:none}
+.fdp-choice-disabled .fdp-note{margin-top:0;color:var(--muted);font-size:.9rem;font-weight:700}
