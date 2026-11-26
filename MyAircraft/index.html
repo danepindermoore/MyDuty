@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MyAircraft</title>
-  <meta name="description" content="Select an aircraft to view its briefing options as well as the operating crew’s AORs." />
+  <meta name="description" content="Aircraft briefing information by aircraft type or registration." />
   <link rel="icon" href="../favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
@@ -92,6 +92,10 @@
     .aircraft-menu-back{margin-bottom:10px;min-height:40px;padding:8px 12px;border-radius:12px;border:1px solid var(--line-2);background:var(--panel-2);color:var(--text);font:inherit;font-weight:700;cursor:pointer}
     .aircraft-menu-back[hidden]{display:none}
     .aircraft-button-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:9px}
+    .aircraft-select{display:block;width:100%;min-height:50px;padding:10px 42px 10px 13px;border-radius:12px;border:1px solid var(--line-2);background:var(--panel-2);color:var(--text);font:inherit;font-weight:700;cursor:pointer}
+    .aircraft-select option{background:#17304c;color:#fff}
+    #pageIntro:empty,#selectorSummary:empty,.registration-message:empty{display:none}
+    .registration-lookup{margin-top:14px}
     .aircraft-code-btn{width:100%;min-width:0;min-height:50px;padding:7px 4px;border-radius:14px;border:1px solid var(--line-2);background:var(--panel-2);color:var(--text);font:inherit;font-weight:800;cursor:pointer;transition:transform .16s ease,border-color .16s ease,background .16s ease,box-shadow .16s ease}
     .aircraft-code-btn-shorthaul{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;line-height:1;font-size:.8rem;letter-spacing:-.025em;white-space:nowrap}
     .position-panel[hidden]{display:none}
@@ -173,7 +177,7 @@
       <div class="fbp-topbar">
         <div>
           <h1 class="fbp-title" id="pageTitle">MyAircraft</h1>
-          <p class="fbp-subtitle" id="pageIntro">Select an aircraft to view its briefing options as well as the operating crew’s AORs.</p>
+          <p class="fbp-subtitle" id="pageIntro"></p>
         </div>
         <div class="fbp-toolbar">
           <a class="fbp-button fbp-feedback-button" href="mailto:u155573@ba.com?subject=Feedback%20for%20MyAircraft"><span class="feedback-label"><span>MyAircraft</span><span>Feedback</span></span><span class="feedback-arrow" aria-hidden="true">↗</span></a>
@@ -189,15 +193,15 @@
           <p id="aircraftHeaderSub">Tap a numbered position to open its full briefing.</p>
         </div>
         <div class="briefing-card">
-          <div class="control-label" id="aircraftMenuLabel">Aircraft Type</div>
+          <label class="control-label" id="aircraftMenuLabel" for="aircraftButtonGrid">Choose aircraft from list or type your registration below</label>
           <button id="aircraftMenuBack" class="aircraft-menu-back" type="button" hidden>Back to Aircraft Types</button>
-          <div id="aircraftButtonGrid" class="aircraft-button-grid"></div>
+          <select id="aircraftButtonGrid" class="aircraft-select" aria-label="Choose an aircraft"><option value="">Choose an aircraft…</option></select>
           <div id="registrationLookup" class="registration-lookup">
-            <label for="registrationInput">OR, Find Aircraft by Registration</label>
-            <div class="registration-entry"><span class="registration-prefix" aria-hidden="true">G-</span><input id="registrationInput" type="text" inputmode="text" autocomplete="off" maxlength="4" pattern="[A-Za-z0-9]{4}" aria-describedby="registrationMessage" placeholder="XLEA" /></div>
-            <div class="registration-message" id="registrationMessage" aria-live="polite">Enter the last four characters to open the aircraft briefing.</div>
+            <label for="registrationInput">Aircraft registration</label>
+            <div class="registration-entry"><span class="registration-prefix" aria-hidden="true">G-</span><input id="registrationInput" type="text" inputmode="text" autocomplete="off" maxlength="4" pattern="[A-Za-z0-9]{4}" aria-describedby="registrationMessage" placeholder="e.g. ZBXA" /></div>
+            <div class="registration-message" id="registrationMessage" aria-live="polite"></div>
           </div>
-          <div class="subtle" id="selectorSummary" style="margin-top:14px;">Select an aircraft type to view its briefing options.</div>
+          <div class="subtle" id="selectorSummary" style="margin-top:14px;"></div>
         </div>
       </section>
       <div id="aorMappingNotice" class="aor-mapping-notice" role="status" hidden>AOR mapping is not yet available for A380 or single aisle aircraft.</div>
@@ -296,10 +300,18 @@ function makeAircraftButton(label,{family=null,option=null,direct=false}={}){
   return btn;
 }
 function renderFamilyMenu(){
-  aircraftMenuLabel.textContent="Aircraft Type";aircraftMenuBack.hidden=true;aircraftButtonGrid.innerHTML="";registrationLookup.hidden=false;
-  selectorSummary.textContent="Select an aircraft type to view its briefing options.";
-  AIRCRAFT_FAMILIES.forEach(family=>aircraftButtonGrid.appendChild(makeAircraftButton(family.label,{family,direct:family.direct})));
-  updateButtons();
+  aircraftMenuLabel.textContent="Choose aircraft from list or type your registration below";aircraftMenuBack.hidden=true;registrationLookup.hidden=false;
+  aircraftButtonGrid.innerHTML='<option value="">Choose an aircraft…</option>';
+  const seen=new Set();
+  const addOption=(label,code,displayLabel=null,deck=null)=>{const key=`${code}|${displayLabel||label}|${deck||""}`;if(seen.has(key))return;seen.add(key);const option=document.createElement("option");option.value=String(aircraftButtonGrid.options.length);option.textContent=label;option.dataset.aircraftCode=code;if(displayLabel)option.dataset.aircraftLabel=displayLabel;if(deck)option.dataset.deck=deck;aircraftButtonGrid.appendChild(option)};
+  const walk=(items)=>items.forEach(item=>{if(item.options)walk(item.options);else if(item.code){const label=item.displayLabel||item.label;addOption(label,item.code,item.displayLabel||item.label)}});
+  AIRCRAFT_FAMILIES.forEach(family=>{
+    if(family.direct){addOption(family.direct.label,family.direct.code,family.direct.label);return}
+    if(family.label==="A380"){addOption("38A · Main Deck","38A",null,"MD");addOption("38A · Upper Deck","38A",null,"UD");addOption("38T","38T","38T");return}
+    walk(family.options||[]);
+  });
+  selectorSummary.textContent="";
+  aircraftButtonGrid.onchange=()=>{const option=aircraftButtonGrid.selectedOptions[0];if(!option?.dataset.aircraftCode)return;selectAircraft(option.dataset.aircraftCode,option.dataset.aircraftLabel||null,option.dataset.deck||null,registrationInput.value||null)};
 }
 function renderFamilyOptions(family,parentFamily=null){
   setAorMappingNotice(false);
@@ -309,22 +321,21 @@ function renderFamilyOptions(family,parentFamily=null){
 }
 function renderDeckOptions(code){
   setAorMappingNotice(code==="38A");
-  const family=AIRCRAFT_FAMILIES.find(item=>item.label==="A380");
-  aircraftMenuLabel.textContent=`${code} deck`;aircraftMenuBack.hidden=false;aircraftMenuBack.textContent="Back to A380 options";aircraftMenuBack.onclick=()=>renderFamilyOptions(family);aircraftButtonGrid.innerHTML="";
-  [{key:"MD",label:"Main Deck"},{key:"UD",label:"Upper Deck"}].forEach(deck=>{
-    const button=document.createElement("button");button.type="button";button.className="aircraft-code-btn";button.textContent=deck.label;button.dataset.aircraftCode=code;button.dataset.aircraftLabel=`${code} ${deck.key}`;button.addEventListener("click",()=>selectAircraft(code,null,deck.key,registrationInput.value||null));aircraftButtonGrid.appendChild(button);
-  });
-  selectorSummary.textContent=`Select Main Deck or Upper Deck for ${code}.`;updateButtons();
+  aircraftMenuLabel.textContent="Choose aircraft deck";aircraftMenuBack.hidden=false;aircraftMenuBack.textContent="Back to aircraft list";aircraftMenuBack.onclick=returnToBriefingStart;
+  aircraftButtonGrid.innerHTML='<option value="">Choose a deck…</option>';
+  [{key:"MD",label:"Main Deck"},{key:"UD",label:"Upper Deck"}].forEach(deck=>{const option=document.createElement("option");option.value=deck.key;option.textContent=deck.label;option.dataset.aircraftCode=code;option.dataset.deck=deck.key;aircraftButtonGrid.appendChild(option)});
+  aircraftButtonGrid.onchange=()=>{const option=aircraftButtonGrid.selectedOptions[0];if(option?.dataset.deck)selectAircraft(code,null,option.dataset.deck,registrationInput.value||null)};
+  selectorSummary.textContent="";
 }
 function returnToBriefingStart(){
   setAorMappingNotice(false);
   STATE.activeCode=null;STATE.activeSelectorLabel=null;STATE.activeMeta=null;STATE.activeData=null;STATE.activePosition=null;STATE.activeDeck=null;
-  registrationLookup.hidden=false;registrationInput.value="";document.getElementById("registrationMessage").textContent="Enter the last four characters to open the aircraft briefing.";document.getElementById("registrationMessage").classList.remove("error");
+  registrationLookup.hidden=false;registrationInput.value="";document.getElementById("registrationMessage").textContent="";document.getElementById("registrationMessage").classList.remove("error");
   document.querySelector(".briefing-shell").classList.remove("has-aircraft");
   document.querySelector(".hero-copy").hidden=true;
   document.querySelector(".layout").hidden=true;
   pageTitle.textContent="MyAircraft";
-  pageIntro.textContent="Select an aircraft to view its briefing options as well as the operating crew’s AORs.";
+  pageIntro.textContent="";
   aircraftHeaderTitle.textContent="Aircraft Layout";
   aircraftHeaderSub.textContent="Tap a numbered position to open its full briefing.";
   clearDiagram();
@@ -593,7 +604,7 @@ if(code==="38T"){
 setLoading(meta,registration);try{const data=await loadDataset(code,deck);STATE.activeData=data;syncUrl(code);renderAircraft(meta,data);if(registration)document.getElementById("registrationMessage").textContent=`G-${registration} selected.`}catch(err){syncUrl(code);renderMissing(meta,err)}
 }
 window.__toggleEquipmentChip=function(button){const expanded=button.classList.toggle("expanded");button.setAttribute("aria-expanded",expanded?"true":"false")};window.__openPosition=function(number){setActivePosition(number);document.querySelector(".position-panel")?.scrollIntoView({behavior:"smooth",block:"start"})};
-    registrationInput.addEventListener("input",()=>{const value=registrationInput.value.toUpperCase().replace(/[^A-Z0-9]/g,"").slice(0,4);registrationInput.value=value;const message=document.getElementById("registrationMessage");message.classList.remove("error");if(value.length===4){const record=globalThis.getAircraftByRegistration?.(value);if(record){if(record.airfile==="38A"){returnToBriefingStart();registrationInput.value=record.registration;message.textContent=`G-${record.registration} found · choose the deck to continue.`;renderDeckOptions("38A")}else{message.textContent=`Opening ${record.aircraft?.fullName||record.airfile} briefing…`;selectAircraft(record.airfile,null,null,record.registration)}return}else{message.textContent="Registration not found in the fleet data.";message.classList.add("error")}}else{message.textContent="Enter the last four characters to open the aircraft briefing."}if(STATE.activeMeta){renderAircraftSummary(STATE.activeMeta,STATE.activeData);updateSummaryStats(STATE.activeMeta,STATE.activeData)}});
+    registrationInput.addEventListener("input",()=>{const value=registrationInput.value.toUpperCase().replace(/[^A-Z0-9]/g,"").slice(0,4);registrationInput.value=value;const message=document.getElementById("registrationMessage");message.classList.remove("error");if(value.length===4){const record=globalThis.getAircraftByRegistration?.(value);if(record){if(record.airfile==="38A"){returnToBriefingStart();registrationInput.value=record.registration;message.textContent=`G-${record.registration} found · choose the deck to continue.`;renderDeckOptions("38A")}else{message.textContent=`Opening ${record.aircraft?.fullName||record.airfile} briefing…`;selectAircraft(record.airfile,null,null,record.registration)}return}else{message.textContent="Registration not found in the fleet data.";message.classList.add("error")}}else{message.textContent=""}if(STATE.activeMeta){renderAircraftSummary(STATE.activeMeta,STATE.activeData);updateSummaryStats(STATE.activeMeta,STATE.activeData)}});
  renderFamilyMenu();document.addEventListener("click",event=>{if(!STATE.activePosition)return;if(event.target.closest(".position-hotspot,.seat-btn,button,a,input,select,textarea,label"))return;if(event.target!==positionContent&&event.target.closest("#positionContent"))return;showAllPositionsList()})}
 document.addEventListener("DOMContentLoaded",boot);
 

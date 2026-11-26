@@ -28,3 +28,18 @@
 .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 @media(max-width:980px){.important-date-calendars{grid-template-columns:1fr}.important-month{padding:18px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+@media(max-width:560px){
+  .important-date-calendars{grid-template-columns:minmax(0,1fr);gap:12px}
+  .important-month{padding:12px;overflow:hidden}
+  .important-month h2{margin-bottom:9px;font-size:1rem}
+  .calendar-scroll{overflow:visible}
+  .month-calendar{width:100%;min-width:0;table-layout:fixed;border-spacing:2px}
+  .month-calendar th{padding:5px 0;font-size:.68rem}
+  .month-calendar td{height:54px;padding:3px; border-radius:6px}
+  .calendar-day-number{margin:0 1px 3px;font-size:.72rem}
+  .calendar-day-events{gap:2px}
+  .calendar-event{display:block;padding:2px 3px;border-left-width:2px;font-size:.58rem;line-height:1.1;overflow:hidden}
+  .calendar-event strong{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .calendar-event span,.calendar-event time{display:none}
+  .important-date-legend{gap:7px 12px;margin-bottom:12px;font-size:.73rem}
+}

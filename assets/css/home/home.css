@@ -108,3 +108,19 @@ body.fbp-theme .tool-card:hover { transform: translateY(-3px); border-color: rgb
   .home-feedback .feedback-label span:last-child{display:block}
   .home-feedback .feedback-arrow{font-size:1.45rem;line-height:.9}
 }
+
+
+/* Phone tiles keep the description collapsed until the user opens it. */
+.tool-card-primary{display:flex;flex:1 1 auto;width:100%;flex-direction:column;align-items:center;gap:12px;color:inherit;text-decoration:none}
+.tool-card-toggle{display:none}
+@media(max-width:560px){
+  body.fbp-theme .tool-card{position:relative;min-height:122px;padding:14px 8px 12px;gap:0}
+  .tool-card-primary{justify-content:flex-start;gap:8px}
+  .tool-card .tool-card-description{display:none}
+  .tool-card-toggle{position:absolute;right:7px;bottom:7px;display:grid;place-items:center;width:25px;height:25px;padding:0;border:1px solid rgba(255,255,255,.23);border-radius:50%;background:rgba(255,255,255,.07);color:#dceaf4;font:inherit;font-size:1.05rem;line-height:1;cursor:pointer}
+  .tool-card-toggle span{transition:transform .16s ease}
+  .tool-card.description-expanded{min-height:0;padding-bottom:40px}
+  .tool-card.description-expanded .tool-card-primary{flex:0 1 auto}
+  .tool-card.description-expanded .tool-card-description{display:block;font-size:.82rem}
+  .tool-card.description-expanded .tool-card-toggle span{transform:rotate(180deg)}
+}
