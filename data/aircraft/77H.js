@@ -383,10 +383,10 @@ globalThis.AOR_77H = {
       "role": "Cabin Crew",
       "displayTitle": "No. 5 (Cabin Crew - GCC 3)",
       "service": {
-        "summary": "WTP pre take off service on aircraft-right, WTP & WT cabin on aircraft-left, Inflight Retail for all cabins unless GCC then IFR assigned to number 12",
+        "summary": "Inflight Retail, WTP pre take off service on aircraft-right, WTP & WT cabin on aircraft-left, If GCC position 3 then IFR re-assigned to number 12",
         "cabin": [
-          "WTP",
-          "WT"
+          "WT",
+          "WTP"
         ]
       },
       "seating": {
@@ -408,9 +408,7 @@ globalThis.AOR_77H = {
       },
       "rest": "2nd Rest",
       "additionalResponsibilities": [
-        "Boarding alongside SCCM at D2L",
-        "Inflight Retail",
-        "if number 5 is GCC position 3",
+        "Boarding alongside SCCM at D2L, If number 5 is GCC position 3",
         "IFR is reallocated to number 12"
       ],
       "equipmentChecks": [
@@ -505,8 +503,8 @@ globalThis.AOR_77H = {
       "service": {
         "summary": "Responsible for World Traveller Plus and World Traveller cabins, WTP pre take off service on aircraft-left, WTP & WT cabin on aircraft-left, or WT Galley Operator if selected",
         "cabin": [
-          "WTP",
-          "WT"
+          "WT",
+          "WTP"
         ]
       },
       "seating": {
@@ -645,9 +643,8 @@ globalThis.AOR_77H = {
       "rest": "1st Rest",
       "additionalResponsibilities": [
         "SEP equipment in OFCR",
-        "door coverage of D1LR when aircraft is on the ground",
-        "boarding at D1L when two doors are used",
-        "if no number 14 is operating, check the D1R forward-facing crew seat"
+        "boarding at D1L when two doors are used, If no number 14 is operating - check the D1R forward-facing crew seat",
+        "Door coverage on ground: D1LR"
       ],
       "equipmentChecks": [
         {
@@ -758,7 +755,7 @@ globalThis.AOR_77H = {
       },
       "rest": "2nd Rest",
       "additionalResponsibilities": [
-        "Door coverage of D2LR when aircraft is on the ground"
+        "Door coverage on ground: D2LR"
       ],
       "equipmentChecks": [
         {
@@ -915,7 +912,7 @@ globalThis.AOR_77H = {
       },
       "rest": "2nd Rest",
       "additionalResponsibilities": [
-        "Door coverage of D3LR when aircraft is on the ground"
+        "Door coverage on ground: D3LR"
       ],
       "equipmentChecks": [
         {
@@ -971,10 +968,10 @@ globalThis.AOR_77H = {
       "role": "Cabin Crew",
       "displayTitle": "No. 11 (Cabin Crew - GCC 2)",
       "service": {
-        "summary": "WTP & WT cabin on aircraft-right",
+        "summary": "Community Fund / Flying Start, WTP & WT cabin on aircraft-right",
         "cabin": [
-          "WTP",
-          "WT"
+          "WT",
+          "WTP"
         ]
       },
       "seating": {
@@ -996,8 +993,7 @@ globalThis.AOR_77H = {
       },
       "rest": "1st Rest",
       "additionalResponsibilities": [
-        "Community Fund / Flying Start collection",
-        "door coverage of D4LR when aircraft is on the ground"
+        "Door coverage on ground: D4LR"
       ],
       "equipmentChecks": [
         {
@@ -1071,8 +1067,8 @@ globalThis.AOR_77H = {
       "service": {
         "summary": "WT Galley Operator if not operated by No. 6, Serves WTP and WT on aircraft-right, Responsible for PRAs and cabin PAs, Responsible for Inflight Retail if No. 5 is assigned GCC 3",
         "cabin": [
-          "WTP",
-          "WT"
+          "WT",
+          "WTP"
         ],
         "extraCrew": [
           "No. 14 takes over aircraft-right WTP and WT cabin service when carried"
@@ -1097,10 +1093,8 @@ globalThis.AOR_77H = {
       },
       "rest": "2nd Rest",
       "additionalResponsibilities": [
-        "Door coverage of D5LR when aircraft is on the ground",
-        "if number 5 is GCC position 3",
-        "IFR is reallocated to number 12",
-        "if no number 16 is operating, check the D5R inboard forward-facing crew seat"
+        "If number 5 is GCC position 3 IFR is reallocated to number 12, if no number 16 is operating - check the D5R inboard forward-facing crew seat",
+        "Door coverage on ground: D5LR"
       ],
       "equipmentChecks": [
         {
@@ -1239,8 +1233,7 @@ globalThis.AOR_77H = {
       "service": {
         "summary": "NA",
         "cabin": [
-          "CW Pre-Departure",
-          "WT Post-Departure"
+          "Varied"
         ],
         "extraCrew": [
           "Supports Club World pre-departure service",
@@ -1323,11 +1316,11 @@ globalThis.AOR_77H = {
         "full": "D5L: Inboard FWD"
       },
       "doorResponsibility": "NA",
-      "rest": "SCCM Discretion",
+      "rest": "IFM Discretion",
       "service": {
         "summary": "NA",
         "cabin": [
-          "NA"
+          "IFM Discretion"
         ]
       },
       "demo": {
@@ -1388,11 +1381,11 @@ globalThis.AOR_77H = {
         "full": "D5R: Inboard FWD"
       },
       "doorResponsibility": "NA",
-      "rest": "SCCM Discretion",
+      "rest": "IFM Discretion",
       "service": {
         "summary": "NA",
         "cabin": [
-          "NA"
+          "IFM Discretion"
         ]
       },
       "demo": {

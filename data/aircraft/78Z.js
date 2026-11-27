@@ -18,7 +18,7 @@ globalThis.AOR_78Z = {
       "doorResponsibility": "D1L",
       "rest": "2nd Rest",
       "service": {
-        "summary": "Overall responsibility for the aircraft. Club World service for rows 12 to 17 on aircraft-left.",
+        "summary": "Overall responsibility for the aircraft. Club World service for rows 12 to 17 on aircraft-left",
         "cabin": [
           "CW"
         ]
@@ -114,7 +114,7 @@ globalThis.AOR_78Z = {
       "doorResponsibility": "D2L",
       "rest": "1st Rest",
       "service": {
-        "summary": "Club World service for rows 5 to 11 on aircraft-right.",
+        "summary": "Club World service for rows 5 to 11 on aircraft-right",
         "cabin": [
           "CW"
         ]
@@ -190,10 +190,10 @@ globalThis.AOR_78Z = {
       "doorResponsibility": "D3L",
       "rest": "2nd Rest",
       "service": {
-        "summary": "Serves with No. 4 from the front of WTP on aircraft left towards the rear, Delivers WTP pre-takeoff service on aircraft right",
+        "summary": "Inflight Retail, Serves from the front of WTP on aircraft-left towards the rear, Delivers WTP pre-takeoff service on aircraft-right",
         "cabin": [
-          "WTP",
-          "WT"
+          "WT",
+          "WTP"
         ],
         "extraCrew": [
           "Works alongside No. 12 if No. 4 becomes the dedicated Galley Operator"
@@ -291,10 +291,10 @@ globalThis.AOR_78Z = {
       "doorResponsibility": "D4L",
       "rest": "1st Rest",
       "service": {
-        "summary": "Responsible for WTP and WT, May choose to be Galley Operator, Serves with No. 3 from the front of WTP on aircraft left towards the rear, Delivers WTP pre-takeoff service on aircraft left",
+        "summary": "Responsible for WTP and WT, May choose to be Galley Operator, Serves from the front of WTP on aircraft-left towards the rear, Delivers WTP pre-takeoff service on aircraft-left",
         "cabin": [
-          "WTP",
-          "WT"
+          "WT",
+          "WTP"
         ],
         "extraCrew": [
           "If assigned as the dedicated Galley Operator, hands the aircraft-left cabin position to No. 12"
@@ -411,7 +411,7 @@ globalThis.AOR_78Z = {
       "doorResponsibility": "D2R",
       "rest": "2nd Rest",
       "service": {
-        "summary": "Club World Galley Operator.",
+        "summary": "Club World Galley Operator",
         "cabin": [
           "CW"
         ]
@@ -423,8 +423,8 @@ globalThis.AOR_78Z = {
         ]
       },
       "additionalResponsibilities": [
-        "Door coverage of D2LR",
-        "Completes the pre-departure Club World drinks order on behalf of No. 1 using iOrder"
+        "Completes the pre-departure Club World drinks order on behalf of No. 1 using iOrder",
+        "Door coverage on ground: D2LR"
       ],
       "equipmentChecks": [
         {
@@ -498,7 +498,7 @@ globalThis.AOR_78Z = {
       "doorResponsibility": "NA",
       "rest": "1st Rest",
       "service": {
-        "summary": "Club World service for rows 12 to 17 on aircraft-right.",
+        "summary": "Club World service for rows 12 to 17 on aircraft-right",
         "cabin": [
           "CW"
         ]
@@ -614,10 +614,10 @@ globalThis.AOR_78Z = {
       "doorResponsibility": "D3R",
       "rest": "1st Rest",
       "service": {
-        "summary": "Serves with No. 8 from the front of WTP on aircraft right towards the rear",
+        "summary": "Community Fund / Flying Start, Serves from the front of WTP on aircraft right towards the rear",
         "cabin": [
-          "WTP",
-          "WT"
+          "WT",
+          "WTP"
         ],
         "extraCrew": [
           "Works alongside No. 12 if No. 8 becomes the dedicated Galley Operator"
@@ -630,8 +630,7 @@ globalThis.AOR_78Z = {
         ]
       },
       "additionalResponsibilities": [
-        "Door coverage of D3LR",
-        "Community Fund / Flying Start"
+        "Door coverage on ground: D3LR"
       ],
       "equipmentChecks": [
         {
@@ -715,10 +714,10 @@ globalThis.AOR_78Z = {
       "doorResponsibility": "D4R",
       "rest": "2nd Rest",
       "service": {
-        "summary": "WT and WTP Galley Operator unless No. 4 chooses the galley, Serves with No. 7 from the front of WTP on aircraft right towards the rear",
+        "summary": "Galley Operator if not No 4, Serves from the front of WTP on aircraft right towards the rear",
         "cabin": [
-          "WTP",
-          "WT"
+          "WT",
+          "WTP"
         ],
         "extraCrew": [
           "If assigned as the dedicated Galley Operator, hands the aircraft-right cabin position to No. 12"
@@ -732,8 +731,8 @@ globalThis.AOR_78Z = {
       },
       "additionalResponsibilities": [
         "Passenger announcements and PRAs",
-        "Door coverage of D4LR",
-        "Takes over Inflight Retail if No. 3 is assigned GCC 2"
+        "Takes over Inflight Retail if No. 3 is assigned GCC 2",
+        "Door coverage on ground: D4LR"
       ],
       "equipmentChecks": [
         {
@@ -812,7 +811,7 @@ globalThis.AOR_78Z = {
       "doorResponsibility": "D1R",
       "rest": "1st Rest",
       "service": {
-        "summary": "FIRST Galley Operator. Flight Crew Service Delivery.",
+        "summary": "FIRST Galley Operator. Flight Crew Service Delivery",
         "cabin": [
           "F"
         ]
@@ -825,7 +824,7 @@ globalThis.AOR_78Z = {
       },
       "additionalResponsibilities": [
         "Boarding at D1L if two doors are used",
-        "Door coverage of D1LR"
+        "Door coverage on ground: D1LR"
       ],
       "equipmentChecks": [
         {
@@ -924,7 +923,7 @@ globalThis.AOR_78Z = {
       "doorResponsibility": "NA",
       "rest": "2nd Rest",
       "service": {
-        "summary": "Works in FIRST.",
+        "summary": "NA",
         "cabin": [
           "F"
         ]
@@ -1004,7 +1003,7 @@ globalThis.AOR_78Z = {
       "doorResponsibility": "NA",
       "rest": "2nd Rest",
       "service": {
-        "summary": "Club World service for rows 5 to 11 on aircraft-left.",
+        "summary": "Club World service for rows 5 to 11 on aircraft-left",
         "cabin": [
           "CW"
         ]
@@ -1070,15 +1069,15 @@ globalThis.AOR_78Z = {
         "seat": "NA",
         "descriptor": "NA",
         "facing": "NA",
-        "full": "Flight deck spare crew seat"
+        "full": "Flight Deck - Observer Seat"
       },
       "doorResponsibility": "NA",
       "rest": "1st Rest",
       "service": {
         "summary": "NA",
         "cabin": [
-          "WTP",
-          "WT"
+          "WT",
+          "WTP"
         ],
         "extraCrew": [
           "Assists with Club World pre-setting before boarding",

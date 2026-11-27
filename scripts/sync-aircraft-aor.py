@@ -20,6 +20,41 @@ def split_responsibilities(v):
     # Semicolons always separate duties. Commas separate list items, while
     # commas introducing a condition/action (", if…", ", check…") stay joined.
     return [x.strip() for x in re.split(r";|,(?!\s*(?:if|check|unless)\b)",s,flags=re.I) if x.strip()] or [NA]
+
+def aor_headers(rows):
+    for index, row in enumerate(rows):
+        headers = [clean(value) for value in row]
+        if {"Airfile", "Position Number"}.issubset(headers):
+            if index > 0:
+                # Vertically merged headings are stored in the row above.
+                headers = [header or clean(above) for header, above in zip(headers, rows[index - 1])]
+            if "Area of Responsibility (AOR)" not in headers:
+                raise SystemExit("Missing 'Area of Responsibility (AOR)' header in 'AOR Positions'")
+            return index, headers
+    raise SystemExit("Missing 'Airfile' and 'Position Number' headers in 'AOR Positions'")
+
+def service_summary(row):
+    duty_names = {"IFR": "Inflight Retail", "CF/FS": "Community Fund / Flying Start"}
+    duties = []
+    for part in re.split(r"[,;\r\n]+", str(row.get("IFR, CF / FS") or "")):
+        duty = clean(part)
+        if duty.upper() not in {"", NA}:
+            code = re.sub(r"\s+", "", duty).upper()
+            duties.append(duty_names.get(code, duty))
+    summary = clean(row.get("Service Delivery"))
+    if summary.upper() not in {"", NA}:
+        duties.append(summary)
+    return ", ".join(duties) or NA
+
+def additional_responsibilities(row):
+    duties = split_responsibilities(row.get("Additional Responsibilities"))
+    coverage = clean(row.get("Door Coverage on Ground"))
+    if coverage.upper() in {"", NA}:
+        return duties
+    if duties == [NA]:
+        duties = []
+    return [*duties, f"Door coverage on ground: {coverage}"]
+
 def extra_crew_bullets(value):
     # A full stop separates duties, except in position labels such as No. 9 and in decimals.
     parts = re.split(r"(?<!\bNo)(?:(?<!\d)\.|\.(?!\d))|[\r\n]+", str(value or ""), flags=re.I)
@@ -110,10 +145,12 @@ def main():
     if not a.workbook.is_file():raise SystemExit(f"Workbook not found: {a.workbook}")
     wb=openpyxl.load_workbook(a.workbook,read_only=True,data_only=True)
     if "AOR Positions" not in wb.sheetnames:raise SystemExit("Missing 'AOR Positions' sheet")
-    rows=list(wb["AOR Positions"].values); header_idx=next(i for i,r in enumerate(rows) if "Airfile" in r and "Position Number" in r)
-    heads=[clean(x) for x in rows[header_idx]]; grouped={}
+    rows = list(wb["AOR Positions"].values)
+    wb.close()
+    header_idx, heads = aor_headers(rows)
+    grouped={}
     for raw in rows[header_idx+1:]:
-        d={heads[i]:raw[i] for i in range(min(len(heads),len(raw)))}
+        d = {header: value for header, value in zip(heads, raw) if header}
         code=clean(d.get("Airfile")); num=d.get("Position Number")
         if not code or not isinstance(num,(int,float)):continue
         grouped.setdefault(code,{})[int(num)]=d
@@ -148,10 +185,10 @@ def main():
             else:
                 p.pop("role2", None)
             p["seating"]=seating(row.get("Seating Position"))
-            p["doorResponsibility"]=clean(row.get("Door Mode Seclection")) or NA
+            p["doorResponsibility"]=clean(row.get("Door Mode Selection") or row.get("Door Mode Seclection")) or NA
             p["rest"]=clean(row.get("Rest")) or NA
             service = {
-                "summary": clean(row.get("Service Delivery")) or NA,
+                "summary": service_summary(row),
                 "cabin": cabin_codes(row.get("Cabin")),
             }
             extra_crew = extra_crew_bullets(row.get("Extra Crew"))
@@ -161,7 +198,7 @@ def main():
             p["demo"]={"position":clean(row.get("Position")) or NA,"pointsOut":split_list(row.get("Points Out")) or [NA]}
             area=clean(row.get("Area of Responsibility (AOR)")) or NA
             p["aor"]={"hasAor":area!=NA,"area":area}
-            p["additionalResponsibilities"]=split_responsibilities(row.get("Additional Responsibilities"))
+            p["additionalResponsibilities"]=additional_responsibilities(row)
             checks=[]
             for col,loc in (("Under Crew Seat","seat"),("In Assigned Area","area"),("In Crew Rest Area","rest")):
                 checks.extend(equipment(row.get(col),loc))

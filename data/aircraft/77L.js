@@ -217,10 +217,10 @@ globalThis.AOR_77L = {
       "role": "Cabin Crew",
       "displayTitle": "No. 3 (Cabin Crew - GCC 2)",
       "service": {
-        "summary": "Works in WTP and WT",
+        "summary": "Inflight Retail, Works in WTP and WT",
         "cabin": [
-          "WTP",
-          "WT"
+          "WT",
+          "WTP"
         ],
         "extraCrew": [
           "With 11 crew, serves with No. 4 from the front of WTP on aircraft left towards the rear"
@@ -320,8 +320,8 @@ globalThis.AOR_77L = {
       "service": {
         "summary": "Responsible for WT and WTP, May choose to be Galley Operator, Delivers WTP pre-takeoff drinks on aircraft-left",
         "cabin": [
-          "WTP",
-          "WT"
+          "WT",
+          "WTP"
         ],
         "extraCrew": [
           "With 11 crew, serves with No. 3 from the front of WTP on aircraft left towards the rear"
@@ -453,8 +453,8 @@ globalThis.AOR_77L = {
       "rest": "2nd Rest",
       "additionalResponsibilities": [
         "Boarding at D1L if two doors are used",
-        "Door coverage of D1LR when aircraft is on the ground",
-        "Safety and security check the additional unoccupied crew seat in the area if No. 11 is not carried"
+        "Safety and security check the additional unoccupied crew seat in the area if No. 11 is not carried",
+        "Door coverage on ground: D1LR"
       ],
       "equipmentChecks": [
         {
@@ -575,7 +575,7 @@ globalThis.AOR_77L = {
       },
       "rest": "1st Rest",
       "additionalResponsibilities": [
-        "Door coverage of D2LR when aircraft is on the ground"
+        "Door coverage on ground: D2LR"
       ],
       "equipmentChecks": [
         {
@@ -631,10 +631,10 @@ globalThis.AOR_77L = {
       "role": "Cabin Crew",
       "displayTitle": "No. 7 (Cabin Crew - GCC 3)",
       "service": {
-        "summary": "Works in WTP and WT",
+        "summary": "Community Fund / Flying Start, Works in WTP and WT",
         "cabin": [
-          "WTP",
-          "WT"
+          "WT",
+          "WTP"
         ],
         "extraCrew": [
           "With 11 crew, serves with No. 10 from the front of WTP on aircraft right towards the rear"
@@ -659,8 +659,7 @@ globalThis.AOR_77L = {
       },
       "rest": "1st Rest",
       "additionalResponsibilities": [
-        "Community Fund / Flying Start",
-        "Door coverage of D3LR when aircraft is on the ground"
+        "Door coverage on ground: D3LR"
       ],
       "equipmentChecks": [
         {
@@ -769,8 +768,8 @@ globalThis.AOR_77L = {
       "service": {
         "summary": "WT and WTP Galley Operator if No. 4 is not operating the galley.",
         "cabin": [
-          "WTP",
-          "WT"
+          "WT",
+          "WTP"
         ]
       },
       "seating": {
@@ -794,7 +793,7 @@ globalThis.AOR_77L = {
       "additionalResponsibilities": [
         "Passenger announcements and PRAs",
         "Takes over Inflight Retail if No. 3 is assigned GCC 2",
-        "Door coverage of D4LR when aircraft is on the ground"
+        "Door coverage on ground: D4LR"
       ],
       "equipmentChecks": [
         {
@@ -943,8 +942,8 @@ globalThis.AOR_77L = {
       "service": {
         "summary": "Delivers WTP pre-takeoff drinks on aircraft-right",
         "cabin": [
-          "WTP",
-          "WT"
+          "WT",
+          "WTP"
         ],
         "extraCrew": [
           "With 11 crew, serves with No. 7 from the front of WTP on aircraft right towards the rear"
@@ -1027,9 +1026,7 @@ globalThis.AOR_77L = {
       "service": {
         "summary": "NA",
         "cabin": [
-          "CW",
-          "WTP",
-          "WT"
+          "Varied"
         ],
         "extraCrew": [
           "Supports Club World pre-boarding service",
@@ -1113,11 +1110,11 @@ globalThis.AOR_77L = {
         "full": "D4L: AFT"
       },
       "doorResponsibility": "NA",
-      "rest": "NA",
+      "rest": "IFM Discretion",
       "service": {
         "summary": "NA",
         "cabin": [
-          "NA"
+          "IFM Discretion"
         ]
       },
       "demo": {

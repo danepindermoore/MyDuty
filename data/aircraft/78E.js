@@ -190,10 +190,10 @@ globalThis.AOR_78E = {
       "role": "Cabin Crew",
       "displayTitle": "No. 3 (Cabin Crew - GCC 2)",
       "service": {
-        "summary": "Serves WTP and WT with No. 4 when No. 4 is serving in the cabin. Works from the front of WTP on aircraft left towards the rear, Delivers WTP pre-takeoff service on aircraft-right, Responsible for Inflight Retail for all cabins unless assigned GCC 2 (then No. 8 takes over)",
+        "summary": "Inflight Retail, Serves WTP and WT with No 4 when No 4 is serving in the cabin. Works from the front of WTP on aircraft left towards the rear, Delivers WTP pre-takeoff service on aircraft-right, If GCC position 2 then IFR is reassigned to No 8",
         "cabin": [
-          "WTP",
-          "WT"
+          "WT",
+          "WTP"
         ],
         "extraCrew": [
           "No. 9 takes over aircraft-right WTP pre-takeoff service during boarding"
@@ -218,8 +218,7 @@ globalThis.AOR_78E = {
       },
       "rest": "2nd Rest",
       "additionalResponsibilities": [
-        "Boarding alongside SCCM",
-        "Inflight Retail, If GCC position is allocated to number 3 then IFR is reallocated to number 8"
+        "Boarding alongside SCCM, If GCC position is allocated to number 3 then IFR is reallocated to number 8"
       ],
       "equipmentChecks": [
         {
@@ -293,7 +292,8 @@ globalThis.AOR_78E = {
       "service": {
         "summary": "Responsible for WT and WTP, May choose to be the dedicated WT Galley Operator, When serving in the cabin works with No. 3 from the front of WTP on aircraft left towards the rear, Delivers WTP pre-takeoff service on aircraft-left",
         "cabin": [
-          "WT"
+          "WT",
+          "WTP"
         ],
         "extraCrew": [
           "Delivers WTP pre-takeoff service on aircraft left while No. 9 covers aircraft right"
@@ -425,8 +425,8 @@ globalThis.AOR_78E = {
       "rest": "2nd Rest",
       "additionalResponsibilities": [
         "SEP Equipment in OFCR",
-        "Door coverage of D1LR when aircraft is on the ground",
-        "Boarding at D1L when two doors used for boarding"
+        "Boarding at D1L when two doors used for boarding",
+        "Door coverage on ground: D1LR"
       ],
       "equipmentChecks": [
         {
@@ -513,7 +513,7 @@ globalThis.AOR_78E = {
       "role": "Cabin Crew",
       "displayTitle": "No. 6 (Cabin Crew - GCC 4)",
       "service": {
-        "summary": "Works in Club World from pre-takeoff until the end of the bar service after take-off, Then assists with meal delivery in WTP and WT alongside No. 7 from the front of WTP on aircraft right towards the rear, Works in either Club World or WTP and WT for second service at the IFM’s discretion, Should remain in Club World for both services at the IFM’s discretion when the combined WTP and WT load is under 100 customers, Takes FIRST rest and works in Club World during second-rest breaks",
+        "summary": "CW pre-departure & bar round, WT & WTP meal delivery alongside No 7 from the front of WTP on aircraft right towards the rear, Works in either Club World or WTP and WT for second service at the IFM’s discretion, Should remain in Club World for both services at the IFM’s discretion when the combined WTP and WT load is under 100 customers, Covers Club World during 2nd rest",
         "cabin": [
           "CW"
         ],
@@ -540,7 +540,7 @@ globalThis.AOR_78E = {
       },
       "rest": "1st Rest",
       "additionalResponsibilities": [
-        "Door coverage of D2LR if door 2 is not used for boarding"
+        "Door coverage on ground: D2LR"
       ],
       "equipmentChecks": [
         {
@@ -642,10 +642,10 @@ globalThis.AOR_78E = {
       "role": "Cabin Crew",
       "displayTitle": "No. 7 (Cabin Crew - GCC 3)",
       "service": {
-        "summary": "Serves WTP and WT from the front of WTP on aircraft right towards the rear, Works with No. 6 when No. 6 joins WTP and WT",
+        "summary": "Community Fund / Flying Start, Serves WTP and WT from the front of WTP on aircraft right towards the rear",
         "cabin": [
-          "WTP",
-          "WT"
+          "WT",
+          "WTP"
         ],
         "extraCrew": [
           "Works with No. 9 on aircraft right"
@@ -670,8 +670,7 @@ globalThis.AOR_78E = {
       },
       "rest": "1st Rest",
       "additionalResponsibilities": [
-        "Community Fund / Flying Start Collection",
-        "Door coverage of D3LR when aircraft is on the ground"
+        "Door coverage on ground: D3LR"
       ],
       "equipmentChecks": [
         {
@@ -738,9 +737,10 @@ globalThis.AOR_78E = {
       "role": "Cabin Crew",
       "displayTitle": "No. 8 (Cabin Crew - Galley Operator)",
       "service": {
-        "summary": "Dedicated WT Galley Operator unless No. 4 takes the galley. Responsible for PRAs and cabin PAs.",
+        "summary": "Galley Operator if not No 4, Responsible for PRAs and cabin Pas, If GCC position 2 assigned to No 5 then IFR reassigned to No 8",
         "cabin": [
-          "WT"
+          "WT",
+          "WTP"
         ]
       },
       "seating": {
@@ -762,7 +762,8 @@ globalThis.AOR_78E = {
       },
       "rest": "2nd Rest",
       "additionalResponsibilities": [
-        "Door coverage of D4LR when aircraft is on the ground, If GCC position is allocated to number 3 then IFR responsibility is reallocated to number 8"
+        "If GCC position is allocated to number 3 then IFR responsibility is reallocated to number 8",
+        "Door coverage on ground: D4LR"
       ],
       "equipmentChecks": [
         {
@@ -806,8 +807,8 @@ globalThis.AOR_78E = {
       "service": {
         "summary": "NA",
         "cabin": [
-          "WTP",
-          "WT"
+          "WT",
+          "WTP"
         ],
         "extraCrew": [
           "Delivers WTP pre-takeoff service on aircraft right during boarding while No. 4 covers aircraft left",

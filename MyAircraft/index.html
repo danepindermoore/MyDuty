@@ -366,7 +366,7 @@ const meta=globalThis.AIRCRAFT[code];
 if(meta?.haul==="shorthaul"&&globalThis.AIRCRAFT_DIAGRAMS?.[code])return applyAircraftDiagram(code,{aircraftCode:code,positions:[]},deck);
 const configuredPath=meta?.dataPath;const path=configuredPath?(configuredPath.startsWith("data/")?`${BASE_DATA_PATH}/${configuredPath.slice(5)}`:configuredPath):`${BASE_DATA_PATH}/aircraft/${code}.js`;
 const dataUrl = new URL(path, document.baseURI);
-dataUrl.searchParams.set("v", "20261127-seat-sides");
+dataUrl.searchParams.set("v", "20261127-duty-columns");
 try{await loadScript(dataUrl.href)}catch(error){if(globalThis.AIRCRAFT_DIAGRAMS?.[code])return applyAircraftDiagram(code,{aircraftCode:code,positions:[]},deck);throw error}
 if(!globalThis[key])throw new Error(`Loaded ${path} but ${key} was not created.`);
 return applyAircraftDiagram(code,globalThis[key],deck)

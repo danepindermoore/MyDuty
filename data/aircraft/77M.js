@@ -222,8 +222,9 @@ globalThis.AOR_77M = {
       "role": "Cabin Crew",
       "displayTitle": "No. 3 (Cabin Crew - GCC 2)",
       "service": {
-        "summary": "WTP pre-takeoff drinks on aircraft right. Works with No. 4 from the front of WTP on aircraft left towards the rear.",
+        "summary": "Inflight Retail, WTP pre-takeoff drinks on aircraft right. Works with No. 4 from the front of WTP on aircraft left towards the rear.",
         "cabin": [
+          "WT",
           "WTP"
         ]
       },
@@ -246,9 +247,8 @@ globalThis.AOR_77M = {
       },
       "rest": "2nd Rest",
       "additionalResponsibilities": [
-        "Boarding alongside No. 1 at D2L",
-        "Inflight Retail unless assigned GCC 2 (then No. 9 takes over)",
-        "Secures WTP and WT only during the demo"
+        "Boarding alongside No. 1 at D2L, If GCC position is allocated to number 2 then IFR is reallocated to number 9",
+        "Secures WT & WTP"
       ],
       "equipmentChecks": [
         {
@@ -322,8 +322,8 @@ globalThis.AOR_77M = {
       "service": {
         "summary": "Responsible for WTP and WT, May choose to be WT or WTP Galley Operator, Delivers WTP pre-takeoff drinks on aircraft left, Works with No. 3 from the front of WTP on aircraft left towards the rear",
         "cabin": [
-          "WTP",
-          "WT"
+          "WT",
+          "WTP"
         ],
         "extraCrew": [
           "Becomes the dedicated Galley Operator if assigned to the galley"
@@ -455,9 +455,9 @@ globalThis.AOR_77M = {
       "rest": "1st Rest",
       "additionalResponsibilities": [
         "Boarding at D1L if two doors are used",
-        "Door coverage of D1LR",
         "Equipment and security check of the D1R FWD crew seat if No. 11 is not carried",
-        "Secures the FWD FIRST Galley only during the demo"
+        "Secures the FWD FIRST Galley",
+        "Door coverage on ground: D1LR"
       ],
       "equipmentChecks": [
         {
@@ -553,9 +553,9 @@ globalThis.AOR_77M = {
       },
       "rest": "1st Rest",
       "additionalResponsibilities": [
-        "Door coverage of D2LR",
         "Safety and security check of the unoccupied D2R FWD spare crew seat",
-        "D2R FWD spare seat equipment: ET / HVT / PBE / LJ / FG / PO / DDC plus 1 FE"
+        "D2R FWD spare seat equipment: ET / HVT / PBE / LJ / FG / PO / DDC plus 1 FE",
+        "Door coverage on ground: D2LR"
       ],
       "equipmentChecks": [
         {
@@ -607,10 +607,10 @@ globalThis.AOR_77M = {
       "role": "Cabin Crew",
       "displayTitle": "No. 7 (Cabin Crew - GCC 3)",
       "service": {
-        "summary": "Works with No. 8 from the front of WTP on aircraft right towards the rear",
+        "summary": "Community Fund / Flying Start, Works with No. 8 from the front of WTP on aircraft right towards the rear",
         "cabin": [
-          "WTP",
-          "WT"
+          "WT",
+          "WTP"
         ],
         "extraCrew": [
           "Works with No. 12 from the front of WTP on aircraft right towards the rear"
@@ -635,8 +635,7 @@ globalThis.AOR_77M = {
       },
       "rest": "1st Rest",
       "additionalResponsibilities": [
-        "Door coverage of D3LR",
-        "Community Fund / Flying Start"
+        "Door coverage on ground: D3LR"
       ],
       "equipmentChecks": [
         {
@@ -715,8 +714,8 @@ globalThis.AOR_77M = {
       "service": {
         "summary": "WT and WTP Galley Operator if No. 4 is not operating the galley, Works with No. 7 from the front of WTP on aircraft right towards the rear",
         "cabin": [
-          "WTP",
-          "WT"
+          "WT",
+          "WTP"
         ],
         "extraCrew": [
           "Becomes the dedicated Galley Operator if assigned to the galley",
@@ -742,8 +741,8 @@ globalThis.AOR_77M = {
       },
       "rest": "2nd Rest",
       "additionalResponsibilities": [
-        "Door coverage of D4LR when aircraft is on the ground",
-        "Safety and security check of the unoccupied D4R AFT crew seat if No. 12 is not carried"
+        "Safety and security check of the unoccupied D4R AFT crew seat if No. 12 is not carried",
+        "Door coverage on ground: D4LR"
       ],
       "equipmentChecks": [
         {
@@ -1052,9 +1051,7 @@ globalThis.AOR_77M = {
       "service": {
         "summary": "NA",
         "cabin": [
-          "CW",
-          "WTP",
-          "WT"
+          "Varied"
         ],
         "extraCrew": [
           "Supports Club World pre-boarding service",

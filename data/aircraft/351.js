@@ -154,7 +154,7 @@ globalThis.AOR_351 = {
       "role": "IFM",
       "displayTitle": "No. 1 (SCCM - IFM)",
       "service": {
-        "summary": "Overall responsibility for all cabins, CW cabin serving rows 1 to 7 on aircraft-left",
+        "summary": "Overall responsibility for all cabins, CW cabin rows 1 to 7 on aircraft-left",
         "cabin": [
           "CW"
         ]
@@ -267,7 +267,7 @@ globalThis.AOR_351 = {
       "role": "Cabin Crew",
       "displayTitle": "No. 2 (Cabin Crew - GCC 1)",
       "service": {
-        "summary": "CW cabin serving rows 17 to 8 on aircraft-left",
+        "summary": "CW cabin rows 17 to 8 on aircraft-left",
         "cabin": [
           "CW"
         ]
@@ -287,7 +287,7 @@ globalThis.AOR_351 = {
       },
       "aor": {
         "hasAor": true,
-        "area": "Club Kitchen / D2L to AFT CW Cabin on aircraft-left"
+        "area": "Club Kitchen, D2L to AFT CW Cabin aircraft-left"
       },
       "rest": "1st Rest",
       "additionalResponsibilities": [
@@ -353,10 +353,10 @@ globalThis.AOR_351 = {
       "role": "Cabin Crew",
       "displayTitle": "No. 3 (Cabin Crew - GCC 2)",
       "service": {
-        "summary": "WTP & WT cabin serving on aircraft-left, Inflight Retail for all cabins",
+        "summary": "Inflight Retail, WTP & WT cabin aircraft-left",
         "cabin": [
-          "WTP",
-          "WT"
+          "WT",
+          "WTP"
         ]
       },
       "seating": {
@@ -374,12 +374,11 @@ globalThis.AOR_351 = {
       },
       "aor": {
         "hasAor": true,
-        "area": "FWD WTP to D3L on aircraft-left, 2 x Toilets at D3L"
+        "area": "FWD WTP aircraft-left to D3L, 2 x Toilets at D3L"
       },
       "rest": "2nd Rest",
       "additionalResponsibilities": [
-        "Boarding alongside SCCM",
-        "Inflight Retail, If GCC position is allocated to number 3 then IFR is reallocated to number 11"
+        "Boarding alongside SCCM, If GCC position is allocated to number 3 then IFR is reallocated to number 11"
       ],
       "equipmentChecks": [
         {
@@ -466,9 +465,10 @@ globalThis.AOR_351 = {
       "role": "IFL",
       "displayTitle": "No. 4 (IFL - Acting SCCM)",
       "service": {
-        "summary": "Responsible for World Traveller and World Traveller Plus cabins, WT cabin or WT Galley Operator, WTP pre-take off service on aircraft-right",
+        "summary": "Responsible for World Traveller and World Traveller Plus cabins, Choice of cabin or Galley Operator position, WTP pre-take off service on aircraft-left",
         "cabin": [
-          "WT"
+          "WT",
+          "WTP"
         ]
       },
       "seating": {
@@ -486,7 +486,7 @@ globalThis.AOR_351 = {
       },
       "aor": {
         "hasAor": true,
-        "area": "D3L to D4L on aircraft-left, CCRC and 1 x Toilet at D4L"
+        "area": "WT cabin aircraft-left, CCRC, 1 x Toilet at D4L"
       },
       "rest": "1st Rest",
       "additionalResponsibilities": [
@@ -597,13 +597,13 @@ globalThis.AOR_351 = {
       },
       "aor": {
         "hasAor": true,
-        "area": "CW Galley, FCRC, 1 x Toilet AFT of the Flight Deck"
+        "area": "CW Galley, FCRC, 1 x Toilet at D1L"
       },
       "rest": "2nd Rest",
       "additionalResponsibilities": [
         "SEP Equipment in FCRC",
-        "Door coverage of D1LR when aircraft is on the ground",
-        "Boarding at D1L when two doors used for boarding"
+        "Boarding at D1L when two doors used for boarding",
+        "Door coverage on ground: D1LR"
       ],
       "equipmentChecks": [
         {
@@ -720,11 +720,11 @@ globalThis.AOR_351 = {
       },
       "aor": {
         "hasAor": true,
-        "area": "D1R to D2R on aircraft-right, 1 x Toilet at D2R"
+        "area": "FWD CW cabin aircraft-right, 1 x Toilet at D2R"
       },
       "rest": "1st Rest",
       "additionalResponsibilities": [
-        "Door coverage of D2LR if door 2 is not used for boarding"
+        "Door coverage on ground: D2LR"
       ],
       "equipmentChecks": [
         {
@@ -815,9 +815,10 @@ globalThis.AOR_351 = {
       "role": "Cabin Crew",
       "displayTitle": "No. 7 (Cabin Crew - GCC 3)",
       "service": {
-        "summary": "WT cabin serving on aircraft-right",
+        "summary": "Community Fund / Flying Start, WT cabin serving on aircraft-right",
         "cabin": [
-          "WT"
+          "WT",
+          "WTP"
         ]
       },
       "seating": {
@@ -835,12 +836,11 @@ globalThis.AOR_351 = {
       },
       "aor": {
         "hasAor": true,
-        "area": "FWD WTP on aircraft-right to D3R, 2 x Toilets at D3R"
+        "area": "FWD WTP cabin aircraft-right to D3R, 2 x Toilets at D3R"
       },
       "rest": "1st Rest",
       "additionalResponsibilities": [
-        "Community Fund / Flying Start Collection",
-        "Door coverage of D3LR when aircraft is on the ground"
+        "Door coverage on ground: D3LR"
       ],
       "equipmentChecks": [
         {
@@ -924,7 +924,8 @@ globalThis.AOR_351 = {
       "service": {
         "summary": "WT Galley Operator if not operated by number 4,Responsible for PRAs and cabin PAs",
         "cabin": [
-          "WT"
+          "WT",
+          "WTP"
         ]
       },
       "seating": {
@@ -946,7 +947,7 @@ globalThis.AOR_351 = {
       },
       "rest": "2nd Rest",
       "additionalResponsibilities": [
-        "Door coverage of D4LR when aircraft is on the ground"
+        "Door coverage on ground: D4LR"
       ],
       "equipmentChecks": [
         {
@@ -1023,10 +1024,10 @@ globalThis.AOR_351 = {
       "role": "Cabin Crew",
       "displayTitle": "No. 9 (Cabin Crew)",
       "service": {
-        "summary": "WTP & WT cabin serving on aircraft-right",
+        "summary": "WTP & WT cabin on aircraft-right",
         "cabin": [
-          "WTP",
-          "WT"
+          "WT",
+          "WTP"
         ]
       },
       "seating": {
@@ -1044,7 +1045,7 @@ globalThis.AOR_351 = {
       },
       "aor": {
         "hasAor": true,
-        "area": "D2R to AFT CW cabin on aircraft-right"
+        "area": "D2R to AFT CW cabin aircraft-right"
       },
       "rest": "1st Rest",
       "additionalResponsibilities": [
@@ -1104,7 +1105,7 @@ globalThis.AOR_351 = {
       "role": "Cabin Crew",
       "displayTitle": "No. 10 (Cabin Crew - GCC 4)",
       "service": {
-        "summary": "CW cabin serving rows 1 to 7 on aircraft-right",
+        "summary": "CW cabin rows 1 to 7 on aircraft-right",
         "cabin": [
           "CW"
         ]
@@ -1185,9 +1186,10 @@ globalThis.AOR_351 = {
       "role": "Cabin Crew",
       "displayTitle": "No. 11 (Cabin Crew)",
       "service": {
-        "summary": "WT cabin serving on aircraft-left, WTP pre-take off service on aircraft-left",
+        "summary": "WT cabin aircraft-left, WTP pre-take off service on aircraft-right",
         "cabin": [
-          "WT"
+          "WT",
+          "WTP"
         ]
       },
       "seating": {
@@ -1265,9 +1267,10 @@ globalThis.AOR_351 = {
       "role": "Cabin Crew",
       "displayTitle": "No. 12 (Cabin Crew)",
       "service": {
-        "summary": "WT cabin serving on aircraft-right, assists with CW cabin pre-departure service",
+        "summary": "WT cabin aircraft-right, assists with CW cabin pre-departure service",
         "cabin": [
-          "WT"
+          "WT",
+          "WTP"
         ]
       },
       "seating": {
