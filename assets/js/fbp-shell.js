@@ -45,6 +45,9 @@ Responsibilities
 
         } = options;
 
+        const label = feedbackText.trim();
+        const pageLabel = label.match(/^(.+?)\s+Feedback$/)?.[1];
+
         const hero = document.createElement("section");
 
         hero.className = "fbp-hero";
@@ -91,7 +94,7 @@ Responsibilities
             class="fbp-button fbp-feedback-button"
             href="mailto:${feedbackEmail}?subject=${encodeURIComponent(feedbackSubject)}">
 
-            <span class="feedback-label"><span>${feedbackText.split(/\s+/)[0]}</span><span>${feedbackText.split(/\s+/).slice(1).join(" ")}</span></span><span class="feedback-arrow" aria-hidden="true">↗</span>
+            <span class="feedback-label"><span>${pageLabel ?? ""}</span><span>${pageLabel ? "Feedback" : label}</span></span><span class="feedback-arrow" aria-hidden="true">↗</span>
 
         </a>
 

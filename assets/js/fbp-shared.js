@@ -29,7 +29,7 @@ Responsibilities
 
     FBP.version = "2.0.0";
 
-    FBP.cacheVersion = "v5";
+    FBP.cacheVersion = "6";
 
     //-----------------------------------------------------
     // Cache Busting

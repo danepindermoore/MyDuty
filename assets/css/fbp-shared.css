@@ -486,7 +486,12 @@ body.fbp-theme :focus-visible {
 body.fbp-theme .fbp-feedback-button{min-height:52px;border-radius:999px;padding:8px 16px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.28);color:var(--text);font-weight:700;gap:8px}
 body.fbp-theme .fbp-feedback-button:hover{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.42);box-shadow:0 12px 28px rgba(0,0,0,.18)}
 .fbp-feedback-button .feedback-label{display:flex;flex-direction:column;align-items:center;line-height:1.05}
-.fbp-feedback-button .feedback-arrow{color:#ef657b;font-size:1.1em;line-height:1}
+.fbp-feedback-button .feedback-arrow {
+  color: #ef657b;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  font-size: 1.1em;
+  line-height: 1;
+}
 
 @media(max-width:560px){
   body.fbp-theme .fbp-feedback-button{width:72px;height:68px;min-height:68px;padding:5px 6px;display:inline-flex;flex-direction:column-reverse;justify-content:center;gap:3px;border-radius:12px;background:rgba(255,255,255,.035);border-color:rgba(255,255,255,.18);font-size:.66rem;line-height:1}
