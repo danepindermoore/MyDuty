@@ -46,10 +46,6 @@ Shared calculator styles:
     line-height: 1.6;
 }
 
-@media (max-width: 700px) {
-  .fdp-grid { grid-template-columns:1fr; gap:12px; }
-  .fdp-choice { min-height:180px; }
-}
 @media (prefers-reduced-motion: reduce) {
   .fdp-choice,.fdp-icon { transition:none!important; }
 }
@@ -74,3 +70,26 @@ button.fdp-choice{width:100%;font:inherit;cursor:pointer}
 .fdp-choice-disabled,.fdp-choice-disabled:hover{opacity:.55;filter:grayscale(1);transform:none;border-color:var(--border);box-shadow:var(--shadow);cursor:not-allowed}
 .fdp-choice-disabled .fdp-icon,.fdp-choice-disabled:hover .fdp-icon{transform:none}
 .fdp-choice-disabled .fdp-note{margin-top:0;color:var(--muted);font-size:.9rem;font-weight:700}
+
+@media (max-width: 700px) {
+  .fdp-grid { gap: 10px; }
+  .fdp-grid .fdp-choice {
+    min-height: 148px;
+    min-width: 0;
+    justify-content: flex-start;
+    gap: 9px;
+    padding-block: 15px;
+    border-radius: 16px;
+  }
+  .fdp-icon { width: 62px; height: 46px; border-radius: 15px 15px 15px 6px; }
+  .fdp-icon svg { width: 29px; height: 29px; }
+  .fdp-choice-title { font-size: 1.08rem; }
+  .fdp-choice-disabled { opacity: 1; }
+  .fdp-choice-disabled .fdp-icon { opacity: .55; }
+  .fdp-choice-disabled .fdp-note {
+    max-width: 14ch;
+    font-size: .82rem;
+    line-height: 1.25;
+    text-wrap: balance;
+  }
+}

@@ -6,6 +6,12 @@
   const clockDisplay=new Intl.DateTimeFormat("en-GB",{timeZone:"Europe/London",hour:"2-digit",minute:"2-digit",second:"2-digit",hourCycle:"h23",timeZoneName:"short"});
   const esc=value=>String(value??"").replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[ch]));
   const search=document.getElementById("reportTimesSearch"),filter=document.getElementById("reportTimesFilter"),terminalFilter=document.getElementById("reportTimesTerminal"),fleetFilter=document.getElementById("reportTimesFleet");
+  const filterPanel=document.getElementById("reportTimesFilters");
+  const compactFilters=window.matchMedia("(max-width: 650px)");
+  const updateFilterPanel=({matches})=>{filterPanel.open=!matches;};
+  updateFilterPanel(compactFilters);
+  compactFilters.addEventListener("change",updateFilterPanel);
+
   let todaysFlights=[],nowMinute=0;
   function londonNow(){
     const parts=Object.fromEntries(timeParts.formatToParts(new Date()).map(part=>[part.type,part.value]));

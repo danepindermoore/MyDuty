@@ -12,7 +12,9 @@
 .report-count-upcoming{border-color:rgba(117,184,223,.42)}
 .report-times-note{padding:0 4px;font-size:.88rem}
 .report-times-list{padding:18px}
-.report-times-tools{display:flex;align-items:end;gap:12px;margin-bottom:14px}
+.report-times-filters { margin-bottom: 14px; }
+.report-times-filters > summary { display: none; }
+.report-times-tools{display:flex;align-items:end;gap:12px}
 .report-times-tools label{display:grid;gap:6px;color:var(--muted);font-size:.8rem;font-weight:700}
 .report-times-search{flex:1}
 .report-times-tools input,.report-times-tools select{min-height:42px;padding:9px 12px;border:1px solid var(--border);border-radius:10px;background:var(--surface-2);color:var(--text);font:inherit}
@@ -33,3 +35,32 @@
 
 .report-times-aircraft-review{margin:0 0 12px;padding:10px 12px;border:1px solid rgba(236,177,83,.45);border-radius:10px;background:rgba(236,177,83,.08);color:var(--text);font-size:.84rem;line-height:1.45}
 .report-times-tools .report-times-filter select{min-width:180px}
+
+@media (max-width: 650px) {
+  .report-times-filters > summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    min-height: 44px;
+    padding: 8px 12px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--surface-2);
+    color: var(--text);
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .report-times-filters > summary::-webkit-details-marker { display: none; }
+  .report-times-filters > summary::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    margin-right: 2px;
+    border-right: 2px solid var(--brand-sky);
+    border-bottom: 2px solid var(--brand-sky);
+    transform: rotate(45deg);
+  }
+  .report-times-filters[open] > summary::after { transform: rotate(225deg); }
+  .report-times-filters[open] .report-times-tools { margin-top: 12px; }
+}

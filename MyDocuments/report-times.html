@@ -13,7 +13,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png?v=2">
   <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png?v=2">
   <link rel="stylesheet" href="../assets/css/fbp-shared.css?v=6">
-  <link rel="stylesheet" href="../assets/css/report-times.css">
+  <link rel="stylesheet" href="../assets/css/report-times.css?v=2">
   <script src="../assets/js/fbp-shared.js?v=6"></script>
   <script src="../assets/js/fbp-nav.js"></script>
   <script src="../assets/js/fbp-shell.js?v=6"></script>
@@ -36,12 +36,15 @@
       </section>
       <p class="report-times-note">Status is assumed from the scheduled report time: once that time has passed, the flight is shown as Reported.</p>
       <section class="report-times-list fbp-panel">
-        <div class="report-times-tools">
-          <label class="report-times-search">Find a flight or destination<input id="reportTimesSearch" type="search" placeholder="e.g. BA123 or JFK" autocomplete="off"></label>
-          <label class="report-times-filter">Flights<select id="reportTimesFilter"><option value="all">Show all flights (Today)</option><option value="reported">Show all reported flights</option><option value="upcoming" selected>Show flights still to report</option></select></label>
-          <label class="report-times-filter">Terminal<select id="reportTimesTerminal"><option value="all">All Terminals</option><option value="T5">T5 only</option><option value="T3">T3 only</option></select></label>
-          <label class="report-times-filter">Fleet<select id="reportTimesFleet"><option value="all">All Fleets</option><option value="B777-B787-A380">B777/B787/A380</option><option value="B777-B787-A350">B777/B787/A350</option><option value="B777-B787">B777/B787</option><option value="B777-only">B777 only</option></select></label>
-        </div>
+        <details class="report-times-filters" id="reportTimesFilters">
+          <summary>Filters</summary>
+          <div class="report-times-tools">
+            <label class="report-times-search">Find a flight or destination<input id="reportTimesSearch" type="search" placeholder="e.g. BA123 or JFK" autocomplete="off"></label>
+            <label class="report-times-filter">Flights<select id="reportTimesFilter"><option value="all">Show all flights (Today)</option><option value="reported">Show all reported flights</option><option value="upcoming" selected>Show flights still to report</option></select></label>
+            <label class="report-times-filter">Terminal<select id="reportTimesTerminal"><option value="all">All Terminals</option><option value="T5">T5 only</option><option value="T3">T3 only</option></select></label>
+            <label class="report-times-filter">Fleet<select id="reportTimesFleet"><option value="all">All Fleets</option><option value="B777-B787-A380">B777/B787/A380</option><option value="B777-B787-A350">B777/B787/A350</option><option value="B777-B787">B777/B787</option><option value="B777-only">B777 only</option></select></label>
+          </div>
+        </details>
         <p id="reportTimesSchedule" class="report-times-schedule"></p>
         <p id="reportTimesAircraftReview" class="report-times-aircraft-review" hidden></p>
         <div class="report-times-table-wrap">
@@ -57,6 +60,6 @@
   <script>
     FBP.createPage({container:"main",contentSelector:".report-times-content",layout:"wide",title:"MyASBY",subtitle:"Report Times - Today's Flights",feedbackText:"MyASBY Feedback",feedbackSubject:"Feedback for Report Times",activePage:"myAsby"});
   </script>
-  <script src="../assets/js/myasby.js"></script>
+  <script src="../assets/js/myasby.js?v=2"></script>
 </body>
 </html>
