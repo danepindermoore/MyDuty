@@ -285,6 +285,22 @@ textarea {
   border: 1px solid rgba(117,184,223,0.24);
 }
 
+/* The homepage icons and navigation links share their tool colours. */
+[data-tool="home"] { --tool-background: linear-gradient(118deg, rgba(7,27,61,.98) 0%, rgba(10,44,81,.94) 64%, rgba(18,69,108,.92) 100%); }
+[data-tool="myAircraft"],
+[data-tool="myExams"] { --tool-background: linear-gradient(145deg, #216da5, #0d3f70); }
+[data-tool="myBriefing"] { --tool-background: linear-gradient(145deg, #c8102e, #86102b); }
+[data-tool="myAsby"] { --tool-background: linear-gradient(145deg, #278778, #125b59); }
+[data-tool="documents"] {
+  --tool-background: #8f826c;
+  --tool-text-color: #021b41;
+}
+[data-tool="importantDates"] {
+  --tool-background: #fbbf24;
+  --tool-text-color: #021b41;
+}
+[data-tool="myRoster"] { --tool-background: linear-gradient(145deg, #398bb9, #155b91); }
+
 .fbp-subnav {
   display: flex;
   gap: 10px;
@@ -300,26 +316,41 @@ textarea {
   padding: 10px 14px;
   border-radius: 999px;
   border: 1px solid var(--border);
-  background: var(--surface);
-  color: var(--text);
+  background: var(--tool-background, var(--surface));
+  color: var(--tool-text-color, var(--text));
   text-decoration: none;
   font-weight: 700;
   font-size: 0.92rem;
-  transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, filter 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .fbp-subnav a:hover {
   transform: translateY(-2px);
-  background: var(--surface-hover);
+  filter: brightness(1.1);
   border-color: rgba(117,184,223,0.4);
   box-shadow: 0 14px 30px rgba(0,0,0,0.14);
 }
 
 .fbp-subnav a.active {
-  background: linear-gradient(135deg, var(--accent), var(--brand-blue));
-  color: #fff;
-  border-color: transparent;
+  border-color: var(--brand-white);
   box-shadow: 0 12px 28px rgba(11,58,98,0.3);
+}
+
+.fbp-site-footer {
+  width: min(calc(100% - 32px), 1140px);
+  margin: auto auto 0;
+  padding: 16px 0 max(24px, env(safe-area-inset-bottom));
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: .82rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+body:has(> .fbp-site-footer) {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 @media (max-width: 980px) {

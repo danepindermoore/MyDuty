@@ -11,7 +11,7 @@ Responsibilities
 ✓ Framework version
 ✓ Cache busting
 ✓ Dark appearance
-✓ Version badge
+✓ Site ownership notice
 ✓ Global initialisation
 
 =========================================================
@@ -29,7 +29,7 @@ Responsibilities
 
     FBP.version = "2.0.0";
 
-    FBP.cacheVersion = "6";
+    FBP.cacheVersion = "7";
 
     //-----------------------------------------------------
     // Cache Busting
@@ -66,8 +66,12 @@ Responsibilities
     FBP.init = function () {
 
         FBP.refreshAssets();
-
-
+        if (!document.querySelector(".fbp-site-footer")) {
+            const footer = document.createElement("footer");
+            footer.className = "fbp-site-footer";
+            footer.textContent = "MyDuty and all of its original components, including its design and creative work, are the property of Dane Jordan-Pinder (u155573).";
+            document.body.appendChild(footer);
+        }
     };
 
     //-----------------------------------------------------

@@ -1,6 +1,6 @@
 /*
 =========================================================
-Flight Briefing Pack
+MyDuty
 Shared Navigation
 Version: 2.0.0
 =========================================================
@@ -21,7 +21,7 @@ Responsibilities
     // Navigation Items
     //-----------------------------------------------------
 
-const IS_FEATURE_PAGE = /\/(MyBriefing|MyAircraft|MyRoster|MyDocuments|MyExams|ImportantDates)(\/|$)/i.test(
+const IS_FEATURE_PAGE = /\/(MyBriefing|MyBriefingPresentation|MyAircraft|MyRoster|MyDocuments|MyExams|ImportantDates)(\/|$)/i.test(
     decodeURIComponent(location.pathname)
 );
 
@@ -35,11 +35,6 @@ const NAV_ITEMS = [
         href: BASE + "index.html"
     },
 
-    {
-        id: "importantDates",
-        text: "MyCalendar",
-        href: BASE + "ImportantDates/index.html"
-    },
 
     {
         id: "myAircraft",
@@ -54,14 +49,19 @@ const NAV_ITEMS = [
     },
 
     {
+        id: "myAsby",
+        text: "MyASBY",
+        href: BASE + "MyDocuments/report-times.html"
+    },
+    {
         id: "documents",
         text: "MyDocuments",
         href: BASE + "MyDocuments/index.html"
     },
     {
-        id: "myAsby",
-        text: "MyASBY",
-        href: BASE + "MyDocuments/report-times.html"
+        id: "importantDates",
+        text: "MyCalendar",
+        href: BASE + "ImportantDates/index.html"
     },
     {
         id: "myRoster",
@@ -90,6 +90,7 @@ const NAV_ITEMS = [
         const nav = document.createElement("nav");
 
         nav.className = "fbp-subnav";
+        nav.setAttribute("aria-label", "Main navigation");
 
         visibleNavigationItems().forEach(item => {
 
@@ -98,6 +99,7 @@ const NAV_ITEMS = [
             link.href = item.href;
 
             link.textContent = item.text;
+            link.dataset.tool = item.id;
 
             if (item.inProgress) {
 
@@ -108,6 +110,7 @@ const NAV_ITEMS = [
             if (item.id === activePage) {
 
                 link.classList.add("active");
+                link.setAttribute("aria-current", "location");
 
             }
 

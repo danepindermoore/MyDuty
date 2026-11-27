@@ -208,13 +208,19 @@ document.addEventListener('DOMContentLoaded',()=>{const form=document.querySelec
 :is(#gate, #setup) .button.secondary:hover { background: var(--surface-hover); }
 #error,
 #setup .build-error { color: #ff9ca9; }
+.top + .fbp-subnav { width: min(calc(100% - 36px), 1014px); margin: 16px auto 0; }
+body:has(> #deck:not(.hidden)) > :is(.top, .fbp-subnav, .fbp-site-footer) { display: none; }
 </style>
-<link rel="stylesheet" href="../assets/css/fbp-shared.css?v=6">
+<link rel="stylesheet" href="../assets/css/fbp-shared.css?v=7">
 <link rel="stylesheet" href="../assets/css/MyBriefing/airport-weather.css">
-<script src="../assets/js/fbp-shared.js?v=6"></script>
+<script src="../assets/js/fbp-shared.js?v=7"></script>
+<script src="../assets/js/fbp-nav.js?v=16"></script>
 </head>
 <body>
-<header class="top"><img src="../assets/brand/ba-primary-logo-white.png" alt="British Airways"><a href="../index.html">Back to MyDuty</a></header>
+<header class="top"><img src="../assets/brand/ba-primary-logo-white.png" alt="British Airways"></header>
+<script>
+  document.querySelector(".top").after(FBP.createNavigation("myBriefing"));
+</script>
 <section id="gate"><div class="gatebox"><p class="eyebrow">MyDuty</p><h1>Pre-flight briefing</h1><p class="muted">If you have set up personalised SCCM expectations, please enter the last 4 digits of your work device phone number below. If you have not set up personalised SCCM expectations, please click 'Generic Briefing'.</p><form id="gateForm"><label class="field"><span class="field label">Your four-digit code</span><input id="code" type="text" inputmode="numeric" pattern="[0-9]{4}" minlength="4" maxlength="4" autocomplete="off" placeholder="" required></label><p id="error" aria-live="polite"></p><div class="gate-actions"><button class="button" type="submit">Continue</button><button id="genericBriefing" class="button secondary" type="button">Generic Briefing</button></div></form></div></section>
 <main id="setup" class="hidden"><p class="eyebrow">Long Haul</p><h1>Prepare today’s briefing</h1><p class="muted">FDP details are pre-filled when you open this page from the long-haul FDP results. Add only the briefing details that change for this flight.</p><div id="fdpNotice" class="pill hidden">FDP details received</div>
 <form id="form"><input type="hidden" name="originCode"><input type="hidden" name="destinationCode"><input type="hidden" name="captainName"><input type="hidden" name="firstOfficerNames"><input type="hidden" name="flightTime">
