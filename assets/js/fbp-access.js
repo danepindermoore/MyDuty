@@ -10,7 +10,7 @@
     const gate=document.createElement("div");gate.id="fbp-access-gate";
     gate.innerHTML='<section class="access-card" role="dialog" aria-modal="true" aria-labelledby="fbp-access-title"><h1 id="fbp-access-title">Admin Access</h1><p>These pages are reserved for use by Admin only. If you wish to request access, please use the feedback button on this page.</p><form><label for="fbp-access-password">Password</label><input id="fbp-access-password" type="password" autocomplete="current-password" required><div class="access-actions"><button type="submit">Continue</button><a id="fbp-access-feedback">Request Access</a></div><p class="access-error" aria-live="polite"></p></form></section>';
     document.body.appendChild(gate);
-    const page=decodeURIComponent(location.pathname.split("/").filter(Boolean).pop()||"Flight Briefing Pack");
+    const page=decodeURIComponent(location.pathname.split("/").filter(Boolean).pop()||"MyDuty");
     gate.querySelector("#fbp-access-feedback").href="mailto:u155573@ba.com?subject="+encodeURIComponent("Request access to "+page);
     const input=gate.querySelector("#fbp-access-password");input.focus();
     gate.querySelector("form").addEventListener("submit",function(event){event.preventDefault();if(input.value==="admin"){sessionStorage.setItem(ACCESS_KEY,"granted");location.reload();return}gate.querySelector(".access-error").textContent="Password not recognised.";input.select()});

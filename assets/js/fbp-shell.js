@@ -1,6 +1,6 @@
 /*
 =========================================================
-Flight Briefing Pack
+MyDuty
 Shared Page Shell
 Version: 2.0.0
 =========================================================
@@ -21,7 +21,7 @@ Responsibilities
     "use strict";
 
     /**
-     * Creates the Flight Briefing Pack page shell.
+     * Creates the MyDuty page shell.
      *
      * @param {Object} options
      * @returns {HTMLElement}
@@ -41,7 +41,7 @@ Responsibilities
 
             feedbackEmail = "u155573@ba.com",
 
-            feedbackSubject = "Flight Briefing Pack Feedback"
+            feedbackSubject = "MyDuty Feedback"
 
         } = options;
 

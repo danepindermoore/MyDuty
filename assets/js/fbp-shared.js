@@ -1,6 +1,6 @@
 /*
 =========================================================
-Flight Briefing Pack
+MyDuty
 Shared Framework
 Version: 2.0.0
 =========================================================
@@ -29,7 +29,7 @@ Responsibilities
 
     FBP.version = "2.0.0";
 
-    FBP.cacheVersion = "v4";
+    FBP.cacheVersion = "v5";
 
     //-----------------------------------------------------
     // Cache Busting

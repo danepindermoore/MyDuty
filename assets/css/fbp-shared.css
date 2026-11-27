@@ -1,17 +1,47 @@
+@font-face {
+  font-family: "Mylius Modern";
+  src: url("../brand/MyliusModern-ExtLig.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mylius Modern";
+  src: url("../brand/MyliusModern-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mylius Modern";
+  src: url("../brand/MyliusModern-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mylius Modern";
+  src: url("../brand/MyliusModern-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
+  --brand-font: "Mylius Modern", "Segoe UI", Arial, sans-serif;
   --brand-navy: #071b3d;
   --brand-blue: #155b91;
   --brand-sky: #75b8df;
   --brand-red: #c8102e;
-  --brand-white: #f7f9fc;
-  --bg-1: #050d1b;
-  --bg-2: #071b3d;
-  --bg-3: #0a2448;
+  --brand-white: #fff;
   --surface: rgba(15,39,69,0.82);
   --surface-2: rgba(255,255,255,0.045);
   --surface-hover: rgba(255,255,255,0.085);
   --border: rgba(190,210,232,0.17);
-  --text: #f5f7fa;
+  --text: var(--brand-white);
   --muted: #b7c5d5;
   --accent: #216da5;
   --accent-2: #c8102e;
@@ -32,14 +62,18 @@
 
 body.fbp-theme {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  font-family: var(--brand-font);
   color: var(--text);
-  background:
-    radial-gradient(ellipse at 8% 0%, rgba(21,91,145,0.24), transparent 34%),
-    radial-gradient(ellipse at 100% 20%, rgba(200,16,46,0.075), transparent 26%),
-    linear-gradient(155deg, var(--bg-1) 0%, var(--bg-2) 52%, var(--bg-3) 100%);
+  background: var(--brand-navy);
   min-height: 100vh;
   overflow-x: hidden;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
 }
 
 .fbp-shell,

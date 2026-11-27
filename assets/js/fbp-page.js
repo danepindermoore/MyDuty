@@ -1,13 +1,13 @@
 /*
 =========================================================
-Flight Briefing Pack
+MyDuty
 Page Builder
 Version: 2.2.0
 =========================================================
 
 Responsibilities
 
-✓ Builds the standard Flight Briefing Pack page
+✓ Builds the standard MyDuty page
 ✓ Inserts the shared navigation
 ✓ Inserts the shared hero
 ✓ Supports multiple page layouts
@@ -42,7 +42,7 @@ Responsibilities
 
             feedbackEmail = "u155573@ba.com",
 
-            feedbackSubject = "Flight Briefing Pack Feedback",
+            feedbackSubject = "MyDuty Feedback",
 
             activePage = ""
 
