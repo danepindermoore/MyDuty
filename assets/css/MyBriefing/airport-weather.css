@@ -1,0 +1,265 @@
+/* Keep the forecast in view while the route and flight details share the remaining space. */
+#mapScreen .map-layout {
+  overflow: auto;
+  scrollbar-color: #6c8ca9 #092448;
+}
+
+#mapScreen .flight-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-content: start;
+  gap: 12px;
+  overflow: visible;
+  padding: clamp(10px, 1.6vw, 20px);
+}
+
+.flight-panel-group {
+  min-width: 0;
+}
+
+.flight-panel-group + .flight-panel-group {
+  border-top: 1px solid #ffffff36;
+  padding-top: 10px;
+}
+
+#mapScreen .crew-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: baseline;
+  gap: 4px 8px;
+  padding: 5px 0;
+}
+
+#mapScreen .crew-row span {
+  line-height: 1.2;
+}
+
+#mapScreen .crew-row b {
+  margin: 0;
+  line-height: 1.17;
+  font-size: clamp(.78rem, 1vw, 1rem);
+}
+
+.map-weather {
+  flex: none;
+  margin-top: 12px;
+  padding: 8px 12px 6px;
+  background: #092448;
+  border-top: 2px solid var(--brand-sky);
+}
+
+.map-weather-ticker {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px 16px;
+}
+
+.map-weather-card + .map-weather-card {
+  border-left: 1px solid #ffffff36;
+  padding-left: 14px;
+}
+
+.map-weather-heading,
+.map-weather-reading,
+.map-weather-value {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 3px 8px;
+}
+
+.map-weather-heading {
+  color: var(--brand-sky);
+  font-size: .8rem;
+}
+
+.map-weather-heading time {
+  color: #bacce0;
+  font-size: .74rem;
+  white-space: nowrap;
+}
+
+.map-weather-reading {
+  flex-wrap: nowrap;
+  align-items: center;
+  min-height: 32px;
+}
+
+.map-weather-symbol {
+  display: block;
+  flex: 0 0 28px;
+  color: #bce5fb;
+  line-height: 0;
+}
+
+.map-weather-symbol:empty {
+  display: none;
+}
+
+.map-weather-symbol svg {
+  width: 100%;
+  height: auto;
+}
+
+.map-weather-value strong {
+  font-size: clamp(1rem, 2.1vw, 1.4rem);
+  white-space: nowrap;
+}
+
+.map-weather-value span,
+.map-weather-source {
+  color: #d3e0ed;
+  font-size: .76rem;
+  line-height: 1.2;
+}
+
+.map-weather-source {
+  margin: 2px 0 0;
+  font-size: .67rem;
+}
+
+.map-weather-source a {
+  color: inherit;
+}
+
+@media (max-width: 560px) {
+  #mapScreen .map-top {
+    gap: 10px;
+  }
+
+  #mapScreen .map-top small {
+    display: block;
+    font-size: .58rem;
+    letter-spacing: .13em;
+    line-height: 1.2;
+  }
+
+  #mapScreen .map-top button {
+    padding: 8px 9px;
+    font-size: .83rem;
+    white-space: nowrap;
+  }
+
+  #mapScreen .map-layout {
+    grid-template-rows: minmax(170px, 1fr) auto;
+  }
+
+  #mapScreen .crew-row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2px;
+  }
+
+  .map-weather {
+    margin-top: 8px;
+    padding-inline: 8px;
+  }
+
+  .map-weather-ticker {
+    column-gap: 8px;
+  }
+
+  .map-weather-card + .map-weather-card {
+    padding-left: 8px;
+  }
+
+  .map-weather-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1px;
+  }
+
+  .map-weather-reading {
+    gap: 4px;
+  }
+
+  .map-weather-symbol {
+    flex-basis: 21px;
+  }
+}
+
+@media (max-width: 560px), (max-height: 540px) and (min-width: 561px) {
+  #mapScreen .flight-panel {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .flight-panel-group + .flight-panel-group {
+    border-top: 0;
+    border-left: 1px solid #ffffff36;
+    padding: 0 0 0 9px;
+  }
+}
+
+@media (max-height: 540px) and (min-width: 561px) {
+  #mapScreen {
+    padding-block: 10px;
+  }
+
+  #mapScreen .map-top {
+    padding-bottom: 7px;
+  }
+
+  #mapScreen .map-top small {
+    display: block;
+    line-height: 1.1;
+  }
+
+  #mapScreen .map-top h2 {
+    margin: 3px 0;
+  }
+
+  #mapScreen .map-top button {
+    min-height: 34px;
+    padding: 5px 10px;
+  }
+
+  #mapScreen .flight-panel {
+    padding: 7px 10px;
+  }
+
+  #mapScreen .flight-panel .section-label {
+    margin-bottom: 5px;
+  }
+
+  #mapScreen .map-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(290px, 44%);
+  }
+
+  #mapScreen .crew-row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2px;
+    padding: 3px 0;
+  }
+
+  .map-weather {
+    margin-top: 6px;
+    padding-block: 5px 4px;
+  }
+}
+
+@media (max-width: 560px) and (max-height: 670px) {
+  #mapScreen {
+    padding-block: 7px;
+  }
+
+  #mapScreen .map-layout {
+    grid-template-rows: minmax(104px, 1fr) auto;
+  }
+
+  .map-weather-reading {
+    min-height: 28px;
+  }
+
+  #mapScreen .flight-panel {
+    padding: 8px;
+  }
+
+  #mapScreen .crew-row {
+    padding: 3px 0;
+  }
+
+  .map-weather {
+    margin-top: 6px;
+    padding-block: 5px 4px;
+  }
+}

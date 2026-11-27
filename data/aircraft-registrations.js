@@ -3657,7 +3657,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
     "baseSection": "Main fleet",
     "airfile": "77H",
     "shortName": "B777-300",
-    "wifiType": "BA-WiFi (Free Messaging)",
+    "wifiType": "Starlink",
     "livery": "Standard",
     "sepEquipment": [
       {
@@ -3727,7 +3727,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
     "baseSection": "Main fleet",
     "airfile": "77H",
     "shortName": "B777-300",
-    "wifiType": "BA-WiFi (Free Messaging)",
+    "wifiType": "Starlink",
     "livery": "Standard",
     "sepEquipment": [
       {
@@ -3902,7 +3902,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
     "baseSection": "Main fleet",
     "airfile": "77H",
     "shortName": "B777-300",
-    "wifiType": "BA-WiFi (Free Messaging)",
+    "wifiType": "Starlink",
     "livery": "Bespoke",
     "sepEquipment": [
       {
@@ -3937,7 +3937,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
     "baseSection": "Main fleet",
     "airfile": "77H",
     "shortName": "B777-300",
-    "wifiType": "BA-WiFi (Free Messaging)",
+    "wifiType": "Starlink",
     "livery": "Standard",
     "sepEquipment": [
       {
@@ -4077,7 +4077,7 @@ globalThis.AIRCRAFT_REGISTRATIONS = Object.freeze({
     "baseSection": "Main fleet",
     "airfile": "77H",
     "shortName": "B777-300",
-    "wifiType": "BA-WiFi (Free Messaging)",
+    "wifiType": "Starlink",
     "livery": "Standard",
     "sepEquipment": [
       {
