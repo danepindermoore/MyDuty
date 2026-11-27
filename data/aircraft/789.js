@@ -16,7 +16,7 @@ globalThis.AOR_789 = {
       "role": "IFM",
       "displayTitle": "No. 1 (SCCM - IFM)",
       "service": {
-        "summary": "NA",
+        "summary": "Overall responsibility for the aircraft. Serves 6ABDE to 7EFJK in Club World.",
         "cabin": [
           "CW"
         ]
@@ -40,11 +40,62 @@ globalThis.AOR_789 = {
       },
       "rest": "2nd Rest",
       "additionalResponsibilities": [
-        "NA"
+        "Passenger announcements",
+        "Boarding at D2L"
       ],
       "equipmentChecks": [
         {
-          "code": "NA",
+          "code": "ET",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "HVT",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "PBE",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "LJ",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "FG",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "DDC",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "P.H2O",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "MP",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "WEX",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "ELT",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "DEM",
           "qty": 1,
           "locationType": "area"
         }
@@ -56,7 +107,7 @@ globalThis.AOR_789 = {
       "role": "Cabin Crew",
       "displayTitle": "No. 2 (Cabin Crew - GCC 1)",
       "service": {
-        "summary": "NA",
+        "summary": "Club World service from 10ABD to 13ABDE.",
         "cabin": [
           "CW"
         ]
@@ -69,14 +120,14 @@ globalThis.AOR_789 = {
       },
       "doorResponsibility": "D2L",
       "demo": {
-        "position": "10BD AFT Facing",
+        "position": "Front of AFT CW cabin, aircraft left",
         "pointsOut": [
           "D3LR followed by D2LR"
         ]
       },
       "aor": {
         "hasAor": true,
-        "area": "FWD & AFT CW cabin ABD, 1 x Toilet at D2L"
+        "area": "FWD to AFT CW cabin on aircraft left, 1 x Toilet at D2L"
       },
       "rest": "1st Rest",
       "additionalResponsibilities": [
@@ -84,7 +135,57 @@ globalThis.AOR_789 = {
       ],
       "equipmentChecks": [
         {
-          "code": "NA",
+          "code": "ET",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "HVT",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "PBE",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "LJ",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "FG",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "DDC",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "SP",
+          "qty": 2,
+          "locationType": "area"
+        },
+        {
+          "code": "M5",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "AED",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "EXT",
+          "qty": 20,
+          "locationType": "area"
+        },
+        {
+          "code": "DEM",
           "qty": 1,
           "locationType": "area"
         }
@@ -96,7 +197,7 @@ globalThis.AOR_789 = {
       "role": "Cabin Crew",
       "displayTitle": "No. 3 (Cabin Crew - GCC 2)",
       "service": {
-        "summary": "NA",
+        "summary": "Serves with No. 4 from the front of WTP on aircraft left towards the rear. WTP pre-takeoff drinks on aircraft right when released from boarding.",
         "cabin": [
           "WTP",
           "WT"
@@ -110,23 +211,69 @@ globalThis.AOR_789 = {
       },
       "doorResponsibility": "D3L",
       "demo": {
-        "position": "Front of WTP cabin AB side",
+        "position": "Front of WTP, aircraft left",
         "pointsOut": [
           "D3LR followed by D2LR"
         ]
       },
       "aor": {
         "hasAor": true,
-        "area": "WTP cabin, 1 x Toilet at D3L"
+        "area": "Entire WTP cabin, 1 x Toilet at D3L"
       },
       "rest": "2nd Rest",
       "additionalResponsibilities": [
-        "NA"
+        "Boarding alongside No. 1 at D2L",
+        "Inflight Retail unless assigned GCC 2 (then No. 8 takes over)"
       ],
       "equipmentChecks": [
         {
-          "code": "NA",
+          "code": "ET",
           "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "HVT",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "PBE",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "LJ",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "FG",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "DDC",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "DEM",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "LJ",
+          "qty": 10,
+          "locationType": "area"
+        },
+        {
+          "code": "LCO",
+          "qty": 8,
+          "locationType": "area"
+        },
+        {
+          "code": "PO",
+          "qty": 3,
           "locationType": "area"
         }
       ]
@@ -137,7 +284,7 @@ globalThis.AOR_789 = {
       "role": "IFL",
       "displayTitle": "No. 4 (IFL - Acting SCCM)",
       "service": {
-        "summary": "NA",
+        "summary": "Overall responsibility for WTP and WT. May choose to be WT and WTP Galley Operator. WTP pre-takeoff drinks on aircraft left. Serves with No. 3 from the front of WTP on aircraft left towards the rear. With 11 crew, No. 4 or No. 8 becomes the dedicated Galley Operator when assigned.",
         "cabin": [
           "WTP",
           "WT"
@@ -151,24 +298,94 @@ globalThis.AOR_789 = {
       },
       "doorResponsibility": "D4L",
       "demo": {
-        "position": "Adjacent to D3L",
+        "position": "Front of WT, aircraft left",
         "pointsOut": [
           "D4LR followed by D3LR"
         ]
       },
       "aor": {
         "hasAor": true,
-        "area": "WT cabin ABC side, 1 x Toilet at D4L, OFAR"
+        "area": "Left WT cabin, OFAR, 1 x Toilet at D4L"
       },
       "rest": "1st Rest",
       "additionalResponsibilities": [
-        "NA"
+        "Checks the D4 galley aft-facing spare crew seat"
       ],
       "equipmentChecks": [
         {
-          "code": "NA",
+          "code": "ET",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "HVT",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "PBE",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "LJ",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "FG",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "DDC",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "DEM",
+          "qty": 2,
+          "locationType": "area"
+        },
+        {
+          "code": "PO",
+          "qty": 3,
+          "locationType": "area"
+        },
+        {
+          "code": "WEX",
           "qty": 1,
           "locationType": "area"
+        },
+        {
+          "code": "JEM",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "M2",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "FG",
+          "qty": 1,
+          "locationType": "rest"
+        },
+        {
+          "code": "FE",
+          "qty": 1,
+          "locationType": "rest"
+        },
+        {
+          "code": "ET",
+          "qty": 1,
+          "locationType": "rest"
+        },
+        {
+          "code": "PBE",
+          "qty": 2,
+          "locationType": "rest"
         }
       ]
     },
@@ -178,7 +395,7 @@ globalThis.AOR_789 = {
       "role": "Cabin Crew",
       "displayTitle": "No. 5 (Cabin Crew - Galley Operator)",
       "service": {
-        "summary": "NA",
+        "summary": "Club World Galley Operator.",
         "cabin": [
           "CW"
         ]
@@ -191,22 +408,88 @@ globalThis.AOR_789 = {
       },
       "doorResponsibility": "D2R",
       "demo": {
-        "position": "7FJ FWD Facing",
+        "position": "Back of FWD CW cabin, aircraft right",
         "pointsOut": [
           "D2LR followed by D1LR"
         ]
       },
       "aor": {
         "hasAor": true,
-        "area": "FWD CW cabin EFJK, CW Galley"
+        "area": "FWD CW to D2R on aircraft right, MID CW Galley"
       },
       "rest": "2nd Rest",
       "additionalResponsibilities": [
-        "NA"
+        "Door coverage of D2LR",
+        "Completes the pre-departure bar order on behalf of No. 1 using iOrder"
       ],
       "equipmentChecks": [
         {
-          "code": "NA",
+          "code": "ET",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "HVT",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "PBE",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "LJ",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "FG",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "DDC",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "DEM",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "FE",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "NC",
+          "qty": 5,
+          "locationType": "area"
+        },
+        {
+          "code": "WCH",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "PO",
+          "qty": 2,
+          "locationType": "area"
+        },
+        {
+          "code": "RES",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "EW",
+          "qty": 2,
+          "locationType": "area"
+        },
+        {
+          "code": "M2",
           "qty": 1,
           "locationType": "area"
         }
@@ -218,7 +501,7 @@ globalThis.AOR_789 = {
       "role": "Cabin Crew",
       "displayTitle": "No. 6 (Cabin Crew - GCC 4)",
       "service": {
-        "summary": "NA",
+        "summary": "Club World service from 10EFJK to 13FJK.",
         "cabin": [
           "CW"
         ]
@@ -231,14 +514,14 @@ globalThis.AOR_789 = {
       },
       "doorResponsibility": "NA",
       "demo": {
-        "position": "13FJ FWD Facing",
+        "position": "Back of AFT CW cabin, aircraft right",
         "pointsOut": [
           "D3LR followed by D2LR"
         ]
       },
       "aor": {
         "hasAor": true,
-        "area": "AFT CW cabin EFJK, x 2 Toilets at D2R"
+        "area": "D2R to AFT CW cabin on aircraft right, 2 x Toilets at D2R"
       },
       "rest": "1st Rest",
       "additionalResponsibilities": [
@@ -246,8 +529,43 @@ globalThis.AOR_789 = {
       ],
       "equipmentChecks": [
         {
-          "code": "NA",
+          "code": "ET",
           "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "HVT",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "PBE",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "LJ",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "FG",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "DDC",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "DEM",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "PO",
+          "qty": 2,
           "locationType": "area"
         }
       ]
@@ -258,7 +576,7 @@ globalThis.AOR_789 = {
       "role": "Cabin Crew",
       "displayTitle": "No. 7 (Cabin Crew - GCC 3)",
       "service": {
-        "summary": "NA",
+        "summary": "Serves from the front of WTP on aircraft right towards the rear with No. 8, or with No. 11 when carried.",
         "cabin": [
           "WTP",
           "WT"
@@ -272,23 +590,74 @@ globalThis.AOR_789 = {
       },
       "doorResponsibility": "D3R",
       "demo": {
-        "position": "Front of WTP cabin JK side",
+        "position": "Front of WTP, aircraft right",
         "pointsOut": [
           "D3LR followed by D2LR"
         ]
       },
       "aor": {
         "hasAor": true,
-        "area": "WT cabin HJK side, 1 x Toilet at D3R"
+        "area": "Right WT cabin, 1 x Toilet at D3R"
       },
       "rest": "1st Rest",
       "additionalResponsibilities": [
-        "NA"
+        "Door coverage of D3LR",
+        "Community Fund / Flying Start"
       ],
       "equipmentChecks": [
         {
-          "code": "NA",
+          "code": "ET",
           "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "HVT",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "PBE",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "LJ",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "FG",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "DDC",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "DEM",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "FE",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "SP",
+          "qty": 2,
+          "locationType": "area"
+        },
+        {
+          "code": "ILJ",
+          "qty": 16,
+          "locationType": "area"
+        },
+        {
+          "code": "PO",
+          "qty": 2,
           "locationType": "area"
         }
       ]
@@ -299,7 +668,7 @@ globalThis.AOR_789 = {
       "role": "Cabin Crew",
       "displayTitle": "No. 8 (Cabin Crew - Galley Operator)",
       "service": {
-        "summary": "NA",
+        "summary": "WT and WTP Galley Operator unless No. 4 chooses the galley. Serves with No. 7 from the front of WTP on aircraft right towards the rear. With 11 crew, No. 11 takes this cabin-service position and No. 8 is dedicated Galley Operator if assigned.",
         "cabin": [
           "WTP",
           "WT"
@@ -313,23 +682,85 @@ globalThis.AOR_789 = {
       },
       "doorResponsibility": "D4R",
       "demo": {
-        "position": "Adjacent to D3R",
+        "position": "Front of WT, aircraft right",
         "pointsOut": [
           "D4LR followed by D3LR"
         ]
       },
       "aor": {
         "hasAor": true,
-        "area": "WT Galley, 1 x Toilet at D4R"
+        "area": "AFT WT and WTP Galley, 1 x Toilet at D4R"
       },
       "rest": "2nd Rest",
       "additionalResponsibilities": [
-        "NA"
+        "Passenger announcements and PRAs",
+        "Door coverage of D4LR",
+        "Takes over Inflight Retail if No. 3 is assigned GCC 2"
       ],
       "equipmentChecks": [
         {
-          "code": "NA",
+          "code": "ET",
           "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "HVT",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "PBE",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "LJ",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "FG",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "DDC",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "DEM",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "MP",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "ELT",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "FE",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "SP",
+          "qty": 2,
+          "locationType": "area"
+        },
+        {
+          "code": "TO",
+          "qty": 3,
+          "locationType": "area"
+        },
+        {
+          "code": "PO",
+          "qty": 3,
           "locationType": "area"
         }
       ]
@@ -340,7 +771,7 @@ globalThis.AOR_789 = {
       "role": "Cabin Crew",
       "displayTitle": "No. 9 (Cabin Crew - Galley Operator)",
       "service": {
-        "summary": "NA",
+        "summary": "FIRST Galley Operator. Flight Crew Service Delivery.",
         "cabin": [
           "F"
         ]
@@ -360,17 +791,89 @@ globalThis.AOR_789 = {
       },
       "aor": {
         "hasAor": true,
-        "area": "FIRST Galley, OFCR"
+        "area": "FIRST Galley, forward galley, OFCR"
       },
       "rest": "1st Rest",
       "additionalResponsibilities": [
-        "NA"
+        "Boarding at D1L if two doors are used",
+        "Door coverage of D1LR",
+        "Checks SEP equipment in OFCR"
       ],
       "equipmentChecks": [
         {
-          "code": "NA",
+          "code": "ET",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "HVT",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "PBE",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "LJ",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "FG",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "DDC",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "DEM",
           "qty": 1,
           "locationType": "area"
+        },
+        {
+          "code": "FE",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "PO",
+          "qty": 2,
+          "locationType": "area"
+        },
+        {
+          "code": "M2",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "ET",
+          "qty": 1,
+          "locationType": "rest"
+        },
+        {
+          "code": "PBE",
+          "qty": 2,
+          "locationType": "rest"
+        },
+        {
+          "code": "FG",
+          "qty": 1,
+          "locationType": "rest"
+        },
+        {
+          "code": "LJ",
+          "qty": 1,
+          "locationType": "rest"
+        },
+        {
+          "code": "FE",
+          "qty": 1,
+          "locationType": "rest"
         }
       ]
     },
@@ -380,7 +883,7 @@ globalThis.AOR_789 = {
       "role": "Cabin Crew",
       "displayTitle": "No. 10 (Cabin Crew)",
       "service": {
-        "summary": "NA",
+        "summary": "Works in FIRST.",
         "cabin": [
           "F"
         ]
@@ -393,7 +896,7 @@ globalThis.AOR_789 = {
       },
       "doorResponsibility": "NA",
       "demo": {
-        "position": "6BD",
+        "position": "Front of FWD CW cabin, aircraft left",
         "pointsOut": [
           "D2LR followed by D1LR"
         ]
@@ -408,8 +911,48 @@ globalThis.AOR_789 = {
       ],
       "equipmentChecks": [
         {
-          "code": "NA",
+          "code": "ET",
           "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "HVT",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "PBE",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "LJ",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "FG",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "DDC",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "DEM",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "SP",
+          "qty": 2,
+          "locationType": "area"
+        },
+        {
+          "code": "PO",
+          "qty": 3,
           "locationType": "area"
         }
       ]
@@ -420,7 +963,7 @@ globalThis.AOR_789 = {
       "role": "Cabin Crew",
       "displayTitle": "No. 11 (Cabin Crew - GCC 5)",
       "service": {
-        "summary": "NA",
+        "summary": "With 11 crew, assists with Club World pre-setting and helps WTP and WT customers with overhead lockers during boarding. Replaces No. 8 in cabin service, working with No. 7 from the front of WTP on aircraft right towards the rear.",
         "cabin": [
           "WTP",
           "WT"
@@ -449,9 +992,34 @@ globalThis.AOR_789 = {
       ],
       "equipmentChecks": [
         {
-          "code": "NA",
+          "code": "ET",
           "qty": 1,
-          "locationType": "area"
+          "locationType": "seat"
+        },
+        {
+          "code": "HVT",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "PBE",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "LJ",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "FG",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "DDC",
+          "qty": 1,
+          "locationType": "seat"
         }
       ]
     }

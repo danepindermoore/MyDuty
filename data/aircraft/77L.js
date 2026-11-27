@@ -14,18 +14,18 @@ globalThis.AOR_77L = {
       "role": "IFM",
       "displayTitle": "No. 1 (SCCM - IFM)",
       "service": {
-        "summary": "NA",
+        "summary": "Overall responsibility for the aircraft. Club World service from 14AE to 10AE.",
         "cabin": [
-          "NA"
+          "CW"
         ]
       },
       "seating": {
-        "seat": "NA",
+        "seat": "D1L",
         "descriptor": "NA",
-        "facing": "NA",
-        "full": "NA"
+        "facing": "AFT",
+        "full": "D1L: AFT"
       },
-      "doorResponsibility": "NA",
+      "doorResponsibility": "D1L",
       "demo": {
         "position": "NA",
         "pointsOut": [
@@ -33,16 +33,97 @@ globalThis.AOR_77L = {
         ]
       },
       "aor": {
-        "hasAor": false,
-        "area": "NA"
+        "hasAor": true,
+        "area": "SCCM workstation, 2 x Toilets at D1L"
       },
-      "rest": "NA",
+      "rest": "2nd Rest",
       "additionalResponsibilities": [
-        "NA"
+        "Boarding at D2L",
+        "Passenger announcements"
       ],
       "equipmentChecks": [
         {
-          "code": "NA",
+          "code": "ET",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "HVT",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "PBE",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "LJ",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "FG",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "PO",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "DDC",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "Suite Demo Kit",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "P.H2O",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "MP",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "WEX",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "RES",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "M5",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "SP",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "ELT",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "EW",
+          "qty": 2,
+          "locationType": "area"
+        },
+        {
+          "code": "AED",
           "qty": 1,
           "locationType": "area"
         }
@@ -50,39 +131,79 @@ globalThis.AOR_77L = {
     },
     {
       "number": 2,
-      "title": "Cabin Crew",
+      "title": "Cabin Crew - GCC 1",
       "role": "Cabin Crew",
-      "displayTitle": "No. 2 (Cabin Crew)",
+      "displayTitle": "No. 2 (Cabin Crew - GCC 1)",
       "service": {
-        "summary": "NA",
+        "summary": "Club World service from 1AE to 7AE.",
         "cabin": [
-          "NA"
+          "CW"
         ]
       },
       "seating": {
-        "seat": "NA",
+        "seat": "D2L",
         "descriptor": "NA",
-        "facing": "NA",
-        "full": "NA"
+        "facing": "AFT",
+        "full": "D2L: AFT"
       },
-      "doorResponsibility": "NA",
+      "doorResponsibility": "D2L",
       "demo": {
-        "position": "NA",
+        "position": "10AE",
         "pointsOut": [
-          "NA"
+          "D3LR followed by D2LR"
         ]
       },
       "aor": {
-        "hasAor": false,
-        "area": "NA"
+        "hasAor": true,
+        "area": "MID Club World Galley, D2L to AFT Club World cabin AE side"
       },
-      "rest": "NA",
+      "rest": "1st Rest",
       "additionalResponsibilities": [
         "NA"
       ],
       "equipmentChecks": [
         {
-          "code": "NA",
+          "code": "ET",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "HVT",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "PBE",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "LJ",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "FG",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "PO",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "DDC",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "Suite Demo Kit",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "M2",
           "qty": 1,
           "locationType": "area"
         }
@@ -90,40 +211,97 @@ globalThis.AOR_77L = {
     },
     {
       "number": 3,
-      "title": "Cabin Crew",
+      "title": "Cabin Crew - GCC 2",
       "role": "Cabin Crew",
-      "displayTitle": "No. 3 (Cabin Crew)",
+      "displayTitle": "No. 3 (Cabin Crew - GCC 2)",
       "service": {
-        "summary": "NA",
+        "summary": "With 11 crew, serves with No. 4 from front of WTP on aircraft left towards the rear.",
         "cabin": [
-          "NA"
+          "WTP",
+          "WT"
         ]
       },
       "seating": {
-        "seat": "NA",
+        "seat": "D3L",
         "descriptor": "NA",
-        "facing": "NA",
-        "full": "NA"
+        "facing": "AFT",
+        "full": "D3L: AFT"
       },
-      "doorResponsibility": "NA",
+      "doorResponsibility": "D3L",
       "demo": {
-        "position": "NA",
+        "position": "Front of WTP cabin AE side",
         "pointsOut": [
-          "NA"
+          "D3LR followed by D2LR"
         ]
       },
       "aor": {
-        "hasAor": false,
-        "area": "NA"
+        "hasAor": true,
+        "area": "World Traveller Plus cabin"
       },
-      "rest": "NA",
+      "rest": "2nd Rest",
       "additionalResponsibilities": [
-        "NA"
+        "Boarding alongside No. 1 at D2L",
+        "Inflight Retail unless assigned GCC 2 (then No. 8 takes over)"
       ],
       "equipmentChecks": [
         {
-          "code": "NA",
+          "code": "ET",
           "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "HVT",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "PBE",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "LJ",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "FG",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "PO",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "DDC",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "DEM",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "ILJ",
+          "qty": 6,
+          "locationType": "area"
+        },
+        {
+          "code": "SP",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "LCO",
+          "qty": 2,
+          "locationType": "area"
+        },
+        {
+          "code": "S EXT",
+          "qty": 10,
           "locationType": "area"
         }
       ]
@@ -134,77 +312,225 @@ globalThis.AOR_77L = {
       "role": "IFL",
       "displayTitle": "No. 4 (IFL - Acting SCCM)",
       "service": {
-        "summary": "NA",
+        "summary": "Responsible for WT and WTP. May choose to be Galley Operator. WTP pre-takeoff drinks on ABC side. With 11 crew, serves with No. 3 from front of WTP on aircraft left towards the rear.",
         "cabin": [
-          "NA"
+          "WTP",
+          "WT"
         ]
       },
       "seating": {
-        "seat": "NA",
+        "seat": "D4L",
         "descriptor": "NA",
-        "facing": "NA",
-        "full": "NA"
+        "facing": "FWD",
+        "full": "D4L: FWD"
       },
-      "doorResponsibility": "NA",
+      "doorResponsibility": "D4L",
       "demo": {
-        "position": "NA",
+        "position": "Adjacent to D3L",
         "pointsOut": [
-          "NA"
+          "D4LR followed by D3LR"
         ]
       },
       "aor": {
-        "hasAor": false,
-        "area": "NA"
+        "hasAor": true,
+        "area": "Left World Traveller cabin, 2 x Toilets at D3L, 1 x Toilet at D4L"
       },
-      "rest": "NA",
+      "rest": "1st Rest",
       "additionalResponsibilities": [
-        "NA"
+        "Safety and security check the additional unoccupied crew seat in the area if No. 12 is not carried"
       ],
       "equipmentChecks": [
         {
-          "code": "NA",
+          "code": "ET",
           "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "HVT",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "PBE",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "LJ",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "FG",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "PO",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "DDC",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "DEM",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "ELT",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "SP",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "NC",
+          "qty": 3,
+          "locationType": "area"
+        },
+        {
+          "code": "Therapeutic Masks",
+          "qty": 4,
+          "locationType": "area"
+        },
+        {
+          "code": "JEM",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "EXT",
+          "qty": 20,
           "locationType": "area"
         }
       ]
     },
     {
       "number": 5,
-      "title": "Cabin Crew",
+      "title": "Cabin Crew - Galley Operator",
       "role": "Cabin Crew",
-      "displayTitle": "No. 5 (Cabin Crew)",
+      "displayTitle": "No. 5 (Cabin Crew - Galley Operator)",
       "service": {
-        "summary": "NA",
+        "summary": "Club World Galley Operator. Flight Crew Service Delivery.",
         "cabin": [
-          "NA"
+          "CW"
         ]
       },
       "seating": {
-        "seat": "NA",
+        "seat": "D1R",
         "descriptor": "NA",
-        "facing": "NA",
-        "full": "NA"
+        "facing": "AFT",
+        "full": "D1R: AFT"
       },
-      "doorResponsibility": "NA",
+      "doorResponsibility": "D1R",
       "demo": {
-        "position": "NA",
+        "position": "1FK",
         "pointsOut": [
-          "NA"
+          "D2LR followed by D1LR"
         ]
       },
       "aor": {
-        "hasAor": false,
-        "area": "NA"
+        "hasAor": true,
+        "area": "FIRST forward galley, OFCR"
       },
-      "rest": "NA",
+      "rest": "2nd Rest",
       "additionalResponsibilities": [
-        "NA"
+        "Boarding at D1L if two doors are used",
+        "Door coverage of D1LR when aircraft is on the ground",
+        "Safety and security check the additional unoccupied crew seat in the area if No. 11 is not carried"
       ],
       "equipmentChecks": [
         {
-          "code": "NA",
+          "code": "ET",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "HVT",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "PBE",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "LJ",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "FG",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "PO",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "DDC",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "Suite Demo Kit",
           "qty": 1,
           "locationType": "area"
+        },
+        {
+          "code": "SP",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "WCH",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "PRM",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "M2",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "FG",
+          "qty": 1,
+          "locationType": "rest"
+        },
+        {
+          "code": "ET",
+          "qty": 1,
+          "locationType": "rest"
+        },
+        {
+          "code": "PBE",
+          "qty": 1,
+          "locationType": "rest"
+        },
+        {
+          "code": "PO",
+          "qty": 2,
+          "locationType": "rest"
+        },
+        {
+          "code": "FE",
+          "qty": 1,
+          "locationType": "rest"
         }
       ]
     },
@@ -214,77 +540,209 @@ globalThis.AOR_77L = {
       "role": "Cabin Crew",
       "displayTitle": "No. 6 (Cabin Crew)",
       "service": {
-        "summary": "NA",
+        "summary": "Club World service from 1FK to 7FK.",
         "cabin": [
-          "NA"
+          "CW"
         ]
       },
       "seating": {
-        "seat": "NA",
+        "seat": "D2R",
         "descriptor": "NA",
-        "facing": "NA",
-        "full": "NA"
+        "facing": "AFT",
+        "full": "D2R: AFT"
       },
-      "doorResponsibility": "NA",
+      "doorResponsibility": "D2R",
       "demo": {
-        "position": "NA",
+        "position": "4FK",
         "pointsOut": [
-          "NA"
+          "D2LR followed by D1LR"
         ]
       },
       "aor": {
-        "hasAor": false,
-        "area": "NA"
+        "hasAor": true,
+        "area": "FWD Club World cabin FK side"
       },
-      "rest": "NA",
+      "rest": "1st Rest",
       "additionalResponsibilities": [
-        "NA"
+        "Door coverage of D2LR when aircraft is on the ground"
       ],
       "equipmentChecks": [
         {
-          "code": "NA",
+          "code": "ET",
           "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "HVT",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "PBE",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "LJ",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "FG",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "PO",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "DDC",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "Suite Demo Kit",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "SP",
+          "qty": 2,
           "locationType": "area"
         }
       ]
     },
     {
       "number": 7,
-      "title": "Cabin Crew",
+      "title": "Cabin Crew - GCC 3",
       "role": "Cabin Crew",
-      "displayTitle": "No. 7 (Cabin Crew)",
+      "displayTitle": "No. 7 (Cabin Crew - GCC 3)",
       "service": {
-        "summary": "NA",
+        "summary": "With 11 crew, serves with No. 10 from front of WTP on aircraft right towards the rear.",
         "cabin": [
-          "NA"
+          "WTP",
+          "WT"
         ]
       },
       "seating": {
-        "seat": "NA",
+        "seat": "D3R",
         "descriptor": "NA",
-        "facing": "NA",
-        "full": "NA"
+        "facing": "AFT",
+        "full": "D3R: AFT"
       },
-      "doorResponsibility": "NA",
+      "doorResponsibility": "D3R",
       "demo": {
-        "position": "NA",
+        "position": "Front of FWD WT cabin HJK side",
         "pointsOut": [
-          "NA"
+          "D3LR followed by D2LR"
         ]
       },
       "aor": {
-        "hasAor": false,
-        "area": "NA"
+        "hasAor": true,
+        "area": "Right World Traveller cabin, 1 x Toilet at D3R, OFAR"
       },
-      "rest": "NA",
+      "rest": "1st Rest",
       "additionalResponsibilities": [
-        "NA"
+        "Community Fund / Flying Start",
+        "Door coverage of D3LR when aircraft is on the ground"
       ],
       "equipmentChecks": [
         {
-          "code": "NA",
+          "code": "ET",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "HVT",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "PBE",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "LJ",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "FG",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "PO",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "DDC",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "DEM",
           "qty": 1,
           "locationType": "area"
+        },
+        {
+          "code": "FE",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "LJ",
+          "qty": 10,
+          "locationType": "area"
+        },
+        {
+          "code": "LCO",
+          "qty": 4,
+          "locationType": "area"
+        },
+        {
+          "code": "ILJ",
+          "qty": 14,
+          "locationType": "area"
+        },
+        {
+          "code": "Therapeutic Masks",
+          "qty": 4,
+          "locationType": "area"
+        },
+        {
+          "code": "SP",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "FE",
+          "qty": 2,
+          "locationType": "rest"
+        },
+        {
+          "code": "PBE",
+          "qty": 1,
+          "locationType": "rest"
+        },
+        {
+          "code": "FG",
+          "qty": 1,
+          "locationType": "rest"
+        },
+        {
+          "code": "PO",
+          "qty": 8,
+          "locationType": "rest"
+        },
+        {
+          "code": "ET",
+          "qty": 2,
+          "locationType": "rest"
         }
       ]
     },
@@ -294,35 +752,98 @@ globalThis.AOR_77L = {
       "role": "Cabin Crew",
       "displayTitle": "No. 8 (Cabin Crew)",
       "service": {
-        "summary": "NA",
+        "summary": "WT and WTP Galley Operator if No. 4 is not operating the galley.",
         "cabin": [
-          "NA"
+          "WTP",
+          "WT"
         ]
       },
       "seating": {
-        "seat": "NA",
+        "seat": "D4R",
         "descriptor": "NA",
-        "facing": "NA",
-        "full": "NA"
+        "facing": "FWD",
+        "full": "D4R: FWD"
       },
-      "doorResponsibility": "NA",
+      "doorResponsibility": "D4R",
       "demo": {
-        "position": "NA",
+        "position": "Adjacent to D3R",
         "pointsOut": [
-          "NA"
+          "D4LR followed by D3LR"
         ]
       },
       "aor": {
-        "hasAor": false,
-        "area": "NA"
+        "hasAor": true,
+        "area": "AFT World Traveller Galley, 1 x Toilet at D4R"
       },
-      "rest": "NA",
+      "rest": "2nd Rest",
       "additionalResponsibilities": [
-        "NA"
+        "Passenger announcements and PRAs",
+        "Takes over Inflight Retail if No. 3 is assigned GCC 2",
+        "Door coverage of D4LR when aircraft is on the ground"
       ],
       "equipmentChecks": [
         {
-          "code": "NA",
+          "code": "ET",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "HVT",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "PBE",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "LJ",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "FG",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "PO",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "DDC",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "DEM",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "MP",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "WEX",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "FE",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "SP",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "M2",
           "qty": 1,
           "locationType": "area"
         }
@@ -330,41 +851,71 @@ globalThis.AOR_77L = {
     },
     {
       "number": 9,
-      "title": "Cabin Crew",
+      "title": "Cabin Crew - GCC 4",
       "role": "Cabin Crew",
-      "displayTitle": "No. 9 (Cabin Crew)",
+      "displayTitle": "No. 9 (Cabin Crew - GCC 4)",
       "service": {
-        "summary": "NA",
+        "summary": "Club World service from 14FK to 10FK.",
         "cabin": [
-          "NA"
+          "CW"
         ]
       },
       "seating": {
-        "seat": "NA",
+        "seat": "D1L",
         "descriptor": "NA",
-        "facing": "NA",
-        "full": "NA"
+        "facing": "FWD",
+        "full": "D1L: FWD"
       },
       "doorResponsibility": "NA",
       "demo": {
-        "position": "NA",
+        "position": "1AE",
         "pointsOut": [
-          "NA"
+          "D2L followed by D1LR"
         ]
       },
       "aor": {
-        "hasAor": false,
-        "area": "NA"
+        "hasAor": true,
+        "area": "FWD Club World cabin AE side"
       },
-      "rest": "NA",
+      "rest": "2nd Rest",
       "additionalResponsibilities": [
-        "NA"
+        "Completes the pre-departure bar order on behalf of No. 1 using iOrder"
       ],
       "equipmentChecks": [
         {
-          "code": "NA",
+          "code": "ET",
           "qty": 1,
-          "locationType": "area"
+          "locationType": "seat"
+        },
+        {
+          "code": "HVT",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "PBE",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "LJ",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "FG",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "PO",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "DDC",
+          "qty": 1,
+          "locationType": "seat"
         }
       ]
     },
@@ -374,16 +925,99 @@ globalThis.AOR_77L = {
       "role": "Cabin Crew",
       "displayTitle": "No. 10 (Cabin Crew)",
       "service": {
-        "summary": "NA",
+        "summary": "WTP pre-takeoff drinks on HJK side. With 11 crew, serves with No. 7 from front of WTP on aircraft right towards the rear.",
         "cabin": [
-          "NA"
+          "WTP",
+          "WT"
         ]
       },
       "seating": {
-        "seat": "NA",
+        "seat": "D2R",
         "descriptor": "NA",
-        "facing": "NA",
-        "full": "NA"
+        "facing": "FWD",
+        "full": "D2R: FWD"
+      },
+      "doorResponsibility": "NA",
+      "demo": {
+        "position": "10FK",
+        "pointsOut": [
+          "D3LR followed by D2LR"
+        ]
+      },
+      "aor": {
+        "hasAor": true,
+        "area": "D2R to AFT Club World cabin FK side, 1 x Toilet at D2R"
+      },
+      "rest": "1st Rest",
+      "additionalResponsibilities": [
+        "NA"
+      ],
+      "equipmentChecks": [
+        {
+          "code": "ET",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "HVT",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "PBE",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "LJ",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "FG",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "PO",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "DDC",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "Suite Demo Kit",
+          "qty": 1,
+          "locationType": "area"
+        },
+        {
+          "code": "FE",
+          "qty": 1,
+          "locationType": "area"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "title": "Cabin Crew",
+      "role": "Cabin Crew",
+      "displayTitle": "No. 11 (Cabin Crew)",
+      "service": {
+        "summary": "Supports Club World pre-boarding service and assists with WTP and WT overhead lockers during boarding. Serves rows 39–44 towards the rear on aircraft left, then the same rows on aircraft right.",
+        "cabin": [
+          "CW",
+          "WTP",
+          "WT"
+        ]
+      },
+      "seating": {
+        "seat": "D1R",
+        "descriptor": "NA",
+        "facing": "FWD",
+        "full": "D1R: FWD"
       },
       "doorResponsibility": "NA",
       "demo": {
@@ -396,45 +1030,122 @@ globalThis.AOR_77L = {
         "hasAor": false,
         "area": "NA"
       },
-      "rest": "NA",
+      "rest": "2nd Rest",
       "additionalResponsibilities": [
         "NA"
       ],
       "equipmentChecks": [
         {
-          "code": "NA",
+          "code": "ET",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "HVT",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "PBE",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "LJ",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "FG",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "PO",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "DDC",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "FE",
           "qty": 1,
           "locationType": "area"
         }
       ]
     },
     {
-      "number": 11,
-      "title": null,
-      "role": null,
-      "displayTitle": "No 11",
-      "service": {
-        "summary": "Position-specific service, AOR, seating, safety demonstration and equipment-check details are not mapped in this dataset. Refer to the aircraft AOR source document.",
-        "cabin": []
-      },
+      "number": 12,
+      "title": "Cabin Crew",
+      "displayTitle": "No. 12 (Cabin Crew)",
+      "role": "Cabin Crew",
       "seating": {
-        "seat": null,
-        "descriptor": null,
-        "facing": null,
-        "full": "See aircraft AOR source document"
+        "seat": "D4L",
+        "descriptor": "NA",
+        "facing": "AFT",
+        "full": "D4L: AFT"
       },
-      "doorResponsibility": null,
+      "doorResponsibility": "NA",
+      "rest": "NA",
+      "service": {
+        "summary": "NA",
+        "cabin": [
+          "NA"
+        ]
+      },
       "demo": {
-        "position": null,
-        "pointsOut": []
+        "position": "NA",
+        "pointsOut": [
+          "NA"
+        ]
       },
       "aor": {
         "hasAor": false,
-        "area": null
+        "area": "NA"
       },
-      "rest": null,
-      "additionalResponsibilities": [],
-      "equipmentChecks": []
+      "additionalResponsibilities": [
+        "NA"
+      ],
+      "equipmentChecks": [
+        {
+          "code": "ET",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "HVT",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "PBE",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "LJ",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "FG",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "PO",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "DDC",
+          "qty": 1,
+          "locationType": "seat"
+        }
+      ]
     }
   ]
 };

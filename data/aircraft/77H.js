@@ -1294,6 +1294,136 @@ globalThis.AOR_77H = {
           "locationType": "area"
         }
       ]
+    },
+    {
+      "number": 15,
+      "title": "Cabin Crew",
+      "displayTitle": "No. 15 (Cabin Crew)",
+      "role": "Cabin Crew",
+      "seating": {
+        "seat": "D5L",
+        "descriptor": "Inboard",
+        "facing": "FWD",
+        "full": "D5L: Inboard FWD"
+      },
+      "doorResponsibility": "NA",
+      "rest": "SCCM Discretion",
+      "service": {
+        "summary": "NA",
+        "cabin": [
+          "NA"
+        ]
+      },
+      "demo": {
+        "position": "NA",
+        "pointsOut": [
+          "NA"
+        ]
+      },
+      "aor": {
+        "hasAor": false,
+        "area": "NA"
+      },
+      "additionalResponsibilities": [
+        "NA"
+      ],
+      "equipmentChecks": [
+        {
+          "code": "ET",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "HVT",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "PBE",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "LJ",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "FG",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "PO",
+          "qty": 1,
+          "locationType": "seat"
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "title": "Cabin Crew",
+      "displayTitle": "No. 16 (Cabin Crew)",
+      "role": "Cabin Crew",
+      "seating": {
+        "seat": "D5R",
+        "descriptor": "Inboard",
+        "facing": "FWD",
+        "full": "D5R: Inboard FWD"
+      },
+      "doorResponsibility": "NA",
+      "rest": "SCCM Discretion",
+      "service": {
+        "summary": "NA",
+        "cabin": [
+          "NA"
+        ]
+      },
+      "demo": {
+        "position": "NA",
+        "pointsOut": [
+          "NA"
+        ]
+      },
+      "aor": {
+        "hasAor": false,
+        "area": "NA"
+      },
+      "additionalResponsibilities": [
+        "NA"
+      ],
+      "equipmentChecks": [
+        {
+          "code": "ET",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "HVT",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "PBE",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "LJ",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "FG",
+          "qty": 1,
+          "locationType": "seat"
+        },
+        {
+          "code": "PO",
+          "qty": 1,
+          "locationType": "seat"
+        }
+      ]
     }
   ]
 };

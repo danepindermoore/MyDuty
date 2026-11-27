@@ -117,10 +117,24 @@ def main():
     for code,by_num in grouped.items():
         path=ROOT/"data"/"aircraft"/(code+".js")
         if not path.exists():continue
-        text,m,obj,end=read_obj(path); positions={int(p["number"]):p for p in obj.get("positions",[])}
+        text,m,obj,end=read_obj(path)
+        position_list = obj.setdefault("positions", [])
+        positions = {int(p["number"]): p for p in position_list}
+        added_positions = False
         for n,row in by_num.items():
             p=positions.get(n)
-            if p is None:continue
+            if p is None:
+                # The workbook also contains empty templates with only crew roles.
+                has_details = any(
+                    clean(value).upper() not in {"", NA}
+                    for header, value in row.items()
+                    if header not in {"Airfile", "Position Number", "Role 1", "Role 2", "Cabin"}
+                )
+                if not has_details:
+                    continue
+                p = {"number": n}
+                position_list.append(p)
+                added_positions = True
             title=role_title(row); p["title"]=title
             p["displayTitle"]=f"No. {n} ({title})" if title!=NA else f"No. {n}"
             p["role"]=clean(row.get("Role 1")) or NA
@@ -136,7 +150,11 @@ def main():
             for col,loc in (("Under Crew Seat","seat"),("In Assigned Area","area"),("In Crew Rest Area","rest")):
                 checks.extend(equipment(row.get(col),loc))
             p["equipmentChecks"]=checks or [{"code":NA,"qty":1,"locationType":"area"}]
+        if added_positions:
+            position_list.sort(key=lambda position: int(position["number"]))
         out=text[:m.start(2)]+json.dumps(obj,ensure_ascii=False,indent=2)+text[end:]
-        path.write_text(out,encoding="utf-8",newline="\n");done.append(code)
+        if out != text:
+            path.write_text(out,encoding="utf-8",newline="\n")
+        done.append(code)
     print("Synced AOR positions for: "+", ".join(done))
 if __name__=="__main__":main()

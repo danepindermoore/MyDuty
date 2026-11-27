@@ -4,7 +4,7 @@ globalThis.EQUIPMENT = {
   ELT: "Emergency Locator Transmitter",
   ET: "Emergency Torch",
   EW: "Eye Wash",
-  EXT: "Extension Seat Belt",
+  EXT: "Extension Seatbelts",
   FE: "HAFEX / BCF",
   FG: "Fire Gloves",
   HVT: "Hi Vis Tabard",
@@ -26,6 +26,7 @@ globalThis.EQUIPMENT = {
   WCH: "Wheelchair",
   WEX: "Water Extinguisher",
   "P.H2O": "Potable Water Check",
-  "S EXT": "Club Suite Extension Seat Belt",
+  "S EXT": "Suite Extension Seatbelts",
+  "S LAP EXT": "Suite Lap Extensions",
   DDC: "Door Drill Cards"
 };
