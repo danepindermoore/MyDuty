@@ -20,6 +20,10 @@ def split_responsibilities(v):
     # Semicolons always separate duties. Commas separate list items, while
     # commas introducing a condition/action (", if…", ", check…") stay joined.
     return [x.strip() for x in re.split(r";|,(?!\s*(?:if|check|unless)\b)",s,flags=re.I) if x.strip()] or [NA]
+def extra_crew_bullets(value):
+    # A full stop separates duties, except in position labels such as No. 9 and in decimals.
+    parts = re.split(r"(?<!\bNo)(?:(?<!\d)\.|\.(?!\d))|[\r\n]+", str(value or ""), flags=re.I)
+    return [text for part in parts if (text := clean(part)).upper() not in {"", NA}]
 def role_title(row):
     a,b=clean(row.get("Role 1")),clean(row.get("Role 2"))
     if a.upper()=="IFM" and b.upper()=="SCCM": parts=["SCCM","IFM"]
@@ -138,10 +142,22 @@ def main():
             title=role_title(row); p["title"]=title
             p["displayTitle"]=f"No. {n} ({title})" if title!=NA else f"No. {n}"
             p["role"]=clean(row.get("Role 1")) or NA
+            role2 = clean(row.get("Role 2"))
+            if role2.upper() not in {"", NA}:
+                p["role2"] = role2
+            else:
+                p.pop("role2", None)
             p["seating"]=seating(row.get("Seating Position"))
             p["doorResponsibility"]=clean(row.get("Door Mode Seclection")) or NA
             p["rest"]=clean(row.get("Rest")) or NA
-            p["service"]={"summary":clean(row.get("Service Delivery")) or NA,"cabin":cabin_codes(row.get("Cabin"))}
+            service = {
+                "summary": clean(row.get("Service Delivery")) or NA,
+                "cabin": cabin_codes(row.get("Cabin")),
+            }
+            extra_crew = extra_crew_bullets(row.get("Extra Crew"))
+            if extra_crew:
+                service["extraCrew"] = extra_crew
+            p["service"] = service
             p["demo"]={"position":clean(row.get("Position")) or NA,"pointsOut":split_list(row.get("Points Out")) or [NA]}
             area=clean(row.get("Area of Responsibility (AOR)")) or NA
             p["aor"]={"hasAor":area!=NA,"area":area}

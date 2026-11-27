@@ -14,7 +14,7 @@ globalThis.AOR_77M = {
       "role": "IFM",
       "displayTitle": "No. 1 (SCCM - IFM)",
       "service": {
-        "summary": "Overall responsibility for all aircraft cabins. Club World service from 5AE to 10AE.",
+        "summary": "Overall responsibility for all aircraft cabins. Club World service for rows 5 to 10 on aircraft-left.",
         "cabin": [
           "CW"
         ]
@@ -127,7 +127,8 @@ globalThis.AOR_77M = {
           "qty": 1,
           "locationType": "area"
         }
-      ]
+      ],
+      "role2": "SCCM"
     },
     {
       "number": 2,
@@ -212,7 +213,8 @@ globalThis.AOR_77M = {
           "qty": 1,
           "locationType": "area"
         }
-      ]
+      ],
+      "role2": "Galley Operator"
     },
     {
       "number": 3,
@@ -309,7 +311,8 @@ globalThis.AOR_77M = {
           "qty": 10,
           "locationType": "area"
         }
-      ]
+      ],
+      "role2": "GCC 2"
     },
     {
       "number": 4,
@@ -317,10 +320,13 @@ globalThis.AOR_77M = {
       "role": "IFL",
       "displayTitle": "No. 4 (IFL - Acting SCCM)",
       "service": {
-        "summary": "Responsible for WTP and WT. May choose to be WT or WTP Galley Operator. WTP pre-takeoff drinks on aircraft left. Works with No. 3 from the front of WTP on aircraft left towards the rear. With 12 crew, No. 4 or No. 8 becomes the dedicated Galley Operator when assigned.",
+        "summary": "Responsible for WTP and WT, May choose to be WT or WTP Galley Operator, Delivers WTP pre-takeoff drinks on aircraft left, Works with No. 3 from the front of WTP on aircraft left towards the rear",
         "cabin": [
           "WTP",
           "WT"
+        ],
+        "extraCrew": [
+          "Becomes the dedicated Galley Operator if assigned to the galley"
         ]
       },
       "seating": {
@@ -415,7 +421,8 @@ globalThis.AOR_77M = {
           "qty": 4,
           "locationType": "area"
         }
-      ]
+      ],
+      "role2": "Acting SCCM"
     },
     {
       "number": 5,
@@ -513,7 +520,8 @@ globalThis.AOR_77M = {
           "qty": 1,
           "locationType": "area"
         }
-      ]
+      ],
+      "role2": "Galley Operator"
     },
     {
       "number": 6,
@@ -521,7 +529,7 @@ globalThis.AOR_77M = {
       "role": "Cabin Crew",
       "displayTitle": "No. 6 (Cabin Crew - GCC 1)",
       "service": {
-        "summary": "Club World service from 17FK to 11FK.",
+        "summary": "Club World service for rows 17 to 11 on aircraft-right.",
         "cabin": [
           "CW"
         ]
@@ -590,7 +598,8 @@ globalThis.AOR_77M = {
           "qty": 1,
           "locationType": "area"
         }
-      ]
+      ],
+      "role2": "GCC 1"
     },
     {
       "number": 7,
@@ -598,10 +607,13 @@ globalThis.AOR_77M = {
       "role": "Cabin Crew",
       "displayTitle": "No. 7 (Cabin Crew - GCC 3)",
       "service": {
-        "summary": "Works with No. 12 from the front of WTP on aircraft right towards the rear. If No. 12 is not carried, works with No. 8.",
+        "summary": "Works with No. 8 from the front of WTP on aircraft right towards the rear",
         "cabin": [
           "WTP",
           "WT"
+        ],
+        "extraCrew": [
+          "Works with No. 12 from the front of WTP on aircraft right towards the rear"
         ]
       },
       "seating": {
@@ -692,7 +704,8 @@ globalThis.AOR_77M = {
           "qty": 4,
           "locationType": "area"
         }
-      ]
+      ],
+      "role2": "GCC 3"
     },
     {
       "number": 8,
@@ -700,10 +713,14 @@ globalThis.AOR_77M = {
       "role": "Cabin Crew",
       "displayTitle": "No. 8 (Cabin Crew)",
       "service": {
-        "summary": "WT and WTP Galley Operator if No. 4 is not operating the galley. With 12 crew, dedicated Galley Operator when assigned. If No. 12 is not carried, works with No. 7 from the front of WTP on aircraft right towards the rear.",
+        "summary": "WT and WTP Galley Operator if No. 4 is not operating the galley, Works with No. 7 from the front of WTP on aircraft right towards the rear",
         "cabin": [
           "WTP",
           "WT"
+        ],
+        "extraCrew": [
+          "Becomes the dedicated Galley Operator if assigned to the galley",
+          "No. 12 takes the aircraft-right cabin position alongside No. 7"
         ]
       },
       "seating": {
@@ -815,7 +832,7 @@ globalThis.AOR_77M = {
       },
       "doorResponsibility": "NA",
       "demo": {
-        "position": "1AE",
+        "position": "Row 1 on aircraft-left",
         "pointsOut": [
           "D2LR followed by D1LR"
         ]
@@ -872,7 +889,7 @@ globalThis.AOR_77M = {
       "role": "Cabin Crew",
       "displayTitle": "No. 10 (Cabin Crew - GCC 4)",
       "service": {
-        "summary": "Club World service from 17AE to 11AE.",
+        "summary": "Club World service for rows 17 to 11 on aircraft-left.",
         "cabin": [
           "CW"
         ]
@@ -939,7 +956,8 @@ globalThis.AOR_77M = {
           "qty": 1,
           "locationType": "area"
         }
-      ]
+      ],
+      "role2": "GCC 4"
     },
     {
       "number": 11,
@@ -947,7 +965,7 @@ globalThis.AOR_77M = {
       "role": "Cabin Crew",
       "displayTitle": "No. 11 (Cabin Crew)",
       "service": {
-        "summary": "Club World service from 5FK to 10FK.",
+        "summary": "Club World service for rows 5 to 10 on aircraft-right.",
         "cabin": [
           "CW"
         ]
@@ -1032,11 +1050,16 @@ globalThis.AOR_77M = {
       "role": "Cabin Crew",
       "displayTitle": "No. 12 (Cabin Crew)",
       "service": {
-        "summary": "Supports Club World pre-boarding service, then assists WTP and WT customers with overhead locker space. With 12 crew, works with No. 7 from the front of WTP on aircraft right towards the rear.",
+        "summary": "NA",
         "cabin": [
           "CW",
           "WTP",
           "WT"
+        ],
+        "extraCrew": [
+          "Supports Club World pre-boarding service",
+          "Assists WTP and WT customers with overhead locker space during boarding",
+          "Works with No. 7 from the front of WTP on aircraft right towards the rear while the assigned Galley Operator is dedicated to the galley"
         ]
       },
       "seating": {

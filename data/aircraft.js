@@ -1127,15 +1127,15 @@ globalThis.AIRCRAFT["32R"] = {
   "emergencyEquipmentSummary": [
     {
       "code": "AED",
-      "location": "AFT Overhead Locker ABC"
+      "location": "AFT Overhead Locker on aircraft-left"
     },
     {
       "code": "M5",
-      "location": "AFT Overhead Locker ABC"
+      "location": "AFT Overhead Locker on aircraft-left"
     },
     {
       "code": "RES",
-      "location": "AFT Overhead Locker ABC"
+      "location": "AFT Overhead Locker on aircraft-left"
     },
     {
       "code": "FE",
@@ -1178,15 +1178,15 @@ globalThis.AIRCRAFT["32H"] = {
   "emergencyEquipmentSummary": [
     {
       "code": "AED",
-      "location": "AFT Overhead Locker ABC"
+      "location": "AFT Overhead Locker on aircraft-left"
     },
     {
       "code": "M5",
-      "location": "AFT Overhead Locker ABC"
+      "location": "AFT Overhead Locker on aircraft-left"
     },
     {
       "code": "RES",
-      "location": "AFT Overhead Locker ABC"
+      "location": "AFT Overhead Locker on aircraft-left"
     },
     {
       "code": "FE",
@@ -1310,19 +1310,19 @@ globalThis.AIRCRAFT["31C"] = {
   "emergencyEquipmentSummary": [
     {
       "code": "AED",
-      "location": "AFT Overhead Locker DEF"
+      "location": "AFT Overhead Locker on aircraft-right"
     },
     {
       "code": "M5",
-      "location": "AFT Overhead Locker ABC"
+      "location": "AFT Overhead Locker on aircraft-left"
     },
     {
       "code": "RES",
-      "location": "AFT Overhead Locker ABC"
+      "location": "AFT Overhead Locker on aircraft-left"
     },
     {
       "code": "FE",
-      "location": "x1 FWD Crew Seat, x1 AFT Dogbox ABC, x1 No 3 Crew Seat"
+      "location": "x1 FWD Crew Seat, x1 AFT Dogbox on aircraft-left, x1 No 3 Crew Seat"
     },
     {
       "code": "WEX",

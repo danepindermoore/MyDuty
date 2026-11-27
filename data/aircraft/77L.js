@@ -14,7 +14,7 @@ globalThis.AOR_77L = {
       "role": "IFM",
       "displayTitle": "No. 1 (SCCM - IFM)",
       "service": {
-        "summary": "Overall responsibility for the aircraft. Club World service from 14AE to 10AE.",
+        "summary": "Overall responsibility for the aircraft. Club World service for rows 14 to 10 on aircraft-left.",
         "cabin": [
           "CW"
         ]
@@ -127,7 +127,8 @@ globalThis.AOR_77L = {
           "qty": 1,
           "locationType": "area"
         }
-      ]
+      ],
+      "role2": "SCCM"
     },
     {
       "number": 2,
@@ -135,7 +136,7 @@ globalThis.AOR_77L = {
       "role": "Cabin Crew",
       "displayTitle": "No. 2 (Cabin Crew - GCC 1)",
       "service": {
-        "summary": "Club World service from 1AE to 7AE.",
+        "summary": "Club World service for rows 1 to 7 on aircraft-left.",
         "cabin": [
           "CW"
         ]
@@ -148,14 +149,14 @@ globalThis.AOR_77L = {
       },
       "doorResponsibility": "D2L",
       "demo": {
-        "position": "10AE",
+        "position": "Row 10 on aircraft-left",
         "pointsOut": [
           "D3LR followed by D2LR"
         ]
       },
       "aor": {
         "hasAor": true,
-        "area": "MID Club World Galley, D2L to AFT Club World cabin AE side"
+        "area": "MID Club World Galley, D2L to AFT Club World cabin on aircraft-left"
       },
       "rest": "1st Rest",
       "additionalResponsibilities": [
@@ -207,7 +208,8 @@ globalThis.AOR_77L = {
           "qty": 1,
           "locationType": "area"
         }
-      ]
+      ],
+      "role2": "GCC 1"
     },
     {
       "number": 3,
@@ -215,10 +217,13 @@ globalThis.AOR_77L = {
       "role": "Cabin Crew",
       "displayTitle": "No. 3 (Cabin Crew - GCC 2)",
       "service": {
-        "summary": "With 11 crew, serves with No. 4 from front of WTP on aircraft left towards the rear.",
+        "summary": "Works in WTP and WT",
         "cabin": [
           "WTP",
           "WT"
+        ],
+        "extraCrew": [
+          "With 11 crew, serves with No. 4 from the front of WTP on aircraft left towards the rear"
         ]
       },
       "seating": {
@@ -229,7 +234,7 @@ globalThis.AOR_77L = {
       },
       "doorResponsibility": "D3L",
       "demo": {
-        "position": "Front of WTP cabin AE side",
+        "position": "Front of WTP cabin on aircraft-left",
         "pointsOut": [
           "D3LR followed by D2LR"
         ]
@@ -304,7 +309,8 @@ globalThis.AOR_77L = {
           "qty": 10,
           "locationType": "area"
         }
-      ]
+      ],
+      "role2": "GCC 2"
     },
     {
       "number": 4,
@@ -312,10 +318,13 @@ globalThis.AOR_77L = {
       "role": "IFL",
       "displayTitle": "No. 4 (IFL - Acting SCCM)",
       "service": {
-        "summary": "Responsible for WT and WTP. May choose to be Galley Operator. WTP pre-takeoff drinks on ABC side. With 11 crew, serves with No. 3 from front of WTP on aircraft left towards the rear.",
+        "summary": "Responsible for WT and WTP, May choose to be Galley Operator, Delivers WTP pre-takeoff drinks on aircraft-left",
         "cabin": [
           "WTP",
           "WT"
+        ],
+        "extraCrew": [
+          "With 11 crew, serves with No. 3 from the front of WTP on aircraft left towards the rear"
         ]
       },
       "seating": {
@@ -410,7 +419,8 @@ globalThis.AOR_77L = {
           "qty": 20,
           "locationType": "area"
         }
-      ]
+      ],
+      "role2": "Acting SCCM"
     },
     {
       "number": 5,
@@ -431,7 +441,7 @@ globalThis.AOR_77L = {
       },
       "doorResponsibility": "D1R",
       "demo": {
-        "position": "1FK",
+        "position": "Row 1 on aircraft-right",
         "pointsOut": [
           "D2LR followed by D1LR"
         ]
@@ -532,7 +542,8 @@ globalThis.AOR_77L = {
           "qty": 1,
           "locationType": "rest"
         }
-      ]
+      ],
+      "role2": "Galley Operator"
     },
     {
       "number": 6,
@@ -540,7 +551,7 @@ globalThis.AOR_77L = {
       "role": "Cabin Crew",
       "displayTitle": "No. 6 (Cabin Crew)",
       "service": {
-        "summary": "Club World service from 1FK to 7FK.",
+        "summary": "Club World service for rows 1 to 7 on aircraft-right.",
         "cabin": [
           "CW"
         ]
@@ -553,14 +564,14 @@ globalThis.AOR_77L = {
       },
       "doorResponsibility": "D2R",
       "demo": {
-        "position": "4FK",
+        "position": "Row 4 on aircraft-right",
         "pointsOut": [
           "D2LR followed by D1LR"
         ]
       },
       "aor": {
         "hasAor": true,
-        "area": "FWD Club World cabin FK side"
+        "area": "FWD Club World cabin on aircraft-right"
       },
       "rest": "1st Rest",
       "additionalResponsibilities": [
@@ -620,10 +631,13 @@ globalThis.AOR_77L = {
       "role": "Cabin Crew",
       "displayTitle": "No. 7 (Cabin Crew - GCC 3)",
       "service": {
-        "summary": "With 11 crew, serves with No. 10 from front of WTP on aircraft right towards the rear.",
+        "summary": "Works in WTP and WT",
         "cabin": [
           "WTP",
           "WT"
+        ],
+        "extraCrew": [
+          "With 11 crew, serves with No. 10 from the front of WTP on aircraft right towards the rear"
         ]
       },
       "seating": {
@@ -634,7 +648,7 @@ globalThis.AOR_77L = {
       },
       "doorResponsibility": "D3R",
       "demo": {
-        "position": "Front of FWD WT cabin HJK side",
+        "position": "Front of FWD WT cabin on aircraft-right",
         "pointsOut": [
           "D3LR followed by D2LR"
         ]
@@ -744,7 +758,8 @@ globalThis.AOR_77L = {
           "qty": 2,
           "locationType": "rest"
         }
-      ]
+      ],
+      "role2": "GCC 3"
     },
     {
       "number": 8,
@@ -855,7 +870,7 @@ globalThis.AOR_77L = {
       "role": "Cabin Crew",
       "displayTitle": "No. 9 (Cabin Crew - GCC 4)",
       "service": {
-        "summary": "Club World service from 14FK to 10FK.",
+        "summary": "Club World service for rows 14 to 10 on aircraft-right.",
         "cabin": [
           "CW"
         ]
@@ -868,14 +883,14 @@ globalThis.AOR_77L = {
       },
       "doorResponsibility": "NA",
       "demo": {
-        "position": "1AE",
+        "position": "Row 1 on aircraft-left",
         "pointsOut": [
           "D2L followed by D1LR"
         ]
       },
       "aor": {
         "hasAor": true,
-        "area": "FWD Club World cabin AE side"
+        "area": "FWD Club World cabin on aircraft-left"
       },
       "rest": "2nd Rest",
       "additionalResponsibilities": [
@@ -917,7 +932,8 @@ globalThis.AOR_77L = {
           "qty": 1,
           "locationType": "seat"
         }
-      ]
+      ],
+      "role2": "GCC 4"
     },
     {
       "number": 10,
@@ -925,10 +941,13 @@ globalThis.AOR_77L = {
       "role": "Cabin Crew",
       "displayTitle": "No. 10 (Cabin Crew)",
       "service": {
-        "summary": "WTP pre-takeoff drinks on HJK side. With 11 crew, serves with No. 7 from front of WTP on aircraft right towards the rear.",
+        "summary": "Delivers WTP pre-takeoff drinks on aircraft-right",
         "cabin": [
           "WTP",
           "WT"
+        ],
+        "extraCrew": [
+          "With 11 crew, serves with No. 7 from the front of WTP on aircraft right towards the rear"
         ]
       },
       "seating": {
@@ -939,14 +958,14 @@ globalThis.AOR_77L = {
       },
       "doorResponsibility": "NA",
       "demo": {
-        "position": "10FK",
+        "position": "Row 10 on aircraft-right",
         "pointsOut": [
           "D3LR followed by D2LR"
         ]
       },
       "aor": {
         "hasAor": true,
-        "area": "D2R to AFT Club World cabin FK side, 1 x Toilet at D2R"
+        "area": "D2R to AFT Club World cabin on aircraft-right, 1 x Toilet at D2R"
       },
       "rest": "1st Rest",
       "additionalResponsibilities": [
@@ -1006,11 +1025,16 @@ globalThis.AOR_77L = {
       "role": "Cabin Crew",
       "displayTitle": "No. 11 (Cabin Crew)",
       "service": {
-        "summary": "Supports Club World pre-boarding service and assists with WTP and WT overhead lockers during boarding. Serves rows 39–44 towards the rear on aircraft left, then the same rows on aircraft right.",
+        "summary": "NA",
         "cabin": [
           "CW",
           "WTP",
           "WT"
+        ],
+        "extraCrew": [
+          "Supports Club World pre-boarding service",
+          "Assists with WTP and WT overhead lockers during boarding",
+          "Serves rows 39–44 towards the rear on aircraft left and then the same rows on aircraft right"
         ]
       },
       "seating": {

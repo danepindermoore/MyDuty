@@ -16,7 +16,7 @@ globalThis.AOR_789 = {
       "role": "IFM",
       "displayTitle": "No. 1 (SCCM - IFM)",
       "service": {
-        "summary": "Overall responsibility for the aircraft. Serves 6ABDE to 7EFJK in Club World.",
+        "summary": "Overall responsibility for the aircraft. Serves from row 6 on aircraft-left to row 7 on aircraft-right in Club World.",
         "cabin": [
           "CW"
         ]
@@ -99,7 +99,8 @@ globalThis.AOR_789 = {
           "qty": 1,
           "locationType": "area"
         }
-      ]
+      ],
+      "role2": "SCCM"
     },
     {
       "number": 2,
@@ -107,7 +108,7 @@ globalThis.AOR_789 = {
       "role": "Cabin Crew",
       "displayTitle": "No. 2 (Cabin Crew - GCC 1)",
       "service": {
-        "summary": "Club World service from 10ABD to 13ABDE.",
+        "summary": "Club World service for rows 10 to 13 on aircraft-left.",
         "cabin": [
           "CW"
         ]
@@ -189,7 +190,8 @@ globalThis.AOR_789 = {
           "qty": 1,
           "locationType": "area"
         }
-      ]
+      ],
+      "role2": "GCC 1"
     },
     {
       "number": 3,
@@ -276,7 +278,8 @@ globalThis.AOR_789 = {
           "qty": 3,
           "locationType": "area"
         }
-      ]
+      ],
+      "role2": "GCC 2"
     },
     {
       "number": 4,
@@ -284,10 +287,13 @@ globalThis.AOR_789 = {
       "role": "IFL",
       "displayTitle": "No. 4 (IFL - Acting SCCM)",
       "service": {
-        "summary": "Overall responsibility for WTP and WT. May choose to be WT and WTP Galley Operator. WTP pre-takeoff drinks on aircraft left. Serves with No. 3 from the front of WTP on aircraft left towards the rear. With 11 crew, No. 4 or No. 8 becomes the dedicated Galley Operator when assigned.",
+        "summary": "Responsible for WTP and WT, May choose to be Galley Operator, Works with No. 3 from the front of WTP on aircraft left towards the rear, Delivers WTP pre-takeoff drinks on aircraft left",
         "cabin": [
           "WTP",
           "WT"
+        ],
+        "extraCrew": [
+          "Becomes the dedicated Galley Operator if assigned to the galley"
         ]
       },
       "seating": {
@@ -387,7 +393,8 @@ globalThis.AOR_789 = {
           "qty": 2,
           "locationType": "rest"
         }
-      ]
+      ],
+      "role2": "Acting SCCM"
     },
     {
       "number": 5,
@@ -493,7 +500,8 @@ globalThis.AOR_789 = {
           "qty": 1,
           "locationType": "area"
         }
-      ]
+      ],
+      "role2": "Galley Operator"
     },
     {
       "number": 6,
@@ -501,7 +509,7 @@ globalThis.AOR_789 = {
       "role": "Cabin Crew",
       "displayTitle": "No. 6 (Cabin Crew - GCC 4)",
       "service": {
-        "summary": "Club World service from 10EFJK to 13FJK.",
+        "summary": "Club World service for rows 10 to 13 on aircraft-right.",
         "cabin": [
           "CW"
         ]
@@ -568,7 +576,8 @@ globalThis.AOR_789 = {
           "qty": 2,
           "locationType": "area"
         }
-      ]
+      ],
+      "role2": "GCC 4"
     },
     {
       "number": 7,
@@ -576,10 +585,13 @@ globalThis.AOR_789 = {
       "role": "Cabin Crew",
       "displayTitle": "No. 7 (Cabin Crew - GCC 3)",
       "service": {
-        "summary": "Serves from the front of WTP on aircraft right towards the rear with No. 8, or with No. 11 when carried.",
+        "summary": "Works with No. 8 from the front of WTP on aircraft right towards the rear",
         "cabin": [
           "WTP",
           "WT"
+        ],
+        "extraCrew": [
+          "Works with No. 11 from the front of WTP on aircraft right towards the rear"
         ]
       },
       "seating": {
@@ -660,7 +672,8 @@ globalThis.AOR_789 = {
           "qty": 2,
           "locationType": "area"
         }
-      ]
+      ],
+      "role2": "GCC 3"
     },
     {
       "number": 8,
@@ -668,10 +681,14 @@ globalThis.AOR_789 = {
       "role": "Cabin Crew",
       "displayTitle": "No. 8 (Cabin Crew - Galley Operator)",
       "service": {
-        "summary": "WT and WTP Galley Operator unless No. 4 chooses the galley. Serves with No. 7 from the front of WTP on aircraft right towards the rear. With 11 crew, No. 11 takes this cabin-service position and No. 8 is dedicated Galley Operator if assigned.",
+        "summary": "WT and WTP Galley Operator unless No. 4 chooses the galley, Works with No. 7 from the front of WTP on aircraft right towards the rear",
         "cabin": [
           "WTP",
           "WT"
+        ],
+        "extraCrew": [
+          "No. 11 takes over this cabin-service position and works alongside No. 7",
+          "Becomes the dedicated Galley Operator if assigned to the galley"
         ]
       },
       "seating": {
@@ -763,7 +780,8 @@ globalThis.AOR_789 = {
           "qty": 3,
           "locationType": "area"
         }
-      ]
+      ],
+      "role2": "Galley Operator"
     },
     {
       "number": 9,
@@ -784,7 +802,7 @@ globalThis.AOR_789 = {
       },
       "doorResponsibility": "D1R",
       "demo": {
-        "position": "1AE",
+        "position": "Row 1 on aircraft-left",
         "pointsOut": [
           "D2LR followed by D1LR"
         ]
@@ -875,7 +893,8 @@ globalThis.AOR_789 = {
           "qty": 1,
           "locationType": "rest"
         }
-      ]
+      ],
+      "role2": "Galley Operator"
     },
     {
       "number": 10,
@@ -963,10 +982,15 @@ globalThis.AOR_789 = {
       "role": "Cabin Crew",
       "displayTitle": "No. 11 (Cabin Crew - GCC 5)",
       "service": {
-        "summary": "With 11 crew, assists with Club World pre-setting and helps WTP and WT customers with overhead lockers during boarding. Replaces No. 8 in cabin service, working with No. 7 from the front of WTP on aircraft right towards the rear.",
+        "summary": "NA",
         "cabin": [
           "WTP",
           "WT"
+        ],
+        "extraCrew": [
+          "Assists with Club World pre-setting",
+          "Helps WTP and WT customers with overhead lockers during boarding",
+          "Replaces No. 8 in cabin service and works with No. 7 from the front of WTP on aircraft right towards the rear"
         ]
       },
       "seating": {
@@ -1021,7 +1045,8 @@ globalThis.AOR_789 = {
           "qty": 1,
           "locationType": "seat"
         }
-      ]
+      ],
+      "role2": "GCC 5"
     }
   ]
 };

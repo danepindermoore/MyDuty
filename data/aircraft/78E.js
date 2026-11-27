@@ -2,8 +2,9 @@ globalThis.AOR_78E = {
   "aircraftCode": "78E",
   "importantInfo": {
     "notes": [
-      "No.6 works in CW from pre-take-off until the end of bar service, assists meal delivery in WTP/WT, supports CW during breaks, and works in CW or WTP/WT for second service at the IFM’s discretion.",
-      "For loads under 100 across WTP/WT, No.6 may remain in CW at the IFM’s discretion; follow CW standards when operating with 9 crew.",
+      "With eight crew, No. 6 works in CW from pre-takeoff until the end of the bar service after take-off, then assists with meal delivery in WTP and WT. The IFM decides whether No. 6 works in CW or WTP and WT for second service. No. 6 takes first rest and works in CW during second-rest breaks.",
+      "With eight crew and fewer than 100 customers across WTP and WT, No. 6 should remain in CW for both services at the IFM’s discretion.",
+      "With nine crew, follow CW standards. No. 6 remains in CW and No. 9 takes over from No. 6 alongside No. 7 on aircraft right in WTP and WT.",
       "If a GCC position is assigned, IFR is allocated to No.8.",
       "Position-level AOR and SEP equipment details should be checked against the current source PDF in Service Documents/Dual_Aisle."
     ]
@@ -15,7 +16,7 @@ globalThis.AOR_78E = {
       "role": "IFM",
       "displayTitle": "No. 1 (SCCM - IFM)",
       "service": {
-        "summary": "Overall responsibility for all cabins, CW cabin serving 1AE - 9AE",
+        "summary": "Overall responsibility for all cabins, CW cabin serving rows 1 to 9 on aircraft-left",
         "cabin": [
           "CW"
         ]
@@ -28,7 +29,7 @@ globalThis.AOR_78E = {
       },
       "doorResponsibility": "D1L",
       "demo": {
-        "position": "1AE",
+        "position": "Row 1 on aircraft-left",
         "pointsOut": [
           "D2LR followed by D1LR"
         ]
@@ -109,7 +110,8 @@ globalThis.AOR_78E = {
           "qty": 1,
           "locationType": "area"
         }
-      ]
+      ],
+      "role2": "SCCM"
     },
     {
       "number": 2,
@@ -117,7 +119,7 @@ globalThis.AOR_78E = {
       "role": "Cabin Crew",
       "displayTitle": "No. 2 (Cabin Crew - GCC 1)",
       "service": {
-        "summary": "CW cabin serving 1FK - 9FK",
+        "summary": "CW cabin serving rows 1 to 9 on aircraft-right",
         "cabin": [
           "CW"
         ]
@@ -130,7 +132,7 @@ globalThis.AOR_78E = {
       },
       "doorResponsibility": "D2L",
       "demo": {
-        "position": "6E",
+        "position": "Row 6 on aircraft-left",
         "pointsOut": [
           "D3LR followed by D2LR"
         ]
@@ -179,7 +181,8 @@ globalThis.AOR_78E = {
           "qty": 1,
           "locationType": "area"
         }
-      ]
+      ],
+      "role2": "GCC 1"
     },
     {
       "number": 3,
@@ -187,10 +190,13 @@ globalThis.AOR_78E = {
       "role": "Cabin Crew",
       "displayTitle": "No. 3 (Cabin Crew - GCC 2)",
       "service": {
-        "summary": "WTP & WT cabin serving AB side, Inflight Retail for all cabins, WTP pre-take off service JK side",
+        "summary": "Serves WTP and WT with No. 4 when No. 4 is serving in the cabin. Works from the front of WTP on aircraft left towards the rear, Delivers WTP pre-takeoff service on aircraft-right, Responsible for Inflight Retail for all cabins unless assigned GCC 2 (then No. 8 takes over)",
         "cabin": [
           "WTP",
           "WT"
+        ],
+        "extraCrew": [
+          "No. 9 takes over aircraft-right WTP pre-takeoff service during boarding"
         ]
       },
       "seating": {
@@ -201,14 +207,14 @@ globalThis.AOR_78E = {
       },
       "doorResponsibility": "D3L",
       "demo": {
-        "position": "Front of WTP AB side",
+        "position": "Front of WTP on aircraft-left",
         "pointsOut": [
           "D3LR followed by D2LR"
         ]
       },
       "aor": {
         "hasAor": true,
-        "area": "WTP cabin, FWD WT cabin ABC side, 1 x Toilet at D3L"
+        "area": "WTP cabin, FWD WT cabin on aircraft-left, 1 x Toilet at D3L"
       },
       "rest": "2nd Rest",
       "additionalResponsibilities": [
@@ -276,7 +282,8 @@ globalThis.AOR_78E = {
           "qty": 10,
           "locationType": "area"
         }
-      ]
+      ],
+      "role2": "GCC 2"
     },
     {
       "number": 4,
@@ -284,9 +291,12 @@ globalThis.AOR_78E = {
       "role": "IFL",
       "displayTitle": "No. 4 (IFL - Acting SCCM)",
       "service": {
-        "summary": "Responsible for World Traveller and World Traveller Plus cabins, WT cabin or WT Galley Operator, WTP pre-take off service AB side",
+        "summary": "Responsible for WT and WTP, May choose to be the dedicated WT Galley Operator, When serving in the cabin works with No. 3 from the front of WTP on aircraft left towards the rear, Delivers WTP pre-takeoff service on aircraft-left",
         "cabin": [
           "WT"
+        ],
+        "extraCrew": [
+          "Delivers WTP pre-takeoff service on aircraft left while No. 9 covers aircraft right"
         ]
       },
       "seating": {
@@ -304,7 +314,7 @@ globalThis.AOR_78E = {
       },
       "aor": {
         "hasAor": true,
-        "area": "AFT WT cabin ABC side, 1 x Toilet at D4L, OFAR"
+        "area": "AFT WT cabin on aircraft-left, 1 x Toilet at D4L, OFAR"
       },
       "rest": "1st Rest",
       "additionalResponsibilities": [
@@ -381,7 +391,8 @@ globalThis.AOR_78E = {
           "qty": 1,
           "locationType": "rest"
         }
-      ]
+      ],
+      "role2": "Acting SCCM"
     },
     {
       "number": 5,
@@ -402,7 +413,7 @@ globalThis.AOR_78E = {
       },
       "doorResponsibility": "D1R",
       "demo": {
-        "position": "1FK",
+        "position": "Row 1 on aircraft-right",
         "pointsOut": [
           "D2LR followed by D1LR"
         ]
@@ -493,7 +504,8 @@ globalThis.AOR_78E = {
           "qty": 1,
           "locationType": "rest"
         }
-      ]
+      ],
+      "role2": "Galley Operator"
     },
     {
       "number": 6,
@@ -501,9 +513,12 @@ globalThis.AOR_78E = {
       "role": "Cabin Crew",
       "displayTitle": "No. 6 (Cabin Crew - GCC 4)",
       "service": {
-        "summary": "CW cabin until end of bar service, WTP & WT meal service, Assists in CW during breaks, 2nd service at IFMs discretion",
+        "summary": "Works in Club World from pre-takeoff until the end of the bar service after take-off, Then assists with meal delivery in WTP and WT alongside No. 7 from the front of WTP on aircraft right towards the rear, Works in either Club World or WTP and WT for second service at the IFM’s discretion, Should remain in Club World for both services at the IFM’s discretion when the combined WTP and WT load is under 100 customers, Takes FIRST rest and works in Club World during second-rest breaks",
         "cabin": [
           "CW"
+        ],
+        "extraCrew": [
+          "Remains in Club World while No. 9 takes over in WTP and WT"
         ]
       },
       "seating": {
@@ -514,7 +529,7 @@ globalThis.AOR_78E = {
       },
       "doorResponsibility": "D2R",
       "demo": {
-        "position": "6F",
+        "position": "Row 6 on aircraft-right",
         "pointsOut": [
           "D3LR followed by D2LR"
         ]
@@ -618,7 +633,8 @@ globalThis.AOR_78E = {
           "qty": 1,
           "locationType": "area"
         }
-      ]
+      ],
+      "role2": "GCC 4"
     },
     {
       "number": 7,
@@ -626,10 +642,13 @@ globalThis.AOR_78E = {
       "role": "Cabin Crew",
       "displayTitle": "No. 7 (Cabin Crew - GCC 3)",
       "service": {
-        "summary": "WTP & WT cabin serving JK side",
+        "summary": "Serves WTP and WT from the front of WTP on aircraft right towards the rear, Works with No. 6 when No. 6 joins WTP and WT",
         "cabin": [
           "WTP",
           "WT"
+        ],
+        "extraCrew": [
+          "Works with No. 9 on aircraft right"
         ]
       },
       "seating": {
@@ -640,14 +659,14 @@ globalThis.AOR_78E = {
       },
       "doorResponsibility": "D3R",
       "demo": {
-        "position": "Front of FWD WT cabin HJK side",
+        "position": "Front of FWD WT cabin on aircraft-right",
         "pointsOut": [
           "D3LR followed by D2LR"
         ]
       },
       "aor": {
         "hasAor": true,
-        "area": "WT cabin (FWD & AFT) HJK side, 2 x Toilets at D3R"
+        "area": "WT cabin (FWD & AFT) on aircraft-right, 2 x Toilets at D3R"
       },
       "rest": "1st Rest",
       "additionalResponsibilities": [
@@ -710,7 +729,8 @@ globalThis.AOR_78E = {
           "qty": 2,
           "locationType": "area"
         }
-      ]
+      ],
+      "role2": "GCC 3"
     },
     {
       "number": 8,
@@ -718,7 +738,7 @@ globalThis.AOR_78E = {
       "role": "Cabin Crew",
       "displayTitle": "No. 8 (Cabin Crew - Galley Operator)",
       "service": {
-        "summary": "WT Galley Operator if not operated by number 4, Responsible for PRAs and cabin PAs",
+        "summary": "Dedicated WT Galley Operator unless No. 4 takes the galley. Responsible for PRAs and cabin PAs.",
         "cabin": [
           "WT"
         ]
@@ -775,35 +795,54 @@ globalThis.AOR_78E = {
           "qty": 1,
           "locationType": "seat"
         }
-      ]
+      ],
+      "role2": "Galley Operator"
     },
     {
       "number": 9,
-      "title": null,
-      "role": null,
-      "displayTitle": "No 9",
+      "title": "Cabin Crew",
+      "role": "Cabin Crew",
+      "displayTitle": "No. 9 (Cabin Crew)",
       "service": {
-        "summary": "Position-specific service, AOR, seating, safety demonstration and equipment-check details are not mapped in this dataset. Refer to the aircraft AOR source document.",
-        "cabin": []
+        "summary": "NA",
+        "cabin": [
+          "WTP",
+          "WT"
+        ],
+        "extraCrew": [
+          "Delivers WTP pre-takeoff service on aircraft right during boarding while No. 4 covers aircraft left",
+          "Takes over from No. 6 and serves with No. 7 from the front of WTP on aircraft right towards the rear",
+          "No. 6 remains in Club World"
+        ]
       },
       "seating": {
-        "seat": null,
-        "descriptor": null,
-        "facing": null,
-        "full": "See aircraft AOR source document"
+        "seat": "D1L",
+        "descriptor": "NA",
+        "facing": "FWD",
+        "full": "D1L: FWD"
       },
-      "doorResponsibility": null,
+      "doorResponsibility": "NA",
       "demo": {
-        "position": null,
-        "pointsOut": []
+        "position": "NA",
+        "pointsOut": [
+          "NA"
+        ]
       },
       "aor": {
         "hasAor": false,
-        "area": null
+        "area": "NA"
       },
-      "rest": null,
-      "additionalResponsibilities": [],
-      "equipmentChecks": []
+      "rest": "2nd Rest",
+      "additionalResponsibilities": [
+        "NA"
+      ],
+      "equipmentChecks": [
+        {
+          "code": "NA",
+          "qty": 1,
+          "locationType": "area"
+        }
+      ]
     }
   ]
 };

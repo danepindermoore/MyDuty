@@ -14,7 +14,7 @@ globalThis.AOR_78N = {
       "role": "IFM",
       "displayTitle": "No. 1 (SCCM - IFM)",
       "service": {
-        "summary": "Overall responsibility for the aircraft. Club World service from 20AE to 25AE.",
+        "summary": "Overall responsibility for the aircraft. Club World service for rows 20 to 25 on aircraft-left.",
         "cabin": [
           "CW"
         ]
@@ -102,7 +102,8 @@ globalThis.AOR_78N = {
           "qty": 1,
           "locationType": "area"
         }
-      ]
+      ],
+      "role2": "SCCM"
     },
     {
       "number": 2,
@@ -110,7 +111,7 @@ globalThis.AOR_78N = {
       "role": "Cabin Crew",
       "displayTitle": "No. 2 (Cabin Crew - GCC 1)",
       "service": {
-        "summary": "Club World service from 5AE to 8K.",
+        "summary": "Club World service from row 5 on aircraft-left to row 8 on aircraft-right.",
         "cabin": [
           "CW"
         ]
@@ -187,7 +188,8 @@ globalThis.AOR_78N = {
           "qty": 1,
           "locationType": "area"
         }
-      ]
+      ],
+      "role2": "GCC 1"
     },
     {
       "number": 3,
@@ -195,10 +197,13 @@ globalThis.AOR_78N = {
       "role": "Cabin Crew",
       "displayTitle": "No. 3 (Cabin Crew - GCC 2)",
       "service": {
-        "summary": "Serves with No. 4 from the front of WTP on aircraft left towards the rear. With 11 crew, delivers WTP pre-takeoff drinks on aircraft right.",
+        "summary": "Works with No. 4 from the front of WTP on aircraft left towards the rear",
         "cabin": [
           "WTP",
           "WT"
+        ],
+        "extraCrew": [
+          "Delivers WTP pre-takeoff drinks on aircraft right"
         ]
       },
       "seating": {
@@ -274,7 +279,8 @@ globalThis.AOR_78N = {
           "qty": 3,
           "locationType": "area"
         }
-      ]
+      ],
+      "role2": "GCC 2"
     },
     {
       "number": 4,
@@ -282,10 +288,14 @@ globalThis.AOR_78N = {
       "role": "IFL",
       "displayTitle": "No. 4 (IFL - Acting SCCM)",
       "service": {
-        "summary": "Overall responsibility for WT and WTP. May choose to be Galley Operator. Serves with No. 3 from the front of WTP on aircraft left towards the rear. With 11 crew, delivers WTP pre-takeoff drinks on aircraft left and is the dedicated Galley Operator if assigned.",
+        "summary": "Responsible for WTP and WT, May choose to be Galley Operator, Works with No. 3 from the front of WTP on aircraft left towards the rear",
         "cabin": [
           "WTP",
           "WT"
+        ],
+        "extraCrew": [
+          "Delivers WTP pre-takeoff drinks on aircraft left",
+          "Becomes the dedicated Galley Operator if assigned to the galley"
         ]
       },
       "seating": {
@@ -385,7 +395,8 @@ globalThis.AOR_78N = {
           "qty": 2,
           "locationType": "rest"
         }
-      ]
+      ],
+      "role2": "Acting SCCM"
     },
     {
       "number": 5,
@@ -491,7 +502,8 @@ globalThis.AOR_78N = {
           "qty": 1,
           "locationType": "area"
         }
-      ]
+      ],
+      "role2": "Galley Operator"
     },
     {
       "number": 6,
@@ -499,7 +511,7 @@ globalThis.AOR_78N = {
       "role": "Cabin Crew",
       "displayTitle": "No. 6 (Cabin Crew - GCC 4)",
       "service": {
-        "summary": "Club World service from 20FK to 25FK.",
+        "summary": "Club World service for rows 20 to 25 on aircraft-right.",
         "cabin": [
           "CW"
         ]
@@ -576,7 +588,8 @@ globalThis.AOR_78N = {
           "qty": 8,
           "locationType": "area"
         }
-      ]
+      ],
+      "role2": "GCC 4"
     },
     {
       "number": 7,
@@ -584,10 +597,13 @@ globalThis.AOR_78N = {
       "role": "Cabin Crew",
       "displayTitle": "No. 7 (Cabin Crew - GCC 3)",
       "service": {
-        "summary": "Serves from the front of WTP on aircraft right towards the rear with No. 8, or with No. 11 when carried.",
+        "summary": "Works with No. 8 from the front of WTP on aircraft right towards the rear",
         "cabin": [
           "WTP",
           "WT"
+        ],
+        "extraCrew": [
+          "Works with No. 11 from the front of WTP on aircraft right towards the rear"
         ]
       },
       "seating": {
@@ -668,7 +684,8 @@ globalThis.AOR_78N = {
           "qty": 2,
           "locationType": "area"
         }
-      ]
+      ],
+      "role2": "GCC 3"
     },
     {
       "number": 8,
@@ -676,10 +693,14 @@ globalThis.AOR_78N = {
       "role": "Cabin Crew",
       "displayTitle": "No. 8 (Cabin Crew - Galley Operator)",
       "service": {
-        "summary": "WT and WTP Galley Operator unless No. 4 chooses the galley. Serves with No. 7 from the front of WTP on aircraft right towards the rear. With 11 crew, No. 11 takes this cabin-service position and No. 8 is dedicated Galley Operator if assigned.",
+        "summary": "WT and WTP Galley Operator unless No. 4 chooses the galley, Works with No. 7 from the front of WTP on aircraft right towards the rear",
         "cabin": [
           "WTP",
           "WT"
+        ],
+        "extraCrew": [
+          "No. 11 takes over this cabin-service position and works alongside No. 7",
+          "Becomes the dedicated Galley Operator if assigned to the galley"
         ]
       },
       "seating": {
@@ -771,7 +792,8 @@ globalThis.AOR_78N = {
           "qty": 3,
           "locationType": "area"
         }
-      ]
+      ],
+      "role2": "Galley Operator"
     },
     {
       "number": 9,
@@ -792,7 +814,7 @@ globalThis.AOR_78N = {
       },
       "doorResponsibility": "D1R",
       "demo": {
-        "position": "1AE",
+        "position": "Row 1 on aircraft-left",
         "pointsOut": [
           "D2LR followed by D1LR"
         ]
@@ -882,7 +904,8 @@ globalThis.AOR_78N = {
           "qty": 1,
           "locationType": "rest"
         }
-      ]
+      ],
+      "role2": "Galley Operator"
     },
     {
       "number": 10,
@@ -970,10 +993,15 @@ globalThis.AOR_78N = {
       "role": "Cabin Crew",
       "displayTitle": "No. 11 (Cabin Crew - GCC 5)",
       "service": {
-        "summary": "When carried, assists with Club World pre-setting and helps WT and WTP customers with overhead lockers during boarding. Replaces No. 8 in cabin service, working with No. 7 from the front of WTP on aircraft right towards the rear.",
+        "summary": "NA",
         "cabin": [
           "WTP",
           "WT"
+        ],
+        "extraCrew": [
+          "Assists with Club World pre-setting",
+          "Helps WTP and WT customers with overhead lockers during boarding",
+          "Replaces No. 8 in cabin service and works with No. 7 from the front of WTP on aircraft right towards the rear"
         ]
       },
       "seating": {
@@ -1003,7 +1031,8 @@ globalThis.AOR_78N = {
           "qty": 1,
           "locationType": "area"
         }
-      ]
+      ],
+      "role2": "GCC 5"
     }
   ]
 };

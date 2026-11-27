@@ -47,7 +47,8 @@ globalThis.AOR_77T = {
           "qty": 1,
           "locationType": "area"
         }
-      ]
+      ],
+      "role2": "SCCM"
     },
     {
       "number": 2,
@@ -167,7 +168,8 @@ globalThis.AOR_77T = {
           "qty": 1,
           "locationType": "area"
         }
-      ]
+      ],
+      "role2": "Acting SCCM"
     },
     {
       "number": 5,

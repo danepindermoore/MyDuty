@@ -15,7 +15,7 @@ globalThis.AOR_77H = {
       "role": "IFM",
       "displayTitle": "No. 1 (SCCM - IFM)",
       "service": {
-        "summary": "Overall responsibility for all cabins, CW cabin serving 5AE - 7FK",
+        "summary": "Overall responsibility for all cabins, CW cabin serving from row 5 on aircraft-left to row 7 on aircraft-right",
         "cabin": [
           "CW"
         ]
@@ -132,7 +132,8 @@ globalThis.AOR_77H = {
           "qty": 5,
           "locationType": "area"
         }
-      ]
+      ],
+      "role2": "SCCM"
     },
     {
       "number": 2,
@@ -153,10 +154,10 @@ globalThis.AOR_77H = {
       },
       "doorResponsibility": "D2L",
       "demo": {
-        "position": "1AE",
+        "position": "Row 1 on aircraft-left",
         "pointsOut": [
           "D2LR followed by D1LR",
-          "Personal Demo 1K & 2K"
+          "Personal Demo at rows 1 and 2 on aircraft-right"
         ]
       },
       "aor": {
@@ -216,7 +217,7 @@ globalThis.AOR_77H = {
       "role": "Cabin Crew",
       "displayTitle": "No. 3 (Cabin Crew)",
       "service": {
-        "summary": "CW cabin serving 8FK - 15FK",
+        "summary": "CW cabin serving rows 8 to 15 on aircraft-right",
         "cabin": [
           "CW"
         ]
@@ -229,7 +230,7 @@ globalThis.AOR_77H = {
       },
       "doorResponsibility": "NA",
       "demo": {
-        "position": "8AE",
+        "position": "Row 8 on aircraft-left",
         "pointsOut": [
           "D3LR followed by D2LR"
         ]
@@ -306,7 +307,7 @@ globalThis.AOR_77H = {
       "role": "Cabin Crew",
       "displayTitle": "No. 4 (Cabin Crew - GCC 1)",
       "service": {
-        "summary": "CW cabin serving 23A/24E - 16AE",
+        "summary": "CW cabin serving rows 23/24 to 16 on aircraft-left",
         "cabin": [
           "CW"
         ]
@@ -319,7 +320,7 @@ globalThis.AOR_77H = {
       },
       "doorResponsibility": "D3L",
       "demo": {
-        "position": "12AE",
+        "position": "Row 12 on aircraft-left",
         "pointsOut": [
           "D3LR followed by D2LR"
         ]
@@ -373,7 +374,8 @@ globalThis.AOR_77H = {
           "qty": 1,
           "locationType": "area"
         }
-      ]
+      ],
+      "role2": "GCC 1"
     },
     {
       "number": 5,
@@ -381,7 +383,7 @@ globalThis.AOR_77H = {
       "role": "Cabin Crew",
       "displayTitle": "No. 5 (Cabin Crew - GCC 3)",
       "service": {
-        "summary": "WTP pre take off service JK side, WTP & WT cabin ABCDE side, Inflight Retail for all cabins unless GCC then IFR assigned to number 12",
+        "summary": "WTP pre take off service on aircraft-right, WTP & WT cabin on aircraft-left, Inflight Retail for all cabins unless GCC then IFR assigned to number 12",
         "cabin": [
           "WTP",
           "WT"
@@ -395,14 +397,14 @@ globalThis.AOR_77H = {
       },
       "doorResponsibility": "D4L",
       "demo": {
-        "position": "19AE",
+        "position": "Row 19 on aircraft-left",
         "pointsOut": [
           "D4LR followed by D3LR"
         ]
       },
       "aor": {
         "hasAor": true,
-        "area": "D4L to AFT WT ABCDE side, 1 x Toilet at D4L, OFAR"
+        "area": "D4L to AFT WT on aircraft-left, 1 x Toilet at D4L, OFAR"
       },
       "rest": "2nd Rest",
       "additionalResponsibilities": [
@@ -492,7 +494,8 @@ globalThis.AOR_77H = {
           "qty": 2,
           "locationType": "rest"
         }
-      ]
+      ],
+      "role2": "GCC 3"
     },
     {
       "number": 6,
@@ -500,7 +503,7 @@ globalThis.AOR_77H = {
       "role": "IFL",
       "displayTitle": "No. 6 (IFL - Acting SCCM)",
       "service": {
-        "summary": "Responsible for World Traveller Plus and World Traveller cabins, WTP pre take off service AB side, WTP & WT cabin ABCDE side, or WT Galley Operator if selected",
+        "summary": "Responsible for World Traveller Plus and World Traveller cabins, WTP pre take off service on aircraft-left, WTP & WT cabin on aircraft-left, or WT Galley Operator if selected",
         "cabin": [
           "WTP",
           "WT"
@@ -608,7 +611,8 @@ globalThis.AOR_77H = {
           "qty": 1,
           "locationType": "area"
         }
-      ]
+      ],
+      "role2": "Acting SCCM"
     },
     {
       "number": 7,
@@ -629,7 +633,7 @@ globalThis.AOR_77H = {
       },
       "doorResponsibility": "D1R",
       "demo": {
-        "position": "5FK",
+        "position": "Row 5 on aircraft-right",
         "pointsOut": [
           "D2LR followed by D1LR"
         ]
@@ -721,7 +725,8 @@ globalThis.AOR_77H = {
           "qty": 1,
           "locationType": "rest"
         }
-      ]
+      ],
+      "role2": "Galley Operator"
     },
     {
       "number": 8,
@@ -742,7 +747,7 @@ globalThis.AOR_77H = {
       },
       "doorResponsibility": "D2R",
       "demo": {
-        "position": "8FK",
+        "position": "Row 8 on aircraft-right",
         "pointsOut": [
           "D3LR followed by D2LR"
         ]
@@ -801,7 +806,8 @@ globalThis.AOR_77H = {
           "qty": 1,
           "locationType": "area"
         }
-      ]
+      ],
+      "role2": "Galley Operator"
     },
     {
       "number": 9,
@@ -809,7 +815,7 @@ globalThis.AOR_77H = {
       "role": "Cabin Crew",
       "displayTitle": "No. 9 (Cabin Crew - GCC 4)",
       "service": {
-        "summary": "CW cabin serving 24F/23K - 16FK",
+        "summary": "CW cabin serving rows 24/23 to 16 on aircraft-right",
         "cabin": [
           "CW"
         ]
@@ -822,7 +828,7 @@ globalThis.AOR_77H = {
       },
       "doorResponsibility": "NA",
       "demo": {
-        "position": "12FK",
+        "position": "Row 12 on aircraft-right",
         "pointsOut": [
           "D3LR followed by D2LR"
         ]
@@ -876,7 +882,8 @@ globalThis.AOR_77H = {
           "qty": 1,
           "locationType": "area"
         }
-      ]
+      ],
+      "role2": "GCC 4"
     },
     {
       "number": 10,
@@ -897,7 +904,7 @@ globalThis.AOR_77H = {
       },
       "doorResponsibility": "D3R",
       "demo": {
-        "position": "19FK",
+        "position": "Row 19 on aircraft-right",
         "pointsOut": [
           "D4LR followed by D3LR"
         ]
@@ -964,7 +971,7 @@ globalThis.AOR_77H = {
       "role": "Cabin Crew",
       "displayTitle": "No. 11 (Cabin Crew - GCC 2)",
       "service": {
-        "summary": "WTP & WT cabin FGHJK side",
+        "summary": "WTP & WT cabin on aircraft-right",
         "cabin": [
           "WTP",
           "WT"
@@ -978,7 +985,7 @@ globalThis.AOR_77H = {
       },
       "doorResponsibility": "D4R",
       "demo": {
-        "position": "Front of WTP cabin JK side",
+        "position": "Front of WTP cabin on aircraft-right",
         "pointsOut": [
           "D4LR followed by D3LR"
         ]
@@ -1053,7 +1060,8 @@ globalThis.AOR_77H = {
           "qty": 4,
           "locationType": "area"
         }
-      ]
+      ],
+      "role2": "GCC 2"
     },
     {
       "number": 12,
@@ -1061,10 +1069,13 @@ globalThis.AOR_77H = {
       "role": "Cabin Crew",
       "displayTitle": "No. 12 (Cabin Crew - Galley Operator)",
       "service": {
-        "summary": "WT Galley Operator if not operated by number 6; WTP & WT cabin FGHJK side; responsible for PRAs and cabin PAs; IFR if number 5 is GCC position 3",
+        "summary": "WT Galley Operator if not operated by No. 6, Serves WTP and WT on aircraft-right, Responsible for PRAs and cabin PAs, Responsible for Inflight Retail if No. 5 is assigned GCC 3",
         "cabin": [
           "WTP",
           "WT"
+        ],
+        "extraCrew": [
+          "No. 14 takes over aircraft-right WTP and WT cabin service when carried"
         ]
       },
       "seating": {
@@ -1082,7 +1093,7 @@ globalThis.AOR_77H = {
       },
       "aor": {
         "hasAor": true,
-        "area": "WT cabin FGHJK side, 1 x Toilet at D5R"
+        "area": "WT cabin on aircraft-right, 1 x Toilet at D5R"
       },
       "rest": "2nd Rest",
       "additionalResponsibilities": [
@@ -1147,7 +1158,8 @@ globalThis.AOR_77H = {
           "qty": 1,
           "locationType": "area"
         }
-      ]
+      ],
+      "role2": "Galley Operator"
     },
     {
       "number": 13,
@@ -1155,7 +1167,7 @@ globalThis.AOR_77H = {
       "role": "Cabin Crew",
       "displayTitle": "No. 13 (Cabin Crew)",
       "service": {
-        "summary": "CW Cabin serving 8AE - 15AE",
+        "summary": "CW Cabin serving rows 8 to 15 on aircraft-left",
         "cabin": [
           "CW"
         ]
@@ -1168,7 +1180,7 @@ globalThis.AOR_77H = {
       },
       "doorResponsibility": "NA",
       "demo": {
-        "position": "5AE",
+        "position": "Row 5 on aircraft-left",
         "pointsOut": [
           "D2LR followed by D1LR"
         ]
@@ -1225,10 +1237,14 @@ globalThis.AOR_77H = {
       "role": "Cabin Crew",
       "displayTitle": "No. 14 (Cabin Crew)",
       "service": {
-        "summary": "CW pre departure service delivery, WTP & WT cabin JK side replacing number 12",
+        "summary": "NA",
         "cabin": [
           "CW Pre-Departure",
           "WT Post-Departure"
+        ],
+        "extraCrew": [
+          "Supports Club World pre-departure service",
+          "Takes over aircraft-right WTP and WT cabin service from No. 12"
         ]
       },
       "seating": {
