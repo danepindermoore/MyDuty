@@ -111,6 +111,33 @@
       flex-direction: column;
       align-items: flex-end;
     }
+    @media (max-width: 560px) {
+      .fbp-hero .fbp-topbar {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 72px;
+        gap: 8px;
+        padding-right: 0;
+      }
+      .fbp-hero .fbp-toolbar {
+        display: contents;
+      }
+      .fbp-hero .fbp-title {
+        font-size: clamp(1.5rem, calc(15vw - 22px), 2.2rem);
+      }
+      .fbp-hero .fbp-feedback-button {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+      }
+      .fbp-hero .fdp-back-button {
+        grid-column: 1;
+        grid-row: 2;
+        width: fit-content;
+        max-width: 100%;
+        min-height: 44px;
+        padding: 8px 10px;
+        font-size: .875rem;
+      }
+    }
 </style>
   <script src="../assets/js/fbp-shared.js?v=7"></script>
 </head>
@@ -119,13 +146,12 @@
     <section class="fbp-hero">
       <div class="fbp-aircraft-bg" aria-hidden="true"><svg viewBox="0 0 1200 360" xmlns="http://www.w3.org/2000/svg"><g opacity="0.9" transform="translate(390 74) scale(1.12)"><path d="M566.5 95.5C550.4 96.5 508.9 97.8 456 99.8L337 178.5H283L359 99.2C307.4 101.3 247.4 104.2 184 107.6L117 156H74L122.5 108.8C74.1 111.5 34.3 114.2 11.8 116.5C4.7 117.2 0 123.5 0 130.6C0 137.8 5 144.1 12.1 144.8C34.8 147.1 74.7 149.7 122.7 152.4L74 199H117L184.6 153.5C248.3 156.9 308.3 159.9 359.7 162L283 239.5H337L456.3 161.4C509.2 163.4 550.5 164.8 566.5 165.8C582.1 166.8 595 154.6 595 139.1V122.2C595 106.7 582 94.5 566.5 95.5Z" fill="currentColor"/></g></svg></div>
       <div class="fbp-topbar">
-        <div>
+        <div class="fbp-page-heading">
           <h1 class="fbp-title">Longhaul FDP</h1>
-          <p class="fbp-subtitle">Use this version for longhaul operations</p>
         </div>
         <div class="fbp-toolbar">
           <a class="fbp-button fbp-feedback-button" href="mailto:u155573@ba.com?subject=Feedback%20for%20MyBriefing"><span class="feedback-label"><span>MyBriefing</span><span>Feedback</span></span><span class="feedback-arrow" aria-hidden="true">↗</span></a>
-          <a class="fbp-button" href="../MyBriefing/">Back to MyBriefing</a>
+          <a class="fbp-button fdp-back-button" href="../MyBriefing/">Back to MyBriefing</a>
         </div>
       </div>
     </section>
